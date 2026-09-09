@@ -8,7 +8,7 @@
 
 import maplibregl, { type Map as MlMap, type GeoJSONSource } from 'maplibre-gl';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
-import { CONTROL_COLOR, TYPE_COLOR, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
+import { CONTROL_COLOR, colorOf, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
 import { MapLabels, type LabelItem } from './labels';
 
 const BASE = import.meta.env.BASE_URL ?? '/';
@@ -211,7 +211,7 @@ export class AtlasMap {
           properties: {
             id: e.id,
             significance: e.significance,
-            color: TYPE_COLOR[e.type] ?? '#e8c26a',
+            color: colorOf(e.type),
             phase: active ? 2 : recent ? 1 : 0,
           },
         };

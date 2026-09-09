@@ -173,17 +173,41 @@ export const THEATRE_LABEL: Record<string, string> = {
   china: '中国',
 };
 
-/** 地図の点の色。種別ごとに変える（大きさは重要度と新しさで決まる） */
-export const TYPE_COLOR: Record<string, string> = {
-  battle: '#e8c26a',
-  invasion: '#e8875a',
-  naval: '#6ac8e8',
-  air_raid: '#d98ae8',
-  siege: '#e8a06a',
-  surrender: '#9ae86a',
-  uprising: '#e86a8a',
-  landing: '#6ae8b0',
+/**
+ * 地図の点の色は「陸・海・空」の 3 つだけにする。
+ *
+ * 種別は 8 つあるが、8 色に塗り分けると地図が読みにくいうえ、
+ * 種別の 8 割は事件名からの機械推定なので、細かく言い切るほどの確からしさがない。
+ * 「戦闘か侵攻か」は外すことがあっても「陸か海か」はまず外さないので、
+ * 色はこの粒度に留めて、細かい種別は詳細の文字で見せる。
+ */
+export type Domain = 'land' | 'sea' | 'air';
+
+export const DOMAIN_OF: Record<string, Domain> = {
+  battle: 'land',
+  invasion: 'land',
+  siege: 'land',
+  landing: 'land',
+  surrender: 'land',
+  uprising: 'land',
+  naval: 'sea',
+  air_raid: 'air',
 };
+
+export const DOMAIN_COLOR: Record<Domain, string> = {
+  land: '#e8c26a',
+  sea: '#6ac8e8',
+  air: '#d98ae8',
+};
+
+export const DOMAIN_LABEL: Record<Domain, string> = {
+  land: '陸戦',
+  sea: '海戦',
+  air: '空襲',
+};
+
+export const domainOf = (type: string): Domain => DOMAIN_OF[type] ?? 'land';
+export const colorOf = (type: string): string => DOMAIN_COLOR[domainOf(type)];
 
 export const TYPE_LABEL: Record<string, string> = {
   battle: '戦闘',

@@ -10,8 +10,9 @@ import {
   CONTROL_COLOR,
   CONTROL_LABEL,
   THEATRE_LABEL,
-  TYPE_COLOR,
-  TYPE_LABEL,
+  DOMAIN_COLOR,
+  DOMAIN_LABEL,
+  type Domain,
   formatJa,
   fromDayNumber,
   loadAtlas,
@@ -349,11 +350,11 @@ function buildChrome(atlas: Atlas, state: State): void {
     )
     .join('');
 
-  // 点の色（種別）。TYPE_COLOR を地図と共有しているのでズレない
-  $('#type-key').innerHTML = Object.entries(TYPE_COLOR)
+  // 点の色は陸・海・空の 3 つだけ。地図と同じ定義を使うのでズレない
+  $('#type-key').innerHTML = (Object.keys(DOMAIN_COLOR) as Domain[])
     .map(
-      ([type, color]) =>
-        `<span class="tk"><i style="background:${color}"></i>${TYPE_LABEL[type] ?? type}</span>`,
+      (d) =>
+        `<span class="tk"><i style="background:${DOMAIN_COLOR[d]}"></i>${DOMAIN_LABEL[d]}</span>`,
     )
     .join('');
 
