@@ -209,20 +209,6 @@ async function main(): Promise<void> {
       }),
     );
 
-  $('#tabs')
-    .querySelectorAll<HTMLButtonElement>('button')
-    .forEach((b) =>
-      b.addEventListener('click', () => {
-        const kind = b.dataset.kind as FeedKind;
-        // 全部消えると何も見えないので、最後の 1 つは外せないようにする
-        if (state.kinds.has(kind) && state.kinds.size > 1) state.kinds.delete(kind);
-        else state.kinds.add(kind);
-        b.classList.toggle('on', state.kinds.has(kind));
-        state.lastDate = null;
-        renderPane();
-      }),
-    );
-
   $('#theatres')
     .querySelectorAll<HTMLInputElement>('input')
     .forEach((cb) =>
