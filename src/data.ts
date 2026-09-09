@@ -173,6 +173,18 @@ export const THEATRE_LABEL: Record<string, string> = {
   china: '中国',
 };
 
+/** 地図の点の色。種別ごとに変える（大きさは重要度と新しさで決まる） */
+export const TYPE_COLOR: Record<string, string> = {
+  battle: '#e8c26a',
+  invasion: '#e8875a',
+  naval: '#6ac8e8',
+  air_raid: '#d98ae8',
+  siege: '#e8a06a',
+  surrender: '#9ae86a',
+  uprising: '#e86a8a',
+  landing: '#6ae8b0',
+};
+
 export const TYPE_LABEL: Record<string, string> = {
   battle: '戦闘',
   invasion: '侵攻',

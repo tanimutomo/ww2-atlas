@@ -10,6 +10,8 @@ import {
   CONTROL_COLOR,
   CONTROL_LABEL,
   THEATRE_LABEL,
+  TYPE_COLOR,
+  TYPE_LABEL,
   formatJa,
   fromDayNumber,
   loadAtlas,
@@ -344,6 +346,14 @@ function buildChrome(atlas: Atlas, state: State): void {
     .map(
       ([k, label]) =>
         `<label><input type="checkbox" value="${k}" checked> ${label}</label>`,
+    )
+    .join('');
+
+  // 点の色（種別）。TYPE_COLOR を地図と共有しているのでズレない
+  $('#type-key').innerHTML = Object.entries(TYPE_COLOR)
+    .map(
+      ([type, color]) =>
+        `<span class="tk"><i style="background:${color}"></i>${TYPE_LABEL[type] ?? type}</span>`,
     )
     .join('');
 

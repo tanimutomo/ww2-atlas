@@ -8,25 +8,13 @@
 
 import maplibregl, { type Map as MlMap, type GeoJSONSource } from 'maplibre-gl';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
-import { CONTROL_COLOR, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
+import { CONTROL_COLOR, TYPE_COLOR, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
 import { MapLabels, type LabelItem } from './labels';
 
 const BASE = import.meta.env.BASE_URL ?? '/';
 
 const OCEAN = '#152029';
 const LAND = '#2b3238';
-
-/** 種別ごとの点の形の代わりに色味を少し変える（大きさは significance で決める） */
-const TYPE_COLOR: Record<string, string> = {
-  battle: '#e8c26a',
-  invasion: '#e8875a',
-  naval: '#6ac8e8',
-  air_raid: '#d98ae8',
-  siege: '#e8a06a',
-  surrender: '#9ae86a',
-  uprising: '#e86a8a',
-  landing: '#6ae8b0',
-};
 
 export class AtlasMap {
   readonly map: MlMap;
