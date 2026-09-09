@@ -1,0 +1,82 @@
+# イタリア（ムッソリーニ / 大評議会 / バドリオ政権）の司令部レイヤー。P1 で追加。
+#
+# 枢軸の一角なのに P0 では 1 件も無く、参戦も陣営転換も年表から辿れなかった。
+# 出典は英伊の百科記事が中心で、原典の所在確認は未了（全件 verified: false）。
+
+- id: dec-19400610-italy-enters-war
+  coord: [12.4964, 41.9028]
+  type: declaration
+  name_ja: イタリアの参戦（対英仏宣戦布告）
+  name_en: Italian declaration of war on France and Britain
+  date: 1940-06-10
+  end: null
+  actors: [it, fr, uk]
+  persons: [ムッソリーニ, ヴィットーリオ・エマヌエーレ 3 世]
+  place: ローマ・ヴェネツィア宮殿
+  summary_ja: |
+    フランスの敗色が濃厚になった段階で、ムッソリーニがバルコニーから
+    群衆に向けて対英仏宣戦を告げた。短期で終わる戦争に間に合わせ、
+    講和の席で分け前を得ることが狙いだったが、
+    以後イタリアはギリシャ・北アフリカで苦戦し、ドイツの支援を要することになる。
+  decisions_ja:
+    - イギリス・フランスに宣戦を布告する
+    - フランス南部への攻勢を発起する
+  license: pd
+  verified: false
+  sources:
+    - title: Italian participation in World War II
+      url: https://en.wikipedia.org/wiki/Military_history_of_Italy_during_World_War_II
+    - title: イタリア王国の第二次世界大戦参戦
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E7%8E%8B%E5%9B%BD
+
+- id: dec-19401028-greco-italian
+  coord: [12.4964, 41.9028]
+  type: order
+  name_ja: ギリシャ侵攻の決定（対ギリシャ最後通牒）
+  name_en: Italian ultimatum and invasion of Greece
+  date: 1940-10-28
+  end: null
+  actors: [it, gr]
+  persons: [ムッソリーニ, チアノ]
+  place: ローマ
+  summary_ja: |
+    ドイツに事前に相談せず、アルバニアからギリシャへ侵攻することを決めた。
+    ムッソリーニがドイツの独走に対抗して「並行戦争」を示そうとしたものだが、
+    ギリシャ軍の反撃でアルバニアまで押し返され、
+    翌春のドイツによるバルカン作戦（マリータ）を招くことになる。
+  decisions_ja:
+    - ギリシャに最後通牒を発し、拒否されしだい侵攻する
+    - アルバニアを起点に進攻する
+    - ドイツには事前に通報しない
+  license: pd
+  verified: false
+  sources:
+    - title: Greco-Italian War
+      url: https://en.wikipedia.org/wiki/Greco-Italian_War
+
+- id: dec-19430725-mussolini-deposed
+  coord: [12.4964, 41.9028]
+  type: conference
+  name_ja: ファシズム大評議会の決議とムッソリーニ解任
+  name_en: Dismissal of Mussolini by the Grand Council of Fascism
+  date: 1943-07-24
+  end: 1943-07-25
+  actors: [it]
+  persons: [ムッソリーニ, グランディ, ヴィットーリオ・エマヌエーレ 3 世, バドリオ]
+  place: ローマ・ヴェネツィア宮殿
+  summary_ja: |
+    シチリア上陸とローマ空襲を受けて開かれたファシズム大評議会が、
+    軍の統帥権を国王に返上する動議を可決した。翌 25 日に国王は
+    ムッソリーニを解任・逮捕し、バドリオを首相に任命する。
+    このあと水面下で連合国との休戦交渉が始まり、9 月の休戦につながる。
+  decisions_ja:
+    - 統帥権を国王に返上する動議を可決する（グランディ動議）
+    - 国王がムッソリーニを解任し、バドリオを首相に任命する
+    - ファシスト党を解散する
+  license: pd
+  verified: false
+  sources:
+    - title: Grand Council of Fascism
+      url: https://en.wikipedia.org/wiki/Grand_Council_of_Fascism
+    - title: Armistice of Cassibile
+      url: https://en.wikipedia.org/wiki/Armistice_of_Cassibile

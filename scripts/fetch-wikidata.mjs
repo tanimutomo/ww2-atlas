@@ -27,8 +27,26 @@ const OUT = resolve(ROOT, 'data/raw/wikidata-events.json');
 // ①② の生結果キャッシュ（gitignore 済み）。付加情報の取り直しで毎回 10 分待たないため
 const BASE_CACHE = resolve(ROOT, 'data/raw/cache/wikidata-base.json');
 
-// Q178561 battle / Q645883 military operation
-const CLASSES = 'VALUES ?cls { wd:Q178561 wd:Q645883 }';
+// 取得の起点になるクラス。ここのサブクラスを展開して使う。
+//   Q178561 battle          戦闘
+//   Q645883 military operation  軍事作戦
+//   Q107706 armistice       休戦（P0 で降伏が 1 件も取れなかった原因。ここが無いと落ちる）
+//   Q217901 capitulation    降伏
+//   Q334516 declaration of war  宣戦布告
+//   Q207326 summit          首脳会談
+//   Q131569 treaty          条約（WWII に P361 で繋がるものだけが残る）
+//
+// ⚠ 戦争犯罪（Q135010）は意図的に外している。南京・カティン等は WWII の一部だが、
+//   型と要約を機械推定のまま並べるのは扱いとして雑すぎる。個別に書くとき（P2）に入れる。
+const ROOTS = ['Q178561', 'Q645883', 'Q207326', 'Q131569'];
+
+// 外交系は「WWII の一部（P361）」として繋がっていないものが多い。
+//   コンピエーニュ休戦・カッシビレ休戦 … P361 を持たない
+//   ドイツ降伏文書                     … P361 は WWII だが P31 が「歴史的文書」
+// P361 を条件にすると全部落ちるので、こちらは **クラスと日付だけ** で取る。
+// 1937〜1945 に限れば数が小さい（休戦 5・降伏 3・宣戦布告 26・講和条約 15・歴史的文書 85）ので、
+// 無関係なものが混ざっても selection.yaml で落とせる。
+const DIPLOMATIC_ROOTS = ['Q107706', 'Q217901', 'Q334516', 'Q625298', 'Q3771738'];
 // Q362 第二次世界大戦 / Q170314 日中戦争（P2 で使う。P0 でも拾っておく）
 const WARS = 'VALUES ?war { wd:Q362 wd:Q170314 }';
 
@@ -55,18 +73,30 @@ const DATE = '(wdt:P580|wdt:P585)';
 //   - かといってクラス条件を外して `wdt:P361+` だけにすると 502（枝刈りが効かず重すぎる）
 //   → 先にサブクラス集合（実測 296 件）を 1 回引いて、本体では VALUES で直接与える。
 //     これで「P31 直付け＋安いジョイン」になり、サブクラス展開ぶんも同じクエリで拾える
-const qSubclasses = () => `
+const qSubclasses = (roots) => `
 SELECT DISTINCT ?cls WHERE {
-  VALUES ?root { wd:Q178561 wd:Q645883 }
+  VALUES ?root { ${roots.map((q) => `wd:${q}`).join(' ')} }
   ?cls wdt:P279* ?root .
 }`;
 
-/** 本体。クラスを小分けにして与える（296 件を一度に渡すと timeout する） */
+/** 戦闘系。WWII の一部であることを P361 でたどる。クラスは小分けに渡す（一度に渡すと timeout） */
 const qEvents = (classes) => `
 SELECT ?item ?en ?ja ?c ?start ?end WHERE {
   VALUES ?cls { ${classes.map((c) => `wd:${c}`).join(' ')} }
   ${WARS}
   ?item wdt:P31 ?cls ; wdt:P361+ ?war ; ${DATE} ?start .
+  OPTIONAL { ?item wdt:P625 ?c }
+  OPTIONAL { ?item wdt:P582 ?end }
+  OPTIONAL { ?item rdfs:label ?en FILTER(LANG(?en)="en") }
+  OPTIONAL { ?item rdfs:label ?ja FILTER(LANG(?ja)="ja") }
+}`;
+
+/** 外交系。P361 は使わず、クラスと日付だけで取る */
+const qDiplomatic = (classes) => `
+SELECT ?item ?en ?ja ?c ?start ?end WHERE {
+  VALUES ?cls { ${classes.map((c) => `wd:${c}`).join(' ')} }
+  ?item wdt:P31 ?cls ; ${DATE} ?start .
+  FILTER(?start >= "1937-01-01T00:00:00Z"^^xsd:dateTime && ?start < "1946-01-01T00:00:00Z"^^xsd:dateTime)
   OPTIONAL { ?item wdt:P625 ?c }
   OPTIONAL { ?item wdt:P582 ?end }
   OPTIONAL { ?item rdfs:label ?en FILTER(LANG(?en)="en") }
@@ -103,6 +133,28 @@ SELECT ?item ?parent ?pen ?pja WHERE {
   OPTIONAL { ?parent rdfs:label ?pja FILTER(LANG(?pja)="ja") }
 }`;
 
+/**
+ * ⑦ 日付の精度。
+ * wdt: で取り出した日付は、Wikidata 側が「年」までしか持っていなくても
+ * 1 月 1 日として返ってくる。実測で 520 件中 52 件が 1 月 1 日に固まっており、
+ * 南京戦（実際は 12 月）のようなものが年頭に並んでしまっていた。
+ * timePrecision（9=年 / 10=月 / 11=日）を別に取って、選別と表示で使う。
+ */
+const qPrecision = (values) => `
+SELECT ?item ?t ?prec WHERE {
+  VALUES ?item { ${values} }
+  { ?item p:P580/psv:P580 [ wikibase:timeValue ?t ; wikibase:timePrecision ?prec ] }
+  UNION
+  { ?item p:P585/psv:P585 [ wikibase:timeValue ?t ; wikibase:timePrecision ?prec ] }
+}`;
+
+/** ⑧ 終了日も同じ理由で主張単位に取り直す */
+const qEndPrecision = (values) => `
+SELECT ?item ?t ?prec WHERE {
+  VALUES ?item { ${values} }
+  ?item p:P582/psv:P582 [ wikibase:timeValue ?t ; wikibase:timePrecision ?prec ] .
+}`;
+
 /** ⑥ 勝者（P1346） */
 const qWinners = (values) => `
 SELECT ?item ?w ?wen WHERE {
@@ -135,6 +187,8 @@ async function main() {
         winners: [],
         wikipedia_ja: null,
         wikipedia_en: null,
+        /** 9=年 / 10=月 / 11=日。⑦ で埋める */
+        start_precision: null,
         source: 'wikidata',
       };
       cur.name_en ??= v(b, 'en');
@@ -156,9 +210,11 @@ async function main() {
     console.log(`①② キャッシュから復元: ${events.size} items（引き直すなら --refresh）`);
   } else {
     console.log('① サブクラス集合');
-    const clsRows = await sparql(qSubclasses(), { label: 'subclasses' });
+    const clsRows = await sparql(qSubclasses(ROOTS), { label: 'subclasses' });
     const classes = clsRows.map((b) => qid(v(b, 'cls'))).filter(Boolean);
-    console.log(`   ${classes.length} classes`);
+    const dipRows = await sparql(qSubclasses(DIPLOMATIC_ROOTS), { label: 'subclasses (外交)' });
+    const dipClasses = dipRows.map((b) => qid(v(b, 'cls'))).filter(Boolean);
+    console.log(`   戦闘系 ${classes.length} / 外交系 ${dipClasses.length} classes`);
 
     // クラスをまとめて渡すほど速いが、多すぎると timeout する。
     // 落ちたら半分に割って引き直す（1 件まで割っても落ちるものだけ諦める）
@@ -183,6 +239,25 @@ async function main() {
     for (let i = 0; i < classes.length; i += CLS_CHUNK) {
       await fetchClasses(classes.slice(i, i + CLS_CHUNK));
       process.stdout.write(`\r   ${Math.min(i + CLS_CHUNK, classes.length)}/${classes.length} classes → ${events.size} items   `);
+    }
+    console.log('');
+
+    console.log("②' 外交系（P361 を使わず日付で絞る）");
+    const before = events.size;
+    for (let i = 0; i < dipClasses.length; i += CLS_CHUNK) {
+      const chunk = dipClasses.slice(i, i + CLS_CHUNK);
+      try {
+        ingest(await sparql(qDiplomatic(chunk), { label: `dip x${chunk.length}`, retries: 2 }));
+      } catch {
+        for (const one of chunk) {
+          try {
+            ingest(await sparql(qDiplomatic([one]), { label: `dip ${one}`, retries: 1 }));
+          } catch {
+            console.warn(`\n   ✖ ${one} は取得できず（スキップ）`);
+          }
+        }
+      }
+      process.stdout.write(`\r   ${Math.min(i + CLS_CHUNK, dipClasses.length)}/${dipClasses.length} classes → +${events.size - before}   `);
     }
     console.log('');
     await mkdir(dirname(BASE_CACHE), { recursive: true });
@@ -227,6 +302,51 @@ async function main() {
     if (w.id && !e.winners.some((x) => x.id === w.id)) e.winners.push(w);
   });
 
+  // ⑦ 日付と精度は必ず「同じ主張（statement）」から採る。
+  // ①② の ingest は複数ある日付のうち最も早いものを採っていたため、
+  // 「年どまりで 1/1 に丸まった日付」と「別の主張の日精度」が混ざり、
+  // 南京戦が 1937-01-01・精度 11 という嘘の組み合わせになっていた。
+  await enrich('⑦ date precision', qPrecision, (e, b) => {
+    const prec = Number(v(b, 'prec'));
+    const date = toDate(v(b, 't'));
+    if (!Number.isFinite(prec) || !date) return;
+    const cur = e._best;
+    // 精度が高いものを優先し、同じ精度なら早いものを採る
+    if (!cur || prec > cur.prec || (prec === cur.prec && date < cur.date)) {
+      e._best = { prec, date };
+    }
+  });
+
+  await enrich('⑧ end precision ', qEndPrecision, (e, b) => {
+    const prec = Number(v(b, 'prec'));
+    const date = toDate(v(b, 't'));
+    if (!Number.isFinite(prec) || !date) return;
+    const cur = e._bestEnd;
+    // 終了日は精度が高いものを優先し、同じ精度なら遅いものを採る
+    if (!cur || prec > cur.prec || (prec === cur.prec && date > cur.date)) {
+      e._bestEnd = { prec, date };
+    }
+  });
+
+  // 採った主張で start / end を上書きする
+  for (const e of events.values()) {
+    if (e._best) {
+      e.start = e._best.date;
+      e.start_precision = e._best.prec;
+      delete e._best;
+    }
+    if (e._bestEnd) {
+      e.end = e._bestEnd.date;
+      e.end_precision = e._bestEnd.prec;
+      delete e._bestEnd;
+    }
+    // 主張を取り直した結果、前後が逆になったものは終了日を落とす
+    if (e.end && e.start && e.end < e.start) {
+      e.end = null;
+      e.end_precision = null;
+    }
+  }
+
   const list = [...events.values()]
     .filter((e) => e.start >= '1937-01-01' && e.start <= '1945-12-31')
     .sort((a, b) => (a.start < b.start ? -1 : a.start > b.start ? 1 : a.id.localeCompare(b.id)));
@@ -252,10 +372,12 @@ async function main() {
 
   const withJa = list.filter((e) => e.name_ja).length;
   const withCoord = list.filter((e) => e.coord).length;
+  const byDay = list.filter((e) => (e.start_precision ?? 11) >= 11).length;
   const pct = (n) => `${Math.round((n / list.length) * 100)}%`;
   console.log(`\n→ ${OUT}`);
   console.log(`   ${list.length} events`);
   console.log(`   ja ラベル ${withJa} 件 (${pct(withJa)}) / 座標あり ${withCoord} 件 (${pct(withCoord)})`);
+  console.log(`   日付が「日」まである ${byDay} 件 (${pct(byDay)})。年・月どまりのものは 1/1 に丸まる`);
   console.log(`   座標なしは「点を持たない作戦・戦役」。出すなら override で coord を与える`);
 }
 

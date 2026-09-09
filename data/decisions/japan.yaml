@@ -290,3 +290,193 @@
       url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9E%E6%88%B0%E7%88%AD%E7%B5%82%E7%B5%90%E3%83%8E%E8%A9%94%E6%9B%B8
     - title: 日本の降伏
       url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F
+
+# ══════════════ P1 追加
+
+- id: dec-19400727-jikyoku-shori-yoko
+  coord: [139.75, 35.69]
+  type: conference
+  name_ja: 大本営政府連絡会議「世界情勢ノ推移ニ伴フ時局処理要綱」
+  name_en: Liaison Conference — Outline for Handling the Situation
+  date: 1940-07-27
+  end: null
+  actors: [jp]
+  persons: [近衛文麿, 松岡洋右, 東條英機]
+  place: 東京・大本営
+  summary_ja: |
+    ドイツの西方勝利を受け、南方進出の方針を初めて明文化した連絡会議決定。
+    好機を捉えて南方問題を解決するとし、そのために武力行使も辞さないとした。
+    北部仏印進駐（9 月）と三国同盟（9 月）はこの線上にある。
+  decisions_ja:
+    - 支那事変の解決を促進しつつ南方問題を解決する
+    - 独伊との政治的結束を強化する
+    - 対ソ国交の飛躍的調整を図る
+    - 情勢有利なら武力行使も辞さない
+  license: pd
+  verified: false
+  sources:
+    - title: 大本営政府連絡会議
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E6%94%BF%E5%BA%9C%E9%80%A3%E7%B5%A1%E4%BC%9A%E8%AD%B0
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19411208-sensen-shosho
+  coord: [139.7528, 35.6852]
+  type: declaration
+  name_ja: 米国及英国ニ対スル宣戦ノ詔書
+  name_en: Imperial Rescript declaring war on the United States and Britain
+  date: 1941-12-08
+  end: null
+  actors: [jp, us, uk]
+  persons: [昭和天皇, 東條英機]
+  place: 東京・宮中
+  summary_ja: |
+    対米英開戦を宣言した詔書。攻撃開始の後に発せられ、
+    ワシントンでの最後通牒の手交が攻撃に間に合わなかったことが、
+    のちに「だまし討ち」として米国世論を硬化させる一因になった。
+  decisions_ja:
+    - 米英に対し宣戦を布告する
+    - 自存自衛のためやむを得ない措置であると位置づける
+  license: pd
+  verified: false
+  sources:
+    - title: 大東亜戦争
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E6%88%A6%E4%BA%89
+    - title: Attack on Pearl Harbor
+      url: https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor
+
+- id: dec-19420307-sensou-shidou-taiko
+  coord: [139.75, 35.69]
+  type: conference
+  name_ja: 大本営政府連絡会議「今後採ルベキ戦争指導ノ大綱」
+  name_en: Liaison Conference — Outline of War Guidance
+  date: 1942-03-07
+  end: null
+  actors: [jp]
+  persons: [東條英機, 杉山元, 永野修身]
+  place: 東京・大本営
+  summary_ja: |
+    緒戦の勝利が一段落した段階で、以後の方針を定めた連絡会議決定。
+    獲得した要域を確保して長期不敗の態勢を築くとしつつ、
+    機を見て積極的な方策も採るとした。守るのか攻めるのかが
+    定まらないまま、ミッドウェー・ガダルカナルへ向かうことになる。
+  decisions_ja:
+    - 既得の戦果を確保し長期不敗の政戦態勢を整える
+    - 機を見て積極的な方策を講じる
+    - 英を屈服させ米の戦意を喪失させることを目指す
+  license: pd
+  verified: false
+  sources:
+    - title: 大本営政府連絡会議
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E6%94%BF%E5%BA%9C%E9%80%A3%E7%B5%A1%E4%BC%9A%E8%AD%B0
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19430531-daitoa-seiryaku
+  coord: [139.7528, 35.6852]
+  type: imperial_conference
+  name_ja: 御前会議「大東亜政略指導大綱」
+  name_en: Imperial Conference — Outline for Guiding Greater East Asia Policy
+  date: 1943-05-31
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 東條英機]
+  place: 東京・宮中
+  summary_ja: |
+    占領地の処遇方針を定めた御前会議。ビルマ・フィリピンの独立を認める一方、
+    マレー・スマトラ・ジャワ・ボルネオ・セレベスは帝国領土に編入するとした。
+    「大東亜共栄圏」の建前と、資源地帯を手放さないという実際が
+    同じ文書に並んでいる。
+  decisions_ja:
+    - ビルマ・フィリピンの独立を認める
+    - マレー・スマトラ・ジャワ・ボルネオ・セレベスは帝国領土とする
+    - 大東亜会議を開催して結束を示す
+  license: pd
+  verified: false
+  sources:
+    - title: 大東亜共栄圏
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E5%85%B1%E6%A0%84%E5%9C%8F
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19431105-daitoa-kaigi
+  coord: [139.7528, 35.6852]
+  type: conference
+  name_ja: 大東亜会議
+  name_en: Greater East Asia Conference
+  date: 1943-11-05
+  end: 1943-11-06
+  actors: [jp, th, cn]
+  persons: [東條英機, 汪兆銘, 張景恵, バー・モウ, ラウレル, ワンワイタヤーコーン, チャンドラ・ボース]
+  place: 東京・帝国議会議事堂
+  summary_ja: |
+    日本と、日本が支援する各政権の代表が集まった会議。
+    共存共栄・独立尊重・人種差別撤廃などを掲げた大東亜共同宣言を採択した。
+    カイロ会談（同月）と時期が重なっており、連合国側の戦後構想に
+    対抗して掲げられた面がある。
+  decisions_ja:
+    - 大東亜共同宣言を採択する
+    - 共存共栄・独立の尊重・互恵の経済発展・人種差別撤廃を掲げる
+  license: pd
+  verified: false
+  sources:
+    - title: 大東亜会議
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E4%BC%9A%E8%AD%B0
+    - title: Greater East Asia Conference
+      url: https://en.wikipedia.org/wiki/Greater_East_Asia_Conference
+
+- id: dec-19450608-hondo-kessen
+  coord: [139.7528, 35.6852]
+  type: imperial_conference
+  name_ja: 御前会議「今後採ルベキ戦争指導ノ基本大綱」（本土決戦方針）
+  name_en: Imperial Conference — Basic Outline for Future War Guidance
+  date: 1945-06-08
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 鈴木貫太郎, 阿南惟幾, 梅津美治郎]
+  place: 東京・宮中
+  summary_ja: |
+    沖縄の戦況が絶望的になるなかで、本土決戦をもって戦争を完遂すると決めた御前会議。
+    一方でこの直後から、天皇と一部の重臣はソ連を介した和平工作に傾いていく。
+    決定と実際の模索が食い違っていた時期にあたる。
+  decisions_ja:
+    - 七生尽忠の信念を源力として戦争を完遂する
+    - 本土決戦の準備を整える
+    - 国民義勇兵役法などで全国民を動員する
+  license: pd
+  verified: false
+  sources:
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19450809-gozen-kaigi-seidan1
+  coord: [139.7528, 35.6852]
+  type: imperial_conference
+  name_ja: 御前会議（第 1 回聖断・ポツダム宣言受諾の方向づけ）
+  name_en: Imperial Conference of 9–10 August 1945 (first sacred decision)
+  date: 1945-08-09
+  end: 1945-08-10
+  actors: [jp]
+  persons: [昭和天皇, 鈴木貫太郎, 東郷茂徳, 阿南惟幾, 米内光政, 梅津美治郎, 豊田副武]
+  place: 東京・宮中（御文庫附属室）
+  summary_ja: |
+    広島への原爆投下とソ連参戦を受けて深夜に開かれた御前会議。
+    国体護持のみを条件に受諾するか、武装解除・占領・戦犯処罰も
+    自主的に行うことを条件に加えるかで 3 対 3 に割れ、
+    鈴木首相が天皇の裁断を仰いだ。天皇は国体護持のみを条件とする案を支持した。
+  decisions_ja:
+    - 国体護持を条件にポツダム宣言を受諾する方向を定める
+    - 連合国に照会を発する
+  license: pd
+  verified: false
+  sources:
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+    - title: 日本の降伏
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F

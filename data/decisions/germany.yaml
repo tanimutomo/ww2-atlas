@@ -286,3 +286,169 @@
       note: locator。原文の所在は要確認
     - title: Atlantic Wall
       url: https://en.wikipedia.org/wiki/Atlantic_Wall
+
+# ══════════════ P1 追加
+
+- id: dec-19400801-weisung-17
+  coord: [13.405, 52.52]
+  type: directive
+  name_ja: 総統指令第 17 号（対英航空戦の遂行）
+  name_en: Führer Directive No. 17
+  date: 1940-08-01
+  end: null
+  actors: [de, uk]
+  persons: [ヒトラー, ゲーリング]
+  place: ベルリン
+  summary_ja: |
+    イギリス本土上陸の前提として、イギリス空軍を空戦・地上攻撃で
+    圧倒するよう命じた指令。第 16 号（アシカ作戦）が示した条件を
+    実行に移すもので、8 月中旬からの本格的な航空攻勢につながる。
+  decisions_ja:
+    - イギリス空軍を最短で撃滅する
+    - 飛行場・地上組織・航空機工業を目標にする
+    - 港湾と食糧貯蔵施設への攻撃を許可する
+    - テロ攻撃は総統の留保事項とする
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Battle of Britain
+      url: https://en.wikipedia.org/wiki/Battle_of_Britain
+
+- id: dec-19401213-weisung-20
+  coord: [13.405, 52.52]
+  type: directive
+  name_ja: 総統指令第 20 号「マリータ作戦」（ギリシャ侵攻）
+  name_en: Führer Directive No. 20 (Operation Marita)
+  date: 1940-12-13
+  end: null
+  actors: [de, gr, it]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    イタリアがギリシャ侵攻に失敗したことを受け、ブルガリア経由で
+    ギリシャ北部に進攻する作戦を命じた指令。イギリスがギリシャに
+    足場を作ることを防ぎ、ルーマニアの油田を空襲圏から外す狙いがあった。
+    バルバロッサの 5 日前に出された第 21 号と並行して準備が進む。
+  decisions_ja:
+    - ブルガリアを経由してギリシャ北岸に進出する
+    - 状況によりギリシャ全土を占領する
+    - イギリスの航空基地化を防ぐ
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Battle of Greece
+      url: https://en.wikipedia.org/wiki/Battle_of_Greece
+
+- id: dec-19410606-kommissarbefehl
+  coord: [13.405, 52.52]
+  type: order
+  name_ja: 政治委員（コミッサール）指令
+  name_en: Commissar Order
+  date: 1941-06-06
+  end: null
+  actors: [de, su]
+  persons: [ヒトラー, カイテル]
+  place: ベルリン
+  summary_ja: |
+    バルバロッサ作戦の 2 週間前に出された命令で、捕らえた赤軍の政治委員を
+    捕虜として扱わず処刑するよう指示した。戦時国際法に明白に反する命令であり、
+    独ソ戦が通常の戦役ではなく殲滅戦として構想されていたことを示す文書として、
+    ニュルンベルク裁判でも重要な証拠になった。
+  decisions_ja:
+    - 捕らえた政治委員を捕虜として扱わない
+    - 前線で選別して処置する
+    - この扱いを部隊に周知する
+  license: pd
+  verified: false
+  sources:
+    - title: Commissar Order
+      url: https://en.wikipedia.org/wiki/Commissar_Order
+    - title: Nuremberg Trial documents（Avalon Project）
+      url: https://avalon.law.yale.edu/subject_menus/imt.asp
+
+- id: dec-19410719-weisung-33
+  coord: [13.405, 52.52]
+  type: directive
+  name_ja: 総統指令第 33 号（東方作戦の続行方針）
+  name_en: Führer Directive No. 33
+  date: 1941-07-19
+  end: null
+  actors: [de, su]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    国境の会戦に勝った後、次にどこへ向かうかを定めた指令。
+    モスクワへの直進より、南方（ウクライナ）と北方（レニングラード）を
+    優先させた。この判断でキエフ包囲戦の大勝を得た一方、
+    モスクワ攻略の開始が秋にずれ込み、冬に間に合わなくなる。
+  decisions_ja:
+    - 中央軍集団の装甲部隊を南北へ振り分ける
+    - ウクライナ方面のソ連軍を包囲撃滅する
+    - レニングラード方面の進撃を強化する
+    - モスクワ方面は歩兵で前進を続ける
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Battle of Kiev (1941)
+      url: https://en.wikipedia.org/wiki/Battle_of_Kyiv_(1941)
+
+- id: dec-19420723-weisung-45
+  coord: [13.405, 52.52]
+  type: directive
+  name_ja: 総統指令第 45 号（青作戦の目標分割）
+  name_en: Führer Directive No. 45
+  date: 1942-07-23
+  end: null
+  actors: [de, su]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    夏季攻勢の途中で、コーカサスの油田とスターリングラードを
+    同時に取りにいくよう目標を 2 つに割った指令。当初は
+    「まずスターリングラード方面を固めてからコーカサス」だった順序が崩れ、
+    兵力が南北に分散した。スターリングラードでの消耗の一因とされる。
+  decisions_ja:
+    - A 軍集団はコーカサスの油田地帯へ向かう
+    - B 軍集団はスターリングラードを攻略する
+    - 2 つの目標を同時に追求する
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Case Blue
+      url: https://en.wikipedia.org/wiki/Case_Blue
+
+- id: dec-19450319-nerobefehl
+  coord: [13.405, 52.52]
+  type: order
+  name_ja: 「ネロ指令」（焦土命令）
+  name_en: Nero Decree
+  date: 1945-03-19
+  end: null
+  actors: [de]
+  persons: [ヒトラー, シュペーア]
+  place: ベルリン
+  summary_ja: |
+    敵の手に渡る恐れのある工業施設・交通・通信・補給設備を
+    すべて破壊するよう命じた指令。軍需相シュペーアは
+    戦後のドイツ国民の生活基盤を失わせるとして実施を妨害し、
+    多くは実行されなかった。
+  decisions_ja:
+    - 敵に利用されうる軍事・産業・交通・通信施設を破壊する
+    - 破壊の実行を軍と大管区指導者に委ねる
+  license: pd
+  verified: false
+  sources:
+    - title: Nero Decree
+      url: https://en.wikipedia.org/wiki/Nero_Decree

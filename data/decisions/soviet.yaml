@@ -1,0 +1,170 @@
+# ソ連（政治局 / スターリン / スタフカ）の司令部レイヤー。P1 で追加。
+#
+# P0 では独・日・連合国の 3 ファイルしか無く、独ソ不可侵条約が丸ごと抜けていた。
+# 開戦の前提になる決定なので、ここを埋めないと「なぜポーランドが分割されたか」が
+# 地図と年表からたどれない。
+#
+# 出典について: ソ連側は一次史料のオンライン公開が弱い。
+# 条約・議定書の英訳は Avalon Project（Yale）にあり、
+# スタフカ命令の類は militera.lib.ru などの露語サイトが中心。
+# 全件 verified: false。
+
+- id: dec-19390823-molotov-ribbentrop
+  coord: [37.6173, 55.7558]
+  type: treaty
+  name_ja: 独ソ不可侵条約（秘密議定書つき）
+  name_en: Molotov–Ribbentrop Pact
+  date: 1939-08-23
+  end: null
+  actors: [su, de]
+  persons: [モロトフ, リッベントロップ, スターリン]
+  place: モスクワ
+  summary_ja: |
+    ドイツとソ連が相互に攻撃しないことを約した条約。本体は不可侵の取り決めだが、
+    付属の秘密議定書で東欧を両国の「勢力範囲」に分ける線が引かれた。
+    これによりドイツは東西二正面を避けてポーランドに侵攻でき、
+    9 月 17 日にはソ連が東からポーランドに入る。開戦の直接の前提になった決定。
+  decisions_ja:
+    - 相互に攻撃せず、第三国による相手への攻撃にも加担しない
+    - 秘密議定書で東欧の勢力範囲を分ける（バルト・ポーランド・ベッサラビア）
+    - ポーランドはナレフ・ヴィスワ・サン川の線で分割する
+  license: pd
+  verified: false
+  sources:
+    - title: Nazi-Soviet Non-Aggression Pact（本文・Avalon Project）
+      url: https://avalon.law.yale.edu/20th_century/nonagres.asp
+    - title: Molotov–Ribbentrop Pact（秘密議定書つき全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Molotov%E2%80%93Ribbentrop_Pact
+    - title: 独ソ不可侵条約
+      url: https://ja.wikipedia.org/wiki/%E7%8B%AC%E3%82%BD%E4%B8%8D%E5%8F%AF%E4%BE%B5%E6%9D%A1%E7%B4%84
+
+- id: dec-19390917-soviet-poland
+  coord: [37.6173, 55.7558]
+  type: order
+  name_ja: ソ連軍のポーランド進駐命令
+  name_en: Soviet order for the invasion of Poland
+  date: 1939-09-17
+  end: null
+  actors: [su, pl]
+  persons: [スターリン, モロトフ]
+  place: モスクワ
+  summary_ja: |
+    ポーランド政府が国外に脱出しつつある状況を理由に、
+    ソ連軍が東部国境を越えて進駐した。秘密議定書の勢力範囲に沿った行動で、
+    10 月上旬までにポーランドは独ソに分割占領される。
+  decisions_ja:
+    - 赤軍にポーランド東部への進駐を命じる
+    - 「ポーランド国家は事実上消滅した」という論理を対外的に用いる
+    - 秘密議定書で定めた線まで進出する
+  license: pd
+  verified: false
+  sources:
+    - title: Soviet invasion of Poland
+      url: https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland
+    - title: Molotov–Ribbentrop Pact（秘密議定書つき全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Molotov%E2%80%93Ribbentrop_Pact
+
+- id: dec-19410413-soviet-japan-neutrality
+  coord: [37.6173, 55.7558]
+  type: treaty
+  name_ja: 日ソ中立条約
+  name_en: Soviet–Japanese Neutrality Pact
+  date: 1941-04-13
+  end: null
+  actors: [su, jp]
+  persons: [松岡洋右, モロトフ, スターリン]
+  place: モスクワ
+  summary_ja: |
+    日本とソ連が相互に中立を保つと約した条約。日本は北方の憂いを減らして
+    南方進出に踏み切れるようになり、ソ連は独ソ開戦後に極東の兵力を
+    西へ回すことができた。1945 年 4 月にソ連が不延長を通告し、
+    8 月 8 日の対日宣戦につながる。
+  decisions_ja:
+    - 相互に領土の保全と不可侵を尊重する
+    - 一方が第三国と戦争になった場合、他方は中立を守る
+    - 有効期間を 5 年とする
+  license: pd
+  verified: false
+  sources:
+    - title: Soviet–Japanese Neutrality Pact
+      url: https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact
+    - title: 日ソ中立条約
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E3%82%BD%E4%B8%AD%E7%AB%8B%E6%9D%A1%E7%B4%84
+
+- id: dec-19410703-stalin-radio
+  coord: [37.6173, 55.7558]
+  type: declaration
+  name_ja: スターリンのラジオ演説（焦土戦術と大祖国戦争）
+  name_en: Stalin's radio address of 3 July 1941
+  date: 1941-07-03
+  end: null
+  actors: [su]
+  persons: [スターリン]
+  place: モスクワ
+  summary_ja: |
+    独ソ開戦から 12 日目、スターリンが初めて国民に向けて行った放送。
+    「兄弟姉妹よ」と呼びかけ、退却時に敵に何も残さない焦土戦術と、
+    パルチザン闘争を指示した。この戦争を「大祖国戦争」と位置づけ、
+    体制の防衛ではなく祖国防衛として動員する枠組みを作った。
+  decisions_ja:
+    - 退却する際に使えるものを一切残さない（焦土戦術）
+    - 占領地でパルチザン部隊を組織する
+    - 工場・設備を東方へ疎開させる
+    - 戦争を「大祖国戦争」として全国民を動員する
+  license: pd
+  verified: false
+  sources:
+    - title: Stalin's 3 July 1941 radio address
+      url: https://en.wikipedia.org/wiki/Great_Patriotic_War_(term)
+    - title: 大祖国戦争
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%A5%96%E5%9B%BD%E6%88%A6%E4%BA%89
+
+- id: dec-19420728-order-227
+  coord: [37.6173, 55.7558]
+  type: order
+  name_ja: 国防人民委員令第 227 号「一歩も退くな」
+  name_en: Order No. 227 ("Not one step back")
+  date: 1942-07-28
+  end: null
+  actors: [su]
+  persons: [スターリン]
+  place: モスクワ
+  summary_ja: |
+    ドイツ軍の南方攻勢でソ連軍が後退を続けるなか出された命令。
+    許可のない後退を禁じ、督戦隊と懲罰部隊の設置を定めた。
+    スターリングラードでの徹底抗戦の背景になった命令として知られる。
+  decisions_ja:
+    - 上級司令部の許可なく陣地を放棄することを禁じる
+    - 各軍に督戦隊を置き、無断で後退する部隊を阻止する
+    - 規律違反者を懲罰部隊に送る
+  license: pd
+  verified: false
+  sources:
+    - title: Order No. 227
+      url: https://en.wikipedia.org/wiki/Order_No._227
+
+- id: dec-19450405-soviet-japan-denounce
+  coord: [37.6173, 55.7558]
+  type: diplomatic_note
+  name_ja: 日ソ中立条約の不延長通告
+  name_en: Soviet denunciation of the Neutrality Pact with Japan
+  date: 1945-04-05
+  end: null
+  actors: [su, jp]
+  persons: [モロトフ, 佐藤尚武]
+  place: モスクワ
+  summary_ja: |
+    ソ連が日ソ中立条約を延長しないことを日本に通告した。
+    条約自体は 1946 年 4 月まで有効という解釈だったため、
+    日本はなおソ連による和平仲介に望みをつないだが、
+    ヤルタでの秘密協定に沿って 8 月 8 日に対日宣戦することになる。
+  decisions_ja:
+    - 日ソ中立条約を延長しないことを日本に通告する
+    - ヤルタ協定に沿って対日参戦の準備を進める
+  license: pd
+  verified: false
+  sources:
+    - title: Soviet–Japanese Neutrality Pact
+      url: https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact
+    - title: ソ連対日参戦
+      url: https://ja.wikipedia.org/wiki/%E3%82%BD%E9%80%A3%E5%AF%BE%E6%97%A5%E5%8F%82%E6%88%A6

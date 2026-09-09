@@ -283,3 +283,218 @@
       url: https://en.wikisource.org/wiki/Potsdam_Declaration
     - title: FRUS — The Conference of Berlin (Potsdam Conference), 1945, Vol. I
       url: https://history.state.gov/historicaldocuments/frus1945Berlinv01
+
+# ══════════════ P1 追加
+
+- id: dec-19390903-uk-fr-declare-war
+  coord: [-0.1276, 51.5074]
+  type: declaration
+  name_ja: イギリス・フランスの対独宣戦布告
+  name_en: British and French declarations of war on Germany
+  date: 1939-09-03
+  end: null
+  actors: [uk, fr, de]
+  persons: [チェンバレン, ダラディエ]
+  place: ロンドン／パリ
+  summary_ja: |
+    ドイツのポーランド侵攻に対する最後通牒が無視されたことを受け、
+    イギリスとフランスが対独宣戦を布告した。ポーランドへの実質的な
+    軍事支援はほとんど行われず、西部戦線は翌春まで「まやかし戦争」が続く。
+  decisions_ja:
+    - ドイツに対し宣戦を布告する
+    - ポーランドへの保障を履行する立場を取る
+  license: pd
+  verified: false
+  sources:
+    - title: Declarations of war during World War II
+      url: https://en.wikipedia.org/wiki/Declarations_of_war_during_World_War_II
+    - title: Chamberlain's declaration of war broadcast
+      url: https://en.wikipedia.org/wiki/Neville_Chamberlain
+
+- id: dec-19400510-churchill-government
+  coord: [-0.1276, 51.5074]
+  type: conference
+  name_ja: チャーチル内閣の成立
+  name_en: Formation of the Churchill war ministry
+  date: 1940-05-10
+  end: null
+  actors: [uk]
+  persons: [チャーチル, チェンバレン, アトリー]
+  place: ロンドン
+  summary_ja: |
+    ノルウェー戦の失敗をめぐる議会の批判でチェンバレンが辞任し、
+    同じ日にドイツが西方攻勢を開始するなかチャーチルが挙国一致内閣を組織した。
+    5 月末の戦時内閣ではドイツとの交渉の可否が議論され、
+    徹底抗戦の方針が固まる。
+  decisions_ja:
+    - 保守・労働・自由の挙国一致内閣を作る
+    - 国防大臣を兼ねて軍と政治の指揮を一元化する
+    - ドイツとの交渉によらず戦争を継続する
+  license: pd
+  verified: false
+  sources:
+    - title: Churchill war ministry
+      url: https://en.wikipedia.org/wiki/Churchill_war_ministry
+    - title: 1940 British war cabinet crisis
+      url: https://en.wikipedia.org/wiki/1940_British_war_cabinet_crisis
+
+- id: dec-19410311-lend-lease
+  coord: [-77.0365, 38.8951]
+  type: declaration
+  name_ja: 武器貸与法（レンドリース法）の成立
+  name_en: Lend-Lease Act
+  date: 1941-03-11
+  end: null
+  actors: [us, uk, su]
+  persons: [ローズヴェルト]
+  place: ワシントン D.C.
+  summary_ja: |
+    アメリカが交戦国に武器・物資を貸与・供与できるようにした法律。
+    中立を保ちながら実質的に連合国側を支える枠組みで、
+    独ソ開戦後はソ連も対象になった。「民主主義の兵器廠」演説の
+    3 か月後に成立している。
+  decisions_ja:
+    - 大統領が防衛上重要と認める国に物資を貸与・供与できるようにする
+    - 現金決済・自国船輸送の原則（中立法）を実質的に外す
+    - のちにソ連・中国も対象に加える
+  license: pd
+  verified: false
+  sources:
+    - title: Lend-Lease
+      url: https://en.wikipedia.org/wiki/Lend-Lease
+    - title: レンドリース法
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%82%B9%E6%B3%95
+
+- id: dec-19411126-hull-note
+  coord: [-77.0365, 38.8951]
+  type: diplomatic_note
+  name_ja: ハル・ノート（合衆国及日本国間協定ノ基礎概略）
+  name_en: Hull note
+  date: 1941-11-26
+  end: null
+  actors: [us, jp]
+  persons: [ハル, 野村吉三郎, 来栖三郎]
+  place: ワシントン D.C.
+  summary_ja: |
+    日米交渉においてアメリカが示した文書。中国・仏印からの全面撤兵、
+    重慶政府以外の政権を認めないことなどを求めた。日本側はこれを
+    事実上の最後通牒と受け取り、12 月 1 日の御前会議で開戦が最終決定される。
+    米側は最終提案ではなく交渉の基礎案という位置づけだった。
+  decisions_ja:
+    - 中国・仏印からの全面撤兵を求める
+    - 重慶の国民政府以外の政権を支持しない
+    - 三国同盟を事実上無効化することを求める
+    - 通商条約の再締結と資産凍結の解除を提示する
+  license: pd
+  verified: false
+  sources:
+    - title: Hull note
+      url: https://en.wikipedia.org/wiki/Hull_note
+    - title: ハル・ノート
+      url: https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%AB%E3%83%BB%E3%83%8E%E3%83%BC%E3%83%88
+
+- id: dec-19411208-us-declares-war
+  coord: [-77.0365, 38.8951]
+  type: declaration
+  name_ja: アメリカの対日宣戦布告
+  name_en: United States declaration of war on Japan
+  date: 1941-12-08
+  end: null
+  actors: [us, jp]
+  persons: [ローズヴェルト]
+  place: ワシントン D.C.
+  summary_ja: |
+    真珠湾攻撃の翌日、ローズヴェルトの議会演説を受けて
+    上下両院が対日宣戦を可決した。反対は下院の 1 票のみ。
+    12 月 11 日にはドイツ・イタリアがアメリカに宣戦し、
+    欧州戦線と太平洋戦線が 1 つの戦争になる。
+  decisions_ja:
+    - 日本に対し宣戦を布告する
+    - 12 月 11 日の独伊の対米宣戦を受けて欧州戦にも正式に参戦する
+  license: pd
+  verified: false
+  sources:
+    - title: United States declaration of war on Japan
+      url: https://en.wikipedia.org/wiki/United_States_declaration_of_war_on_Japan
+    - title: Pearl Harbor speech（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Pearl_Harbor_speech
+
+- id: dec-19431019-moscow-conference
+  coord: [37.6173, 55.7558]
+  type: conference
+  name_ja: モスクワ外相会議
+  name_en: Moscow Conference (1943)
+  date: 1943-10-19
+  end: 1943-10-30
+  actors: [us, uk, su, cn]
+  persons: [ハル, イーデン, モロトフ]
+  place: モスクワ
+  summary_ja: |
+    米英ソの外相が集まり、戦後の国際機構の設立と、
+    ドイツの戦争犯罪の訴追について合意した。
+    テヘラン会談（翌月）の地ならしにあたり、
+    ここでの一般的安全保障に関する宣言が国際連合の出発点になる。
+  decisions_ja:
+    - 一般的安全保障に関する宣言を出す（国際機構の設立を約す）
+    - ドイツの残虐行為について責任者を訴追する
+    - オーストリアの独立回復を目標とする
+    - ヨーロッパ諮問委員会を設置する
+  license: pd
+  verified: false
+  sources:
+    - title: Moscow Conference (1943)
+      url: https://en.wikipedia.org/wiki/Moscow_Conference_(1943)
+    - title: Declaration of the Four Nations on General Security（Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/moscow.asp
+
+- id: dec-19440821-dumbarton-oaks
+  coord: [-77.0653, 38.9147]
+  type: conference
+  name_ja: ダンバートン・オークス会議
+  name_en: Dumbarton Oaks Conference
+  date: 1944-08-21
+  end: 1944-10-07
+  actors: [us, uk, su, cn]
+  persons: [ステティニアス, カドガン, グロムイコ, 顧維鈞]
+  place: ワシントン D.C.・ダンバートン・オークス
+  summary_ja: |
+    戦後の国際機構の骨格を詰めた実務会議。総会・安全保障理事会・
+    事務局という構成と、大国に常任理事国の地位を与える案がここで固まった。
+    拒否権の範囲は決着せず、ヤルタ会談に持ち越される。
+  decisions_ja:
+    - 総会・安全保障理事会・事務局・国際司法裁判所からなる機構を構想する
+    - 米英ソ中（＋仏）を安全保障理事会の常任理事国とする
+    - 拒否権の扱いは決着せず持ち越す
+  license: pd
+  verified: false
+  sources:
+    - title: Dumbarton Oaks Conference
+      url: https://en.wikipedia.org/wiki/Dumbarton_Oaks_Conference
+    - title: FRUS — The Conferences at Malta and Yalta, 1945
+      url: https://history.state.gov/historicaldocuments/frus1945Malta
+
+- id: dec-19450425-san-francisco
+  coord: [-122.4194, 37.7749]
+  type: conference
+  name_ja: サンフランシスコ会議（国際連合憲章の起草）
+  name_en: United Nations Conference on International Organization
+  date: 1945-04-25
+  end: 1945-06-26
+  actors: [us, uk, su, cn, fr]
+  persons: [ステティニアス, イーデン, モロトフ]
+  place: サンフランシスコ
+  summary_ja: |
+    50 か国が参加して国際連合憲章を起草・署名した会議。
+    ドイツ降伏をまたいで 2 か月続き、6 月 26 日に憲章が署名された。
+    大西洋憲章から始まった戦後構想がここで形になる。
+  decisions_ja:
+    - 国際連合憲章を起草し署名する
+    - 安全保障理事会の常任理事国に拒否権を与える
+    - 国際司法裁判所規程を憲章の一部とする
+  license: pd
+  verified: false
+  sources:
+    - title: United Nations Conference on International Organization
+      url: https://en.wikipedia.org/wiki/United_Nations_Conference_on_International_Organization
+    - title: Charter of the United Nations（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Charter_of_the_United_Nations
