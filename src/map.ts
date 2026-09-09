@@ -8,6 +8,7 @@
 
 import maplibregl, { type Map as MlMap, type GeoJSONSource } from 'maplibre-gl';
 import { CONTROL_COLOR, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
+import { MapLabels, type LabelItem } from './labels';
 
 const BASE = import.meta.env.BASE_URL ?? '/';
 
@@ -32,6 +33,10 @@ export class AtlasMap {
   private territoryCache = new Map<string, unknown>();
   private currentKeyframe: string | null = null;
   private onSelect: (e: EventRec) => void;
+  private labels: MapLabels | null = null;
+  /** 前回の描画で「進行中」だったイベント。増えたぶんにだけ名前を出す */
+  private prevActive = new Set<string>();
+  private stickyId: string | null = null;
 
   constructor(container: HTMLElement, atlas: Atlas, onSelect: (e: EventRec) => void) {
     this.atlas = atlas;
@@ -80,6 +85,7 @@ export class AtlasMap {
     // 初回に明示的に測り直し、以後はコンテナのサイズ変化を監視して追随する。
     this.map.resize();
     new ResizeObserver(() => this.map.resize()).observe(this.map.getContainer());
+    this.labels = new MapLabels(this.map);
 
     const land = await fetch(`${BASE}base/ne_50m_land.geojson`).then((r) => r.json());
     this.map.addSource('land', { type: 'geojson', data: land });
@@ -205,11 +211,59 @@ export class AtlasMap {
       type: 'FeatureCollection',
       features: feats,
     });
+
+    this.refreshLabels(date, filters);
   }
 
-  /** 選択・リンク先のハイライト */
+  /**
+   * 名前ラベルの出し分け。
+   *   - その日に「新しく始まった」ものだけを一時的に出す（全部出すと埋まる）
+   *   - 選択中のものは出したままにする
+   */
+  private refreshLabels(date: string, filters: { theatres: Set<string> }): void {
+    if (!this.labels) return;
+    const active = this.atlas.events.filter(
+      (e) => e.coord && isActive(e, date) && filters.theatres.has(e.theatre),
+    );
+    const activeIds = new Set(active.map((e) => e.id));
+
+    const items: LabelItem[] = active
+      // 前回まで進行中でなかった＝この日に始まったもの
+      .filter((e) => !this.prevActive.has(e.id))
+      // 一度に出しすぎないよう、重要なものから
+      .sort((a, b) => b.significance - a.significance)
+      .slice(0, 6)
+      .map((e) => ({ id: e.id, coord: e.coord as [number, number], text: e.name_ja }));
+
+    if (this.stickyId) {
+      const sel = this.atlas.events.find((e) => e.id === this.stickyId);
+      if (sel?.coord) {
+        const already = items.find((i) => i.id === sel.id);
+        if (already) already.sticky = true;
+        else items.push({ id: sel.id, coord: sel.coord as [number, number], text: sel.name_ja, sticky: true });
+      }
+    }
+
+    this.labels.show(items);
+    this.prevActive = activeIds;
+  }
+
+  /** 選択・リンク先のハイライト。先頭が選択中のもので、その名前は出したままにする */
   highlight(ids: string[]): void {
     this.map.setFilter('events-highlight', ['in', ['get', 'id'], ['literal', ids]]);
+    this.stickyId = ids[0] ?? null;
+    if (!this.labels) return;
+    // ハイライトされた点すべてに名前を出す（リンク先がどれか分かるように）
+    const items = ids
+      .map((id) => this.atlas.events.find((e) => e.id === id))
+      .filter((e): e is EventRec => Boolean(e?.coord))
+      .map((e) => ({
+        id: e.id,
+        coord: e.coord as [number, number],
+        text: e.name_ja,
+        sticky: true,
+      }));
+    this.labels.show(items);
   }
 
   flyTo(coord: [number, number]): void {

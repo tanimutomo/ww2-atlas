@@ -159,55 +159,5 @@ export function renderDetail(atlas: Atlas, id: string): string {
     </div>`;
 }
 
-/** 右ペインのリスト（当日±window 日） */
-export function renderList(
-  atlas: Atlas,
-  tab: 'command' | 'home',
-  date: string,
-  windowDays: number,
-): string {
-  const lo = shift(date, -windowDays);
-  const hi = shift(date, windowDays);
-
-  if (tab === 'command') {
-    const items = atlas.decisions.filter((d) => {
-      const end = d.end ?? d.date;
-      return d.date <= hi && end >= lo;
-    });
-    if (!items.length) return `<p class="empty">この前後に会議・指令の記録はありません</p>`;
-    return `<ul class="cards">${items
-      .map((d) => {
-        const targets = (atlas.linksOf.get(d.id) ?? []).filter((l) => l.from === d.id).length;
-        return `<li>
-          <button class="card" data-id="${esc(d.id)}">
-            <div class="card-when">${esc(formatJa(d.date))}</div>
-            <div class="card-title">${esc(d.name_ja)}</div>
-            <div class="card-meta">${esc(d.actors?.map((a) => atlas.actorById.get(a)?.name_ja ?? a).join('・') ?? '')}${
-              targets ? ` ・ 動かした作戦 ${targets}` : ''
-            }</div>
-          </button>
-        </li>`;
-      })
-      .join('')}</ul>`;
-  }
-
-  const items = atlas.homefront.filter((h) => h.date >= lo && h.date <= hi);
-  if (!items.length) return `<p class="empty">この前後に発表・報道・生活の記録はありません</p>`;
-  return `<ul class="cards">${items
-    .map((h) => {
-      const disc = (atlas.linksOf.get(h.id) ?? []).some((l) => l.discrepancy);
-      return `<li>
-        <button class="card" data-id="${esc(h.id)}">
-          <div class="card-when">${esc(formatJa(h.date))}</div>
-          <div class="card-title">${esc(h.headline_ja)}</div>
-          <div class="card-meta">${esc(atlas.actorById.get(h.country)?.name_ja ?? h.country)}${
-            disc ? ' ・ <span class="flag">発表と実態に差</span>' : ''
-          }</div>
-        </button>
-      </li>`;
-    })
-    .join('')}</ul>`;
-}
-
 export const shift = (iso: string, days: number): string =>
   new Date(Date.parse(`${iso}T00:00:00Z`) + days * 86_400_000).toISOString().slice(0, 10);

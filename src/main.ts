@@ -19,7 +19,8 @@ import {
   type EventRec,
 } from './data';
 import { AtlasMap } from './map';
-import { renderDetail, renderList, shift } from './ui';
+import { renderDetail, shift } from './ui';
+import { buildFeed, renderFeed, type FeedEntry, type FeedKind } from './feed';
 
 const START = '1937-07-07';
 const END = '1945-09-02';
@@ -52,11 +53,14 @@ const $ = <T extends HTMLElement>(sel: string): T => {
 type State = {
   date: string;
   selected: string | null;
-  tab: 'command' | 'home';
+  /** フィードに出す層 */
+  kinds: Set<FeedKind>;
   theatres: Set<string>;
   step: number;
   playing: boolean;
   windowDays: number;
+  /** 直前の日付。これより後に増えた投稿を「新着」として光らせる */
+  lastDate: string | null;
 };
 
 async function main(): Promise<void> {
@@ -65,12 +69,15 @@ async function main(): Promise<void> {
   const state: State = {
     date: '1941-06-22',
     selected: null,
-    tab: 'command',
+    kinds: new Set<FeedKind>(['field', 'command', 'home']),
     theatres: new Set(Object.keys(THEATRE_LABEL)),
     step: 7,
     playing: false,
     windowDays: 10,
+    lastDate: null,
   };
+
+  const feedEntries: FeedEntry[] = buildFeed(atlas);
 
   buildChrome(atlas, state);
 
@@ -85,6 +92,12 @@ async function main(): Promise<void> {
   let timer: number | undefined;
 
   function setDate(date: string, fromSlider = false): void {
+    const prev = state.date;
+    // 「新着」の光らせ方:
+    //   - 前に戻ったときは出さない（積み上げを作り直すだけ）
+    //   - 章ジャンプのように大きく飛んだときも出さない（画面中が光って意味を失う）
+    const jump = Math.abs(toDayNumber(date) - toDayNumber(prev));
+    state.lastDate = date > prev && jump <= 40 ? prev : null;
     state.date = date;
     if (!fromSlider) slider.value = String(toDayNumber(date));
     $('#date-label').textContent = formatJa(date);
@@ -123,10 +136,14 @@ async function main(): Promise<void> {
   }
 
   function renderPane(): void {
-    $('#list').innerHTML = renderList(atlas, state.tab, state.date, state.windowDays);
-    $('#list')
-      .querySelectorAll<HTMLButtonElement>('button.card')
+    const list = $('#list');
+    // 新着は上に積まれるので、いちばん上を見ていたときだけ追従させる
+    const wasAtTop = list.scrollTop < 24;
+    list.innerHTML = renderFeed(feedEntries, state.date, state.kinds, state.lastDate);
+    list
+      .querySelectorAll<HTMLButtonElement>('button.post-btn')
       .forEach((b) => b.addEventListener('click', () => select(b.dataset.id!)));
+    if (wasAtTop) list.scrollTop = 0;
   }
 
   /** タイムライン上のイベント密度（戦域別に積む） */
@@ -196,9 +213,12 @@ async function main(): Promise<void> {
     .querySelectorAll<HTMLButtonElement>('button')
     .forEach((b) =>
       b.addEventListener('click', () => {
-        state.tab = b.dataset.tab as 'command' | 'home';
-        $('#tabs').querySelectorAll('button').forEach((x) => x.classList.remove('on'));
-        b.classList.add('on');
+        const kind = b.dataset.kind as FeedKind;
+        // 全部消えると何も見えないので、最後の 1 つは外せないようにする
+        if (state.kinds.has(kind) && state.kinds.size > 1) state.kinds.delete(kind);
+        else state.kinds.add(kind);
+        b.classList.toggle('on', state.kinds.has(kind));
+        state.lastDate = null;
         renderPane();
       }),
     );
