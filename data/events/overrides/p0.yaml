@@ -491,3 +491,78 @@
     - title: Wikidata Q379433
       url: https://www.wikidata.org/wiki/Q379433
       note: CC0
+
+# ══════════════ ③ 取得の網から落ちる「降伏・休戦」
+#
+# fetch-wikidata は P31 が戦闘（Q178561）／軍事作戦（Q645883）のサブクラスのものだけを取る。
+# 降伏文書や休戦協定は「文書」「出来事」であって戦闘ではないので、
+# 構造的に 1 件も入ってこない（raw 1,925 件中ゼロだった）。
+# スキーマの Event.type には surrender があり、地図に出したい転換点なので、
+# 主要なものは手で足す。網を広げるのは P1（条約類が大量に入るので選別が要る）。
+
+- id: Q170360
+  name_ja: コンピエーニュ休戦協定（フランスの降伏）
+  name_en: Armistice of 22 June 1940
+  type: surrender
+  theatre: europe_west
+  start: 1940-06-22
+  end: 1940-06-22
+  coord: [2.8994, 49.4269] # コンピエーニュの森・レトンド。1918 年と同じ客車で調印された
+  significance: 3
+  outcome: axis_victory
+  actors: [de, fr, it]
+  summary_ja: |
+    フランスがドイツに降伏した休戦協定。国土は北部の占領地区と
+    南部のヴィシー政権の管轄に分けられ、艦隊と海外植民地の扱いが争点になった。
+    ドイツは 1918 年の休戦調印に使われた客車を同じ場所に運ばせて調印させている。
+  wikipedia_ja: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E3%82%B3%E3%83%B3%E3%83%94%E3%82%A8%E3%83%BC%E3%83%8B%E3%83%A5%E4%BC%91%E6%88%A6%E5%8D%94%E5%AE%9A
+  verified: false
+  sources:
+    - title: Wikidata Q170360
+      url: https://www.wikidata.org/wiki/Q170360
+      note: CC0
+
+- id: Q196502
+  name_ja: カッシビレ休戦協定（イタリアの降伏）
+  name_en: Armistice of Cassibile
+  type: surrender
+  theatre: mediterranean
+  start: 1943-09-03
+  end: 1943-09-08
+  coord: [15.2167, 37.0167] # シチリア島カッシビレ
+  significance: 3
+  outcome: allied_victory
+  actors: [it, us, uk, de]
+  summary_ja: |
+    イタリアが連合国と結んだ休戦協定。9 月 3 日にシチリア島カッシビレで署名され、
+    8 日に公表された。公表と同時にドイツ軍がイタリア北部・中部を占領し、
+    以後イタリアは南部の王国（連合国側の共同交戦国）と
+    北部のイタリア社会共和国に分かれて戦うことになる。
+  wikipedia_ja: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%81%AE%E4%BC%91%E6%88%A6
+  verified: false
+  sources:
+    - title: Wikidata Q196502
+      url: https://www.wikidata.org/wiki/Q196502
+      note: CC0
+
+- id: Q700983
+  name_ja: ドイツの降伏文書調印
+  name_en: German Instrument of Surrender
+  type: surrender
+  theatre: europe_east
+  start: 1945-05-07
+  end: 1945-05-08
+  coord: [13.5333, 52.4847] # ベルリン・カールスホルスト（5/7 のランス調印を受けた批准）
+  significance: 3
+  outcome: allied_victory
+  actors: [de, us, uk, su, fr]
+  summary_ja: |
+    ドイツの無条件降伏。5 月 7 日にランスで署名され、
+    ソ連の求めにより 5 月 8 日にベルリン・カールスホルストで改めて調印された。
+    これをもって欧州での戦闘が終わる。時差の関係でソ連では 5 月 9 日が戦勝記念日になる。
+  wikipedia_ja: https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%A4%E3%83%84%E3%81%AE%E9%99%8D%E4%BC%8F%E6%96%87%E6%9B%B8
+  verified: false
+  sources:
+    - title: Wikidata Q700983
+      url: https://www.wikidata.org/wiki/Q700983
+      note: CC0

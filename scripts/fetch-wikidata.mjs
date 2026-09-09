@@ -8,6 +8,13 @@
 // を別クエリで回して QID で突き合わせる。
 //
 // 出力は CC0。手で編集しない（補正は data/events/overrides/*.yaml で行う）。
+//
+// ⚠ 取れないもの: 降伏文書・休戦協定。
+//   ここは P31 が戦闘（Q178561）／軍事作戦（Q645883）のサブクラスのものだけを取るので、
+//   「文書」「出来事」に分類される降伏・休戦は構造的に 1 件も入らない（実測ゼロ）。
+//   スキーマの Event.type には surrender があり地図に出したい転換点なので、
+//   主要 4 件（仏・伊・独・日）は data/events/overrides/p0.yaml に手で書いている。
+//   網を広げるのは P1（条約類が大量に混ざるので選別の仕組みが要る）。
 
 import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';

@@ -431,3 +431,21 @@
   to: dec-19450814-gozen-kaigi-shusen
   relation: reports
   note_ja: 前日の御前会議で決まったポツダム宣言受諾が、玉音放送として国民に伝えられた。
+
+# ══════════════════════════════ 降伏・休戦へのつながり
+
+- from: Q151340
+  to: Q170360
+  relation: triggers
+  note_ja: 6 週間でフランス軍が崩壊し、6 月 22 日のコンピエーニュ休戦につながった。
+
+- from: Q217981
+  to: Q196502
+  relation: triggers
+  note_ja: シチリア上陸でムッソリーニが失脚し、後継のバドリオ政権が連合国と休戦を結んだ。
+
+- from: Q700983
+  to: dec-19450717-potsdam
+  relation: triggers
+  note_ja: ドイツ降伏を受けて、戦後処理と対日方針を決めるポツダム会談が開かれた。
+
