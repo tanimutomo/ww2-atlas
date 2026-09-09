@@ -265,17 +265,27 @@ async function main() {
     }
   }
 
+  // 幾何は日付をまたいで共有する（日付ごとに持つと 1 枚 1.1MB × 枚数になる）
+  const geomPath = resolve(DATA, 'territory/geometry.json');
+  const geometry = existsSync(geomPath) ? JSON.parse(await readFile(geomPath, 'utf8')) : null;
+  if (!geometry) warn('data/territory/geometry.json が無い（npm run fetch:territory）');
+
   const territoryOut = [];
   const unassigned = new Map(); // name → [dates]
+  const usedGeom = new Set();
   for (const date of keyframes) {
-    const p = resolve(DATA, `territory/${date}.geojson`);
-    if (!existsSync(p)) {
-      warn(`territory/${date}.geojson が無い（npm run fetch:territory）`);
+    const p = resolve(DATA, `territory/frames/${date}.json`);
+    if (!existsSync(p) || !geometry) {
+      warn(`territory/frames/${date}.json が無い（npm run fetch:territory）`);
       continue;
     }
-    const fc = JSON.parse(await readFile(p, 'utf8'));
-    for (const f of fc.features) {
-      const pr = f.properties ?? {};
+    const frame = JSON.parse(await readFile(p, 'utf8'));
+    const polities = [];
+    for (const pr of frame.polities) {
+      if (!geometry[pr.ohm_id]) {
+        warn(`territory/frames/${date}.json: ${pr.ohm_id} の幾何が geometry.json に無い`);
+        continue;
+      }
       const control =
         resolveControl(byId.get(String(pr.ohm_id)), date) ?? resolveControl(byName.get(pr.name), date);
       if (!control) {
@@ -283,7 +293,8 @@ async function main() {
         if (!unassigned.has(key)) unassigned.set(key, []);
         unassigned.get(key).push(date);
       }
-      f.properties = {
+      usedGeom.add(String(pr.ohm_id));
+      polities.push({
         ohm_id: pr.ohm_id,
         name: pr.name,
         name_ja: pr.name_ja ?? null,
@@ -291,9 +302,9 @@ async function main() {
         control_assigned: Boolean(control),
         start_date: pr.start_date ?? null,
         end_date: pr.end_date ?? null,
-      };
+      });
     }
-    territoryOut.push({ date, fc });
+    territoryOut.push({ date, polities });
   }
   if (unassigned.size) {
     warn(
@@ -378,7 +389,13 @@ async function main() {
     _meta: meta('territory keyframes', { count: territoryOut.length }),
     keyframes: territoryOut.map((t) => t.date),
   });
-  for (const { date, fc } of territoryOut) await write(`territory/${date}.geojson`, fc);
+  // 実際に使われた幾何だけを 1 ファイルに出す。フロントは 1 回読んで使い回す
+  const geomOut = {};
+  for (const id of usedGeom) if (geometry?.[id]) geomOut[id] = geometry[id];
+  await write('territory/geometry.json', geomOut);
+  for (const { date, polities } of territoryOut) {
+    await write(`territory/${date}.json`, { date, polities });
+  }
 
   // 帰属一覧。公開時に書き直さないよう source フィールドから自動生成する
   const datasets = [

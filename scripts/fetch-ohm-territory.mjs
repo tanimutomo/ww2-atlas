@@ -22,6 +22,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = resolve(ROOT, 'data/raw/ohm');
 const GEOM_CACHE = resolve(CACHE, 'geom');
 const OUT_DIR = resolve(ROOT, 'data/territory');
+const FRAME_DIR = resolve(OUT_DIR, 'frames');
 
 const ENDPOINT = 'https://overpass-api.openhistoricalmap.org/api/interpreter';
 const UA = 'ww2-atlas/0.1 (https://github.com/tanimutomo/ww2-atlas; t.tanimura@ispec.tech)';
@@ -159,33 +160,37 @@ async function main() {
     }
   }
 
-  console.log('\n③ 日付ごとに組み立て');
+  // ③ 幾何は 1 か所にまとめ、日付ごとのフレームは「どの政体がいたか」だけにする。
+  //    同じ政体が何十枚もの日付に出てくるので、日付ごとに幾何を持つと
+  //    1 枚 1.1MB × 枚数になってしまう。共有すれば日付を増やすのがほぼ無料になる。
+  console.log('\n③ 幾何をまとめる');
+  const geometry = {};
+  for (const id of ids) {
+    const g = await ensureGeom(id).catch(() => null);
+    if (g) geometry[id] = g;
+  }
+  await writeFile(resolve(OUT_DIR, 'geometry.json'), JSON.stringify(geometry) + '\n');
+  const geomKb = Math.round(JSON.stringify(geometry).length / 1024);
+  console.log(`  ${Object.keys(geometry).length} polities / ${geomKb} KB`);
+
+  console.log('\n④ 日付ごとのフレーム');
+  await mkdir(FRAME_DIR, { recursive: true });
   for (const date of dates) {
-    const features = [];
-    for (const el of byDate.get(date)) {
-      const g = await ensureGeom(el.id).catch(() => null);
-      if (!g) continue;
-      features.push({
-        type: 'Feature',
-        properties: {
-          ohm_id: el.id,
-          name: el.tags.name ?? el.tags['name:en'] ?? String(el.id),
-          name_ja: el.tags['name:ja'] ?? null,
-          name_en: el.tags['name:en'] ?? null,
-          admin_level: el.tags.admin_level,
-          start_date: el.tags.start_date ?? null,
-          end_date: el.tags.end_date ?? null,
-        },
-        geometry: g,
-      });
-    }
-    const file = resolve(OUT_DIR, `${date}.geojson`);
-    await writeFile(
-      file,
-      JSON.stringify({ type: 'FeatureCollection', features }) + '\n',
-    );
-    const kb = Math.round(JSON.stringify(features).length / 1024);
-    console.log(`  ${date}: ${features.length} polities (${kb} KB)`);
+    const polities = byDate
+      .get(date)
+      .filter((el) => geometry[el.id])
+      .map((el) => ({
+        ohm_id: el.id,
+        name: el.tags.name ?? el.tags['name:en'] ?? String(el.id),
+        name_ja: el.tags['name:ja'] ?? null,
+        name_en: el.tags['name:en'] ?? null,
+        admin_level: el.tags.admin_level,
+        start_date: el.tags.start_date ?? null,
+        end_date: el.tags.end_date ?? null,
+      }));
+    const body = JSON.stringify({ date, polities });
+    await writeFile(resolve(FRAME_DIR, `${date}.json`), body + '\n');
+    console.log(`  ${date}: ${polities.length} polities (${Math.round(body.length / 1024)} KB)`);
   }
 
   console.log('\n次: data/territory/faction-map.yaml に ohm_id → control を書く');

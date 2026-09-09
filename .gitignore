@@ -1,7 +1,7 @@
 node_modules
 dist
-public/data/*.json
-public/data/*.geojson
+# 生成物。サブディレクトリ（territory/）も含めて丸ごと無視する
+public/data/
 .DS_Store
 .vercel
 data/raw/ohm

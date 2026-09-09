@@ -7,6 +7,7 @@
 // イベント点は「その日に進行中のもの」だけを filter 式で出し分ける。
 
 import maplibregl, { type Map as MlMap, type GeoJSONSource } from 'maplibre-gl';
+import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { CONTROL_COLOR, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
 import { MapLabels, type LabelItem } from './labels';
 
@@ -30,7 +31,10 @@ const TYPE_COLOR: Record<string, string> = {
 export class AtlasMap {
   readonly map: MlMap;
   private atlas: Atlas;
-  private territoryCache = new Map<string, unknown>();
+  /** ohm_id → 幾何。日付をまたいで共有するので 1 回だけ読む */
+  private geometry: Record<string, Geometry> | null = null;
+  /** 組み立て済みの日付フレーム */
+  private territoryCache = new Map<string, FeatureCollection>();
   private currentKeyframe: string | null = null;
   private onSelect: (e: EventRec) => void;
   private labels: MapLabels | null = null;
@@ -195,12 +199,11 @@ export class AtlasMap {
     const kf = keyframeFor(this.atlas.keyframes, date);
     if (kf && kf !== this.currentKeyframe) {
       this.currentKeyframe = kf;
-      let fc = this.territoryCache.get(kf);
-      if (!fc) {
-        fc = await fetch(`${BASE}data/territory/${kf}.geojson`).then((r) => r.json());
-        this.territoryCache.set(kf, fc);
+      const fc = await this.territoryFrame(kf);
+      // 取得を待つあいだに日付が変わっていたら、古い枠を描かない
+      if (this.currentKeyframe === kf) {
+        (this.map.getSource('territory') as GeoJSONSource | undefined)?.setData(fc as never);
       }
-      (this.map.getSource('territory') as GeoJSONSource | undefined)?.setData(fc as never);
     }
 
     // その日までに起きたことは消さずに残す。
@@ -264,6 +267,33 @@ export class AtlasMap {
 
     this.labels.show(items);
     this.prevActive = activeIds;
+  }
+
+  /**
+   * 日付フレームを組み立てる。
+   * 幾何（geometry.json）は全日付で共有し、フレーム側は「どの政体がどの陣営か」だけを持つ。
+   * 日付を増やしてもフレーム 1 枚ぶん（数十 KB）しか増えない。
+   */
+  private async territoryFrame(kf: string): Promise<FeatureCollection> {
+    const cached = this.territoryCache.get(kf);
+    if (cached) return cached;
+
+    if (!this.geometry) {
+      this.geometry = await fetch(`${BASE}data/territory/geometry.json`).then((r) => r.json());
+    }
+    const frame: { polities: Record<string, unknown>[] } = await fetch(
+      `${BASE}data/territory/${kf}.json`,
+    ).then((r) => r.json());
+
+    const fc: FeatureCollection = {
+      type: 'FeatureCollection',
+      features: frame.polities.flatMap((p) => {
+        const g = this.geometry?.[String(p.ohm_id)];
+        return g ? [{ type: 'Feature', properties: p, geometry: g } as Feature] : [];
+      }),
+    };
+    this.territoryCache.set(kf, fc);
+    return fc;
   }
 
   /** 選択・リンク先のハイライト。先頭が選択中のもので、その名前は出したままにする */

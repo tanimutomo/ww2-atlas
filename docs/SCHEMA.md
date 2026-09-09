@@ -90,8 +90,16 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
 
 ## Territory `data/territory/`
 
-- `keyframes.yaml` — 日付リスト（P0 は四半期）
-- `<YYYY-MM-DD>.geojson` — OHM（CC0）から取得・簡略化済み。Feature properties: `ohm_id` `name` `name_ja?` `start_date` `end_date`
+- `keyframes.yaml` — 切り出す日付のリスト。四半期＋**OHM が実際に版を分けている転換日**。
+  四半期だけだと動きの速い時期が 1 コマに潰れる（1941-12〜1942-05 の南方進出が
+  1942-07-01 に一気に広がって見えていた）
+- `geometry.json` — `ohm_id` → 幾何。**全日付で共有する**。
+  日付ごとに幾何を持つと 1 枚 1.1MB × 枚数になるので分けている
+- `frames/<YYYY-MM-DD>.json` — その日に存在した政体の一覧（幾何は持たない・1 枚 30KB 前後）。
+  `{date, polities: [{ohm_id, name, name_ja, name_en, admin_level, start_date, end_date}]}`
+
+日付を増やすコストはフレーム 1 枚ぶんで済む（36 枚で計 3.8MB。旧形式なら 14 枚で 15MB だった）。
+フロントは `geometry.json` を 1 回読み、フレームと突き合わせて FeatureCollection を組み立てる。
 - `faction-map.yaml` — `ohm_id` or `name` → `control`（`axis` | `axis_occupied` | `allied` | `allied_occupied` | `neutral` | `su`）。地図の塗り分けはこれで決める
 
   値は 2 通り書ける。OHM は多くの政体を日付で版分けしているので（ギリシャ・ベルギー・ルーマニアなど）、
@@ -108,7 +116,8 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
 
 ## ライセンス区画（ビルド出力）
 
-`public/data/` に `events.json` `decisions.json` `homefront.json` `links.json` `actors.json` `territory/<date>.geojson` `sources.json`（帰属一覧）。
+`public/data/` に `events.json` `decisions.json` `homefront.json` `links.json` `actors.json` `sources.json`（帰属一覧）、
+および `territory/index.json` `territory/geometry.json` `territory/<date>.json`。
 `license: cc-by-sa` のレコードは `*.cc-by-sa.json` に分けて出す。`data/seed-wikipedia/` 配下は全部 `cc-by-sa`。
 
 
