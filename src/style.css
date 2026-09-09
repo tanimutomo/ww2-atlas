@@ -76,6 +76,18 @@ a { color: var(--actual); }
 .filters-title { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
 .theatres { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; }
 .theatres label { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+
+/* 点は起きた順に残る。大きさと濃さで新しさを見せる */
+.dot-key {
+  display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 7px;
+  padding-top: 6px; border-top: 1px solid var(--line);
+  font-size: 10.5px; color: var(--muted);
+}
+.dk { display: inline-flex; align-items: center; gap: 4px; }
+.dk i { border-radius: 50%; background: #e8c26a; display: inline-block; }
+.dk-now    { width: 9px; height: 9px; box-shadow: 0 0 0 3px rgba(232, 194, 106, .18); }
+.dk-recent { width: 7px; height: 7px; opacity: .7; }
+.dk-past   { width: 5px; height: 5px; opacity: .45; }
 .caveat {
   margin: 0; font-size: 11px; line-height: 1.55; color: var(--muted);
   background: rgba(20, 29, 37, .92);

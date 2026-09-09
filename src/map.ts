@@ -137,10 +137,11 @@ export class AtlasMap {
       id: 'events-halo',
       type: 'circle',
       source: 'events',
+      filter: ['==', ['get', 'phase'], 2],
       paint: {
         'circle-radius': ['*', ['get', 'significance'], 5],
         'circle-color': ['get', 'color'],
-        'circle-opacity': ['case', ['==', ['get', 'active'], 1], 0.18, 0.06],
+        'circle-opacity': 0.18,
       },
     });
     this.map.addLayer({
@@ -148,11 +149,19 @@ export class AtlasMap {
       type: 'circle',
       source: 'events',
       paint: {
-        'circle-radius': ['+', 2, ['*', ['get', 'significance'], 1.8]],
+        'circle-radius': [
+          'match',
+          ['get', 'phase'],
+          2, ['+', 2, ['*', ['get', 'significance'], 1.8]],
+          1, ['+', 1.6, ['*', ['get', 'significance'], 1.2]],
+          // 痕跡。小さすぎると集まっても「濃い地域」に見えないので、
+          // 単体では控えめ・重なると効く程度の大きさにしてある
+          ['+', 1.5, ['*', ['get', 'significance'], 1.0]],
+        ],
         'circle-color': ['get', 'color'],
-        'circle-opacity': ['case', ['==', ['get', 'active'], 1], 1, 0.45],
+        'circle-opacity': ['match', ['get', 'phase'], 2, 1, 1, 0.7, 0.45],
         'circle-stroke-color': '#0d141a',
-        'circle-stroke-width': 1,
+        'circle-stroke-width': ['match', ['get', 'phase'], 2, 1, 1, 0.6, 0],
       },
     });
     // 選択中のイベント・リンク先を光らせる
@@ -194,19 +203,28 @@ export class AtlasMap {
       (this.map.getSource('territory') as GeoJSONSource | undefined)?.setData(fc as never);
     }
 
+    // その日までに起きたことは消さずに残す。
+    // 消してしまうと「どのあたりで何が積み重なったか」が読めなくなるので、
+    // 3 段階に落として、古いものほど小さく薄くする。
+    //   2 進行中     … いちばん大きく、まわりに光を出す
+    //   1 直近に終了 … 中くらい
+    //   0 それ以前   … 小さな痕跡。集まると「濃い地域」として見える
     const feats = this.atlas.events
-      .filter((e) => e.coord && isNear(e, date, filters.windowDays) && filters.theatres.has(e.theatre))
-      .map((e) => ({
-        type: 'Feature' as const,
-        geometry: { type: 'Point' as const, coordinates: e.coord as [number, number] },
-        properties: {
-          id: e.id,
-          significance: e.significance,
-          color: TYPE_COLOR[e.type] ?? '#e8c26a',
-          // 進行中は濃く、前後の日に始まる／終わるものは薄く出す
-          active: isActive(e, date) ? 1 : 0,
-        },
-      }));
+      .filter((e) => e.coord && e.start <= date && filters.theatres.has(e.theatre))
+      .map((e) => {
+        const active = isActive(e, date);
+        const recent = !active && isNear(e, date, filters.windowDays);
+        return {
+          type: 'Feature' as const,
+          geometry: { type: 'Point' as const, coordinates: e.coord as [number, number] },
+          properties: {
+            id: e.id,
+            significance: e.significance,
+            color: TYPE_COLOR[e.type] ?? '#e8c26a',
+            phase: active ? 2 : recent ? 1 : 0,
+          },
+        };
+      });
     (this.map.getSource('events') as GeoJSONSource | undefined)?.setData({
       type: 'FeatureCollection',
       features: feats,
