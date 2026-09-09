@@ -1,0 +1,21 @@
+- {id: jp, name_ja: 日本, name_en: Japan, faction: axis, color: "#b91c1c"}
+- {id: de, name_ja: ドイツ, name_en: Germany, faction: axis, color: "#7f1d1d"}
+- {id: it, name_ja: イタリア, name_en: Italy, faction: axis, color: "#c2410c"}
+- {id: us, name_ja: アメリカ, name_en: United States, faction: allied, color: "#1d4ed8"}
+- {id: uk, name_ja: イギリス, name_en: United Kingdom, faction: allied, color: "#1e40af"}
+- {id: su, name_ja: ソ連, name_en: Soviet Union, faction: allied, color: "#7c2d12"}
+- {id: fr, name_ja: フランス, name_en: France, faction: allied, color: "#2563eb"}
+- {id: cn, name_ja: 中国（国民政府）, name_en: China, faction: allied, color: "#0f766e"}
+- {id: pl, name_ja: ポーランド, name_en: Poland, faction: allied, color: "#3b82f6"}
+- {id: nl, name_ja: オランダ, name_en: Netherlands, faction: allied, color: "#3b82f6"}
+- {id: be, name_ja: ベルギー, name_en: Belgium, faction: allied, color: "#3b82f6"}
+- {id: no, name_ja: ノルウェー, name_en: Norway, faction: allied, color: "#3b82f6"}
+- {id: gr, name_ja: ギリシャ, name_en: Greece, faction: allied, color: "#3b82f6"}
+- {id: yu, name_ja: ユーゴスラビア, name_en: Yugoslavia, faction: allied, color: "#3b82f6"}
+- {id: au, name_ja: オーストラリア, name_en: Australia, faction: allied, color: "#3b82f6"}
+- {id: ca, name_ja: カナダ, name_en: Canada, faction: allied, color: "#3b82f6"}
+- {id: fi, name_ja: フィンランド, name_en: Finland, faction: axis, color: "#9a3412"}
+- {id: ro, name_ja: ルーマニア, name_en: Romania, faction: axis, color: "#9a3412"}
+- {id: hu, name_ja: ハンガリー, name_en: Hungary, faction: axis, color: "#9a3412"}
+- {id: th, name_ja: タイ, name_en: Thailand, faction: axis, color: "#9a3412"}
+- {id: vichy, name_ja: ヴィシー・フランス, name_en: Vichy France, faction: axis, color: "#9a3412"}

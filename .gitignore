@@ -1,0 +1,6 @@
+node_modules
+dist
+public/data/*.json
+public/data/*.geojson
+.DS_Store
+.vercel
