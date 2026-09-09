@@ -2,7 +2,7 @@
 
 第二次世界大戦（1937–1945）の日本語・時系列世界地図。**現場（地図）× 司令部（年表）× 国内（発表・報道・生活）** の 3 層を 1 本のタイムラインで同期する。
 
-- 設計の正本: vault `10_Thinking/2026-09-09-WW2-時系列世界地図サイト-設計.md`
+- 設計の正本: garden https://garden-five-inky.vercel.app/pages/2026-09-09-ww2-atlas-design/ （思考ログは vault `10_Thinking/2026-09-09-WW2-時系列世界地図サイト-設計.md`、実装引き継ぎは vault `10_Thinking/2026-09-09-ww2-atlas-P0-引き継ぎ.md`）
 - データスキーマ: `docs/SCHEMA.md`（レコードは必ず `license` と `sources` を持つ）
 - データ正本は `data/**/*.yaml`。`npm run data` で `public/data/` を生成。生成物はコミットしない
 - 転載不可・要申請のソース（防衛研究所・有料新聞・NHK・Bundesarchiv 映像）は **本文を保存しない**。日付・自前要約・URL のみ（`license: link-only`）
