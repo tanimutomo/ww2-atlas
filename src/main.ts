@@ -20,7 +20,7 @@ import {
 } from './data';
 import { AtlasMap } from './map';
 import { renderDetail, shift } from './ui';
-import { buildFeed, renderFeed, type FeedEntry, type FeedKind } from './feed';
+import { buildFeed, countOn, eventDays, renderFeed, type FeedEntry, type FeedKind } from './feed';
 
 const START = '1937-07-07';
 const END = '1945-09-02';
@@ -38,11 +38,24 @@ const CHAPTERS: { label: string; date: string }[] = [
   { label: '終戦', date: '1945-08-15' },
 ];
 
-const PLAY_STEPS = [
-  { label: '1 日', days: 1 },
-  { label: '1 週', days: 7 },
-  { label: '1 月', days: 30 },
-];
+/**
+ * 再生の進み方。
+ * 既定は「出来事ごと」― 何も起きていない日を飛ばし、起きた日だけを順に見せる。
+ * 日・週・月の連続送りは、戦況が動いていく様子を眺めたいとき用に残す。
+ */
+const PLAY_MODES = [
+  { id: 'events', label: '出来事ごと', days: 0 },
+  { id: 'day', label: '1 日', days: 1 },
+  { id: 'week', label: '1 週', days: 7 },
+  { id: 'month', label: '1 月', days: 30 },
+] as const;
+
+type PlayModeId = (typeof PLAY_MODES)[number]['id'];
+
+/** 「出来事ごと」で 1 日を何秒見せるか */
+const DWELLS = [3, 5, 10];
+/** 連続送りのときの 1 コマの間隔 */
+const CONTINUOUS_TICK_MS = 260;
 
 const $ = <T extends HTMLElement>(sel: string): T => {
   const el = document.querySelector<T>(sel);
@@ -56,7 +69,8 @@ type State = {
   /** フィードに出す層 */
   kinds: Set<FeedKind>;
   theatres: Set<string>;
-  step: number;
+  mode: PlayModeId;
+  dwellSec: number;
   playing: boolean;
   windowDays: number;
   /** 直前の日付。これより後に増えた投稿を「新着」として光らせる */
@@ -71,13 +85,22 @@ async function main(): Promise<void> {
     selected: null,
     kinds: new Set<FeedKind>(['field', 'command', 'home']),
     theatres: new Set(Object.keys(THEATRE_LABEL)),
-    step: 7,
+    mode: 'events',
+    dwellSec: 5,
     playing: false,
     windowDays: 10,
     lastDate: null,
   };
 
   const feedEntries: FeedEntry[] = buildFeed(atlas);
+  // 何かが起きた日だけの並び。◀ ▶ と「出来事ごと」再生はこの上を歩く
+  const days: string[] = eventDays(feedEntries);
+
+  /** date より後で最初に何かが起きた日（無ければ null） */
+  const nextDay = (date: string): string | null => days.find((d) => d > date) ?? null;
+  /** date より前で最後に何かが起きた日（無ければ null） */
+  const prevDay = (date: string): string | null =>
+    [...days].reverse().find((d) => d < date) ?? null;
 
   buildChrome(atlas, state);
 
@@ -91,19 +114,34 @@ async function main(): Promise<void> {
 
   let timer: number | undefined;
 
-  function setDate(date: string, fromSlider = false): void {
+  /**
+   * @param flash 増えたぶんをフィードで光らせるか。
+   *   1 コマ進めたとき（◀ ▶・再生）は光らせ、スライダーや章ジャンプでは光らせない。
+   */
+  function setDate(date: string, opts: { fromSlider?: boolean; flash?: boolean } = {}): void {
     const prev = state.date;
-    // 「新着」の光らせ方:
-    //   - 前に戻ったときは出さない（積み上げを作り直すだけ）
-    //   - 章ジャンプのように大きく飛んだときも出さない（画面中が光って意味を失う）
-    const jump = Math.abs(toDayNumber(date) - toDayNumber(prev));
-    state.lastDate = date > prev && jump <= 40 ? prev : null;
+    state.lastDate = opts.flash && date > prev ? prev : null;
     state.date = date;
-    if (!fromSlider) slider.value = String(toDayNumber(date));
+    if (!opts.fromSlider) slider.value = String(toDayNumber(date));
     $('#date-label').textContent = formatJa(date);
+    const n = countOn(feedEntries, date);
+    $('#day-count').textContent = n ? `この日 ${n} 件` : '';
     void atlasMap.setDate(date, { theatres: state.theatres, windowDays: state.windowDays });
     renderPane();
     renderDensity();
+    syncNav();
+  }
+
+  /** 端に来たら ◀ ▶ を押せなくする */
+  function syncNav(): void {
+    ($('#prev-day') as HTMLButtonElement).disabled = prevDay(state.date) === null;
+    ($('#next-day') as HTMLButtonElement).disabled = nextDay(state.date) === null;
+  }
+
+  /** 出来事のある日を 1 つ進む／戻る */
+  function stepDay(dir: 1 | -1): void {
+    const target = dir === 1 ? nextDay(state.date) : prevDay(state.date);
+    if (target) setDate(target, { flash: dir === 1 });
   }
 
   function select(id: string | null, pan = true): void {
@@ -176,7 +214,7 @@ async function main(): Promise<void> {
   // ---- イベント配線
   slider.addEventListener('input', () => {
     stop();
-    setDate(fromDayNumber(Number(slider.value)), true);
+    setDate(fromDayNumber(Number(slider.value)), { fromSlider: true });
   });
 
   $('#play').addEventListener('click', () => (state.playing ? stop() : play()));
@@ -184,11 +222,25 @@ async function main(): Promise<void> {
   function play(): void {
     state.playing = true;
     $('#play').textContent = '⏸ 停止';
+
+    if (state.mode === 'events') {
+      // 出来事のある日だけを、1 日ずつ dwellSec 秒かけて見せる
+      const tick = () => {
+        const next = nextDay(state.date);
+        if (!next) return stop();
+        setDate(next, { flash: true });
+      };
+      tick();
+      timer = window.setInterval(tick, state.dwellSec * 1000);
+      return;
+    }
+
+    const stepDays = PLAY_MODES.find((m) => m.id === state.mode)?.days ?? 7;
     timer = window.setInterval(() => {
-      const next = shift(state.date, state.step);
+      const next = shift(state.date, stepDays);
       if (next > END) return stop();
-      setDate(next);
-    }, 260);
+      setDate(next, { flash: true });
+    }, CONTINUOUS_TICK_MS);
   }
   function stop(): void {
     state.playing = false;
@@ -200,11 +252,40 @@ async function main(): Promise<void> {
     .querySelectorAll<HTMLButtonElement>('button')
     .forEach((b) =>
       b.addEventListener('click', () => {
-        state.step = Number(b.dataset.days);
+        state.mode = b.dataset.mode as PlayModeId;
         $('#steps').querySelectorAll('button').forEach((x) => x.classList.remove('on'));
         b.classList.add('on');
+        // 表示時間の選択は「出来事ごと」のときだけ意味がある
+        $('#dwells').classList.toggle('is-off', state.mode !== 'events');
+        if (state.playing) {
+          stop();
+          play();
+        }
       }),
     );
+
+  $('#dwells')
+    .querySelectorAll<HTMLButtonElement>('button')
+    .forEach((b) =>
+      b.addEventListener('click', () => {
+        state.dwellSec = Number(b.dataset.sec);
+        $('#dwells').querySelectorAll('button').forEach((x) => x.classList.remove('on'));
+        b.classList.add('on');
+        if (state.playing && state.mode === 'events') {
+          stop();
+          play();
+        }
+      }),
+    );
+
+  $('#prev-day').addEventListener('click', () => {
+    stop();
+    stepDay(-1);
+  });
+  $('#next-day').addEventListener('click', () => {
+    stop();
+    stepDay(1);
+  });
 
   $('#chapters')
     .querySelectorAll<HTMLButtonElement>('button')
@@ -228,7 +309,14 @@ async function main(): Promise<void> {
 
   $('#detail-close').addEventListener('click', () => select(null));
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && state.selected) select(null);
+    if (e.key === 'Escape' && state.selected) return select(null);
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      // 入力欄（スライダー）にフォーカスがあるときは邪魔しない
+      if (document.activeElement instanceof HTMLInputElement) return;
+      e.preventDefault();
+      stop();
+      stepDay(e.key === 'ArrowRight' ? 1 : -1);
+    }
   });
 
   setDate(state.date);
@@ -241,9 +329,16 @@ function buildChrome(atlas: Atlas, state: State): void {
     (c) => `<button data-date="${c.date}">${c.label}</button>`,
   ).join('');
 
-  $('#steps').innerHTML = PLAY_STEPS.map(
-    (s) => `<button data-days="${s.days}"${s.days === state.step ? ' class="on"' : ''}>${s.label}</button>`,
+  $('#steps').innerHTML = PLAY_MODES.map(
+    (m) => `<button data-mode="${m.id}"${m.id === state.mode ? ' class="on"' : ''}>${m.label}</button>`,
   ).join('');
+
+  $('#dwells').innerHTML =
+    `<span class="dwell-label">1 件あたり</span>` +
+    DWELLS.map(
+      (sec) => `<button data-sec="${sec}"${sec === state.dwellSec ? ' class="on"' : ''}>${sec}秒</button>`,
+    ).join('');
+  $('#dwells').classList.toggle('is-off', state.mode !== 'events');
 
   $('#theatres').innerHTML = Object.entries(THEATRE_LABEL)
     .map(

@@ -14,7 +14,7 @@
   --claimed: #c98a5a;
   --actual: #6ac8e8;
   --topbar: 44px;
-  --timeline: 96px;
+  --timeline: 104px;
   --side: 380px;
 }
 
@@ -273,7 +273,24 @@ a { color: var(--actual); }
   padding: 6px 12px 10px;
   display: flex; flex-direction: column; gap: 4px;
 }
-.tl-row { display: flex; align-items: center; gap: 10px; }
+.tl-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+/* 出来事のある日を 1 つずつ進む／戻る */
+.stepper { display: flex; gap: 2px; }
+.nav {
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
+  border-radius: 5px; width: 30px; height: 26px; font-size: 11px; line-height: 1;
+}
+.nav:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.nav:disabled { opacity: .35; cursor: default; }
+
+/* 「出来事ごと」以外では表示時間の選択を伏せる */
+.dwells { align-items: center; gap: 3px; }
+.dwells.is-off { opacity: .3; pointer-events: none; }
+.dwell-label { font-size: 10.5px; color: var(--muted); margin-right: 1px; }
+
+.date-block { display: flex; align-items: baseline; gap: 8px; }
+.day-count { font-size: 10.5px; color: var(--accent); white-space: nowrap; }
 .play {
   background: var(--panel-2); border: 1px solid var(--line);
   border-radius: 5px; padding: 3px 12px; font-size: 12px; white-space: nowrap;
@@ -284,7 +301,7 @@ a { color: var(--actual); }
   padding: 3px 8px; font-size: 11px; border-radius: 4px;
 }
 .steps button.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
-.date-label { font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 9.5em; }
+.date-label { font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 9.5em; display: inline-block; }
 .chapters { display: flex; gap: 3px; flex-wrap: wrap; margin-left: auto; }
 .chapters button {
   background: none; border: 1px solid var(--line); color: var(--muted);

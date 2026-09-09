@@ -58,9 +58,17 @@
 
     <footer id="timeline">
       <div class="tl-row">
+        <div class="stepper">
+          <button id="prev-day" class="nav" title="前の出来事へ（←）">◀</button>
+          <button id="next-day" class="nav" title="次の出来事へ（→）">▶</button>
+        </div>
         <button id="play" class="play">▶ 再生</button>
         <div id="steps" class="steps"></div>
-        <div id="date-label" class="date-label"></div>
+        <div id="dwells" class="steps dwells"></div>
+        <div class="date-block">
+          <span id="date-label" class="date-label"></span>
+          <span id="day-count" class="day-count"></span>
+        </div>
         <div id="chapters" class="chapters"></div>
       </div>
       <div id="density" class="density"></div>

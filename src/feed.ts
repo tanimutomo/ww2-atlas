@@ -237,3 +237,14 @@ export function renderFeed(
       : '';
   return `<ul class="feed">${rows}${more}</ul>`;
 }
+
+
+/** 何かが起きた日だけを古い順に並べる（空の日を飛ばして進むため） */
+export function eventDays(entries: FeedEntry[]): string[] {
+  return [...new Set(entries.map((e) => e.date))].sort();
+}
+
+/** その日に何件あるか */
+export function countOn(entries: FeedEntry[], date: string): number {
+  return entries.reduce((n, e) => (e.date === date ? n + 1 : n), 0);
+}
