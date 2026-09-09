@@ -109,11 +109,14 @@ async function main(): Promise<void> {
   function select(id: string | null, pan = true): void {
     state.selected = id;
     const detail = $('#detail');
+    const panel = $('#detail-panel');
     if (!id) {
-      detail.innerHTML = '<p class="empty">地図の点、または右のカードを選ぶと詳細が出ます</p>';
+      panel.hidden = true;
       atlasMap.highlight([]);
       return;
     }
+    panel.hidden = false;
+    detail.scrollTop = 0;
     detail.innerHTML = renderDetail(atlas, id);
 
     // 選択したものと、そこから伸びるリンク先のイベントを地図で光らせる
@@ -121,7 +124,10 @@ async function main(): Promise<void> {
     atlasMap.highlight([id, ...related].filter((x) => !x.startsWith('dec-') && !x.startsWith('hf-')));
 
     const rec = atlas.byId.get(id);
-    if (rec && pan && 'coord' in rec && rec.coord) atlasMap.flyTo(rec.coord as [number, number]);
+    if (rec && pan && 'coord' in rec && rec.coord) {
+      // 詳細パネルが地図の右側を覆うので、そのぶん寄せる位置をずらす
+      atlasMap.flyTo(rec.coord as [number, number], panel.clientWidth);
+    }
 
     // 詳細の中の「つながり」ボタンで別レコードへ飛ぶ
     detail.querySelectorAll<HTMLButtonElement>('button.jump').forEach((b) => {
@@ -219,6 +225,11 @@ async function main(): Promise<void> {
         renderDensity();
       }),
     );
+
+  $('#detail-close').addEventListener('click', () => select(null));
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && state.selected) select(null);
+  });
 
   setDate(state.date);
   select(null);

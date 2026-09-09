@@ -266,8 +266,18 @@ export class AtlasMap {
     this.labels.show(items);
   }
 
-  flyTo(coord: [number, number]): void {
-    this.map.easeTo({ center: coord, zoom: Math.max(this.map.getZoom(), 3.6), duration: 600 });
+  /**
+   * 選択した点へ寄せる。
+   * @param obscuredRight 右側が詳細パネルで隠れている幅(px)。
+   *   そのぶん左にずらして、見えている範囲の真ん中に点が来るようにする。
+   */
+  flyTo(coord: [number, number], obscuredRight = 0): void {
+    this.map.easeTo({
+      center: coord,
+      zoom: Math.max(this.map.getZoom(), 3.6),
+      offset: [-obscuredRight / 2, 0],
+      duration: 600,
+    });
   }
 }
 
