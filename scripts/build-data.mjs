@@ -59,6 +59,21 @@ async function readYamlDir(dir) {
   return out;
 }
 
+/**
+ * 座標の検証。司令部・国内も地図に出すので coord を持たせる
+ * （決定なら「どこで決めたか」、発表・報道なら「どこから出たか」）。
+ */
+function checkCoord(rec, where) {
+  const c = rec.coord;
+  if (!Array.isArray(c) || c.length !== 2 || typeof c[0] !== 'number' || typeof c[1] !== 'number') {
+    warn(`${where} (${rec.id}): coord が無い（地図に出ない）`);
+    return;
+  }
+  if (c[0] < -180 || c[0] > 180 || c[1] < -90 || c[1] > 90) {
+    err(`${where} (${rec.id}): coord は [経度, 緯度] の順。範囲外の値`);
+  }
+}
+
 /** license / sources / verified の共通検証 */
 function checkCommon(rec, where) {
   if (!rec.id) err(`${where}: id が無い`);
@@ -178,6 +193,7 @@ async function main() {
       if (!/^dec-\d{8}-/.test(rec.id ?? '')) err(`${where} (${rec.id}): id は dec-YYYYMMDD-slug`);
       for (const a of rec.actors ?? []) if (!actorIds.has(a)) err(`${where} (${rec.id}): 未知の actor "${a}"`);
       if (!rec.summary_ja) warn(`${where} (${rec.id}): summary_ja が無い`);
+      checkCoord(rec, where);
       decisions.push({ ...rec, _seed: isSeed });
     }
   }
@@ -202,6 +218,7 @@ async function main() {
       if (!/^hf-\d{8}-/.test(rec.id ?? '')) err(`${where} (${rec.id}): id は hf-YYYYMMDD-slug`);
       if (rec.country && !actorIds.has(rec.country)) err(`${where} (${rec.id}): 未知の country "${rec.country}"`);
       if (!rec.headline_ja) err(`${where} (${rec.id}): headline_ja が無い`);
+      checkCoord(rec, where);
       homefront.push(rec);
     }
   }

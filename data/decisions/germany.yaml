@@ -6,6 +6,7 @@
 # license: pd — 1940 年代のドイツ政府文書そのものはパブリックドメイン。要約は自前。
 
 - id: dec-19390411-fall-weiss
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 「1939/40 年の戦争準備に関する指令」（白作戦＝対ポーランド）
   name_en: Directive for the Armed Forces 1939/40 (Case White)
@@ -32,6 +33,7 @@
       url: https://en.wikipedia.org/wiki/Case_White
 
 - id: dec-19390831-weisung-1
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 1 号「戦争遂行に関する指令」
   name_en: Führer Directive No. 1 (Directive for the Conduct of the War)
@@ -58,6 +60,7 @@
       url: https://en.wikipedia.org/wiki/1939_Invasion_of_Poland
 
 - id: dec-19391009-weisung-6
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 6 号「西方における作戦」
   name_en: Führer Directive No. 6 (Case Yellow)
@@ -84,6 +87,7 @@
       url: https://en.wikipedia.org/wiki/Battle_of_France
 
 - id: dec-19400301-weserubung
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 「ヴェーザー演習作戦」指令（デンマーク・ノルウェー侵攻）
   name_en: Directive for Operation Weserübung
@@ -110,6 +114,7 @@
       url: https://en.wikipedia.org/wiki/Operation_Weser%C3%BCbung
 
 - id: dec-19400716-weisung-16
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 16 号「アシカ作戦」（英本土上陸準備）
   name_en: Führer Directive No. 16 (Operation Sea Lion)
@@ -138,6 +143,7 @@
 
 # ★ P0 の芯。これ 1 本から「決定 → 作戦」のリンクが辿れることが P0 のゴール
 - id: dec-19401218-weisung-21
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 21 号「バルバロッサ作戦」
   name_en: Führer Directive No. 21 (Case Barbarossa)
@@ -167,6 +173,7 @@
       url: https://en.wikipedia.org/wiki/Operation_Barbarossa
 
 - id: dec-19410327-weisung-25
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 25 号（ユーゴスラビア侵攻）
   name_en: Führer Directive No. 25 (Invasion of Yugoslavia)
@@ -194,6 +201,7 @@
       url: https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia
 
 - id: dec-19420405-weisung-41
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 41 号「青作戦」（南方攻勢＝スターリングラード・コーカサス）
   name_en: Führer Directive No. 41 (Case Blue)
@@ -222,6 +230,7 @@
       url: https://en.wikipedia.org/wiki/Case_Blue
 
 - id: dec-19430415-zitadelle
+  coord: [13.405, 52.52]
   type: order
   name_ja: 作戦命令第 6 号「ツィタデレ作戦」（クルスク攻勢）
   name_en: Operation Order No. 6 (Operation Citadel)
@@ -250,6 +259,7 @@
       note: locator。原文の所在は要確認
 
 - id: dec-19431103-weisung-51
+  coord: [13.405, 52.52]
   type: directive
   name_ja: 総統指令第 51 号（西方の防備強化）
   name_en: Führer Directive No. 51 (Defence of the West)

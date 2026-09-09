@@ -6,6 +6,7 @@
 # （全件 verified: false。P1 で官報・国立公文書館の告示に当てる）。
 
 - id: hf-19400601-jp-life-kippu
+  coord: [139.7528, 35.6852]
   type: life
   country: jp
   date: 1940-06-01
@@ -24,6 +25,7 @@
       note: 告示の原本。請求記号の特定は未了
 
 - id: hf-19400907-jp-life-zeitaku
+  coord: [139.7528, 35.6852]
   type: policy
   country: jp
   date: 1940-08-01
@@ -42,6 +44,7 @@
       note: 告示の原本。請求記号の特定は未了
 
 - id: hf-19410401-jp-life-beikoku-tsucho
+  coord: [139.7528, 35.6852]
   type: life
   country: jp
   date: 1941-04-01
@@ -60,6 +63,7 @@
       note: 告示の原本。請求記号の特定は未了
 
 - id: hf-19420201-jp-life-iryo-kippu
+  coord: [139.7528, 35.6852]
   type: life
   country: jp
   date: 1942-02-01
@@ -78,6 +82,7 @@
       note: 告示の原本。請求記号の特定は未了
 
 - id: hf-19430921-jp-life-gakuto
+  coord: [139.7528, 35.6852]
   type: policy
   country: jp
   date: 1943-10-21
@@ -96,6 +101,7 @@
       note: 勅令の原本。請求記号の特定は未了
 
 - id: hf-19440330-jp-life-kessenhijo
+  coord: [139.7528, 35.6852]
   type: policy
   country: jp
   date: 1944-03-07
@@ -113,6 +119,7 @@
       note: 閣議決定の原本。請求記号の特定は未了
 
 - id: hf-19440630-jp-life-gakudo-sokai
+  coord: [139.7528, 35.6852]
   type: life
   country: jp
   date: 1944-06-30
@@ -131,6 +138,7 @@
       note: 閣議決定の原本。請求記号の特定は未了
 
 - id: hf-19441124-jp-life-b29
+  coord: [139.7528, 35.6852]
   type: life
   country: jp
   date: 1944-11-24
@@ -149,6 +157,7 @@
       url: https://en.wikipedia.org/wiki/Bombing_of_Tokyo
 
 - id: hf-19450311-jp-life-tokyo-risai
+  coord: [139.7528, 35.6852]
   type: life
   country: jp
   date: 1945-03-11
@@ -166,6 +175,7 @@
       url: https://en.wikipedia.org/wiki/Bombing_of_Tokyo_(10_March_1945)
 
 - id: hf-19450815-jp-life-gyokuon
+  coord: [139.7528, 35.6852]
   type: announcement
   country: jp
   date: 1945-08-15

@@ -35,7 +35,10 @@
 
 Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `end` `wikipedia_ja` `wikipedia_en` `participants`。override が勝つ。
 
-## Decision（司令部・地図に出さない）`data/decisions/*.yaml`
+## Decision（司令部）`data/decisions/*.yaml`
+
+⚠ 当初は「地図に出さない」方針だったが、会議・指令も **どこで決めたかが分かった方がいい**
+という判断で地図に出すことにした。`coord` を必須に近い扱いで持つ（無いと警告が出て地図に出ない）。
 
 ```yaml
 - id: dec-19401218-weisung-21
@@ -46,7 +49,8 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
   end: null
   actors: [de]           # 国コード。会議は複数
   persons: [ヒトラー]
-  place: ベルリン          # 任意。coord は持たない（地図に出さない）
+  place: ベルリン          # 表示用の地名
+  coord: [13.405, 52.52]  # [lon, lat]。決めた場所。無いと地図に出ない
   summary_ja: 何を決めたか 2〜4 文
   decisions_ja: [箇条書き 1〜5]
   license: pd
@@ -54,12 +58,15 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
   sources: [{title: ..., url: ...}]
 ```
 
-## HomeFront（国内・地図に出さない）`data/homefront/*.yaml`
+## HomeFront（国内）`data/homefront/*.yaml`
+
+こちらも地図に出す。`coord` は「発表・報道が出た場所」（大本営発表なら東京、米紙ならニューヨーク）。
 
 ```yaml
 - id: hf-19420610-daihonei-midway
   type: announcement     # announcement | press | newsreel | life | opinion | policy
   country: jp
+  coord: [139.7528, 35.6852]  # 発表・報道が出た場所
   date: 1942-06-10
   headline_ja: 大本営発表「ミッドウェー海戦で空母1隻喪失、敵空母2隻撃沈」
   body_ja: 要約 1〜3 文。原文は転載しない（license: link-only のとき）
@@ -157,3 +164,22 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
   geometry は relation id ごとに 1 回取って簡略化してキャッシュする（`data/raw/ohm/` は gitignore）
 - **YAML**: js-yaml の既定スキーマは `1940-12-18` を JS の `Date` に変換してしまう。
   日付を文字列のまま扱うため、読み込みは必ず `scripts/lib/yamlio.mjs` を通す（CORE_SCHEMA）
+
+
+## 地図の点の分類（表示）
+
+`src/data.ts` の `PointCategory` が正本。現場・司令部・国内を 1 つの点の集合に均している。
+
+| 分類 | 中身 | 件数 |
+|---|---|---|
+| `land` | 戦闘・侵攻・包囲・上陸・蜂起 | 106 |
+| `sea` | 海戦 | 34 |
+| `air` | 空襲 | 10 |
+| `decision` | 会議・指令・宣言・条約 ＋ **降伏・休戦** | 34 |
+| `home` | 公式発表・報道・生活 | 40 |
+
+- 戦闘を陸・海・空までしか割らないのは、種別 8 つを色にすると読めないのと、
+  種別の 8 割が名前からの機械推定で細かく言い切る根拠が弱いため
+- 降伏・休戦は戦闘ではなく「大きな意思決定」として `decision` に入れる
+- 同じ座標に重なる点（東京に 39 件など）は、ひまわり配置で最大 1.2 度までずらして表示する。
+  ずらすのは表示上の都合なので YAML の座標は動かさない

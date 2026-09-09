@@ -6,6 +6,7 @@
 # 要約は自前。全件 verified: false（原典の該当文書まで当てたら true にする）。
 
 - id: dec-19410814-atlantic-charter
+  coord: [-53.97, 47.25]
   type: declaration
   name_ja: 大西洋憲章（大西洋会談）
   name_en: Atlantic Charter (Atlantic Conference)
@@ -33,6 +34,7 @@
       url: https://avalon.law.yale.edu/wwii/atlantic.asp
 
 - id: dec-19411222-arcadia
+  coord: [-77.0365, 38.8951]
   type: conference
   name_ja: アルカディア会談（第 1 次ワシントン会談）
   name_en: Arcadia Conference (First Washington Conference)
@@ -60,6 +62,7 @@
       url: https://en.wikipedia.org/wiki/Arcadia_Conference
 
 - id: dec-19420101-united-nations-declaration
+  coord: [-77.0365, 38.8951]
   type: declaration
   name_ja: 連合国共同宣言
   name_en: Declaration by United Nations
@@ -86,6 +89,7 @@
       url: https://history.state.gov/historicaldocuments/frus1941-43
 
 - id: dec-19430114-casablanca
+  coord: [-7.589, 33.573]
   type: conference
   name_ja: カサブランカ会談
   name_en: Casablanca Conference
@@ -114,6 +118,7 @@
       url: https://en.wikipedia.org/wiki/Casablanca_Conference
 
 - id: dec-19430512-trident
+  coord: [-77.0365, 38.8951]
   type: conference
   name_ja: トライデント会談（第 3 次ワシントン会談）
   name_en: Trident Conference (Third Washington Conference)
@@ -140,6 +145,7 @@
       url: https://en.wikipedia.org/wiki/Washington_Conference_(1943)
 
 - id: dec-19430817-quadrant
+  coord: [-71.208, 46.813]
   type: conference
   name_ja: クアドラント会談（第 1 次ケベック会談）
   name_en: Quadrant Conference (First Quebec Conference)
@@ -167,6 +173,7 @@
       url: https://en.wikipedia.org/wiki/First_Quebec_Conference
 
 - id: dec-19431122-cairo
+  coord: [31.235, 30.044]
   type: conference
   name_ja: カイロ会談（カイロ宣言）
   name_en: Cairo Conference (Cairo Declaration)
@@ -194,6 +201,7 @@
       url: https://history.state.gov/historicaldocuments/frus1943CairoTehran
 
 - id: dec-19431128-tehran
+  coord: [51.389, 35.689]
   type: conference
   name_ja: テヘラン会談
   name_en: Tehran Conference
@@ -221,6 +229,7 @@
       url: https://en.wikipedia.org/wiki/Tehran_Conference
 
 - id: dec-19450204-yalta
+  coord: [34.166, 44.495]
   type: conference
   name_ja: ヤルタ会談
   name_en: Yalta Conference
@@ -248,6 +257,7 @@
       url: https://en.wikipedia.org/wiki/Yalta_Conference
 
 - id: dec-19450717-potsdam
+  coord: [13.06, 52.4]
   type: conference
   name_ja: ポツダム会談（ポツダム宣言）
   name_en: Potsdam Conference (Potsdam Declaration)

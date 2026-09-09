@@ -8,7 +8,15 @@
 
 import maplibregl, { type Map as MlMap, type GeoJSONSource } from 'maplibre-gl';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
-import { CONTROL_COLOR, colorOf, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
+import {
+  CATEGORY_COLOR,
+  CONTROL_COLOR,
+  keyframeFor,
+  mapPoints,
+  toDayNumber,
+  type Atlas,
+  type MapPoint,
+} from './data';
 import { MapLabels, type LabelItem } from './labels';
 
 const BASE = import.meta.env.BASE_URL ?? '/';
@@ -19,19 +27,22 @@ const LAND = '#2b3238';
 export class AtlasMap {
   readonly map: MlMap;
   private atlas: Atlas;
+  /** 現場・司令部・国内を均した地図用の点。重なりのずらしも済んでいる */
+  private points: MapPoint[];
   /** ohm_id → 幾何。日付をまたいで共有するので 1 回だけ読む */
   private geometry: Record<string, Geometry> | null = null;
   /** 組み立て済みの日付フレーム */
   private territoryCache = new Map<string, FeatureCollection>();
   private currentKeyframe: string | null = null;
-  private onSelect: (e: EventRec) => void;
+  private onSelect: (id: string) => void;
   private labels: MapLabels | null = null;
   /** 前回の描画で「進行中」だったイベント。増えたぶんにだけ名前を出す */
   private prevActive = new Set<string>();
   private stickyId: string | null = null;
 
-  constructor(container: HTMLElement, atlas: Atlas, onSelect: (e: EventRec) => void) {
+  constructor(container: HTMLElement, atlas: Atlas, onSelect: (id: string) => void) {
     this.atlas = atlas;
+    this.points = mapPoints(atlas);
     this.onSelect = onSelect;
     this.map = new maplibregl.Map({
       container,
@@ -172,9 +183,7 @@ export class AtlasMap {
 
     this.map.on('click', 'events-dot', (e) => {
       const id = e.features?.[0]?.properties?.id as string | undefined;
-      if (!id) return;
-      const rec = this.atlas.events.find((x) => x.id === id);
-      if (rec) this.onSelect(rec);
+      if (id) this.onSelect(id);
     });
     for (const layer of ['events-dot']) {
       this.map.on('mouseenter', layer, () => (this.map.getCanvas().style.cursor = 'pointer'));
@@ -200,28 +209,29 @@ export class AtlasMap {
     //   2 進行中     … いちばん大きく、まわりに光を出す
     //   1 直近に終了 … 中くらい
     //   0 それ以前   … 小さな痕跡。集まると「濃い地域」として見える
-    const feats = this.atlas.events
-      .filter((e) => e.coord && e.start <= date && filters.theatres.has(e.theatre))
-      .map((e) => {
-        const active = isActive(e, date);
-        const recent = !active && isNear(e, date, filters.windowDays);
-        return {
-          type: 'Feature' as const,
-          geometry: { type: 'Point' as const, coordinates: e.coord as [number, number] },
-          properties: {
-            id: e.id,
-            significance: e.significance,
-            color: colorOf(e.type),
-            phase: active ? 2 : recent ? 1 : 0,
-          },
-        };
-      });
+    const feats = this.visible(date, filters).map((p) => ({
+      type: 'Feature' as const,
+      geometry: { type: 'Point' as const, coordinates: p.coord },
+      properties: {
+        id: p.id,
+        significance: p.significance,
+        color: CATEGORY_COLOR[p.category],
+        phase: phaseOf(p, date, filters.windowDays),
+      },
+    }));
     (this.map.getSource('events') as GeoJSONSource | undefined)?.setData({
       type: 'FeatureCollection',
       features: feats,
     });
 
     this.refreshLabels(date, filters);
+  }
+
+  /** その日までに起きていて、フィルタを通る点。戦域フィルタは現場だけに効く */
+  private visible(date: string, filters: { theatres: Set<string> }): MapPoint[] {
+    return this.points.filter(
+      (p) => p.start <= date && (p.theatre === null || filters.theatres.has(p.theatre)),
+    );
   }
 
   /**
@@ -231,25 +241,23 @@ export class AtlasMap {
    */
   private refreshLabels(date: string, filters: { theatres: Set<string> }): void {
     if (!this.labels) return;
-    const active = this.atlas.events.filter(
-      (e) => e.coord && isActive(e, date) && filters.theatres.has(e.theatre),
-    );
-    const activeIds = new Set(active.map((e) => e.id));
+    const active = this.visible(date, filters).filter((p) => isOn(p, date));
+    const activeIds = new Set(active.map((p) => p.id));
 
     const items: LabelItem[] = active
       // 前回まで進行中でなかった＝この日に始まったもの
-      .filter((e) => !this.prevActive.has(e.id))
+      .filter((p) => !this.prevActive.has(p.id))
       // 一度に出しすぎないよう、重要なものから
       .sort((a, b) => b.significance - a.significance)
       .slice(0, 6)
-      .map((e) => ({ id: e.id, coord: e.coord as [number, number], text: e.name_ja }));
+      .map((p) => ({ id: p.id, coord: p.coord, text: p.name }));
 
     if (this.stickyId) {
-      const sel = this.atlas.events.find((e) => e.id === this.stickyId);
-      if (sel?.coord) {
+      const sel = this.points.find((p) => p.id === this.stickyId);
+      if (sel) {
         const already = items.find((i) => i.id === sel.id);
         if (already) already.sticky = true;
-        else items.push({ id: sel.id, coord: sel.coord as [number, number], text: sel.name_ja, sticky: true });
+        else items.push({ id: sel.id, coord: sel.coord, text: sel.name, sticky: true });
       }
     }
 
@@ -291,15 +299,15 @@ export class AtlasMap {
     if (!this.labels) return;
     // ハイライトされた点すべてに名前を出す（リンク先がどれか分かるように）
     const items = ids
-      .map((id) => this.atlas.events.find((e) => e.id === id))
-      .filter((e): e is EventRec => Boolean(e?.coord))
-      .map((e) => ({
-        id: e.id,
-        coord: e.coord as [number, number],
-        text: e.name_ja,
-        sticky: true,
-      }));
+      .map((id) => this.points.find((p) => p.id === id))
+      .filter((p): p is MapPoint => Boolean(p))
+      .map((p) => ({ id: p.id, coord: p.coord, text: p.name, sticky: true }));
     this.labels.show(items);
+  }
+
+  /** ずらし込み後の座標。詳細を開いたときに寄せる先として使う */
+  coordOf(id: string): [number, number] | null {
+    return this.points.find((p) => p.id === id)?.coord ?? null;
   }
 
   /**
@@ -318,3 +326,14 @@ export class AtlasMap {
 }
 
 const emptyFc = () => ({ type: 'FeatureCollection' as const, features: [] });
+
+/** その日に「進行中」か（単日のものはその日だけ） */
+const isOn = (p: MapPoint, date: string): boolean => p.start <= date && date <= (p.end ?? p.start);
+
+/** 2 進行中 / 1 直近 / 0 それ以前 */
+function phaseOf(p: MapPoint, date: string, windowDays: number): 0 | 1 | 2 {
+  if (isOn(p, date)) return 2;
+  const d = toDayNumber(date);
+  const end = toDayNumber(p.end ?? p.start);
+  return d - end <= windowDays ? 1 : 0;
+}

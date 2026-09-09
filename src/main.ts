@@ -10,9 +10,9 @@ import {
   CONTROL_COLOR,
   CONTROL_LABEL,
   THEATRE_LABEL,
-  DOMAIN_COLOR,
-  DOMAIN_LABEL,
-  type Domain,
+  CATEGORY_COLOR,
+  CATEGORY_LABEL,
+  CATEGORY_ORDER,
   formatJa,
   fromDayNumber,
   loadAtlas,
@@ -107,7 +107,7 @@ async function main(): Promise<void> {
 
   buildChrome(atlas, state);
 
-  const atlasMap = new AtlasMap($('#map'), atlas, (e) => select(e.id, false));
+  const atlasMap = new AtlasMap($('#map'), atlas, (id) => select(id, false));
   await atlasMap.init();
 
   const slider = $<HTMLInputElement>('#scrub');
@@ -160,14 +160,15 @@ async function main(): Promise<void> {
     detail.scrollTop = 0;
     detail.innerHTML = renderDetail(atlas, id);
 
-    // 選択したものと、そこから伸びるリンク先のイベントを地図で光らせる
+    // 選択したものと、そこから伸びるリンク先を地図で光らせる。
+    // 司令部・国内も地図に出るようになったので、層で絞らず全部光らせる
     const related = (atlas.linksOf.get(id) ?? []).map((l) => (l.from === id ? l.to : l.from));
-    atlasMap.highlight([id, ...related].filter((x) => !x.startsWith('dec-') && !x.startsWith('hf-')));
+    atlasMap.highlight([id, ...related]);
 
-    const rec = atlas.byId.get(id);
-    if (rec && pan && 'coord' in rec && rec.coord) {
+    const coord = atlasMap.coordOf(id);
+    if (coord && pan) {
       // 詳細パネルが地図の右側を覆うので、そのぶん寄せる位置をずらす
-      atlasMap.flyTo(rec.coord as [number, number], panel.clientWidth);
+      atlasMap.flyTo(coord, panel.clientWidth);
     }
 
     // 詳細の中の「つながり」ボタンで別レコードへ飛ぶ
@@ -350,13 +351,10 @@ function buildChrome(atlas: Atlas, state: State): void {
     )
     .join('');
 
-  // 点の色は陸・海・空の 3 つだけ。地図と同じ定義を使うのでズレない
-  $('#type-key').innerHTML = (Object.keys(DOMAIN_COLOR) as Domain[])
-    .map(
-      (d) =>
-        `<span class="tk"><i style="background:${DOMAIN_COLOR[d]}"></i>${DOMAIN_LABEL[d]}</span>`,
-    )
-    .join('');
+  // 点の色。地図と同じ定義（CATEGORY_COLOR）を使うのでズレない
+  $('#type-key').innerHTML = CATEGORY_ORDER.map(
+    (c) => `<span class="tk"><i style="background:${CATEGORY_COLOR[c]}"></i>${CATEGORY_LABEL[c]}</span>`,
+  ).join('');
 
   $('#legend').innerHTML = (Object.keys(CONTROL_COLOR) as Control[])
     .map(

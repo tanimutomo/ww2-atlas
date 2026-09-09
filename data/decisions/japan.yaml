@@ -10,6 +10,7 @@
 #   原本での突き合わせは未了（全件 verified: false）。P1 で JACAR 原本に当てる。
 
 - id: dec-19400927-sangoku-domei
+  coord: [13.405, 52.52]
   type: treaty
   name_ja: 日独伊三国同盟条約
   name_en: Tripartite Pact
@@ -37,6 +38,7 @@
       note: 条約書原本の所在。請求記号の特定は未了
 
 - id: dec-19410702-josei-no-suii
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議「情勢ノ推移ニ伴フ帝国国策要綱」
   name_en: Imperial Conference — Outline of National Policies in View of the Changing Situation
@@ -64,6 +66,7 @@
       note: 決定文書の原本画像。レファレンスコードの特定は未了
 
 - id: dec-19410906-teikoku-kokusaku-suikou
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議「帝国国策遂行要領」（対米交渉の期限を切る）
   name_en: Imperial Conference — Guidelines for Implementing National Policy
@@ -91,6 +94,7 @@
       note: 決定文書の原本画像。レファレンスコードの特定は未了
 
 - id: dec-19411105-kokusaku-suikou-yoryo
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議「帝国国策遂行要領」（12 月初頭開戦を決定）
   name_en: Imperial Conference — Revised Guidelines (decision for war in early December)
@@ -120,6 +124,7 @@
 
 # ★ P0 の芯（日本側）。ここから真珠湾・マレーへ authorizes が伸びる
 - id: dec-19411201-gozen-kaigi-kaisen
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議（対米英蘭開戦の最終決定）
   name_en: Imperial Conference — final decision for war against the US, Britain and the Netherlands
@@ -149,6 +154,7 @@
       note: 決定文書の原本画像。レファレンスコードの特定は未了
 
 - id: dec-19411201-dairikumei-569
+  coord: [139.75, 35.69]
   type: order
   name_ja: 大陸命第 569 号（南方作戦の発動）
   name_en: Imperial General Headquarters Army Order No. 569 (Southern Operations)
@@ -176,6 +182,7 @@
 
 # ★ P0 の芯（ミッドウェー側）。大本営発表 1942-06-10 の discrepancy と対になる
 - id: dec-19420505-daikairei-18
+  coord: [139.75, 35.69]
   type: order
   name_ja: 大海令第 18 号（MI 作戦＝ミッドウェー攻略、AL 作戦＝アリューシャン）
   name_en: Imperial General Headquarters Navy Order No. 18 (Operation MI / AL)
@@ -203,6 +210,7 @@
       note: 原本は防衛研究所分。本文は転載せずリンクのみ。命令番号は要確認
 
 - id: dec-19421231-gozen-kaigi-guadalcanal
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議（ガダルカナル島撤退の決定）
   name_en: Imperial Conference — decision to withdraw from Guadalcanal
@@ -229,6 +237,7 @@
       url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
 
 - id: dec-19430930-zettai-kokubouken
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議「今後採ルベキ戦争指導ノ大綱」（絶対国防圏の設定）
   name_en: Imperial Conference — Absolute National Defence Sphere
@@ -256,6 +265,7 @@
       note: 決定文書の原本画像。レファレンスコードの特定は未了
 
 - id: dec-19450814-gozen-kaigi-shusen
+  coord: [139.7528, 35.6852]
   type: imperial_conference
   name_ja: 御前会議（ポツダム宣言受諾の決定＝聖断）
   name_en: Imperial Conference — decision to accept the Potsdam Declaration
