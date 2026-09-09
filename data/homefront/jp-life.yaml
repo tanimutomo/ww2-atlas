@@ -1,0 +1,184 @@
+# 日本国内の生活（配給・統制・疎開）。P0 は 10 行。
+#
+# 「戦場で何が起きたか」の裏で、国民の暮らしがどう締め上げられていったかを
+# 同じ時間軸に置くための最小セット。切符制・通帳制の開始日は制度の告示日と
+# 実施日がずれることがあり、ここでは広く採られている実施年月を採っている
+# （全件 verified: false。P1 で官報・国立公文書館の告示に当てる）。
+
+- id: hf-19400601-jp-life-kippu
+  type: life
+  country: jp
+  date: 1940-06-01
+  headline_ja: 砂糖・マッチが切符制に ― 生活必需品の配給統制が始まる
+  body_ja: |
+    砂糖とマッチが切符制になり、日常の必需品にまで配給統制が及んだ。
+    以後、味噌・醤油・木炭・衣料へと対象が広がっていく。
+    開戦の 1 年半前から生活の締め付けが始まっていたことになる。
+  license: pd
+  verified: false
+  sources:
+    - title: 配給 (物資)
+      url: https://ja.wikipedia.org/wiki/%E9%85%8D%E7%B5%A6_(%E7%89%A9%E8%B3%87)
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 告示の原本。請求記号の特定は未了
+
+- id: hf-19400907-jp-life-zeitaku
+  type: policy
+  country: jp
+  date: 1940-08-01
+  headline_ja: 「ぜいたくは敵だ」― 奢侈品等製造販売制限規則の施行
+  body_ja: |
+    奢侈品等製造販売制限規則（いわゆる七・七禁令）により、
+    高級品の製造・販売が制限された。街頭には標語看板が立ち、
+    生活様式そのものが統制の対象になっていく。
+  license: pd
+  verified: false
+  sources:
+    - title: 奢侈品等製造販売制限規則
+      url: https://ja.wikipedia.org/wiki/%E5%A5%A2%E4%BE%88%E5%93%81%E7%AD%89%E8%A3%BD%E9%80%A0%E8%B2%A9%E5%A3%B2%E5%88%B6%E9%99%90%E8%A6%8F%E5%89%87
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 告示の原本。請求記号の特定は未了
+
+- id: hf-19410401-jp-life-beikoku-tsucho
+  type: life
+  country: jp
+  date: 1941-04-01
+  headline_ja: 六大都市で米穀配給通帳制が始まる ― 主食が通帳管理に
+  body_ja: |
+    東京・大阪など六大都市で米の配給が通帳制になり、
+    世帯ごとに定められた量しか受け取れなくなった。
+    のちに全国へ拡大し、成人 1 日あたりの配給量は戦争末期に向けて減っていく。
+  license: pd
+  verified: false
+  sources:
+    - title: 配給 (物資)
+      url: https://ja.wikipedia.org/wiki/%E9%85%8D%E7%B5%A6_(%E7%89%A9%E8%B3%87)
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 告示の原本。請求記号の特定は未了
+
+- id: hf-19420201-jp-life-iryo-kippu
+  type: life
+  country: jp
+  date: 1942-02-01
+  headline_ja: 衣料切符制が始まる ― 服も点数で買う時代に
+  body_ja: |
+    衣料品が点数切符制になり、1 年間に使える点数の範囲でしか
+    衣類を買えなくなった。国民服・もんぺが標準的な装いになっていく。
+    緒戦の勝利が報じられている時期に、生活面ではすでに窮乏が進んでいた。
+  license: pd
+  verified: false
+  sources:
+    - title: 配給 (物資)
+      url: https://ja.wikipedia.org/wiki/%E9%85%8D%E7%B5%A6_(%E7%89%A9%E8%B3%87)
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 告示の原本。請求記号の特定は未了
+
+- id: hf-19430921-jp-life-gakuto
+  type: policy
+  country: jp
+  date: 1943-10-21
+  headline_ja: 学徒出陣 ― 文科系学生の徴集猶予が停止される
+  body_ja: |
+    在学徴集延期臨時特例により文科系学生の徴兵猶予が停止され、
+    10 月 21 日に明治神宮外苑競技場で出陣学徒壮行会が行われた。
+    兵力の枯渇が学生にまで及んだことを国民に可視化した出来事でもある。
+  license: pd
+  verified: false
+  sources:
+    - title: 学徒出陣
+      url: https://ja.wikipedia.org/wiki/%E5%AD%A6%E5%BE%92%E5%87%BA%E9%99%A3
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 勅令の原本。請求記号の特定は未了
+
+- id: hf-19440330-jp-life-kessenhijo
+  type: policy
+  country: jp
+  date: 1944-03-07
+  headline_ja: 決戦非常措置要綱 ― 高級料亭・劇場の閉鎖、中等学校の授業停止へ
+  body_ja: |
+    決戦非常措置要綱により、高級飲食店や劇場が閉鎖され、
+    学生の勤労動員が本格化した。都市生活の娯楽が事実上停止する。
+  license: pd
+  verified: false
+  sources:
+    - title: 決戦非常措置要綱
+      url: https://ja.wikipedia.org/wiki/%E6%B1%BA%E6%88%A6%E9%9D%9E%E5%B8%B8%E6%8E%AA%E7%BD%AE%E8%A6%81%E7%B6%B1
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 閣議決定の原本。請求記号の特定は未了
+
+- id: hf-19440630-jp-life-gakudo-sokai
+  type: life
+  country: jp
+  date: 1944-06-30
+  headline_ja: 学童疎開の開始 ― 都市の国民学校児童が集団で地方へ
+  body_ja: |
+    サイパン失陥が迫るなか、都市部の国民学校児童を地方へ
+    集団疎開させる方針が決まり、夏から実施された。
+    本土空襲が現実の前提になったことを、家族の分離という形で示している。
+  license: pd
+  verified: false
+  sources:
+    - title: 疎開
+      url: https://ja.wikipedia.org/wiki/%E7%96%8E%E9%96%8B
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 閣議決定の原本。請求記号の特定は未了
+
+- id: hf-19441124-jp-life-b29
+  type: life
+  country: jp
+  date: 1944-11-24
+  headline_ja: マリアナ基地からの B-29 が東京を初空襲 ― 本土空襲が日常に
+  body_ja: |
+    サイパンなどマリアナ諸島の基地から発進した B-29 による
+    東京への本格的な空襲が始まった。以後、警報と防空壕への退避が
+    都市生活の日常になる。絶対国防圏が破られた結果が
+    国民生活に直接現れた局面。
+  license: pd
+  verified: false
+  sources:
+    - title: 東京大空襲
+      url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E7%A9%BA%E8%A5%B2
+    - title: Bombing of Tokyo
+      url: https://en.wikipedia.org/wiki/Bombing_of_Tokyo
+
+- id: hf-19450311-jp-life-tokyo-risai
+  type: life
+  country: jp
+  date: 1945-03-11
+  headline_ja: 東京大空襲の翌日 ― 下町が焼失し 100 万人規模が罹災
+  body_ja: |
+    3 月 10 日未明の空襲により下町一帯が焼失し、
+    100 万人規模が家を失った。大本営発表では被害の規模は伝えられていない。
+    以後、名古屋・大阪・神戸と主要都市への焼夷弾攻撃が続く。
+  license: pd
+  verified: false
+  sources:
+    - title: 東京大空襲
+      url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E7%A9%BA%E8%A5%B2
+    - title: Bombing of Tokyo (10 March 1945)
+      url: https://en.wikipedia.org/wiki/Bombing_of_Tokyo_(10_March_1945)
+
+- id: hf-19450815-jp-life-gyokuon
+  type: announcement
+  country: jp
+  date: 1945-08-15
+  headline_ja: 玉音放送 ― 終戦の詔書がラジオで読み上げられる
+  body_ja: |
+    正午、昭和天皇による終戦の詔書の録音がラジオで放送された。
+    「堪ヘ難キヲ堪ヘ」の一節で知られる。多くの国民にとって
+    敗戦を知る瞬間であり、大本営発表が伝えてきた戦況と
+    実態との落差が一挙に露わになった日でもある。
+  license: pd
+  verified: false
+  sources:
+    - title: 大東亞戰爭終結ノ詔書（原文・Wikisource）
+      url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9E%E6%88%B0%E7%88%AD%E7%B5%82%E7%B5%90%E3%83%8E%E8%A9%94%E6%9B%B8
+    - title: 玉音放送
+      url: https://ja.wikipedia.org/wiki/%E7%8E%89%E9%9F%B3%E6%94%BE%E9%80%81

@@ -1,0 +1,275 @@
+# 連合国（首脳会談 / 合同参謀本部 / 宣言）の司令部レイヤー。P0 は 10 件。
+#
+# 出典について: 連合国側は一次史料の機械可読性がいちばん高い。
+# FRUS（Foreign Relations of the United States）の会議巻が文書単位で公開されており、
+# 米政府著作物なのでパブリックドメイン。宣言類は Wikisource / Avalon Project に全文がある。
+# 要約は自前。全件 verified: false（原典の該当文書まで当てたら true にする）。
+
+- id: dec-19410814-atlantic-charter
+  type: declaration
+  name_ja: 大西洋憲章（大西洋会談）
+  name_en: Atlantic Charter (Atlantic Conference)
+  date: 1941-08-09
+  end: 1941-08-12
+  actors: [us, uk]
+  persons: [ローズヴェルト, チャーチル]
+  place: ニューファンドランド・プラセンティア湾（艦上）
+  summary_ja: |
+    アメリカ参戦前に行われた米英首脳の初会談で合意された共同宣言。
+    領土不拡大、民族自決、貿易の自由、恐怖と欠乏からの自由、
+    航海の自由、武力行使の放棄などの原則を掲げた。
+    のちの連合国共同宣言・国際連合憲章の原型になる。公表は 8 月 14 日。
+  decisions_ja:
+    - 領土拡大を求めない／住民の意思に反する領土変更を認めない
+    - すべての人民が自らの政体を選ぶ権利を認める
+    - 通商・原材料へのアクセスの平等を目指す
+    - ナチス専制の打倒後の平和構想を共同で示す
+  license: pd
+  verified: false
+  sources:
+    - title: Atlantic Charter（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Atlantic_Charter
+    - title: The Atlantic Charter（Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/atlantic.asp
+
+- id: dec-19411222-arcadia
+  type: conference
+  name_ja: アルカディア会談（第 1 次ワシントン会談）
+  name_en: Arcadia Conference (First Washington Conference)
+  date: 1941-12-22
+  end: 1942-01-14
+  actors: [us, uk]
+  persons: [ローズヴェルト, チャーチル, マーシャル, ダドリー・パウンド]
+  place: ワシントン D.C.
+  summary_ja: |
+    真珠湾攻撃の直後に開かれた米英首脳・軍事会談。日本と開戦したにもかかわらず
+    「ドイツ打倒を最優先する（Germany First）」という基本戦略を確認した。
+    米英の作戦を一元的に調整する合同参謀本部（Combined Chiefs of Staff）の
+    設置と、連合国共同宣言の起草もここで決まった。
+  decisions_ja:
+    - 対独戦を最優先する（Germany First）
+    - 合同参謀本部（CCS）を設置し米英の戦略を一元調整する
+    - 1942 年は北アフリカ・大西洋を重視し、大陸反攻は準備段階とする
+    - 連合国共同宣言を起草する
+  license: pd
+  verified: false
+  sources:
+    - title: FRUS — The Conferences at Washington, 1941–1942, and Casablanca, 1943
+      url: https://history.state.gov/historicaldocuments/frus1941-43
+    - title: Arcadia Conference
+      url: https://en.wikipedia.org/wiki/Arcadia_Conference
+
+- id: dec-19420101-united-nations-declaration
+  type: declaration
+  name_ja: 連合国共同宣言
+  name_en: Declaration by United Nations
+  date: 1942-01-01
+  end: null
+  actors: [us, uk, su, cn]
+  persons: [ローズヴェルト, チャーチル, リトヴィノフ, 宋子文]
+  place: ワシントン D.C.
+  summary_ja: |
+    26 か国が署名した共同宣言。大西洋憲章の原則を共有し、
+    枢軸国に対して全資源を投入して戦うこと、単独では休戦・講和しないことを
+    相互に約束した。「United Nations（連合国）」という呼称がここで定着し、
+    のちの国際連合の名称に引き継がれる。
+  decisions_ja:
+    - 大西洋憲章の目的と原則を共有する
+    - 全軍事・経済資源を枢軸国との戦争に投入する
+    - 敵国と単独で休戦・講和しない
+  license: pd
+  verified: false
+  sources:
+    - title: Declaration by United Nations（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Declaration_by_United_Nations
+    - title: FRUS — The Conferences at Washington, 1941–1942, and Casablanca, 1943
+      url: https://history.state.gov/historicaldocuments/frus1941-43
+
+- id: dec-19430114-casablanca
+  type: conference
+  name_ja: カサブランカ会談
+  name_en: Casablanca Conference
+  date: 1943-01-14
+  end: 1943-01-24
+  actors: [us, uk]
+  persons: [ローズヴェルト, チャーチル, マーシャル, アラン・ブルック]
+  place: モロッコ・カサブランカ
+  summary_ja: |
+    北アフリカ戦の帰趨が見えた段階で開かれた米英首脳会談。
+    枢軸国に「無条件降伏」を求める方針を公表し、1943 年の作戦としては
+    フランス本土上陸ではなくシチリア上陸（ハスキー作戦）を選んだ。
+    ドイツ本土に対する昼夜連続の戦略爆撃（Combined Bomber Offensive）も
+    ここで指令化された。
+  decisions_ja:
+    - 枢軸国に無条件降伏を求める（記者会見で公表）
+    - 1943 年の次の一手をシチリア上陸とする（大陸反攻は 1944 年へ）
+    - 米英による連合爆撃攻勢（Pointblank）を指令する
+    - 大西洋の U ボート対策を最優先課題とする
+  license: pd
+  verified: false
+  sources:
+    - title: FRUS — The Conferences at Washington, 1941–1942, and Casablanca, 1943
+      url: https://history.state.gov/historicaldocuments/frus1941-43
+    - title: Casablanca Conference
+      url: https://en.wikipedia.org/wiki/Casablanca_Conference
+
+- id: dec-19430512-trident
+  type: conference
+  name_ja: トライデント会談（第 3 次ワシントン会談）
+  name_en: Trident Conference (Third Washington Conference)
+  date: 1943-05-12
+  end: 1943-05-25
+  actors: [us, uk]
+  persons: [ローズヴェルト, チャーチル, マーシャル, アラン・ブルック]
+  place: ワシントン D.C.
+  summary_ja: |
+    北アフリカでの枢軸軍降伏（5 月 13 日）と前後して開かれた会談。
+    大陸反攻（のちのオーヴァーロード作戦）の目標を 1944 年 5 月 1 日と定め、
+    地中海方面ではシチリア後にイタリア本土を突く方向を確認した。
+    英側の地中海重視と米側の大陸反攻重視の折り合いをつけた会談。
+  decisions_ja:
+    - 大陸反攻の目標期日を 1944 年 5 月 1 日とする
+    - シチリア上陸後、イタリアを戦争から離脱させる方向で作戦を継続する
+    - ビルマ方面の作戦と対日反攻の枠組みを検討する
+  license: pd
+  verified: false
+  sources:
+    - title: FRUS — The Conferences at Washington and Quebec, 1943
+      url: https://history.state.gov/historicaldocuments/frus1943
+    - title: Washington Conference (1943)
+      url: https://en.wikipedia.org/wiki/Washington_Conference_(1943)
+
+- id: dec-19430817-quadrant
+  type: conference
+  name_ja: クアドラント会談（第 1 次ケベック会談）
+  name_en: Quadrant Conference (First Quebec Conference)
+  date: 1943-08-17
+  end: 1943-08-24
+  actors: [us, uk, ca]
+  persons: [ローズヴェルト, チャーチル, マッケンジー・キング]
+  place: カナダ・ケベック
+  summary_ja: |
+    シチリア攻略完了直後の米英会談。オーヴァーロード作戦を 1944 年の
+    最優先作戦として正式に承認し、東南アジア方面の指揮系統として
+    東南アジア司令部（SEAC）の設置を決めた。原子爆弾開発に関する
+    米英の協定（ケベック協定）もここで結ばれている。
+  decisions_ja:
+    - オーヴァーロード作戦を 1944 年の最優先作戦として承認する
+    - 東南アジア司令部（SEAC）を設置する
+    - 原子力研究における米英加の協力を定める（ケベック協定）
+    - イタリア本土への進攻を継続する
+  license: pd
+  verified: false
+  sources:
+    - title: FRUS — The Conferences at Washington and Quebec, 1943
+      url: https://history.state.gov/historicaldocuments/frus1943
+    - title: First Quebec Conference
+      url: https://en.wikipedia.org/wiki/First_Quebec_Conference
+
+- id: dec-19431122-cairo
+  type: conference
+  name_ja: カイロ会談（カイロ宣言）
+  name_en: Cairo Conference (Cairo Declaration)
+  date: 1943-11-22
+  end: 1943-11-26
+  actors: [us, uk, cn]
+  persons: [ローズヴェルト, チャーチル, 蒋介石]
+  place: エジプト・カイロ
+  summary_ja: |
+    米英中の首脳が対日戦の方針を協議した会談。共同発表（カイロ宣言）で
+    日本に無条件降伏を求め、第一次大戦以降に日本が獲得した太平洋の島々の
+    剥奪、満洲・台湾・澎湖の中国への返還、朝鮮の独立を掲げた。
+    のちのポツダム宣言はこの条項の履行を求める形をとる。
+  decisions_ja:
+    - 日本に対し無条件降伏を求める
+    - 日本が第一次大戦以降に獲得した太平洋諸島を剥奪する
+    - 満洲・台湾・澎湖諸島を中国に返還させる
+    - 朝鮮を独立させる
+  license: pd
+  verified: false
+  sources:
+    - title: Cairo Communiqué（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Cairo_Communiqu%C3%A9
+    - title: FRUS — The Conferences at Cairo and Tehran, 1943
+      url: https://history.state.gov/historicaldocuments/frus1943CairoTehran
+
+- id: dec-19431128-tehran
+  type: conference
+  name_ja: テヘラン会談
+  name_en: Tehran Conference
+  date: 1943-11-28
+  end: 1943-12-01
+  actors: [us, uk, su]
+  persons: [ローズヴェルト, チャーチル, スターリン]
+  place: イラン・テヘラン
+  summary_ja: |
+    米英ソ三国首脳の初の直接会談。スターリンの強い要求を受け、
+    オーヴァーロード作戦を 1944 年 5 月に実行することを確約し、
+    あわせて南フランス上陸（アンヴィル作戦）を行うこととした。
+    ソ連はドイツ降伏後に対日参戦する意向をここで初めて表明している。
+  decisions_ja:
+    - オーヴァーロード作戦を 1944 年 5 月に実行する
+    - あわせて南フランスへの上陸作戦を行う
+    - ソ連は東部戦線で呼応する攻勢を発起する
+    - ソ連はドイツ降伏後に対日参戦する意向を示す
+  license: pd
+  verified: false
+  sources:
+    - title: FRUS — The Conferences at Cairo and Tehran, 1943
+      url: https://history.state.gov/historicaldocuments/frus1943CairoTehran
+    - title: Tehran Conference
+      url: https://en.wikipedia.org/wiki/Tehran_Conference
+
+- id: dec-19450204-yalta
+  type: conference
+  name_ja: ヤルタ会談
+  name_en: Yalta Conference
+  date: 1945-02-04
+  end: 1945-02-11
+  actors: [us, uk, su]
+  persons: [ローズヴェルト, チャーチル, スターリン]
+  place: クリミア・ヤルタ
+  summary_ja: |
+    ドイツ敗戦が視野に入った段階の米英ソ首脳会談。ドイツの分割占領と
+    非武装化、解放ヨーロッパにおける自由選挙、国際連合の設立手続きを決めた。
+    秘密協定として、ソ連がドイツ降伏の 2〜3 か月後に対日参戦することと、
+    その代償（南樺太・千島の帰属など）が取り決められた。
+  decisions_ja:
+    - ドイツを米英ソ仏で分割占領し非武装化する
+    - 解放された諸国で自由選挙を行う（ヨーロッパ解放宣言）
+    - 国際連合の設立会議を 4 月にサンフランシスコで開く
+    - ソ連はドイツ降伏の 2〜3 か月後に対日参戦する（秘密協定）
+  license: pd
+  verified: false
+  sources:
+    - title: FRUS — The Conferences at Malta and Yalta, 1945
+      url: https://history.state.gov/historicaldocuments/frus1945Malta
+    - title: Yalta Conference
+      url: https://en.wikipedia.org/wiki/Yalta_Conference
+
+- id: dec-19450717-potsdam
+  type: conference
+  name_ja: ポツダム会談（ポツダム宣言）
+  name_en: Potsdam Conference (Potsdam Declaration)
+  date: 1945-07-17
+  end: 1945-08-02
+  actors: [us, uk, su]
+  persons: [トルーマン, チャーチル, アトリー, スターリン]
+  place: ドイツ・ポツダム
+  summary_ja: |
+    ドイツ降伏後の戦後処理と対日方針を決めた最後の三国首脳会談。
+    7 月 26 日、米英中の名で日本に無条件降伏を求めるポツダム宣言が発せられた
+    （ソ連はこの時点で対日中立のため署名せず、8 月 8 日の宣戦時に参加）。
+    会談中にトルーマンは原爆実験成功の報を受け取っている。
+  decisions_ja:
+    - 日本に対し降伏条件を示し、受諾しなければ「迅速かつ完全な壊滅」を警告する
+    - カイロ宣言の条項を履行させ、日本の主権を本土 4 島に限定する
+    - ドイツの非ナチ化・非軍事化・賠償の方針を定める
+    - ドイツの東部国境を暫定的にオーデル・ナイセ線とする
+  license: pd
+  verified: false
+  sources:
+    - title: Potsdam Declaration（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Potsdam_Declaration
+    - title: FRUS — The Conference of Berlin (Potsdam Conference), 1945, Vol. I
+      url: https://history.state.gov/historicaldocuments/frus1945Berlinv01

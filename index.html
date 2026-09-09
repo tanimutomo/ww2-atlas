@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>WW2 時系列世界地図</title>
+    <meta
+      name="description"
+      content="第二次世界大戦を、地図に出す「現場」と、年表に出す「司令部」「国内」の3層で同じ時間軸に並べて見る日本語の地図。"
+    />
+  </head>
+  <body>
+    <header id="topbar">
+      <div class="brand">
+        <strong>WW2 時系列世界地図</strong>
+        <span class="tag">P0</span>
+      </div>
+      <div id="counts" class="counts"></div>
+      <div id="legend" class="legend"></div>
+    </header>
+
+    <main id="stage">
+      <section id="map-pane">
+        <div id="map"></div>
+        <div id="map-overlay">
+          <div class="filters">
+            <div class="filters-title">戦域</div>
+            <div id="theatres" class="theatres"></div>
+          </div>
+          <p class="caveat">
+            支配領域は OpenHistoricalMap の時点境界（四半期キーフレーム・補間なし）。
+            <strong>ソ連領内の独軍占領地域と、日本占領下の中国は面が無いため塗り分けられていません。</strong>
+            前線ラインも P0 では未実装です。
+          </p>
+        </div>
+      </section>
+
+      <aside id="side">
+        <div id="tabs" class="tabs">
+          <button data-tab="command" class="on">司令部</button>
+          <button data-tab="home">国内</button>
+        </div>
+        <div id="list" class="list"></div>
+        <div id="detail" class="detail-wrap"></div>
+      </aside>
+    </main>
+
+    <footer id="timeline">
+      <div class="tl-row">
+        <button id="play" class="play">▶ 再生</button>
+        <div id="steps" class="steps"></div>
+        <div id="date-label" class="date-label"></div>
+        <div id="chapters" class="chapters"></div>
+      </div>
+      <div id="density" class="density"></div>
+      <input id="scrub" type="range" step="1" />
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

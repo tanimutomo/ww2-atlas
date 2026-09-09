@@ -1,0 +1,424 @@
+# 大本営発表（日本・公式発表）。P0 は 20 回。
+#
+# ⚠ ライセンス上の扱い: 大本営発表の原本は JACAR に収録された防衛研究所所蔵資料の画像で、
+#   本文の転載には申請が要る。したがってここには **日付・自前の要約・原本の所在** の
+#   3 点だけを置き、原文は転載しない（license: link-only）。
+#   headline_ja / body_ja はいずれも自前の要約であって、発表文の書き写しではない。
+#
+# 「発表と実態の差」は data/links.yaml の relation: reports + discrepancy 側に構造化して持つ。
+# ここには「何をどう発表したか」だけを書く。
+#
+# 全 846 回の YAML 化（JACAR 画像の OCR）は P1。P0 は転換点になった 20 回に絞る。
+
+- id: hf-19411208-daihonei-kaisen
+  type: announcement
+  country: jp
+  date: 1941-12-08
+  headline_ja: 開戦の発表 ― 帝国陸海軍は本日未明、西太平洋において米英軍と戦闘状態に入れり
+  body_ja: |
+    12 月 8 日午前 6 時、ラジオの臨時ニュースで読み上げられた最初の大本営発表。
+    西太平洋で米英軍と戦闘状態に入ったことだけを短く告げ、具体的な戦場や戦果には
+    触れていない。これ以降、戦争の経過は大本営発表を通じて国民に伝えられる。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19411208-daihonei-shinjuwan
+  type: announcement
+  country: jp
+  date: 1941-12-08
+  headline_ja: ハワイ空襲の戦果 ― 米太平洋艦隊の主力に甚大な損害を与えたと発表
+  body_ja: |
+    真珠湾攻撃の戦果として、米戦艦を主体とする艦隊に大きな損害を与えたと発表した。
+    戦艦の被害についてはおおむね実態に近い規模が伝えられた一方で、
+    攻撃時に米空母が真珠湾に不在で撃ち漏らしたこと ― この作戦の最大の取りこぼし ―
+    には触れていない。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Attack on Pearl Harbor
+      url: https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19411210-daihonei-malay-oki
+  type: announcement
+  country: jp
+  date: 1941-12-10
+  headline_ja: マレー沖海戦 ― 英戦艦プリンス・オブ・ウェールズと巡洋戦艦レパルスを撃沈と発表
+  body_ja: |
+    マレー半島東方沖で英東洋艦隊の主力 2 隻を航空攻撃により撃沈したと発表。
+    この発表内容は実際の戦果とほぼ一致しており、開戦初期の発表が
+    まだ実態に対応していたことを示す例になっている。
+    航行中の戦艦が航空機だけで沈められた最初の事例として世界的に衝撃を与えた。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Sinking of Prince of Wales and Repulse
+      url: https://en.wikipedia.org/wiki/Sinking_of_Prince_of_Wales_and_Repulse
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19420215-daihonei-singapore
+  type: announcement
+  country: jp
+  date: 1942-02-15
+  headline_ja: シンガポール陥落の発表
+  body_ja: |
+    英軍の東洋における最大の拠点シンガポールが陥落したことを発表。
+    開戦から約 70 日での攻略で、国内では提灯行列などの祝賀が行われた。
+    緒戦の連勝を象徴する発表で、内容は実態と一致している。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of Singapore
+      url: https://en.wikipedia.org/wiki/Battle_of_Singapore
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19420418-daihonei-doolittle
+  type: announcement
+  country: jp
+  date: 1942-04-18
+  headline_ja: 本土初空襲 ― 被害は軽微、敵機を撃墜したと発表
+  body_ja: |
+    米陸軍機による本土初空襲（ドーリットル空襲）について、被害は軽微であり
+    来襲した敵機のうち数機を撃墜したと発表した。実際には日本上空で
+    撃墜された機体はなく、爆撃を終えた機は大陸方面へ抜けている。
+    この空襲が本土防衛の穴を露呈させ、ミッドウェー攻略（MI 作戦）を後押しした。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Doolittle Raid
+      url: https://en.wikipedia.org/wiki/Doolittle_Raid
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19420508-daihonei-coral-sea
+  type: announcement
+  country: jp
+  date: 1942-05-08
+  headline_ja: 珊瑚海海戦 ― 米空母 2 隻撃沈と発表
+  body_ja: |
+    珊瑚海での機動部隊同士の海戦について、米空母 2 隻を撃沈したと発表した。
+    実際に沈んだ米空母は 1 隻（レキシントン）で、もう 1 隻（ヨークタウン）は
+    損傷にとどまり修理されてミッドウェーに間に合っている。
+    日本側も小型空母 1 隻を失い、大型空母 2 隻が次の作戦に参加できなくなった。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of the Coral Sea
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+# ★ P0 の芯。「発表 vs 実態」が 1 本通ることを確認する対象
+- id: hf-19420610-daihonei-midway
+  type: announcement
+  country: jp
+  date: 1942-06-10
+  headline_ja: ミッドウェー海戦 ― 敵空母 2 隻撃沈、わが方の空母喪失は 1 隻と発表
+  body_ja: |
+    ミッドウェー海戦の結果として、米空母 2 隻を撃沈し、日本側の損害は
+    空母 1 隻喪失・1 隻大破にとどまると発表した。実際には主力空母 4 隻すべてを
+    失っており、発表は自軍の損害を大幅に小さく伝えている。
+    生還した乗員は隔離され、敗北は陸軍にも十分に共有されなかった。
+    発表と実態の乖離が決定的に広がった最初の転換点とされる。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: ミッドウェー海戦
+      url: https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%83%E3%83%89%E3%82%A6%E3%82%A7%E3%83%BC%E6%B5%B7%E6%88%A6
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19420826-daihonei-guadalcanal
+  type: announcement
+  country: jp
+  date: 1942-08-26
+  headline_ja: ソロモン方面の戦況 ― ガダルカナル島の敵上陸部隊を撃退中と発表
+  body_ja: |
+    8 月 7 日の米軍ガダルカナル島上陸に対し、日本軍が反撃して
+    優勢に戦っているとする戦況発表。実際にはこの時点で一木支隊が壊滅しており、
+    以後半年にわたり兵力の逐次投入と補給途絶による餓死者を出す消耗戦になる。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: ガダルカナル島の戦い
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%80%E3%83%AB%E3%82%AB%E3%83%8A%E3%83%AB%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19421027-daihonei-south-pacific
+  type: announcement
+  country: jp
+  date: 1942-10-27
+  headline_ja: 南太平洋海戦 ― 米空母複数隻を撃沈し敵艦隊を撃滅と発表
+  body_ja: |
+    南太平洋海戦（サンタクルーズ沖海戦）で米空母を複数撃沈したと発表。
+    実際に沈んだ米空母は 1 隻（ホーネット）で、他は損傷にとどまる。
+    日本側は艦載機と搭乗員に大きな損害を出し、機動部隊の戦力回復が
+    以後困難になった点は伝えられていない。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of the Santa Cruz Islands
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Santa_Cruz_Islands
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+# ★ 「後退」を初めて言い換えた発表
+- id: hf-19430209-daihonei-tenshin
+  type: announcement
+  country: jp
+  date: 1943-02-09
+  headline_ja: ガダルカナル島「転進」の発表 ― 所期の目的を達成し他方面へ転進と発表
+  body_ja: |
+    ガダルカナル島からの撤退を「転進」と表現して発表した。
+    実際には奪回を断念した撤退で、島に投入された兵力の多くが
+    戦死・戦病死・餓死している。以後、大本営発表では後退や敗北を
+    「転進」「玉砕」といった語に置き換える言い換えが常態化していく。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: ガダルカナル島の戦い
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%80%E3%83%AB%E3%82%AB%E3%83%8A%E3%83%AB%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19430530-daihonei-attu
+  type: announcement
+  country: jp
+  date: 1943-05-30
+  headline_ja: アッツ島守備隊「玉砕」の発表 ― 全員が最後の攻撃を敢行したと発表
+  body_ja: |
+    アリューシャン列島アッツ島の守備隊が全滅したことを「玉砕」と表現して発表した。
+    全滅を美化する語として「玉砕」が公式に用いられた最初の例とされ、
+    以後サイパン・硫黄島などの守備隊全滅にも繰り返し使われる。
+    救援も撤退も行われなかったこと自体は発表されていない。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of Attu
+      url: https://en.wikipedia.org/wiki/Battle_of_Attu
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19440624-daihonei-marianas
+  type: announcement
+  country: jp
+  date: 1944-06-24
+  headline_ja: マリアナ沖海戦 ― 敵機動部隊に大打撃を与えたと発表
+  body_ja: |
+    マリアナ沖海戦（あ号作戦）について、米機動部隊に大きな損害を与えたと発表した。
+    実際には日本側が空母 3 隻を失い、艦載機と搭乗員をほぼ失って
+    機動部隊は航空戦力としての実体を失っている。米側の損害は軽微だった。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of the Philippine Sea
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19440718-daihonei-saipan
+  type: announcement
+  country: jp
+  date: 1944-07-18
+  headline_ja: サイパン島守備隊玉砕の発表
+  body_ja: |
+    サイパン島の守備隊が全滅したことを発表。絶対国防圏の一角が破られ、
+    本土が B-29 の行動圏に入ったことを意味する。この発表の当日、
+    東條内閣は総辞職した。多数の民間人が犠牲になったことは
+    発表では詳しく触れられていない。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of Saipan
+      url: https://en.wikipedia.org/wiki/Battle_of_Saipan
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+# ★★ 発表と実態の乖離が最大になった例。しかも次の作戦判断を誤らせた
+- id: hf-19441019-daihonei-taiwan-oki
+  type: announcement
+  country: jp
+  date: 1944-10-19
+  headline_ja: 台湾沖航空戦 ― 敵空母十数隻を撃沈破し機動部隊を壊滅させたと発表
+  body_ja: |
+    台湾沖の航空戦で米機動部隊に壊滅的打撃を与え、空母多数を撃沈したと発表した。
+    実際には米艦の沈没はなく、巡洋艦 2 隻が損傷したにとどまる。
+    搭乗員の過大な戦果報告が精査されないまま発表された。
+    この「戦果」を前提に日本側はレイテ決戦の方針を固めており、
+    誤った発表が作戦判断そのものを誤らせた事例として知られる。
+  license: link-only
+  verified: false
+  sources:
+    - title: 台湾沖航空戦
+      url: https://ja.wikipedia.org/wiki/%E5%8F%B0%E6%B9%BE%E6%B2%96%E8%88%AA%E7%A9%BA%E6%88%A6
+    - title: Formosa Air Battle
+      url: https://en.wikipedia.org/wiki/Formosa_Air_Battle
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19441027-daihonei-leyte
+  type: announcement
+  country: jp
+  date: 1944-10-27
+  headline_ja: レイテ沖海戦 ― 敵艦隊に大打撃を与えたと発表
+  body_ja: |
+    レイテ沖海戦について大きな戦果を挙げたと発表した。
+    実際にはこの海戦で連合艦隊は戦艦武蔵をはじめ多数の艦艇を失い、
+    組織的な艦隊戦力を事実上喪失している。フィリピンの制海権も失われた。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of Leyte Gulf
+      url: https://en.wikipedia.org/wiki/Battle_of_Leyte_Gulf
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19441029-daihonei-kamikaze
+  type: announcement
+  country: jp
+  date: 1944-10-29
+  headline_ja: 神風特別攻撃隊の戦果を発表
+  body_ja: |
+    フィリピン方面で編成された神風特別攻撃隊による体当たり攻撃と
+    その戦果を公表した。以後、特攻は戦意高揚のための報道の柱になる。
+    戦果は繰り返し過大に伝えられ、消耗の実態は公表されなかった。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Kamikaze
+      url: https://en.wikipedia.org/wiki/Kamikaze
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19450310-daihonei-tokyo-raid
+  type: announcement
+  country: jp
+  date: 1945-03-10
+  headline_ja: 東京空襲 ― 市街地に相当の被害、敵機を撃墜と発表
+  body_ja: |
+    3 月 10 日未明の東京大空襲について、市街地に被害が出たことと
+    敵機を撃墜したことを発表した。実際には一夜で約 10 万人が死亡し、
+    下町のほぼ全域が焼失している。被害の規模は発表では伝えられていない。
+  license: link-only
+  verified: false
+  sources:
+    - title: 東京大空襲
+      url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E7%A9%BA%E8%A5%B2
+    - title: Bombing of Tokyo
+      url: https://en.wikipedia.org/wiki/Bombing_of_Tokyo
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19450407-daihonei-yamato
+  type: announcement
+  country: jp
+  date: 1945-04-07
+  headline_ja: 沖縄方面の海上特攻 ― 戦艦大和の喪失は公表されず
+  body_ja: |
+    沖縄への海上特攻で戦艦大和以下が撃沈されたが、その事実は
+    ただちには公表されなかった。海軍の象徴的存在の喪失は
+    国民に伏せられ、沖縄戦の戦況発表も実態より楽観的に伝えられている。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Operation Ten-Go
+      url: https://en.wikipedia.org/wiki/Operation_Ten-Go
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19450623-daihonei-okinawa
+  type: announcement
+  country: jp
+  date: 1945-06-25
+  headline_ja: 沖縄守備軍の組織的戦闘終結を発表
+  body_ja: |
+    沖縄の守備軍による組織的戦闘が終わったことを発表した。
+    住民を巻き込んだ地上戦で県民の多くが犠牲になったが、
+    その実態は発表されていない。本土決戦準備がこれ以降前面に出る。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: Battle of Okinawa
+      url: https://en.wikipedia.org/wiki/Battle_of_Okinawa
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ
+
+- id: hf-19450807-daihonei-hiroshima
+  type: announcement
+  country: jp
+  date: 1945-08-07
+  headline_ja: 広島「新型爆弾」による攻撃 ― 相当の被害と発表
+  body_ja: |
+    8 月 6 日の広島への攻撃について、敵が「新型爆弾」を使用し
+    相当の被害が出たと発表した。原子爆弾であることや被害の規模は
+    このときには示されていない。8 月 9 日には長崎にも投下される。
+  license: link-only
+  verified: false
+  sources:
+    - title: 大本営発表
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9C%AC%E5%96%B6%E7%99%BA%E8%A1%A8
+    - title: atomic bombing of Hiroshima
+      url: https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所所蔵。本文は転載せずリンクのみ

@@ -1,0 +1,282 @@
+# 日本（御前会議 / 大本営政府連絡会議 / 大陸命・大海令）の司令部レイヤー。P0 は 10 件。
+#
+# 出典について: 大陸命・大海令の原本は JACAR（アジア歴史資料センター）の画像で、
+# 防衛研究所分は本文の転載に申請が要る。したがってここには **命令番号・日付・自前要約・
+# 原本の所在** だけを置き、本文は転載しない（license: link-only）。
+# 御前会議の決定文書（帝国国策遂行要領など）は国立公文書館／JACAR に公文書として
+# 収録されており、要旨は自前で書いている。
+#
+# ⚠ 大陸命・大海令の「番号」は二次文献で広く引かれている値を採ったもので、
+#   原本での突き合わせは未了（全件 verified: false）。P1 で JACAR 原本に当てる。
+
+- id: dec-19400927-sangoku-domei
+  type: treaty
+  name_ja: 日独伊三国同盟条約
+  name_en: Tripartite Pact
+  date: 1940-09-27
+  end: null
+  actors: [jp, de, it]
+  persons: [松岡洋右, リッベントロップ, チアノ]
+  place: ベルリン
+  summary_ja: |
+    日本・ドイツ・イタリアが相互援助を約した条約。締約国のいずれかが
+    「現に欧州戦争または日中紛争に参入していない国」から攻撃された場合に
+    互いに援助すると定め、事実上アメリカを牽制する形をとった。
+    日本の南方進出と対米関係悪化の枠組みを決めた条約で、以後の国策決定の前提になる。
+  decisions_ja:
+    - 欧州における独伊、大東亜における日本の「指導的地位」を相互に承認する
+    - 締約国が第三国から攻撃された場合、相互に援助する
+    - ソ連との既存の関係には影響しないと明記する
+  license: pd
+  verified: false
+  sources:
+    - title: Tripartite Pact（条文・Wikisource ほか）
+      url: https://en.wikipedia.org/wiki/Tripartite_Pact
+    - title: 国立公文書館デジタルアーカイブ
+      url: https://www.digital.archives.go.jp/
+      note: 条約書原本の所在。請求記号の特定は未了
+
+- id: dec-19410702-josei-no-suii
+  type: imperial_conference
+  name_ja: 御前会議「情勢ノ推移ニ伴フ帝国国策要綱」
+  name_en: Imperial Conference — Outline of National Policies in View of the Changing Situation
+  date: 1941-07-02
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 近衛文麿, 松岡洋右, 杉山元, 永野修身]
+  place: 東京・宮中
+  summary_ja: |
+    独ソ開戦（6 月 22 日）を受けて日本の方針を決めた御前会議。南方進出を進める
+    一方で、対ソ戦の準備も並行して整えるという二本立ての方針を採った。
+    南部仏印進駐がこの決定に基づいて実行され、アメリカの対日資産凍結・
+    石油禁輸を招く直接の引き金になる。
+  decisions_ja:
+    - 南方進出の歩を進め、対英米戦の準備を整える
+    - 独ソ戦の推移が有利になれば武力による北方問題解決も行う（関特演）
+    - 目的達成のため対英米戦を「避けない」
+  license: pd
+  verified: false
+  sources:
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19410906-teikoku-kokusaku-suikou
+  type: imperial_conference
+  name_ja: 御前会議「帝国国策遂行要領」（対米交渉の期限を切る）
+  name_en: Imperial Conference — Guidelines for Implementing National Policy
+  date: 1941-09-06
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 近衛文麿, 杉山元, 永野修身]
+  place: 東京・宮中
+  summary_ja: |
+    対米英蘭戦の準備を 10 月下旬を目途に完成させ、並行して外交交渉を続けるが、
+    10 月上旬までに要求が通る見込みがなければ開戦を決意する、と定めた御前会議。
+    「外交と戦争準備の並行」に初めて期限が入った決定で、以後の日程を規定した。
+    天皇が統帥部に見通しを問い、永野・杉山が答えた場面が知られる。
+  decisions_ja:
+    - 対米英蘭戦争の準備を 10 月下旬を目途に完成する
+    - 並行して対米交渉を継続する
+    - 10 月上旬までに要求貫徹の見込みがなければ開戦を決意する
+  license: pd
+  verified: false
+  sources:
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19411105-kokusaku-suikou-yoryo
+  type: imperial_conference
+  name_ja: 御前会議「帝国国策遂行要領」（12 月初頭開戦を決定）
+  name_en: Imperial Conference — Revised Guidelines (decision for war in early December)
+  date: 1941-11-05
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 東條英機, 東郷茂徳, 杉山元, 永野修身]
+  place: 東京・宮中
+  summary_ja: |
+    東條内閣のもとで対米英蘭開戦を「12 月初頭」と定めた御前会議。
+    甲案・乙案の 2 つの交渉案を用意し、12 月 1 日午前 0 時までに交渉が
+    成立すれば武力発動を中止するという条件を付けた。同日、大海令第 1 号により
+    連合艦隊に作戦準備が命じられ、軍事日程が動き出す。
+  decisions_ja:
+    - 武力発動の時期を 12 月初頭と定める
+    - 対米交渉案として甲案・乙案を用意する
+    - 12 月 1 日 0 時までに交渉成立すれば武力発動を中止する
+    - 大海令第 1 号で連合艦隊に作戦準備を命じる（同日）
+  license: link-only
+  verified: false
+  sources:
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 大海令第 1 号の原本は防衛研究所分。本文は転載せずリンクのみ
+
+# ★ P0 の芯（日本側）。ここから真珠湾・マレーへ authorizes が伸びる
+- id: dec-19411201-gozen-kaigi-kaisen
+  type: imperial_conference
+  name_ja: 御前会議（対米英蘭開戦の最終決定）
+  name_en: Imperial Conference — final decision for war against the US, Britain and the Netherlands
+  date: 1941-12-01
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 東條英機, 東郷茂徳, 杉山元, 永野修身]
+  place: 東京・宮中
+  summary_ja: |
+    ハル・ノート（11 月 26 日）を受け、対米交渉の成立見込みが無くなったとして
+    対米英蘭開戦を最終決定した御前会議。11 月 5 日の決定に付けられていた
+    「12 月 1 日 0 時までに交渉成立なら中止」の条件が外れ、12 月 8 日の開戦が
+    確定した。翌 2 日、機動部隊に「ニイタカヤマノボレ一二〇八」が発信される。
+  decisions_ja:
+    - 対米英蘭に対し開戦する
+    - 交渉打ち切りを決定する（ハル・ノートを最後通牒と判断）
+    - 開戦日を 12 月 8 日とする
+  license: pd
+  verified: false
+  sources:
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+    - title: Attack on Pearl Harbor
+      url: https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19411201-dairikumei-569
+  type: order
+  name_ja: 大陸命第 569 号（南方作戦の発動）
+  name_en: Imperial General Headquarters Army Order No. 569 (Southern Operations)
+  date: 1941-12-01
+  end: null
+  actors: [jp]
+  persons: [杉山元, 寺内寿一]
+  place: 東京・大本営
+  summary_ja: |
+    南方軍に対しマレー・フィリピン・蘭印方面の作戦を発動させた大本営陸軍部命令。
+    12 月 8 日の開戦日と合わせ、マレー上陸・香港攻略・フィリピン進攻を同時に
+    起動させる根拠になった。番号・日付は二次文献による（原本突き合わせは未了）。
+  decisions_ja:
+    - 南方軍に対し南方作戦の実行を命じる
+    - 作戦開始を 12 月 8 日とする
+    - マレー・フィリピン・蘭印・香港を作戦地域とする
+  license: link-only
+  verified: false
+  sources:
+    - title: 大陸命（大本営陸軍部命令）
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%99%B8%E5%91%BD
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所分。本文は転載せずリンクのみ。命令番号は要確認
+
+# ★ P0 の芯（ミッドウェー側）。大本営発表 1942-06-10 の discrepancy と対になる
+- id: dec-19420505-daikairei-18
+  type: order
+  name_ja: 大海令第 18 号（MI 作戦＝ミッドウェー攻略、AL 作戦＝アリューシャン）
+  name_en: Imperial General Headquarters Navy Order No. 18 (Operation MI / AL)
+  date: 1942-05-05
+  end: null
+  actors: [jp]
+  persons: [永野修身, 山本五十六]
+  place: 東京・大本営
+  summary_ja: |
+    連合艦隊司令長官に対しミッドウェー島およびアリューシャン西部要地の攻略を
+    命じた大本営海軍部命令。ドーリットル空襲（4 月 18 日）で本土空襲の脅威が
+    現実化したことが、東方の哨戒線を押し出すこの作戦を後押しした。
+    実行は 6 月 5〜7 日（日本時間）のミッドウェー海戦となり、空母 4 隻を失う。
+  decisions_ja:
+    - 連合艦隊にミッドウェー島の攻略を命じる（MI 作戦）
+    - あわせてアリューシャン西部要地を攻略する（AL 作戦）
+    - 米機動部隊の誘出撃滅を作戦目的に含める
+  license: link-only
+  verified: false
+  sources:
+    - title: ミッドウェー海戦
+      url: https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%83%E3%83%89%E3%82%A6%E3%82%A7%E3%83%BC%E6%B5%B7%E6%88%A6
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 原本は防衛研究所分。本文は転載せずリンクのみ。命令番号は要確認
+
+- id: dec-19421231-gozen-kaigi-guadalcanal
+  type: imperial_conference
+  name_ja: 御前会議（ガダルカナル島撤退の決定）
+  name_en: Imperial Conference — decision to withdraw from Guadalcanal
+  date: 1942-12-31
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 東條英機, 杉山元, 永野修身]
+  place: 東京・宮中
+  summary_ja: |
+    半年に及ぶ消耗戦を経てガダルカナル島の放棄を決定した御前会議。
+    以後、ソロモン方面の防衛線をニュージョージア以北に下げる方針となった。
+    撤退作戦（ケ号作戦）は 1943 年 2 月上旬に実行され、大本営はこれを
+    「転進」と発表する ― 後退を初めて言い換えた発表として知られる。
+  decisions_ja:
+    - ガダルカナル島の奪回作戦を中止し撤退する
+    - ソロモン方面の防衛線をニュージョージア以北に後退させる
+    - ニューギニア方面の作戦を重点化する
+  license: pd
+  verified: false
+  sources:
+    - title: ガダルカナル島の戦い
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%80%E3%83%AB%E3%82%AB%E3%83%8A%E3%83%AB%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+    - title: 御前会議（一覧・経緯）
+      url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
+
+- id: dec-19430930-zettai-kokubouken
+  type: imperial_conference
+  name_ja: 御前会議「今後採ルベキ戦争指導ノ大綱」（絶対国防圏の設定）
+  name_en: Imperial Conference — Absolute National Defence Sphere
+  date: 1943-09-30
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 東條英機, 杉山元, 永野修身]
+  place: 東京・宮中
+  summary_ja: |
+    守りきるべき最終防衛線として「絶対国防圏」（千島・小笠原・内南洋（マリアナ・
+    カロリン）・西部ニューギニア・スンダ・ビルマ）を定めた御前会議。
+    それまで確保するとしていた外周の要地を実質的に切り捨てる決定で、
+    翌年サイパンが陥落してこの線が破られると、東條内閣は総辞職に至る。
+  decisions_ja:
+    - 千島・小笠原・内南洋・西部ニューギニア・スンダ・ビルマを絶対国防圏とする
+    - 圏外の要地は戦力を消耗させない範囲で持久する
+    - 1944 年中期までに圏内の防備と航空戦力を整備する
+  license: pd
+  verified: false
+  sources:
+    - title: 絶対国防圏
+      url: https://ja.wikipedia.org/wiki/%E7%B5%B6%E5%AF%BE%E5%9B%BD%E9%98%B2%E5%9C%8F
+    - title: JACAR（アジア歴史資料センター）
+      url: https://www.jacar.archives.go.jp/
+      note: 決定文書の原本画像。レファレンスコードの特定は未了
+
+- id: dec-19450814-gozen-kaigi-shusen
+  type: imperial_conference
+  name_ja: 御前会議（ポツダム宣言受諾の決定＝聖断）
+  name_en: Imperial Conference — decision to accept the Potsdam Declaration
+  date: 1945-08-14
+  end: null
+  actors: [jp]
+  persons: [昭和天皇, 鈴木貫太郎, 東郷茂徳, 阿南惟幾, 梅津美治郎]
+  place: 東京・宮中（御文庫附属室）
+  summary_ja: |
+    広島・長崎への原爆投下とソ連の対日参戦を受け、ポツダム宣言の受諾を
+    最終決定した御前会議。8 月 9〜10 日の会議では国体護持の条件をめぐり
+    3 対 3 で割れ、天皇の裁断（聖断）で受諾に傾いた。14 日の会議で
+    受諾が確定し、翌 15 日に終戦の詔書が放送される。
+  decisions_ja:
+    - ポツダム宣言を受諾する
+    - 国体護持（天皇の地位）について連合国の回答を受け入れる
+    - 終戦の詔書を発し、放送により国民に伝える
+  license: pd
+  verified: false
+  sources:
+    - title: 大東亞戰爭終結ノ詔書（原文・Wikisource）
+      url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9E%E6%88%B0%E7%88%AD%E7%B5%82%E7%B5%90%E3%83%8E%E8%A9%94%E6%9B%B8
+    - title: 日本の降伏
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F

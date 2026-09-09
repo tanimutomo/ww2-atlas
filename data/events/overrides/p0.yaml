@@ -1,0 +1,493 @@
+# Wikidata 由来の値に対する手当て。ここに書いた項目だけが raw を上書きする。
+#
+# 書く理由は主に 3 つ:
+#   ① 座標が無い「作戦・戦役」に代表点を与える（無いと地図に出ない）
+#   ② 機械推定（type / theatre / significance）が外れているものを直す
+#   ③ P0 の芯になるイベントに自前の要約を付ける
+#
+# ここで手当てしていないイベントは、build-data.mjs の推定値がそのまま入り、
+# 画面には「機械推定（人手未確認）」と表示される。
+#
+# significance: 3 は「地図でいちばん大きく出す」の意味。手で付けたときだけ 3 になる。
+# 全件 verified: false（要約は自前だが原典確認は未了）。
+
+# ══════════════ ① 座標を持たない作戦・戦役に代表点を与える
+# 代表点は「その作戦を 1 点で置くならどこか」であって、戦域の重心ではない。
+
+- id: Q83055
+  name_ja: バルバロッサ作戦
+  type: invasion
+  theatre: europe_east
+  coord: [27.5, 53.9] # 中央軍集団の主攻正面（ミンスク方面）を代表点にする
+  significance: 3
+  outcome: inconclusive
+  actors: [de, su, ro, fi, hu, it]
+  summary_ja: |
+    ドイツを中心とする枢軸軍によるソ連侵攻。総統指令第 21 号（1940 年 12 月 18 日）に
+    基づき 1941 年 6 月 22 日に開始された。国境付近でソ連軍を包囲・撃滅しながら進んだが、
+    アルハンゲリスク〜ヴォルガ線という当初目標には届かず、冬までにモスクワ前面で停止する。
+    以後、独ソ戦は 4 年近く続く消耗戦になった。
+  verified: false
+  sources:
+    - title: Wikidata Q83055
+      url: https://www.wikidata.org/wiki/Q83055
+      note: CC0
+    - title: Führer Directive 21（英訳全文・Wikisource）
+      url: https://en.wikisource.org/wiki/F%C3%BChrer_Directive_21
+
+- id: Q150812
+  name_ja: ポーランド侵攻
+  type: invasion
+  theatre: europe_east
+  coord: [19.0, 52.2]
+  significance: 3
+  outcome: axis_victory
+  actors: [de, su, pl]
+  summary_ja: |
+    ドイツによる 9 月 1 日の侵攻と、9 月 17 日のソ連による東部侵攻。
+    英仏は 9 月 3 日に対独宣戦し、欧州での大戦が始まった。
+    10 月上旬までにポーランドは独ソに分割占領される。
+  verified: false
+  sources:
+    - title: Wikidata Q150812
+      url: https://www.wikidata.org/wiki/Q150812
+      note: CC0
+
+- id: Q151340
+  name_ja: フランス侵攻（西方電撃戦）
+  type: invasion
+  theatre: europe_west
+  coord: [4.9, 49.8] # アルデンヌ突破の正面（セダン付近）
+  significance: 3
+  outcome: axis_victory
+  actors: [de, fr, uk, be, nl]
+  summary_ja: |
+    ドイツによる低地諸国とフランスへの侵攻。アルデンヌを突破して英仏海峡へ抜ける
+    機動により連合軍主力を分断し、6 週間でフランスを降伏させた。
+    英遠征軍はダンケルクから撤退し、以後フランスは北部の占領地区と
+    ヴィシー政権の管轄に分かれる。
+  verified: false
+  sources:
+    - title: Wikidata Q151340
+      url: https://www.wikidata.org/wiki/Q151340
+      note: CC0
+
+- id: Q697842
+  name_ja: ユーゴスラビア侵攻
+  type: invasion
+  theatre: mediterranean
+  coord: [20.46, 44.8]
+  significance: 2
+  outcome: axis_victory
+  actors: [de, it, hu, yu]
+  verified: false
+  sources:
+    - title: Wikidata Q697842
+      url: https://www.wikidata.org/wiki/Q697842
+      note: CC0
+
+- id: Q696664
+  name_ja: マレー作戦
+  type: invasion
+  theatre: pacific
+  coord: [102.2, 6.1] # コタバル上陸地点
+  significance: 3
+  outcome: axis_victory
+  actors: [jp, uk, au]
+  summary_ja: |
+    真珠湾攻撃とほぼ同時に始まった、マレー半島への上陸と南下。
+    自転車を活用した迅速な進撃で 70 日ほどでシンガポールに到達し、
+    英軍の東洋における拠点を奪った。
+  verified: false
+  sources:
+    - title: Wikidata Q696664
+      url: https://www.wikidata.org/wiki/Q696664
+      note: CC0
+
+- id: Q5470224
+  name_ja: 台湾沖航空戦
+  type: air_raid
+  theatre: pacific
+  coord: [122.5, 23.5]
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us]
+  summary_ja: |
+    台湾・南西諸島周辺での日米の航空戦。日本側は米機動部隊を壊滅させたと発表したが、
+    実際には米艦の沈没は無かった。この誤った戦果認識のままレイテ決戦が決められており、
+    「発表の誤りが作戦判断そのものを誤らせた」例として知られる。
+  verified: false
+  sources:
+    - title: Wikidata Q5470224
+      url: https://www.wikidata.org/wiki/Q5470224
+      note: CC0
+    - title: 台湾沖航空戦
+      url: https://ja.wikipedia.org/wiki/%E5%8F%B0%E6%B9%BE%E6%B2%96%E8%88%AA%E7%A9%BA%E6%88%A6
+
+# raw（Wikidata の取得結果）に入ってこないので、全項目を手で与える
+- id: Q6540361
+  name_ja: 日本の降伏
+  name_en: Surrender of Japan
+  type: surrender
+  theatre: pacific
+  start: 1945-09-02
+  end: 1945-09-02
+  coord: [139.77, 35.36] # 東京湾・戦艦ミズーリ艦上
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us, uk, su, cn]
+  summary_ja: |
+    東京湾上の戦艦ミズーリで降伏文書が調印され、第二次世界大戦が終結した。
+    8 月 14 日の御前会議によるポツダム宣言受諾、15 日の玉音放送を経ての調印。
+  wikipedia_ja: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F
+  verified: false
+  sources:
+    - title: Wikidata Q6540361
+      url: https://www.wikidata.org/wiki/Q6540361
+      note: CC0
+    - title: 日本の降伏
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F
+
+# ══════════════ ② P0 の芯になるイベント（要約と重要度を手で付ける）
+
+- id: Q173034
+  type: naval
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us]
+  summary_ja: |
+    ミッドウェー島の攻略と米機動部隊の撃滅を狙った MI 作戦の結果起きた海戦。
+    日本側は主力空母 4 隻を失い、以後の攻勢能力を大きく損なった。
+    大本営はこの損害を「空母 1 隻喪失」と発表しており、発表と実態の乖離が
+    決定的に広がった転換点とされる。
+  verified: false
+  sources:
+    - title: Wikidata Q173034
+      url: https://www.wikidata.org/wiki/Q173034
+      note: CC0
+    - title: ミッドウェー海戦
+      url: https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%83%E3%83%89%E3%82%A6%E3%82%A7%E3%83%BC%E6%B5%B7%E6%88%A6
+
+- id: Q52418
+  type: naval
+  theatre: pacific
+  significance: 3
+  outcome: axis_victory
+  actors: [jp, us]
+  summary_ja: |
+    ハワイ・真珠湾の米太平洋艦隊に対する空母機動部隊による奇襲攻撃。
+    戦艦部隊に大きな損害を与えたが、主目標だった米空母は湾内におらず、
+    燃料タンクや工廠も攻撃されなかった。アメリカの参戦を決定づけた。
+  verified: false
+  sources:
+    - title: Wikidata Q52418
+      url: https://www.wikidata.org/wiki/Q52418
+      note: CC0
+
+- id: Q38789
+  type: siege
+  theatre: europe_east
+  significance: 3
+  outcome: allied_victory
+  actors: [de, su, ro, hu, it]
+  verified: false
+  sources:
+    - title: Wikidata Q38789
+      url: https://www.wikidata.org/wiki/Q38789
+      note: CC0
+
+- id: Q8641370
+  type: landing
+  theatre: europe_west
+  significance: 3
+  outcome: allied_victory
+  actors: [us, uk, ca, de, fr]
+  summary_ja: |
+    ノルマンディーへの上陸から北フランス解放までの一連の作戦。
+    テヘラン会談での確約に基づき 1944 年 6 月 6 日に開始された。
+    西部に第二戦線が生まれ、ドイツは東西両面での消耗を強いられる。
+  verified: false
+  sources:
+    - title: Wikidata Q8641370
+      url: https://www.wikidata.org/wiki/Q8641370
+      note: CC0
+
+- id: Q154720
+  type: air_raid
+  theatre: europe_west
+  significance: 3
+  outcome: allied_victory
+  actors: [de, uk]
+  verified: false
+  sources:
+    - title: Wikidata Q154720
+      url: https://www.wikidata.org/wiki/Q154720
+      note: CC0
+
+- id: Q217145
+  type: battle
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us, au]
+  verified: false
+  sources:
+    - title: Wikidata Q217145
+      url: https://www.wikidata.org/wiki/Q217145
+      note: CC0
+
+- id: Q130861
+  type: battle
+  theatre: europe_east
+  significance: 3
+  outcome: allied_victory
+  actors: [de, su]
+  verified: false
+  sources:
+    - title: Wikidata Q130861
+      url: https://www.wikidata.org/wiki/Q130861
+      note: CC0
+
+- id: Q703203
+  type: air_raid
+  theatre: pacific
+  significance: 3
+  actors: [jp, us]
+  summary_ja: |
+    広島への原子爆弾投下。市街が壊滅し、その年の末までに十数万人が死亡したとされる。
+    日本側の発表は「新型爆弾により相当の被害」にとどまり、
+    米側は同日に原子爆弾であることを公表している。
+  verified: false
+  sources:
+    - title: Wikidata Q703203
+      url: https://www.wikidata.org/wiki/Q703203
+      note: CC0
+
+- id: Q192660
+  type: battle
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us, uk]
+  verified: false
+  sources:
+    - title: Wikidata Q192660
+      url: https://www.wikidata.org/wiki/Q192660
+      note: CC0
+
+- id: Q6165880
+  type: invasion
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, su]
+  verified: false
+  sources:
+    - title: Wikidata Q6165880
+      url: https://www.wikidata.org/wiki/Q6165880
+      note: CC0
+
+- id: Q59886
+  name_ja: ドーリットル空襲（東京初空襲）
+  type: air_raid
+  theatre: pacific
+  significance: 2
+  actors: [jp, us]
+  summary_ja: |
+    空母から発進した米陸軍 B-25 による日本本土初空襲。物理的な被害は小さかったが、
+    本土防空の穴を露呈させ、東方の哨戒線を押し出すミッドウェー攻略を後押しした。
+  verified: false
+  sources:
+    - title: Wikidata Q59886
+      url: https://www.wikidata.org/wiki/Q59886
+      note: CC0
+    - title: Doolittle Raid
+      url: https://en.wikipedia.org/wiki/Doolittle_Raid
+
+- id: Q700705
+  type: battle
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us]
+  summary_ja: |
+    絶対国防圏の一角であるサイパン島をめぐる戦い。陥落により本土が
+    B-29 の行動圏に入り、東條内閣は総辞職した。多数の民間人が犠牲になっている。
+  verified: false
+  sources:
+    - title: Wikidata Q700705
+      url: https://www.wikidata.org/wiki/Q700705
+      note: CC0
+
+- id: Q308999
+  type: naval
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us, au]
+  verified: false
+  sources:
+    - title: Wikidata Q308999
+      url: https://www.wikidata.org/wiki/Q308999
+      note: CC0
+
+- id: Q51881408
+  name_ja: 東京大空襲（1945 年 3 月 10 日）
+  type: air_raid
+  theatre: pacific
+  significance: 3
+  actors: [jp, us]
+  summary_ja: |
+    低空からの夜間焼夷弾攻撃により下町一帯が焼失し、一夜で約 10 万人が死亡した。
+    大本営発表は被害の規模を伝えていない。
+  verified: false
+  sources:
+    - title: Wikidata Q51881408
+      url: https://www.wikidata.org/wiki/Q51881408
+      note: CC0
+
+- id: Q194132
+  type: landing
+  theatre: africa
+  significance: 3
+  outcome: allied_victory
+  actors: [us, uk, vichy]
+  verified: false
+  sources:
+    - title: Wikidata Q194132
+      url: https://www.wikidata.org/wiki/Q194132
+      note: CC0
+
+- id: Q217981
+  type: landing
+  theatre: mediterranean
+  significance: 3
+  outcome: allied_victory
+  actors: [us, uk, ca, it, de]
+  verified: false
+  sources:
+    - title: Wikidata Q217981
+      url: https://www.wikidata.org/wiki/Q217981
+      note: CC0
+
+- id: Q153376
+  type: battle
+  theatre: africa
+  significance: 3
+  outcome: allied_victory
+  actors: [uk, au, de, it]
+  verified: false
+  sources:
+    - title: Wikidata Q153376
+      url: https://www.wikidata.org/wiki/Q153376
+      note: CC0
+
+- id: Q150939
+  type: invasion
+  theatre: europe_west
+  significance: 2
+  outcome: axis_victory
+  actors: [de, no, uk, fr]
+  verified: false
+  sources:
+    - title: Wikidata Q150939
+      url: https://www.wikidata.org/wiki/Q150939
+      note: CC0
+
+- id: Q207165
+  type: naval
+  theatre: pacific
+  significance: 2
+  outcome: inconclusive
+  actors: [jp, us, au]
+  verified: false
+  sources:
+    - title: Wikidata Q207165
+      url: https://www.wikidata.org/wiki/Q207165
+      note: CC0
+
+- id: Q504347
+  type: naval
+  theatre: pacific
+  significance: 3
+  outcome: allied_victory
+  actors: [jp, us]
+  verified: false
+  sources:
+    - title: Wikidata Q504347
+      url: https://www.wikidata.org/wiki/Q504347
+      note: CC0
+
+- id: Q700569
+  type: naval
+  theatre: pacific
+  significance: 2
+  outcome: axis_victory
+  actors: [jp, uk]
+  verified: false
+  sources:
+    - title: Wikidata Q700569
+      url: https://www.wikidata.org/wiki/Q700569
+      note: CC0
+
+- id: Q296754
+  type: siege
+  theatre: pacific
+  significance: 3
+  outcome: axis_victory
+  actors: [jp, uk, au]
+  verified: false
+  sources:
+    - title: Wikidata Q296754
+      url: https://www.wikidata.org/wiki/Q296754
+      note: CC0
+
+- id: Q697059
+  type: battle
+  theatre: pacific
+  significance: 2
+  outcome: axis_victory
+  actors: [jp, uk, ca]
+  verified: false
+  sources:
+    - title: Wikidata Q697059
+      url: https://www.wikidata.org/wiki/Q697059
+      note: CC0
+
+- id: Q699669
+  type: naval
+  theatre: pacific
+  significance: 2
+  outcome: inconclusive
+  actors: [jp, us]
+  verified: false
+  sources:
+    - title: Wikidata Q699669
+      url: https://www.wikidata.org/wiki/Q699669
+      note: CC0
+
+- id: Q700572
+  type: battle
+  theatre: pacific
+  significance: 2
+  outcome: allied_victory
+  actors: [jp, us]
+  verified: false
+  sources:
+    - title: Wikidata Q700572
+      url: https://www.wikidata.org/wiki/Q700572
+      note: CC0
+
+- id: Q379433
+  name_ja: 天一号作戦（戦艦大和の沖縄特攻）
+  type: naval
+  theatre: pacific
+  significance: 2
+  outcome: allied_victory
+  actors: [jp, us]
+  verified: false
+  sources:
+    - title: Wikidata Q379433
+      url: https://www.wikidata.org/wiki/Q379433
+      note: CC0

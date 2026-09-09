@@ -94,7 +94,57 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
 - `<YYYY-MM-DD>.geojson` — OHM（CC0）から取得・簡略化済み。Feature properties: `ohm_id` `name` `name_ja?` `start_date` `end_date`
 - `faction-map.yaml` — `ohm_id` or `name` → `control`（`axis` | `axis_occupied` | `allied` | `allied_occupied` | `neutral` | `su`）。地図の塗り分けはこれで決める
 
+  値は 2 通り書ける。OHM は多くの政体を日付で版分けしているので（ギリシャ・ベルギー・ルーマニアなど）、
+  期間指定が要るのは「同じ relation のまま陣営が変わった国」（ノルウェー・オランダ・米国など）だけ。
+
+  ```yaml
+  by_ohm_id:
+    2692712: axis            # 単一の値
+    2851798:                 # 期間で変わる場合（keyframe 日付以下で最後に当たった控えを採る）
+      - { control: allied }
+      - { control: axis_occupied, from: 1940-06-10 }
+      - { control: allied, from: 1945-05-08 }
+  ```
+
 ## ライセンス区画（ビルド出力）
 
 `public/data/` に `events.json` `decisions.json` `homefront.json` `links.json` `actors.json` `territory/<date>.geojson` `sources.json`（帰属一覧）。
 `license: cc-by-sa` のレコードは `*.cc-by-sa.json` に分けて出す。`data/seed-wikipedia/` 配下は全部 `cc-by-sa`。
+
+
+## ビルドと検証
+
+| コマンド | 何をするか |
+|---|---|
+| `npm run fetch:wikidata` | Wikidata から戦闘・作戦を取得 → `data/raw/wikidata-events.json`（`--refresh` で引き直し） |
+| `npm run fetch:territory` | OHM から keyframes 各日付の境界を取得 → `data/territory/<date>.geojson` |
+| `npm run data` | YAML を結合・検証して `public/data/` を生成 |
+| `npm run check` | 検証だけ（書き出さない）。`--strict` で警告も失敗にする |
+| `npm run check:sources` | `sources[].url` を実際に叩いて切れリンクを洗う |
+| `npm run build` | `npm run data` ＋ Vite ビルド |
+
+`npm run data` は次のときにビルドを落とす:
+
+- レコードに `license` / `sources` / `verified` が無い
+- 未知の `license` / `type` / `theatre` / `outcome` / `actor` / `control`
+- Link の `from` / `to` が存在しない、または重複している
+- `discrepancy` が `relation: reports` 以外に付いている
+- `data/seed-wikipedia/` 配下が `cc-by-sa` 以外
+- `selection.yaml` の QID が raw にも override にも無い（座標が決まらない）
+
+`faction-map.yaml` に控えの無い政体は警告として一覧され、`neutral` 扱いで出力される。
+
+## 取得スクリプトの実測メモ（P0 で踏んだところ）
+
+- **Wikidata**: `wdt:P31/wdt:P279*` を本体クエリに書くと必ず timeout する。逆にクラス条件を外して
+  `wdt:P361+` だけにすると 502。先にサブクラス集合（296 件）を引いて、本体では 16 件ずつ
+  `VALUES` で与えるのが通る形。付加情報（参加者・sitelink・親・勝者）は QID を `VALUES` で
+  直接渡して 80 件ずつ引く
+- **日付**: `P580`（開始日）だけだと真珠湾・広島・ドーリットル空襲が落ちる。単日で終わる事件は
+  `P585`（時点）しか持たないので両方を受ける
+- **座標**: 必須にするとバルバロッサ・ポーランド侵攻・フランス侵攻のような「点を持たない作戦・戦役」が
+  丸ごと落ちる。取り込みでは OPTIONAL にして、地図に出す代表点は override で与える
+- **OHM**: 日付ごとに `out geom;` を投げると 1 日付 100MB 超になる。日付ごとは `out tags;` だけにして、
+  geometry は relation id ごとに 1 回取って簡略化してキャッシュする（`data/raw/ohm/` は gitignore）
+- **YAML**: js-yaml の既定スキーマは `1940-12-18` を JS の `Date` に変換してしまう。
+  日付を文字列のまま扱うため、読み込みは必ず `scripts/lib/yamlio.mjs` を通す（CORE_SCHEMA）

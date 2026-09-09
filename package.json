@@ -10,7 +10,8 @@
     "data": "node scripts/build-data.mjs",
     "fetch:wikidata": "node scripts/fetch-wikidata.mjs",
     "fetch:territory": "node scripts/fetch-ohm-territory.mjs",
-    "check": "node scripts/build-data.mjs --check"
+    "check": "node scripts/build-data.mjs --check",
+    "check:sources": "node scripts/check-sources.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^5.6.0"

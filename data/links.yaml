@@ -1,0 +1,433 @@
+# 3 層をつなぐリンク。ここが手作業の核で、このサイトの独自性そのもの。
+#
+#   authorizes   決定 → 作戦（「なぜその侵攻をしたか」の答え）
+#   triggers     出来事 → 決定（戦況が司令部を動かした）
+#   responds_to  決定 → 出来事（予期・備え・対応）
+#   reports      発表・報道 → 実際の戦況（discrepancy で「発表と実態」を構造化）
+#
+# ⚠ 全レコードと同じく未検証（レコード側 verified: false）。
+#   relation の向きと根拠は note_ja に書く。断定的な因果は書かない。
+#
+# discrepancy の kind:
+#   own_losses_understated  自軍の損害を小さく伝えた
+#   enemy_losses_overstated 敵の損害を大きく伝えた
+#   omitted                 都合の悪い事実を伝えなかった
+#   euphemism               言い換えた
+#   accurate                ほぼ実態どおり
+
+# ══════════════════════════════ 決定 → 作戦（ドイツ）
+
+- from: dec-19390831-weisung-1
+  to: Q150812
+  relation: authorizes
+  note_ja: 攻撃開始を 9 月 1 日 04:45 と定めた指令が、そのままポーランド侵攻の発動になった。
+
+- from: dec-19391009-weisung-6
+  to: Q151340
+  relation: authorizes
+  note_ja: 低地諸国を通過して北フランスへ出る西方攻勢の準備指令。実行は延期を重ねて翌年 5 月。
+
+- from: dec-19400301-weserubung
+  to: Q150939
+  relation: authorizes
+  note_ja: デンマーク・ノルウェー占領を命じた指令がそのまま作戦名になっている。
+
+- from: dec-19400716-weisung-16
+  to: Q154720
+  relation: authorizes
+  note_ja: 上陸の前提条件として英空軍の排除を求めた指令が、バトル・オブ・ブリテンの直接の根拠。
+
+# ★ P0 の芯（欧州側）
+- from: dec-19401218-weisung-21
+  to: Q83055
+  relation: authorizes
+  note_ja: 準備完了期限を 1941 年 5 月 15 日と定めた指令。バルカン方面の作戦で実際の開始は 6 月 22 日にずれ込んだ。
+
+- from: dec-19410327-weisung-25
+  to: Q697842
+  relation: authorizes
+  note_ja: ベオグラードのクーデタを受けて 3 月 27 日に出され、4 月 6 日に実行された。
+
+- from: dec-19410327-weisung-25
+  to: Q83055
+  relation: responds_to
+  note_ja: ユーゴスラビア・ギリシャ方面に振り向けた時間が、バルバロッサ開始の遅れの一因とされる（影響の程度には諸説ある）。
+
+- from: dec-19420405-weisung-41
+  to: Q38789
+  relation: authorizes
+  note_ja: 南方に主力を振りコーカサスの油田を狙う夏季攻勢の指令。スターリングラードは当初は側面確保の目標だった。
+
+- from: dec-19430415-zitadelle
+  to: Q130861
+  relation: authorizes
+  note_ja: クルスク突出部の南北からの挟撃を命じた作戦命令。新型戦車を待って開始が 7 月まで延びた。
+
+- from: dec-19431103-weisung-51
+  to: Q8641370
+  relation: responds_to
+  note_ja: 西方上陸を予期して東部戦線より西方の防備を優先させた指令。実際の上陸は 7 ヶ月後。
+
+# ══════════════════════════════ 決定 → 作戦（日本）
+
+- from: dec-19411201-gozen-kaigi-kaisen
+  to: Q52418
+  relation: authorizes
+  note_ja: 12 月 8 日の開戦を最終決定した御前会議。翌 2 日に機動部隊へ攻撃実行が発信された。
+
+- from: dec-19411201-gozen-kaigi-kaisen
+  to: Q696664
+  relation: authorizes
+  note_ja: 真珠湾と同時にマレー上陸が実行された。開戦決定は両方を同時に起動している。
+
+- from: dec-19411201-dairikumei-569
+  to: Q696664
+  relation: authorizes
+  note_ja: 南方軍に南方作戦を発動させた大本営陸軍部命令（番号は要確認）。
+
+- from: dec-19411201-dairikumei-569
+  to: Q697059
+  relation: authorizes
+  note_ja: 香港攻略も同じ南方作戦の一部として 12 月 8 日に開始された。
+
+# ★ P0 の芯（太平洋側）
+- from: dec-19420505-daikairei-18
+  to: Q173034
+  relation: authorizes
+  note_ja: ミッドウェー攻略（MI 作戦）を連合艦隊に命じた大本営海軍部命令（番号は要確認）。
+
+- from: dec-19421231-gozen-kaigi-guadalcanal
+  to: Q217145
+  relation: authorizes
+  note_ja: 奪回を断念し撤退を決定した御前会議。撤退は翌 2 月上旬に実行された。
+
+- from: dec-19430930-zettai-kokubouken
+  to: Q700705
+  relation: responds_to
+  note_ja: 絶対国防圏の一角として守るとされたマリアナが、翌年 6〜7 月に破られた。
+
+- from: dec-19450814-gozen-kaigi-shusen
+  to: Q6540361
+  relation: authorizes
+  note_ja: ポツダム宣言受諾の決定。降伏文書の調印は 9 月 2 日。
+
+# ══════════════════════════════ 決定 → 作戦（連合国）
+
+- from: dec-19411222-arcadia
+  to: Q194132
+  relation: authorizes
+  note_ja: 「ドイツ打倒優先」を確認したアルカディア会談の路線が、1942 年の北アフリカ上陸に結実した。
+
+- from: dec-19430114-casablanca
+  to: Q217981
+  relation: authorizes
+  note_ja: 1943 年の次の一手をフランス本土ではなくシチリアとした決定。
+
+- from: dec-19430817-quadrant
+  to: Q8641370
+  relation: authorizes
+  note_ja: オーヴァーロード作戦を 1944 年の最優先作戦として正式に承認した。
+
+- from: dec-19431128-tehran
+  to: Q8641370
+  relation: authorizes
+  note_ja: スターリンの要求を受け、実行期日を 1944 年 5 月と確約した（実際は 6 月 6 日）。
+
+- from: dec-19450204-yalta
+  to: Q6165880
+  relation: authorizes
+  note_ja: ドイツ降伏の 2〜3 か月後にソ連が対日参戦するという秘密協定が、8 月 9 日の満洲侵攻の根拠になった。
+
+- from: dec-19450717-potsdam
+  to: Q6540361
+  relation: authorizes
+  note_ja: 降伏条件を示したポツダム宣言。受諾がそのまま降伏の形式になった。
+
+# ══════════════════════════════ 戦況 → 司令部（triggers / responds_to）
+
+# ★ 「空襲されたから哨戒線を押し出す」という決定の連鎖
+- from: Q59886
+  to: dec-19420505-daikairei-18
+  relation: triggers
+  note_ja: 本土初空襲で東方の哨戒線の穴が露呈したことが、ミッドウェー攻略の後押しになったとされる。
+
+- from: Q52418
+  to: dec-19411222-arcadia
+  relation: triggers
+  note_ja: 真珠湾攻撃の 2 週間後に米英首脳が集まり、対日開戦後もなお「ドイツ優先」を確認した。
+
+- from: Q217145
+  to: dec-19421231-gozen-kaigi-guadalcanal
+  relation: triggers
+  note_ja: 半年の消耗戦の結果として、年末の御前会議で撤退が決まった。
+
+- from: Q38789
+  to: dec-19430415-zitadelle
+  relation: triggers
+  note_ja: スターリングラードの敗北後、東部戦線で主導権を取り戻すための攻勢として立案された。
+
+- from: Q153376
+  to: dec-19430114-casablanca
+  relation: triggers
+  note_ja: エル・アラメインとトーチ作戦で北アフリカの帰趨が見えたことが、次の一手を決める会談の前提になった。
+
+- from: Q700705
+  to: dec-19430930-zettai-kokubouken
+  relation: responds_to
+  note_ja: 絶対国防圏として設定した線が、サイパン失陥で破られた。当日に東條内閣が総辞職している。
+
+- from: Q703203
+  to: dec-19450814-gozen-kaigi-shusen
+  relation: triggers
+  note_ja: 広島・長崎への原爆投下とソ連参戦が、受諾決定を押し切る要因になった。
+
+- from: Q6165880
+  to: dec-19450814-gozen-kaigi-shusen
+  relation: triggers
+  note_ja: 8 月 9 日のソ連対日参戦により、ソ連仲介による和平の望みが絶たれた。
+
+# ══════════════════════════════ 発表 → 実態（日本・大本営発表）
+
+- from: hf-19411208-daihonei-kaisen
+  to: Q52418
+  relation: reports
+  discrepancy:
+    claimed_ja: 西太平洋で米英軍と戦闘状態に入った
+    actual_ja: ハワイ・マレー・フィリピン・香港への同時攻撃が始まっていた
+    kind: omitted
+
+- from: hf-19411208-daihonei-shinjuwan
+  to: Q52418
+  relation: reports
+  discrepancy:
+    claimed_ja: 米太平洋艦隊の主力に甚大な損害を与えた
+    actual_ja: 戦艦の被害は概ね発表どおりだが、主目標の米空母は湾内におらず撃ち漏らした
+    kind: omitted
+
+- from: hf-19411210-daihonei-malay-oki
+  to: Q700569
+  relation: reports
+  discrepancy:
+    claimed_ja: 英戦艦プリンス・オブ・ウェールズと巡洋戦艦レパルスを撃沈
+    actual_ja: 2 隻とも撃沈。発表と実態が一致している
+    kind: accurate
+
+- from: hf-19420215-daihonei-singapore
+  to: Q296754
+  relation: reports
+  discrepancy:
+    claimed_ja: シンガポールを攻略した
+    actual_ja: 攻略は事実。発表と実態が一致している
+    kind: accurate
+
+- from: hf-19420418-daihonei-doolittle
+  to: Q59886
+  relation: reports
+  discrepancy:
+    claimed_ja: 被害は軽微で、来襲した敵機のうち数機を撃墜した
+    actual_ja: 日本上空での撃墜は無く、爆撃機は爆撃後に大陸方面へ抜けた
+    kind: enemy_losses_overstated
+
+- from: hf-19420508-daihonei-coral-sea
+  to: Q207165
+  relation: reports
+  discrepancy:
+    claimed_ja: 米空母 2 隻を撃沈
+    actual_ja: 撃沈は 1 隻。もう 1 隻は損傷にとどまり修理されてミッドウェーに間に合った
+    kind: enemy_losses_overstated
+
+# ★★ P0 の芯。「発表 vs 実態」が 1 本通ることを確認する対象
+- from: hf-19420610-daihonei-midway
+  to: Q173034
+  relation: reports
+  discrepancy:
+    claimed_ja: 敵空母 2 隻を撃沈。わが方の損害は空母 1 隻喪失・1 隻大破
+    actual_ja: 日本側は主力空母 4 隻すべてを喪失。米側の空母喪失は 1 隻
+    kind: own_losses_understated
+
+- from: hf-19420826-daihonei-guadalcanal
+  to: Q217145
+  relation: reports
+  discrepancy:
+    claimed_ja: ガダルカナル島の敵上陸部隊を撃退中
+    actual_ja: 先行して上陸した支隊はすでに壊滅しており、以後半年の消耗戦に入った
+    kind: own_losses_understated
+
+- from: hf-19421027-daihonei-south-pacific
+  to: Q699669
+  relation: reports
+  discrepancy:
+    claimed_ja: 米空母を複数撃沈し敵艦隊を撃滅した
+    actual_ja: 米空母の沈没は 1 隻。日本側は艦載機と搭乗員を大量に失った
+    kind: enemy_losses_overstated
+
+- from: hf-19430209-daihonei-tenshin
+  to: Q217145
+  relation: reports
+  discrepancy:
+    claimed_ja: 所期の目的を達成したので他方面へ「転進」する
+    actual_ja: 奪回を断念した撤退。投入兵力の多くが戦死・戦病死・餓死していた
+    kind: euphemism
+
+- from: hf-19430530-daihonei-attu
+  to: Q700572
+  relation: reports
+  discrepancy:
+    claimed_ja: 守備隊は最後の攻撃を敢行し「玉砕」した
+    actual_ja: 救援も撤退も行われないまま守備隊が全滅した
+    kind: euphemism
+
+- from: hf-19440624-daihonei-marianas
+  to: Q504347
+  relation: reports
+  discrepancy:
+    claimed_ja: 敵機動部隊に大打撃を与えた
+    actual_ja: 日本側が空母 3 隻と艦載機・搭乗員の大半を失い、米側の損害は軽微だった
+    kind: enemy_losses_overstated
+
+- from: hf-19440718-daihonei-saipan
+  to: Q700705
+  relation: reports
+  discrepancy:
+    claimed_ja: 守備隊が玉砕した
+    actual_ja: 絶対国防圏が破られ本土が B-29 の行動圏に入った。多数の民間人も犠牲になった
+    kind: omitted
+
+# ★★ 発表と実態の差が最大になり、しかも次の作戦判断を誤らせた例
+- from: hf-19441019-daihonei-taiwan-oki
+  to: Q5470224
+  relation: reports
+  discrepancy:
+    claimed_ja: 敵空母十数隻を撃沈破し、米機動部隊を壊滅させた
+    actual_ja: 米艦の沈没はなく、巡洋艦 2 隻が損傷したのみ
+    kind: enemy_losses_overstated
+
+- from: hf-19441027-daihonei-leyte
+  to: Q308999
+  relation: reports
+  discrepancy:
+    claimed_ja: 敵艦隊に大打撃を与えた
+    actual_ja: 戦艦武蔵をはじめ多数を失い、連合艦隊は組織的な戦力を喪失した
+    kind: own_losses_understated
+
+- from: hf-19450310-daihonei-tokyo-raid
+  to: Q51881408
+  relation: reports
+  discrepancy:
+    claimed_ja: 市街地に相当の被害。敵機を撃墜した
+    actual_ja: 一夜で約 10 万人が死亡し、下町のほぼ全域が焼失した
+    kind: own_losses_understated
+
+- from: hf-19450407-daihonei-yamato
+  to: Q379433
+  relation: reports
+  discrepancy:
+    claimed_ja: 沖縄方面の海上特攻について、戦艦大和の喪失は公表されなかった
+    actual_ja: 大和以下が撃沈され、海上戦力による沖縄支援は失敗した
+    kind: omitted
+
+- from: hf-19450623-daihonei-okinawa
+  to: Q192660
+  relation: reports
+  discrepancy:
+    claimed_ja: 守備軍の組織的戦闘が終わった
+    actual_ja: 住民を巻き込んだ地上戦で県民の多くが犠牲になったが、その実態は伝えられなかった
+    kind: omitted
+
+- from: hf-19450807-daihonei-hiroshima
+  to: Q703203
+  relation: reports
+  discrepancy:
+    claimed_ja: 敵が「新型爆弾」を使用し相当の被害が出た
+    actual_ja: 原子爆弾であり、市街が壊滅して同年末までに十数万人が死亡した
+    kind: own_losses_understated
+
+# ══════════════════════════════ 報道 → 実態（米国）
+# 同じ出来事を日米がどう伝えたかを並べると、統制の差がそのまま出る
+
+- from: hf-19390901-us-press-poland
+  to: Q150812
+  relation: reports
+  discrepancy:
+    claimed_ja: ドイツがポーランドに侵攻し欧州で大戦が始まった
+    actual_ja: 事実。米国は中立の立場から報じている
+    kind: accurate
+
+- from: hf-19411208-us-press-pearl-harbor
+  to: Q52418
+  relation: reports
+  discrepancy:
+    claimed_ja: 日本がアメリカを攻撃した
+    actual_ja: 事実。ただし損害の詳細は当初は伏せられた
+    kind: omitted
+
+# ★ 日本側の同じ海戦の発表（hf-19420610）と並べるための対
+- from: hf-19420607-us-press-midway
+  to: Q173034
+  relation: reports
+  discrepancy:
+    claimed_ja: ミッドウェーで日本艦隊に大打撃を与えた
+    actual_ja: 事実。ただし暗号解読による事前察知は伏せられた
+    kind: omitted
+
+- from: hf-19430203-us-press-stalingrad
+  to: Q38789
+  relation: reports
+  discrepancy:
+    claimed_ja: スターリングラードでドイツ第 6 軍が降伏した
+    actual_ja: 事実。発表と実態が一致している
+    kind: accurate
+
+- from: hf-19440606-us-press-dday
+  to: Q8641370
+  relation: reports
+  discrepancy:
+    claimed_ja: 連合軍がフランスに上陸した
+    actual_ja: 事実。作戦の規模と地点の詳細は伏せられた
+    kind: omitted
+
+- from: hf-19450806-us-truman-atomic-statement
+  to: Q703203
+  relation: reports
+  discrepancy:
+    claimed_ja: 広島に原子爆弾を投下した。降伏しなければ同種の攻撃を続ける
+    actual_ja: 事実。日本側の同日の発表は「新型爆弾により相当の被害」にとどまる
+    kind: accurate
+
+- from: hf-19450815-us-press-vj-day
+  to: Q6540361
+  relation: reports
+  discrepancy:
+    claimed_ja: 日本が降伏した
+    actual_ja: 事実。降伏文書の調印は 9 月 2 日
+    kind: accurate
+
+# ══════════════════════════════ 国内の生活 → 戦況・決定
+
+- from: hf-19411208-us-infamy-speech
+  to: dec-19411201-gozen-kaigi-kaisen
+  relation: responds_to
+  note_ja: 12 月 1 日の御前会議で決まった開戦に対する、米側の応答が翌日の宣戦要請演説になる。
+
+- from: hf-19440630-jp-life-gakudo-sokai
+  to: Q700705
+  relation: responds_to
+  note_ja: サイパン失陥で本土空襲が現実になり、都市の学童を地方へ集団疎開させる方針が決まった。
+
+- from: hf-19441124-jp-life-b29
+  to: Q700705
+  relation: responds_to
+  note_ja: マリアナ諸島の基地から B-29 が飛来するようになった。絶対国防圏が破られた結果が生活に直接現れた。
+
+- from: hf-19450311-jp-life-tokyo-risai
+  to: Q51881408
+  relation: reports
+  discrepancy:
+    claimed_ja: 罹災の実感としては下町一帯が焼け、100 万人規模が家を失った
+    actual_ja: 同じ空襲について大本営発表は被害の規模を伝えていない
+    kind: own_losses_understated
+
+- from: hf-19450815-jp-life-gyokuon
+  to: dec-19450814-gozen-kaigi-shusen
+  relation: reports
+  note_ja: 前日の御前会議で決まったポツダム宣言受諾が、玉音放送として国民に伝えられた。

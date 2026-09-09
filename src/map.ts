@@ -1,0 +1,220 @@
+// 地図（現場レイヤー）。MapLibre GL JS。
+//
+// タイルサーバは使わない。Natural Earth の陸地と、ビルド済みの領域 GeoJSON、
+// イベント点をすべてローカルの GeoJSON ソースとして持つ。オフラインでも動く。
+//
+// 領域は日付キーフレームのステップ表示（補間しない）。
+// イベント点は「その日に進行中のもの」だけを filter 式で出し分ける。
+
+import maplibregl, { type Map as MlMap, type GeoJSONSource } from 'maplibre-gl';
+import { CONTROL_COLOR, type Atlas, type EventRec, isActive, isNear, keyframeFor } from './data';
+
+const BASE = import.meta.env.BASE_URL ?? '/';
+
+const OCEAN = '#152029';
+const LAND = '#2b3238';
+
+/** 種別ごとの点の形の代わりに色味を少し変える（大きさは significance で決める） */
+const TYPE_COLOR: Record<string, string> = {
+  battle: '#e8c26a',
+  invasion: '#e8875a',
+  naval: '#6ac8e8',
+  air_raid: '#d98ae8',
+  siege: '#e8a06a',
+  surrender: '#9ae86a',
+  uprising: '#e86a8a',
+  landing: '#6ae8b0',
+};
+
+export class AtlasMap {
+  readonly map: MlMap;
+  private atlas: Atlas;
+  private territoryCache = new Map<string, unknown>();
+  private currentKeyframe: string | null = null;
+  private onSelect: (e: EventRec) => void;
+
+  constructor(container: HTMLElement, atlas: Atlas, onSelect: (e: EventRec) => void) {
+    this.atlas = atlas;
+    this.onSelect = onSelect;
+    this.map = new maplibregl.Map({
+      container,
+      style: {
+        version: 8,
+        // グリフを外部から取らない（フォントを使うシンボルレイヤーは置かない）
+        sources: {},
+        layers: [{ id: 'bg', type: 'background', paint: { 'background-color': OCEAN } }],
+      },
+      center: [20, 35],
+      zoom: 2.1,
+      minZoom: 1.2,
+      maxZoom: 7,
+      attributionControl: false,
+    });
+    this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-left');
+    this.map.addControl(
+      new maplibregl.AttributionControl({
+        compact: true,
+        customAttribution:
+          'Natural Earth (PD) / OpenHistoricalMap (CC0) / Wikidata (CC0)',
+      }),
+      'bottom-right',
+    );
+  }
+
+  async init(): Promise<void> {
+    // 'load' はここに来る前に発火していることがある（そのまま待つと永久に解決しない）。
+    // すでに読み込み済みかを先に確かめる。
+    // 'load' を待つのは危険が 2 つある。
+    //   ① ここに来る前に発火済みだと、そのまま待つと永久に解決しない
+    //   ② 'load' は初回描画のときに出るので、コンテナのサイズが 0 だと出ない
+    //      （タブが非表示・パネルが畳まれている・遅延表示のとき）
+    // スタイルは自前のインライン定義なので、'styledata' が出た時点でソースを足してよい。
+    await new Promise<void>((resolve) => {
+      if (this.map.isStyleLoaded()) return resolve();
+      const done = () => resolve();
+      this.map.once('load', done);
+      this.map.once('styledata', done);
+    });
+
+    // CSS が当たる前に構築されるとキャンバスが極小のまま固定されることがある。
+    // 初回に明示的に測り直し、以後はコンテナのサイズ変化を監視して追随する。
+    this.map.resize();
+    new ResizeObserver(() => this.map.resize()).observe(this.map.getContainer());
+
+    const land = await fetch(`${BASE}base/ne_50m_land.geojson`).then((r) => r.json());
+    this.map.addSource('land', { type: 'geojson', data: land });
+    this.map.addLayer({
+      id: 'land',
+      type: 'fill',
+      source: 'land',
+      paint: { 'fill-color': LAND },
+    });
+
+    // 支配領域（面）
+    this.map.addSource('territory', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'territory-fill',
+      type: 'fill',
+      source: 'territory',
+      paint: {
+        'fill-color': [
+          'match',
+          ['get', 'control'],
+          'axis', CONTROL_COLOR.axis,
+          'axis_occupied', CONTROL_COLOR.axis_occupied,
+          'allied', CONTROL_COLOR.allied,
+          'allied_occupied', CONTROL_COLOR.allied_occupied,
+          'su', CONTROL_COLOR.su,
+          CONTROL_COLOR.neutral,
+        ],
+        // 占領地はやや薄くして「本国ではない」ことを出す
+        'fill-opacity': [
+          'match',
+          ['get', 'control'],
+          'axis_occupied', 0.55,
+          'allied_occupied', 0.55,
+          'neutral', 0.3,
+          0.8,
+        ],
+      },
+    });
+    this.map.addLayer({
+      id: 'territory-line',
+      type: 'line',
+      source: 'territory',
+      paint: { 'line-color': '#0d141a', 'line-width': 0.5, 'line-opacity': 0.7 },
+    });
+
+    // イベント点
+    this.map.addSource('events', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'events-halo',
+      type: 'circle',
+      source: 'events',
+      paint: {
+        'circle-radius': ['*', ['get', 'significance'], 5],
+        'circle-color': ['get', 'color'],
+        'circle-opacity': ['case', ['==', ['get', 'active'], 1], 0.18, 0.06],
+      },
+    });
+    this.map.addLayer({
+      id: 'events-dot',
+      type: 'circle',
+      source: 'events',
+      paint: {
+        'circle-radius': ['+', 2, ['*', ['get', 'significance'], 1.8]],
+        'circle-color': ['get', 'color'],
+        'circle-opacity': ['case', ['==', ['get', 'active'], 1], 1, 0.45],
+        'circle-stroke-color': '#0d141a',
+        'circle-stroke-width': 1,
+      },
+    });
+    // 選択中のイベント・リンク先を光らせる
+    this.map.addLayer({
+      id: 'events-highlight',
+      type: 'circle',
+      source: 'events',
+      filter: ['==', ['get', 'id'], '__none__'],
+      paint: {
+        'circle-radius': ['+', 8, ['*', ['get', 'significance'], 2.5]],
+        'circle-color': 'transparent',
+        'circle-stroke-color': '#ffd479',
+        'circle-stroke-width': 2.5,
+      },
+    });
+
+    this.map.on('click', 'events-dot', (e) => {
+      const id = e.features?.[0]?.properties?.id as string | undefined;
+      if (!id) return;
+      const rec = this.atlas.events.find((x) => x.id === id);
+      if (rec) this.onSelect(rec);
+    });
+    for (const layer of ['events-dot']) {
+      this.map.on('mouseenter', layer, () => (this.map.getCanvas().style.cursor = 'pointer'));
+      this.map.on('mouseleave', layer, () => (this.map.getCanvas().style.cursor = ''));
+    }
+  }
+
+  /** 日付を変える。領域はキーフレームが変わったときだけ読み直す */
+  async setDate(date: string, filters: { theatres: Set<string>; windowDays: number }): Promise<void> {
+    const kf = keyframeFor(this.atlas.keyframes, date);
+    if (kf && kf !== this.currentKeyframe) {
+      this.currentKeyframe = kf;
+      let fc = this.territoryCache.get(kf);
+      if (!fc) {
+        fc = await fetch(`${BASE}data/territory/${kf}.geojson`).then((r) => r.json());
+        this.territoryCache.set(kf, fc);
+      }
+      (this.map.getSource('territory') as GeoJSONSource | undefined)?.setData(fc as never);
+    }
+
+    const feats = this.atlas.events
+      .filter((e) => e.coord && isNear(e, date, filters.windowDays) && filters.theatres.has(e.theatre))
+      .map((e) => ({
+        type: 'Feature' as const,
+        geometry: { type: 'Point' as const, coordinates: e.coord as [number, number] },
+        properties: {
+          id: e.id,
+          significance: e.significance,
+          color: TYPE_COLOR[e.type] ?? '#e8c26a',
+          // 進行中は濃く、前後の日に始まる／終わるものは薄く出す
+          active: isActive(e, date) ? 1 : 0,
+        },
+      }));
+    (this.map.getSource('events') as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: feats,
+    });
+  }
+
+  /** 選択・リンク先のハイライト */
+  highlight(ids: string[]): void {
+    this.map.setFilter('events-highlight', ['in', ['get', 'id'], ['literal', ids]]);
+  }
+
+  flyTo(coord: [number, number]): void {
+    this.map.easeTo({ center: coord, zoom: Math.max(this.map.getZoom(), 3.6), duration: 600 });
+  }
+}
+
+const emptyFc = () => ({ type: 'FeatureCollection' as const, features: [] });

@@ -1,0 +1,278 @@
+# ドイツ（OKW / 総統指令）の司令部レイヤー。P0 は 10 件。
+#
+# 出典について: 総統指令の英訳全文がオンラインで確実に引けるのは第 21 号（Wikisource）だけで、
+# 他は「指令一覧」＋各作戦の記事を locator として置き、原文の所在確認は P1 に回している。
+# したがって全件 verified: false。原文を当てたものだけ true にする。
+# license: pd — 1940 年代のドイツ政府文書そのものはパブリックドメイン。要約は自前。
+
+- id: dec-19390411-fall-weiss
+  type: directive
+  name_ja: 「1939/40 年の戦争準備に関する指令」（白作戦＝対ポーランド）
+  name_en: Directive for the Armed Forces 1939/40 (Case White)
+  date: 1939-04-11
+  end: null
+  actors: [de]
+  persons: [ヒトラー, カイテル]
+  place: ベルリン
+  summary_ja: |
+    国防軍に対し、1939/40 年の作戦準備の枠組みを示した指令。ポーランドに対する
+    攻撃計画「白作戦（Fall Weiss）」を、9 月 1 日以降いつでも実行できる状態に
+    しておくよう命じた。この時点では英仏の介入を局地化できるという前提が置かれている。
+  decisions_ja:
+    - ポーランドに対する「白作戦」の作戦準備を命じる
+    - 準備完了期限を 1939 年 9 月 1 日とする
+    - 紛争をポーランドとの局地戦に限定する前提を置く
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Case White（白作戦）
+      url: https://en.wikipedia.org/wiki/Case_White
+
+- id: dec-19390831-weisung-1
+  type: directive
+  name_ja: 総統指令第 1 号「戦争遂行に関する指令」
+  name_en: Führer Directive No. 1 (Directive for the Conduct of the War)
+  date: 1939-08-31
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    ポーランド侵攻の開始を命じた指令。攻撃開始を 9 月 1 日 04:45 と定め、
+    西方では英仏に対して先に手を出さず、開戦の責任を相手側に負わせる方針を示した。
+    外交による解決の可能性が尽きたという判断を前提に置いている。
+  decisions_ja:
+    - 1939 年 9 月 1 日 04:45 をもって対ポーランド攻撃を開始する
+    - 西部戦線では先に攻勢に出ず、開戦の口実を相手に作らせる
+    - 海軍・空軍の行動も東方に優先させる
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: 1939 Invasion of Poland
+      url: https://en.wikipedia.org/wiki/1939_Invasion_of_Poland
+
+- id: dec-19391009-weisung-6
+  type: directive
+  name_ja: 総統指令第 6 号「西方における作戦」
+  name_en: Führer Directive No. 6 (Case Yellow)
+  date: 1939-10-09
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    西方攻勢（黄作戦）の準備を命じた指令。オランダ・ベルギー・ルクセンブルクの
+    中立を侵して北フランスへ進出し、英仏に対する航空・海上作戦の拠点を得ることを
+    目的に据えた。実行はたびたび延期され、翌 1940 年 5 月の西方電撃戦に至る。
+  decisions_ja:
+    - 低地諸国を通過してフランス北部へ攻勢に出る準備を命じる
+    - 目的をイギリスに対する航空・海上戦の前進拠点確保に置く
+    - できるだけ早い時期の実行を求める（実際には翌春まで延期）
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Battle of France
+      url: https://en.wikipedia.org/wiki/Battle_of_France
+
+- id: dec-19400301-weserubung
+  type: directive
+  name_ja: 「ヴェーザー演習作戦」指令（デンマーク・ノルウェー侵攻）
+  name_en: Directive for Operation Weserübung
+  date: 1940-03-01
+  end: null
+  actors: [de]
+  persons: [ヒトラー, ファルケンホルスト]
+  place: ベルリン
+  summary_ja: |
+    デンマークとノルウェーの占領を命じた指令。スウェーデン鉄鉱石の輸送路（ナルヴィク）
+    の確保と、大西洋・北海への海空軍拠点の獲得を目的とした。英軍の同方面への
+    先行行動を封じる狙いも明示されている。
+  decisions_ja:
+    - デンマーク・ノルウェーを占領する（ヴェーザー演習作戦）
+    - 鉄鉱石輸送路と北海・大西洋への出口を確保する
+    - 英仏がノルウェーに先に足場を作るのを防ぐ
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Operation Weserübung
+      url: https://en.wikipedia.org/wiki/Operation_Weser%C3%BCbung
+
+- id: dec-19400716-weisung-16
+  type: directive
+  name_ja: 総統指令第 16 号「アシカ作戦」（英本土上陸準備）
+  name_en: Führer Directive No. 16 (Operation Sea Lion)
+  date: 1940-07-16
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    イギリス本土上陸作戦「アシカ」の準備を命じた指令。上陸の前提条件として
+    イギリス空軍の無力化を挙げており、これが同年夏のバトル・オブ・ブリテンの
+    直接の根拠になった。制空権が取れなかったため上陸は実行されず、9 月に延期・
+    事実上放棄される。
+  decisions_ja:
+    - イギリス本土への上陸作戦（アシカ作戦）の準備を命じる
+    - 前提条件としてイギリス空軍の航空優勢を排除する
+    - 準備完了を 8 月中旬とする
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Operation Sea Lion
+      url: https://en.wikipedia.org/wiki/Operation_Sea_Lion
+
+# ★ P0 の芯。これ 1 本から「決定 → 作戦」のリンクが辿れることが P0 のゴール
+- id: dec-19401218-weisung-21
+  type: directive
+  name_ja: 総統指令第 21 号「バルバロッサ作戦」
+  name_en: Führer Directive No. 21 (Case Barbarossa)
+  date: 1940-12-18
+  end: null
+  actors: [de]
+  persons: [ヒトラー, カイテル, ヨードル]
+  place: ベルリン
+  summary_ja: |
+    ソ連侵攻を命じた指令。「ドイツ国防軍はソビエト・ロシアを迅速な戦役で打倒する
+    準備を整えるべし」として、準備完了期限を 1941 年 5 月 15 日と定めた。作戦目標は
+    西部ロシアのソ連軍を前線で撃滅し、アルハンゲリスク〜ヴォルガ線まで進出すること。
+    バルカン方面の作戦により実際の開始は 6 月 22 日にずれ込む。
+  decisions_ja:
+    - ソ連に対する侵攻作戦（バルバロッサ）の準備を命じる
+    - 準備完了期限を 1941 年 5 月 15 日とする
+    - 西部ロシアのソ連軍主力を国境付近で撃滅する
+    - 最終到達線をアルハンゲリスク〜ヴォルガ線に置く
+    - 対英戦は継続しつつ、東方作戦を優先する
+  license: pd
+  verified: false
+  sources:
+    - title: Führer Directive 21（英訳全文・Wikisource）
+      url: https://en.wikisource.org/wiki/F%C3%BChrer_Directive_21
+      note: パブリックドメイン。P0 で唯一、原文（英訳）が引けている指令
+    - title: Operation Barbarossa
+      url: https://en.wikipedia.org/wiki/Operation_Barbarossa
+
+- id: dec-19410327-weisung-25
+  type: directive
+  name_ja: 総統指令第 25 号（ユーゴスラビア侵攻）
+  name_en: Führer Directive No. 25 (Invasion of Yugoslavia)
+  date: 1941-03-27
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    ベオグラードでのクーデタにより三国同盟加入が覆されたことを受け、ユーゴスラビアを
+    「軍事的に打倒し、国家として解体する」ことを命じた指令。ギリシャ方面の作戦
+    （マリータ）と併せて 4 月に実行され、その分の時間がバルバロッサ開始を後ろに
+    ずらす結果になった。
+  decisions_ja:
+    - ユーゴスラビアを軍事的に打倒し国家として解体する
+    - ギリシャ方面作戦（マリータ）と同時並行で実施する
+    - 可能な限り早期に開始する（4 月 6 日に実行）
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Invasion of Yugoslavia
+      url: https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia
+
+- id: dec-19420405-weisung-41
+  type: directive
+  name_ja: 総統指令第 41 号「青作戦」（南方攻勢＝スターリングラード・コーカサス）
+  name_en: Führer Directive No. 41 (Case Blue)
+  date: 1942-04-05
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    1942 年夏季攻勢の方針を定めた指令。モスクワ正面ではなく南方に主力を振り、
+    ドン河湾曲部のソ連軍を撃滅した上でコーカサスの油田地帯を獲得することを
+    目標に据えた。スターリングラードは当初、側面を守るための目標として位置づけ
+    られていたが、のちに攻勢そのものの焦点に変わっていく。
+  decisions_ja:
+    - 1942 年夏季攻勢の主力を南方に振る
+    - ドン河湾曲部でソ連軍を撃滅する
+    - コーカサスの油田地帯を獲得する
+    - スターリングラード方面は側面確保の目標とする
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Case Blue
+      url: https://en.wikipedia.org/wiki/Case_Blue
+
+- id: dec-19430415-zitadelle
+  type: order
+  name_ja: 作戦命令第 6 号「ツィタデレ作戦」（クルスク攻勢）
+  name_en: Operation Order No. 6 (Operation Citadel)
+  date: 1943-04-15
+  end: null
+  actors: [de]
+  persons: [ヒトラー, ツァイツラー]
+  place: ベルリン
+  summary_ja: |
+    クルスク突出部を南北から挟撃して包囲する攻勢を命じた作戦命令。
+    「東部戦線における今年の最も重要な攻勢」と位置づけ、成功のために
+    最良の部隊・武器・指揮官を集中するとした。新型戦車の到着を待って
+    開始が 7 月まで繰り延べられ、その間にソ連側の防御準備が整った。
+  decisions_ja:
+    - クルスク突出部を南北から挟撃・包囲する
+    - 東部戦線における 1943 年の最重要攻勢と位置づける
+    - 最良の部隊と新型戦車を集中投入する
+    - 開始日は状況に応じて決定する（実際には 7 月 5 日）
+  license: pd
+  verified: false
+  sources:
+    - title: Operation Citadel
+      url: https://en.wikipedia.org/wiki/Operation_Citadel
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+
+- id: dec-19431103-weisung-51
+  type: directive
+  name_ja: 総統指令第 51 号（西方の防備強化）
+  name_en: Führer Directive No. 51 (Defence of the West)
+  date: 1943-11-03
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    連合軍の西方上陸が近いという判断のもと、東部戦線から西方へ重点を移すことを
+    命じた指令。「東方では空間の広さが、最悪の場合でも致命的でない領土喪失を
+    許すが、西方では違う」として、上陸を water's edge で阻止する方針を打ち出した。
+    大西洋の壁の増強と機動予備の配置がこの指令に基づく。
+  decisions_ja:
+    - 西方の防備を東部戦線より優先する
+    - 上陸してくる敵を海岸線で阻止する
+    - 西方の装甲・機動予備を増強する
+    - 東方は空間的余裕があるため territorial な後退を許容する
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Atlantic Wall
+      url: https://en.wikipedia.org/wiki/Atlantic_Wall

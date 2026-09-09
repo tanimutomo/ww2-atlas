@@ -1,0 +1,173 @@
+# 米国の報道・世論・大統領演説。P0 は 10 件。
+#
+# 米国側は一次史料の状態がいちばんよく、Chronicling America（米議会図書館）で
+# 日付を指定して当日の新聞 1 面を OCR 全文つきで引ける。大統領の演説・炉辺談話は
+# 米政府著作物なのでパブリックドメイン（license: pd）。
+#
+# 「日本は発表を統制し、米国は 1 面がそのまま残っている」という非対称そのものが、
+# 国内レイヤーを並べたときの見どころになる。
+
+- id: hf-19390901-us-press-poland
+  type: press
+  country: us
+  date: 1939-09-01
+  headline_ja: 米各紙 1 面「ドイツ、ポーランドに侵攻」― 欧州大戦の勃発を報じる
+  body_ja: |
+    ドイツのポーランド侵攻を各紙が 1 面で報じた。アメリカは中立を保つ立場で、
+    参戦の是非をめぐる国内世論は割れていた。当日の紙面は
+    Chronicling America で日付を指定して閲覧できる。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1939-09-01 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1939-09-01&end_date=1939-09-01
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける
+
+- id: hf-19401229-us-fireside-arsenal
+  type: opinion
+  country: us
+  date: 1940-12-29
+  headline_ja: ローズヴェルト炉辺談話「民主主義の兵器廠」
+  body_ja: |
+    ラジオ炉辺談話で、アメリカは参戦しないが英国など枢軸国と戦う国々に
+    武器を供給する「民主主義の兵器廠」になるべきだと訴えた。
+    翌 1941 年 3 月の武器貸与法（レンドリース）につながる世論形成の起点になった。
+  license: pd
+  verified: false
+  sources:
+    - title: Franklin D. Roosevelt — Fireside Chats（米政府著作物）
+      url: https://en.wikisource.org/wiki/Author:Franklin_Delano_Roosevelt
+    - title: Arsenal of Democracy
+      url: https://en.wikipedia.org/wiki/Arsenal_of_Democracy
+
+- id: hf-19411208-us-press-pearl-harbor
+  type: press
+  country: us
+  date: 1941-12-08
+  headline_ja: 米各紙 1 面「日本、アメリカを攻撃」― 真珠湾攻撃を報じる
+  body_ja: |
+    前日の真珠湾攻撃を各紙が号外・1 面で一斉に報じた。
+    参戦をめぐって割れていた国内世論は一日で反転し、
+    孤立主義はほぼ消滅する。当日の紙面が日付指定で残っている。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1941-12-08 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1941-12-08&end_date=1941-12-08
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける
+
+- id: hf-19411208-us-infamy-speech
+  type: opinion
+  country: us
+  date: 1941-12-08
+  headline_ja: ローズヴェルト議会演説「屈辱の日」― 対日宣戦を要請
+  body_ja: |
+    上下両院合同会議での演説で、前日の攻撃を「汚辱の日」と呼び、
+    対日宣戦布告を要請した。議会は即日これを可決している。
+    演説の全文は米政府著作物としてパブリックドメイン。
+  license: pd
+  verified: false
+  sources:
+    - title: Pearl Harbor speech（真珠湾攻撃を受けた議会演説・全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Pearl_Harbor_speech
+    - title: Infamy Speech
+      url: https://en.wikipedia.org/wiki/Infamy_Speech
+
+- id: hf-19420607-us-press-midway
+  type: press
+  country: us
+  date: 1942-06-07
+  headline_ja: 米各紙「ミッドウェーで日本艦隊に大打撃」― 太平洋の転機を報じる
+  body_ja: |
+    ミッドウェー海戦の戦果を各紙が報じた。米側は暗号解読による
+    事前察知を伏せたまま勝利を伝えており、報道と作戦保全のせめぎ合いがある。
+    同じ戦いを日本側は「空母 1 隻喪失」と発表しており、
+    同じ日付の日米の紙面を並べると発表の差がそのまま見える。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1942-06-07 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1942-06-07&end_date=1942-06-07
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける
+    - title: Battle of Midway
+      url: https://en.wikipedia.org/wiki/Battle_of_Midway
+
+- id: hf-19430203-us-press-stalingrad
+  type: press
+  country: us
+  date: 1943-02-03
+  headline_ja: 米各紙「スターリングラードでドイツ第 6 軍が降伏」
+  body_ja: |
+    スターリングラードでのドイツ軍降伏を各紙が報じた。
+    東部戦線の転換点として大きく扱われ、ソ連への支援世論を押し上げた。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1943-02-03 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1943-02-03&end_date=1943-02-03
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける
+
+- id: hf-19440606-us-press-dday
+  type: press
+  country: us
+  date: 1944-06-06
+  headline_ja: 米各紙 1 面「連合軍、フランスに上陸」― ノルマンディー上陸を報じる
+  body_ja: |
+    ノルマンディー上陸を各紙が 1 面で報じた。教会では祈祷が行われ、
+    ローズヴェルトはラジオで祈りを読み上げている。
+    作戦の詳細は伏せられたまま、上陸の事実だけが先に伝えられた。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1944-06-06 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1944-06-06&end_date=1944-06-06
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける
+
+- id: hf-19450413-us-press-fdr-death
+  type: press
+  country: us
+  date: 1945-04-13
+  headline_ja: 米各紙 1 面「ローズヴェルト大統領死去」― トルーマンが昇格
+  body_ja: |
+    4 月 12 日のローズヴェルト急死を各紙が報じた。
+    副大統領トルーマンが大統領に昇格し、原爆計画の存在を
+    このとき初めて知らされている。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1945-04-13 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1945-04-13&end_date=1945-04-13
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける
+
+- id: hf-19450806-us-truman-atomic-statement
+  type: announcement
+  country: us
+  date: 1945-08-06
+  headline_ja: トルーマン声明 ― 広島に原子爆弾を投下したと公表
+  body_ja: |
+    ホワイトハウス声明で、広島に「原子爆弾」を投下したことを公表し、
+    日本が降伏しなければ同種の攻撃を続けると警告した。
+    日本側の同じ出来事の発表は「新型爆弾により相当の被害」であり、
+    同じ事象に対する日米の発表の落差がそのまま並ぶ。
+  license: pd
+  verified: false
+  sources:
+    - title: Statement by the President Announcing the Use of the A-Bomb at Hiroshima（Truman Library・米政府著作物）
+      url: https://www.trumanlibrary.gov/library/public-papers/93/statement-president-announcing-use-bomb-hiroshima
+    - title: Chronicling America（米議会図書館・1945-08-07 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1945-08-07&end_date=1945-08-07
+
+- id: hf-19450815-us-press-vj-day
+  type: press
+  country: us
+  date: 1945-08-15
+  headline_ja: 米各紙 1 面「日本降伏」― 対日戦勝の報道
+  body_ja: |
+    日本の降伏を各紙が 1 面で報じ、各地で祝賀が起きた。
+    同じ日、日本では玉音放送が流れている。
+  license: pd
+  verified: false
+  sources:
+    - title: Chronicling America（米議会図書館・1945-08-15 の紙面）
+      url: https://www.loc.gov/collections/chronicling-america/?start_date=1945-08-15&end_date=1945-08-15
+      note: パブリックドメイン。日付指定で当日の 1 面を引ける

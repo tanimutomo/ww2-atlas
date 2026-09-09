@@ -4,3 +4,5 @@ public/data/*.json
 public/data/*.geojson
 .DS_Store
 .vercel
+data/raw/ohm
+data/raw/cache
