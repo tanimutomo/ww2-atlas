@@ -334,6 +334,30 @@ async function main() {
     );
   }
 
+  // ------------------------------------------------------------- 前線ライン
+  // OHM の面は「政体の境界」しか持たないので、独ソ戦のようにソ連領内へ食い込んだ
+  // 戦線は面として描けない。折れ線で補う。
+  const flPath = resolve(DATA, 'territory/frontlines.yaml');
+  const frontlines = existsSync(flPath) ? ((await readYaml(flPath)) ?? []) : [];
+  for (const fl of frontlines) {
+    const where = 'territory/frontlines.yaml';
+    checkCommon(fl, where);
+    if (!/^fl-\d{8}-/.test(fl.id ?? '')) err(`${where} (${fl.id}): id は fl-YYYYMMDD-slug`);
+    if (!fl.date) err(`${where} (${fl.id}): date が無い`);
+    if (fl.theatre && !THEATRES.includes(fl.theatre)) err(`${where} (${fl.id}): 未知の theatre`);
+    if (!Array.isArray(fl.coords) || fl.coords.length < 2) {
+      err(`${where} (${fl.id}): coords は 2 点以上の [経度, 緯度] の配列`);
+    } else {
+      for (const c of fl.coords) {
+        if (!Array.isArray(c) || c.length !== 2 || typeof c[0] !== 'number' || typeof c[1] !== 'number') {
+          err(`${where} (${fl.id}): coords の要素が [経度, 緯度] でない`);
+          break;
+        }
+      }
+    }
+  }
+  frontlines.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+
   // --------------------------------------------------------------- 検証結果
   if (warnings.length) {
     console.warn(`\n⚠ 警告 ${warnings.length} 件`);
@@ -355,6 +379,7 @@ async function main() {
     homefront: homefront.length,
     links: links.length,
     territory: territoryOut.length,
+    frontlines: frontlines.length,
   };
   if (CHECK_ONLY) {
     console.log('\n✓ 検証だけ実行（--check）');
@@ -401,6 +426,22 @@ async function main() {
   }
 
   await write('links.json', { _meta: meta('links', { count: links.length }), links });
+  await write('frontlines.json', {
+    _meta: meta('frontlines', {
+      count: frontlines.length,
+      note: '概略線。地図のトレースではないので数十 km 単位の精度は無い',
+    }),
+    frontlines: frontlines.map((fl) => ({
+      id: fl.id,
+      date: fl.date,
+      theatre: fl.theatre ?? null,
+      name_ja: fl.name_ja,
+      note_ja: fl.note_ja ?? null,
+      coords: fl.coords,
+      verified: fl.verified,
+      sources: fl.sources,
+    })),
+  });
   await write('actors.json', { _meta: meta('actors', { count: actors.length }), actors });
   await write('territory/index.json', {
     _meta: meta('territory keyframes', { count: territoryOut.length }),

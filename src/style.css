@@ -95,6 +95,7 @@ a { color: var(--actual); }
 .dk-now    { width: 9px; height: 9px; box-shadow: 0 0 0 3px rgba(232, 194, 106, .18); }
 .dk-recent { width: 7px; height: 7px; opacity: .7; }
 .dk-past   { width: 5px; height: 5px; opacity: .45; }
+.dk-front  { width: 16px; height: 0; border-radius: 0; border-top: 2px dashed var(--accent); background: none; }
 .caveat {
   margin: 0; font-size: 11px; line-height: 1.55; color: var(--muted);
   background: rgba(20, 29, 37, .92);

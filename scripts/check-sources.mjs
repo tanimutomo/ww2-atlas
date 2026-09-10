@@ -19,12 +19,25 @@ const UA =
   'Mozilla/5.0 (compatible; ww2-atlas/0.1; +https://github.com/tanimutomo/ww2-atlas)';
 
 const DIRS = ['data/decisions', 'data/homefront', 'data/events/overrides', 'data/seed-wikipedia'];
+const FILES = ['data/territory/frontlines.yaml'];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function collect() {
   /** @type {Map<string, {title: string, where: string[]}>} */
   const urls = new Map();
+  for (const f of FILES) {
+    const p = resolve(ROOT, f);
+    if (!existsSync(p)) continue;
+    for (const rec of (await loadYaml(p)) ?? []) {
+      for (const s of rec.sources ?? []) {
+        if (!s?.url) continue;
+        const hit = urls.get(s.url) ?? { title: s.title, where: [] };
+        hit.where.push(`${f}:${rec.id}`);
+        urls.set(s.url, hit);
+      }
+    }
+  }
   for (const d of DIRS) {
     const dir = resolve(ROOT, d);
     if (!existsSync(dir)) continue;

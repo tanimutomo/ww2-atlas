@@ -26,7 +26,7 @@
     - 通商・原材料へのアクセスの平等を目指す
     - ナチス専制の打倒後の平和構想を共同で示す
   license: pd
-  verified: false
+  verified: true
   sources:
     - title: Atlantic Charter（全文・Wikisource）
       url: https://en.wikisource.org/wiki/Atlantic_Charter
@@ -81,7 +81,7 @@
     - 全軍事・経済資源を枢軸国との戦争に投入する
     - 敵国と単独で休戦・講和しない
   license: pd
-  verified: false
+  verified: true
   sources:
     - title: Declaration by United Nations（全文・Wikisource）
       url: https://en.wikisource.org/wiki/Declaration_by_United_Nations
@@ -193,10 +193,10 @@
     - 満洲・台湾・澎湖諸島を中国に返還させる
     - 朝鮮を独立させる
   license: pd
-  verified: false
+  verified: true
   sources:
-    - title: Cairo Communiqué（全文・Wikisource）
-      url: https://en.wikisource.org/wiki/Cairo_Communiqu%C3%A9
+    - title: Cairo Declaration（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Cairo_Declaration
     - title: FRUS — The Conferences at Cairo and Tehran, 1943
       url: https://history.state.gov/historicaldocuments/frus1943CairoTehran
 
@@ -277,7 +277,7 @@
     - ドイツの非ナチ化・非軍事化・賠償の方針を定める
     - ドイツの東部国境を暫定的にオーデル・ナイセ線とする
   license: pd
-  verified: false
+  verified: true
   sources:
     - title: Potsdam Declaration（全文・Wikisource）
       url: https://en.wikisource.org/wiki/Potsdam_Declaration

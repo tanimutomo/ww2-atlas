@@ -164,7 +164,7 @@
     - 最終到達線をアルハンゲリスク〜ヴォルガ線に置く
     - 対英戦は継続しつつ、東方作戦を優先する
   license: pd
-  verified: false
+  verified: true
   sources:
     - title: Führer Directive 21（英訳全文・Wikisource）
       url: https://en.wikisource.org/wiki/F%C3%BChrer_Directive_21

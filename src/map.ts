@@ -134,6 +134,28 @@ export class AtlasMap {
       paint: { 'line-color': '#0d141a', 'line-width': 0.5, 'line-opacity': 0.7 },
     });
 
+    // 前線ライン。面（政体境界）では描けない戦線を折れ線で補う
+    this.map.addSource('frontlines', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'frontline-glow',
+      type: 'line',
+      source: 'frontlines',
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: { 'line-color': '#ffd479', 'line-width': 7, 'line-blur': 5, 'line-opacity': 0.28 },
+    });
+    this.map.addLayer({
+      id: 'frontline',
+      type: 'line',
+      source: 'frontlines',
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: {
+        'line-color': '#ffd479',
+        'line-width': 2,
+        // 概略線であることが見て分かるよう破線にする
+        'line-dasharray': [3, 2],
+      },
+    });
+
     // イベント点
     this.map.addSource('events', { type: 'geojson', data: emptyFc() });
     this.map.addLayer({
@@ -222,6 +244,24 @@ export class AtlasMap {
     (this.map.getSource('events') as GeoJSONSource | undefined)?.setData({
       type: 'FeatureCollection',
       features: feats,
+    });
+
+    // 前線は日付以下で最も新しいものを出す（面と同じくステップ表示・補間しない）
+    const flDates = [...new Set(this.atlas.frontlines.map((f) => f.date))].sort();
+    let flDate: string | null = null;
+    for (const d of flDates) if (d <= date) flDate = d;
+    const lines = flDate
+      ? this.atlas.frontlines.filter(
+          (f) => f.date === flDate && (!f.theatre || filters.theatres.has(f.theatre)),
+        )
+      : [];
+    (this.map.getSource('frontlines') as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: lines.map((f) => ({
+        type: 'Feature' as const,
+        geometry: { type: 'LineString' as const, coordinates: f.coords },
+        properties: { id: f.id, name: f.name_ja },
+      })),
     });
 
     this.refreshLabels(date, filters);

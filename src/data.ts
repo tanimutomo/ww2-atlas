@@ -79,6 +79,17 @@ export type Link = {
   discrepancy?: Discrepancy;
 };
 
+export type FrontLine = {
+  id: string;
+  date: string;
+  theatre: string | null;
+  name_ja: string;
+  note_ja: string | null;
+  coords: [number, number][];
+  verified: boolean;
+  sources: Source[];
+};
+
 export type Actor = {
   id: string;
   name_ja: string;
@@ -93,6 +104,7 @@ export type Atlas = {
   homefront: HomeFront[];
   links: Link[];
   actors: Actor[];
+  frontlines: FrontLine[];
   keyframes: string[];
   /** id → レコード（Event / Decision / HomeFront をまとめて引く） */
   byId: Map<string, EventRec | Decision | HomeFront>;
@@ -110,13 +122,14 @@ async function getJson<T>(path: string): Promise<T> {
 }
 
 export async function loadAtlas(): Promise<Atlas> {
-  const [ev, dec, hf, ln, ac, tf] = await Promise.all([
+  const [ev, dec, hf, ln, ac, tf, fl] = await Promise.all([
     getJson<{ events: EventRec[] }>('events.json'),
     getJson<{ decisions: Decision[] }>('decisions.json'),
     getJson<{ homefront: HomeFront[] }>('homefront.json'),
     getJson<{ links: Link[] }>('links.json'),
     getJson<{ actors: Actor[] }>('actors.json'),
     getJson<{ keyframes: string[] }>('territory/index.json'),
+    getJson<{ frontlines: FrontLine[] }>('frontlines.json'),
   ]);
 
   const byId = new Map<string, EventRec | Decision | HomeFront>();
@@ -141,6 +154,7 @@ export async function loadAtlas(): Promise<Atlas> {
     homefront: hf.homefront,
     links: ln.links,
     actors: ac.actors,
+    frontlines: fl.frontlines,
     keyframes: tf.keyframes,
     byId,
     linksOf,
