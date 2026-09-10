@@ -1,0 +1,221 @@
+# 独・日・連合・ソ・伊のどれにも収まらない国の司令部レコード。
+# フランス（第三共和政 / 自由フランス / ヴィシー）、枢軸の中小国、中国。
+#
+# 大国だけを並べると「決定は 5 か国がしていた」ように見えてしまうので、
+# 参戦・離脱・寝返りといった、地図の色が変わる決定を優先して入れている。
+# license: pd — いずれも 1940 年代の政府文書・公的宣言。要約は自前。
+
+- id: dec-19380930-munich
+  coord: [11.576, 48.137]
+  type: conference
+  name_ja: ミュンヘン会談（ミュンヘン協定）
+  name_en: Munich Agreement
+  date: 1938-09-30
+  end: null
+  actors: [de, uk, fr, it]
+  persons: [ヒトラー, チェンバレン, ダラディエ, ムッソリーニ]
+  place: ミュンヘン（総統官邸）
+  summary_ja: |
+    チェコスロヴァキアのズデーテン地方をドイツに割譲させることで
+    戦争を回避した会談。当事国であるチェコスロヴァキアは招かれていない。
+    「これ以上の領土要求はしない」という言明は半年後の
+    プラハ進駐で破られ、以後イギリスはポーランドに保障を与えて
+    宥和政策から転じる。
+  decisions_ja:
+    - ズデーテン地方をドイツに割譲する
+    - チェコスロヴァキアの残余の国境を 4 か国で保障する
+  license: pd
+  verified: false
+  sources:
+    - title: Munich Agreement
+      url: https://en.wikipedia.org/wiki/Munich_Agreement
+    - title: German occupation of Czechoslovakia
+      url: https://en.wikipedia.org/wiki/German_occupation_of_Czechoslovakia
+
+- id: dec-19400618-appel-18-juin
+  coord: [-0.144, 51.518]
+  type: declaration
+  name_ja: ド・ゴールの「6 月 18 日の呼びかけ」
+  name_en: Appeal of 18 June
+  date: 1940-06-18
+  end: null
+  actors: [fr, uk]
+  persons: [ド・ゴール, チャーチル]
+  place: ロンドン（BBC）
+  summary_ja: |
+    ペタン政権が休戦を求めた翌日、ロンドンに逃れていた国防次官
+    ド・ゴールが BBC のラジオで抗戦の継続を訴えた。実際に聞いた人は
+    少なかったが、この放送が自由フランスの出発点になり、
+    フランスが「敗れた国」ではなく「戦い続けた連合国」として
+    戦後の席に着く根拠にもなった。
+  decisions_ja:
+    - 休戦に応じず抵抗を続けることを宣言する
+    - ロンドンに亡命フランス軍の結集を呼びかける
+  license: pd
+  verified: false
+  sources:
+    - title: Appeal of 18 June
+      url: https://en.wikipedia.org/wiki/Appeal_of_18_June
+    - title: Free France
+      url: https://en.wikipedia.org/wiki/Free_France
+
+- id: dec-19400710-vichy
+  coord: [3.426, 46.127]
+  type: declaration
+  name_ja: ヴィシー政権の成立（第三共和政の終わり）
+  name_en: Establishment of Vichy France
+  date: 1940-07-10
+  end: null
+  actors: [vichy, fr]
+  persons: [ペタン, ラヴァル]
+  place: ヴィシー
+  summary_ja: |
+    国民議会がペタンに憲法改正の全権を委ねる法律を可決し、
+    第三共和政が事実上終わった。占領されていない南部を統治する
+    政権が生まれ、対独協力の枠組みができる。地図の上では
+    「枢軸でも連合国でもないフランス」という第 3 の色が要る時期に入る。
+  decisions_ja:
+    - ペタン元帥に憲法制定の全権を与える
+    - 首都をヴィシーに置く
+  license: pd
+  verified: false
+  sources:
+    - title: Vichy France
+      url: https://en.wikipedia.org/wiki/Vichy_France
+    - title: Philippe Pétain
+      url: https://en.wikipedia.org/wiki/Philippe_P%C3%A9tain
+
+- id: dec-19401120-hungary-tripartite
+  coord: [16.381, 48.191]
+  type: treaty
+  name_ja: ハンガリーの三国同盟加入（東欧諸国の枢軸参加が続く）
+  name_en: Hungary joins the Tripartite Pact
+  date: 1940-11-20
+  end: null
+  actors: [hu, de, it, jp]
+  persons: [テレキ, リッベントロップ]
+  place: ウィーン（ベルヴェデーレ宮）
+  summary_ja: |
+    ハンガリーが三国同盟に加わり、23 日にルーマニア、24 日にスロヴァキア、
+    翌年 3 月にブルガリアとユーゴスラビアが続いた。ユーゴでは
+    加入の 2 日後にクーデタが起き、それがドイツのユーゴ侵攻
+    （総統指令第 25 号）を招く。東欧が枢軸の側に並んでいく過程の起点。
+  decisions_ja:
+    - 三国同盟に加入する
+    - ドイツ軍の通過と駐留を認める
+  license: pd
+  verified: false
+  sources:
+    - title: Tripartite Pact
+      url: https://en.wikipedia.org/wiki/Tripartite_Pact
+    - title: Hungary in World War II
+      url: https://en.wikipedia.org/wiki/Hungary_in_World_War_II
+
+- id: dec-19410625-finland-continuation-war
+  coord: [24.938, 60.170]
+  type: declaration
+  name_ja: フィンランドの参戦（継続戦争の開始）
+  name_en: Finland enters the Continuation War
+  date: 1941-06-25
+  end: null
+  actors: [fi, su, de]
+  persons: [リュティ, マンネルヘイム]
+  place: ヘルシンキ
+  summary_ja: |
+    バルバロッサ開始の 3 日後、ソ連機の空襲を受けたことをもって
+    フィンランドが戦争状態に入ったと宣言した。冬戦争で失った
+    カレリアの回復が目的で、フィンランド側は自国の戦争を
+    ドイツの対ソ戦とは別のものだと位置づけた（「共同交戦国」であって
+    同盟国ではないという建前）。
+  decisions_ja:
+    - ソ連との戦争状態に入る
+    - 冬戦争で失った地域の回復を目標とする
+    - ドイツとは同盟ではなく共同交戦の関係とする
+  license: pd
+  verified: false
+  sources:
+    - title: Continuation War
+      url: https://en.wikipedia.org/wiki/Continuation_War
+    - title: Finland in World War II
+      url: https://en.wikipedia.org/wiki/Finland_in_World_War_II
+
+- id: dec-19411209-china-declares-war
+  coord: [106.551, 29.563]
+  type: declaration
+  name_ja: 中華民国の対日・対独伊宣戦布告
+  name_en: Chinese declaration of war on Japan, Germany and Italy
+  date: 1941-12-09
+  end: null
+  actors: [cn, jp, de, it]
+  persons: [蔣介石]
+  place: 重慶
+  summary_ja: |
+    1937 年から 4 年半戦っていながら、中華民国は宣戦を布告していなかった。
+    宣戦すれば中立国からの物資輸入が止まるためで、日米開戦によって
+    その制約が消えたところで正式に宣戦した。これで日中戦争は
+    法的にも第二次世界大戦の一部になり、中国は連合国の一員として
+    カイロ会談に加わることになる。
+  decisions_ja:
+    - 日本・ドイツ・イタリアに対して宣戦を布告する
+    - 日本と結んだ一切の条約を無効とする
+  license: pd
+  verified: false
+  sources:
+    - title: Second Sino-Japanese War
+      url: https://en.wikipedia.org/wiki/Second_Sino-Japanese_War
+    - title: China in World War II
+      url: https://en.wikipedia.org/wiki/China_in_World_War_II
+
+- id: dec-19440823-romania-coup
+  coord: [26.103, 44.437]
+  type: order
+  name_ja: ルーマニアの政変（アントネスク解任と枢軸離脱）
+  name_en: King Michael's Coup
+  date: 1944-08-23
+  end: null
+  actors: [ro, de, su]
+  persons: [ミハイ 1 世, アントネスク]
+  place: ブカレスト（王宮）
+  summary_ja: |
+    ソ連軍がプルート川を越えた 3 日後、国王ミハイ 1 世が
+    アントネスク首相を解任・逮捕し、連合国との休戦と対独宣戦に転じた。
+    枢軸側は最大の石油供給地プロイェシュティを一夜で失い、
+    バルカン半島の戦線が一気に崩れる。地図の色が最も速く変わった 1 日。
+  decisions_ja:
+    - アントネスク政権を排除する
+    - 連合国と休戦し、ドイツに宣戦する
+    - ソ連軍のルーマニア通過を認める
+  license: pd
+  verified: false
+  sources:
+    - title: King Michael's Coup
+      url: https://en.wikipedia.org/wiki/King_Michael%27s_Coup
+    - title: Romania in World War II
+      url: https://en.wikipedia.org/wiki/Romania_in_World_War_II
+
+- id: dec-19440919-moscow-armistice
+  coord: [37.618, 55.752]
+  type: treaty
+  name_ja: モスクワ休戦協定（フィンランドの戦争離脱）
+  name_en: Moscow Armistice
+  date: 1944-09-19
+  end: null
+  actors: [fi, su, uk]
+  persons: [マンネルヘイム, ジダーノフ]
+  place: モスクワ
+  summary_ja: |
+    ソ連の夏季攻勢を受けてフィンランドが戦争を離脱した協定。
+    カレリアとペツァモの割譲、賠償、そして国内に残るドイツ軍の
+    追放が条件で、この最後の条項がラップランド戦争
+    （フィンランド軍が前日までの共同交戦国と戦う）を生んだ。
+  decisions_ja:
+    - 1940 年の国境に戻り、ペツァモをソ連に割譲する
+    - 賠償として 3 億ドル相当を支払う
+    - 国内のドイツ軍を自力で退去させる
+  license: pd
+  verified: false
+  sources:
+    - title: Moscow Armistice
+      url: https://en.wikipedia.org/wiki/Moscow_Armistice
+    - title: Lapland War
+      url: https://en.wikipedia.org/wiki/Lapland_War

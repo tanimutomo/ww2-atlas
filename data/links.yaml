@@ -449,3 +449,96 @@
   relation: triggers
   note_ja: ドイツ降伏を受けて、戦後処理と対日方針を決めるポツダム会談が開かれた。
 
+
+# ══════════════════════════════ P1 追加分（2026-09-10）
+# Decision を 101 件に増やしたぶん、決定と現場のつながりを足す。
+
+- from: dec-19400524-haltebefehl
+  to: Q208529
+  relation: responds_to
+  note_ja: 運河線での停止命令が出ていた 3 日間に、包囲下の英仏軍が海上撤退の態勢を整えた。
+
+- from: dec-19420323-weisung-40
+  to: Q16470
+  relation: responds_to
+  note_ja: 2 年前に出た沿岸防衛の指令が、上陸を水際で止めるという配置の前提を作っていた。
+
+- from: dec-19440916-wacht-am-rhein
+  to: Q151018
+  relation: authorizes
+  note_ja: 9 月の幕僚会議で決めたアルデンヌ反攻が、そのまま 12 月 16 日の攻勢になった。
+
+- from: dec-19411105-daikairei-1
+  to: Q52418
+  relation: authorizes
+  note_ja: 同日の御前会議の決定を受けて出た作戦準備命令。機動部隊の展開はこれを根拠に始まる。
+
+- from: dec-19440107-u-go
+  to: Q707238
+  relation: authorizes
+  note_ja: 大本営が認可したウ号作戦がインパール作戦として発動された。
+
+- from: Q700705
+  to: dec-19440718-tojo-resign
+  relation: triggers
+  note_ja: サイパンの失陥で本土が B-29 の行動圏に入り、重臣層の倒閣運動がまとまった。
+
+- from: Q192660
+  to: dec-19450407-suzuki-cabinet
+  relation: triggers
+  note_ja: 沖縄戦の開始とソ連の中立条約不延長通告が重なって小磯内閣が倒れた。
+
+- from: dec-19440605-overlord-go
+  to: Q16470
+  relation: authorizes
+  note_ja: 天候による延期を打ち切って 6 月 6 日の決行を決めた判断。
+
+- from: dec-19450725-atomic-bomb-order
+  to: Q703203
+  relation: authorizes
+  note_ja: 8 月 3 日以降の投下を包括的に授権した命令。日時と目標は現地の判断で決まった。
+
+- from: dec-19450725-atomic-bomb-order
+  to: Q4382340
+  relation: authorizes
+  note_ja: 同じ命令が「準備でき次第、追加の爆弾も」と定めており、2 発目に新たな命令は出ていない。
+
+- from: dec-19450808-declare-war-japan
+  to: Q6165880
+  relation: authorizes
+  note_ja: 宣戦を通告した数時間後に、極東の 3 方面から地上部隊が国境を越えた。
+
+- from: dec-19420913-uranus
+  to: Q38789
+  relation: responds_to
+  note_ja: 市内での消耗戦を続けながら、両翼に予備兵力を秘匿して集める方針をこの時点で決めている。
+
+- from: dec-19391130-winter-war
+  to: Q715182
+  relation: authorizes
+  note_ja: 攻撃開始の決定が、同じ日に始まった国境各地の戦闘の根拠になっている。
+
+- from: dec-19430908-armistice-announced
+  to: Q196502
+  relation: responds_to
+  note_ja: 9 月 3 日にカッシビレで秘密裏に調印した休戦を、上陸に合わせて 8 日に公表した。
+
+- from: dec-19400618-appel-18-juin
+  to: Q170360
+  relation: responds_to
+  note_ja: 休戦交渉が始まった段階で、それに応じないという立場をロンドンから表明した。
+
+- from: dec-19400710-vichy
+  to: Q170360
+  relation: responds_to
+  note_ja: 休戦協定の 3 週間後に、占領されなかった南部を統治する政権が発足した。
+
+- from: dec-19410625-finland-continuation-war
+  to: Q83055
+  relation: responds_to
+  note_ja: バルバロッサ開始の 3 日後の参戦。フィンランド側は自国の戦争を別のものと位置づけた。
+
+- from: dec-19411209-china-declares-war
+  to: Q52418
+  relation: responds_to
+  note_ja: 日米開戦で中立国からの輸入が止まる懸念が消え、4 年半戦ったのちに正式に宣戦した。

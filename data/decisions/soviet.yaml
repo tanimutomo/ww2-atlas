@@ -168,3 +168,138 @@
       url: https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact
     - title: ソ連対日参戦
       url: https://ja.wikipedia.org/wiki/%E3%82%BD%E9%80%A3%E5%AF%BE%E6%97%A5%E5%8F%82%E6%88%A6
+
+# ── P1 追加分（2026-09-10）───────────────────────────────────────────────
+
+- id: dec-19391130-winter-war
+  coord: [37.618, 55.752]
+  type: order
+  name_ja: 対フィンランド攻撃の決定（冬戦争の開始）
+  name_en: Soviet decision to attack Finland
+  date: 1939-11-30
+  end: null
+  actors: [su, fi]
+  persons: [スターリン, モロトフ, メレツコフ]
+  place: モスクワ
+  summary_ja: |
+    レニングラード防衛のための領土交換交渉が決裂したあと、
+    国境のマイニラで自国側に着弾があったとして、これを口実に攻撃を始めた。
+    3 か月半の戦闘で赤軍は大きな損害を出し、その様子が
+    「ソ連軍は弱い」という評価をドイツ側に与えることになる。
+  decisions_ja:
+    - フィンランドへの武力行使に踏み切る
+    - マイニラ砲撃事件を開戦の根拠とする
+    - 傀儡政権（テリヨキ政府）を立てて交渉相手を置き換える
+  license: pd
+  verified: false
+  sources:
+    - title: Winter War
+      url: https://en.wikipedia.org/wiki/Winter_War
+    - title: Shelling of Mainila
+      url: https://en.wikipedia.org/wiki/Shelling_of_Mainila
+
+- id: dec-19410624-sovinformburo
+  coord: [37.618, 55.752]
+  type: order
+  name_ja: ソビエト情報局と疎開評議会の設置
+  name_en: Sovinformburo and the Evacuation Council
+  date: 1941-06-24
+  end: null
+  actors: [su]
+  persons: [スターリン, シュヴェルニク, モロトフ]
+  place: モスクワ
+  summary_ja: |
+    独ソ戦の開始 2 日後に、戦況発表を一元化するソビエト情報局と、
+    西部の工業設備を東方へ移すための疎開評議会を同じ日に設けた。
+    前者は国内向けの情報の窓口、後者は数千の工場をウラル以東へ
+    動かす実務機関で、この 2 つが「発表」と「実態」の両側を支えた。
+  decisions_ja:
+    - 戦況の公式発表をソビエト情報局に一元化する
+    - 西部の工業設備と労働者を東方へ疎開させる機関を設ける
+  license: pd
+  verified: false
+  sources:
+    - title: Sovinformburo
+      url: https://en.wikipedia.org/wiki/Sovinformburo
+    - title: Eastern Front (World War II)
+      url: https://en.wikipedia.org/wiki/Eastern_Front_(World_War_II)
+
+- id: dec-19410630-gko
+  coord: [37.618, 55.752]
+  type: order
+  name_ja: 国家防衛委員会（GKO）の設置
+  name_en: Establishment of the State Defense Committee
+  date: 1941-06-30
+  end: null
+  actors: [su]
+  persons: [スターリン, モロトフ, ベリヤ, マレンコフ, ヴォロシーロフ]
+  place: モスクワ・クレムリン
+  summary_ja: |
+    党・政府・軍の権限を 5 人の委員会に集中させ、その決定に
+    すべての機関が従う体制を作った。スターリンが議長となり、
+    以後の動員・生産・作戦はこの委員会の決定として出される。
+    独ソ戦の 8 日目に、戦時の意思決定を一本化した措置。
+  decisions_ja:
+    - 国家防衛委員会に全権を集中する
+    - スターリンが議長を務める
+    - 委員会決定は法律と同等の効力を持つ
+  license: pd
+  verified: false
+  sources:
+    - title: State Defense Committee
+      url: https://en.wikipedia.org/wiki/State_Defense_Committee
+    - title: Joseph Stalin
+      url: https://en.wikipedia.org/wiki/Joseph_Stalin
+
+- id: dec-19420913-uranus
+  coord: [37.618, 55.752]
+  type: order
+  name_ja: ウラヌス作戦の承認（スターリングラードでの反攻計画）
+  name_en: Approval of Operation Uranus
+  date: 1942-09-13
+  end: null
+  actors: [su]
+  persons: [スターリン, ジューコフ, ヴァシレフスキー]
+  place: モスクワ・クレムリン
+  summary_ja: |
+    市街戦に兵力を注ぎ込むのではなく、両翼のルーマニア軍正面を破って
+    包囲するという構想を、ジューコフとヴァシレフスキーが提案し
+    スターリンが承認した。以後 2 か月、市内では消耗戦を続けながら
+    翼側に予備兵力を秘匿して集めることになる。実行は 11 月 19 日。
+  decisions_ja:
+    - 市内での反撃ではなく、両翼からの包囲を選ぶ
+    - 準備期間を 2 か月とり、予備兵力を秘匿して集中する
+  license: pd
+  verified: false
+  sources:
+    - title: Operation Uranus
+      url: https://en.wikipedia.org/wiki/Operation_Uranus
+    - title: Battle of Stalingrad
+      url: https://en.wikipedia.org/wiki/Battle_of_Stalingrad
+
+- id: dec-19450808-declare-war-japan
+  coord: [37.618, 55.752]
+  type: declaration
+  name_ja: ソ連の対日宣戦布告
+  name_en: Soviet declaration of war on Japan
+  date: 1945-08-08
+  end: null
+  actors: [su, jp]
+  persons: [モロトフ, スターリン, 佐藤尚武]
+  place: モスクワ
+  summary_ja: |
+    ヤルタでの密約（ドイツ降伏の 3 か月後に対日参戦）に沿って、
+    モロトフ外相が佐藤大使に宣戦を通告した。日本政府はこの時点まで
+    ソ連を和平の仲介者として頼っており、その前提が消えたことは
+    広島への原爆投下と並んで受諾の決断を早める要因になった。
+    通告の数時間後に満洲侵攻が始まる。
+  decisions_ja:
+    - 8 月 9 日をもって日本と戦争状態に入る
+    - ポツダム宣言に加わる
+  license: pd
+  verified: false
+  sources:
+    - title: Soviet–Japanese War
+      url: https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War
+    - title: Yalta Conference
+      url: https://en.wikipedia.org/wiki/Yalta_Conference

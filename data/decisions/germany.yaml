@@ -452,3 +452,220 @@
   sources:
     - title: Nero Decree
       url: https://en.wikipedia.org/wiki/Nero_Decree
+
+# ── P1 追加分（2026-09-10）───────────────────────────────────────────────
+# 「決定 → 作戦」の抜けと、causal spine 上の大きな分岐を埋める。
+# 総統指令は引き続き原文の所在が取れていないので verified: false。
+
+- id: dec-19400524-haltebefehl
+  coord: [4.720, 49.771]
+  type: order
+  name_ja: ダンケルク前面の停止命令（ハルテベフェール）
+  name_en: Halt Order before Dunkirk
+  date: 1940-05-24
+  end: 1940-05-26
+  actors: [de]
+  persons: [ヒトラー, ルントシュテット, ゲーリング]
+  place: シャルルヴィル＝メジエール（A 軍集団司令部）
+  summary_ja: |
+    海岸まで 20km 前後に迫っていた装甲部隊に、運河線で停止するよう命じた。
+    A 軍集団司令部での協議を経た判断で、装甲師団の消耗を避けること、
+    湿地帯での戦車運用を避けること、包囲網の掃討は空軍に任せられるという
+    ゲーリングの主張が重なっている。停止は 3 日で解かれたが、その間に
+    英仏軍の海上撤退（ダイナモ作戦）の枠組みができた。
+  decisions_ja:
+    - 装甲部隊をアー運河の線で停止させる
+    - 包囲下の敵の撃滅は空軍に委ねる
+    - 装甲師団を次の作戦（赤作戦）のために温存する
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of Dunkirk
+      url: https://en.wikipedia.org/wiki/Battle_of_Dunkirk
+    - title: Dunkirk evacuation
+      url: https://en.wikipedia.org/wiki/Dunkirk_evacuation
+
+- id: dec-19401023-hendaye
+  coord: [-1.774, 43.359]
+  type: conference
+  name_ja: アンダイエ会談（ヒトラーとフランコ）
+  name_en: Meeting at Hendaye
+  date: 1940-10-23
+  end: null
+  actors: [de]
+  persons: [ヒトラー, フランコ, リッベントロップ]
+  place: アンダイエ（仏西国境の鉄道駅）
+  summary_ja: |
+    スペインを枢軸側で参戦させ、ジブラルタル攻略（フェリックス作戦）に
+    協力させるための会談。フランコは食糧・燃料の供与とフランス領モロッコの
+    割譲を条件に挙げ、9 時間の交渉は合意に至らなかった。地中海の西口を
+    閉じる構想はここで実質的に潰れている。
+  decisions_ja:
+    - スペインの参戦時期を確定できないまま散会する
+    - ジブラルタル攻略への協力は具体化しない
+  license: pd
+  verified: false
+  sources:
+    - title: Meeting at Hendaye
+      url: https://en.wikipedia.org/wiki/Meeting_at_Hendaye
+    - title: Operation Felix
+      url: https://en.wikipedia.org/wiki/Operation_Felix
+
+- id: dec-19401112-weisung-18
+  coord: [13.405, 52.52]
+  type: directive
+  name_ja: 総統指令第 18 号（対仏・対西政策とフェリックス作戦）
+  name_en: Führer Directive No. 18
+  date: 1940-11-12
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    アンダイエ会談の後に出た指令。スペイン・ヴィシー政権・イタリアとの関係を
+    整理し、ジブラルタル攻略（フェリックス作戦）の準備を命じた。同時に
+    「東方問題」への言及があり、対ソ作戦の検討が並行していたことが読み取れる。
+  decisions_ja:
+    - ジブラルタル攻略（フェリックス作戦）の準備を命じる
+    - ヴィシー政権には対英戦への限定的な協力を求める
+    - 東方（対ソ）については別途検討を続ける
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Operation Felix
+      url: https://en.wikipedia.org/wiki/Operation_Felix
+
+- id: dec-19411211-declare-war-us
+  coord: [13.375, 52.518]
+  type: declaration
+  name_ja: ドイツの対米宣戦布告
+  name_en: German declaration of war against the United States
+  date: 1941-12-11
+  end: null
+  actors: [de, us]
+  persons: [ヒトラー, リッベントロップ]
+  place: ベルリン（クロル・オペラハウス／国会）
+  summary_ja: |
+    真珠湾攻撃の 4 日後、ヒトラーが国会で対米宣戦を宣言した。三国同盟は
+    「攻撃を受けた場合」の相互援助を定めており、日本から攻撃した今回は
+    法的な義務が生じていない。にもかかわらず先に宣戦したことで、
+    アメリカは欧州戦への全面参戦を国内世論の抵抗なく決められるようになった。
+  decisions_ja:
+    - アメリカ合衆国に対して宣戦を布告する
+    - 日本・イタリアと単独不講和を約する追加協定を結ぶ
+  license: pd
+  verified: false
+  sources:
+    - title: German declaration of war against the United States
+      url: https://en.wikipedia.org/wiki/German_declaration_of_war_against_the_United_States
+    - title: Tripartite Pact
+      url: https://en.wikipedia.org/wiki/Tripartite_Pact
+
+- id: dec-19411219-hitler-takes-okh
+  coord: [21.494, 54.078]
+  type: order
+  name_ja: ヒトラーの陸軍総司令官就任（ブラウヒッチュ解任）
+  name_en: Hitler assumes command of the Army
+  date: 1941-12-19
+  end: null
+  actors: [de]
+  persons: [ヒトラー, ブラウヒッチュ]
+  place: 総統大本営「狼の巣」（ラステンブルク）
+  summary_ja: |
+    モスクワ前面での後退をめぐる対立の末、陸軍総司令官ブラウヒッチュを解任し、
+    ヒトラー自身が陸軍総司令官を兼ねた。以後、東部戦線の作戦指導は
+    軍事的な指揮系統を経ずに総統の直接命令で動くようになる。
+  decisions_ja:
+    - 陸軍総司令官を解任し、総統が兼任する
+    - 東部戦線での後退を原則として禁じる（死守命令）
+  license: pd
+  verified: false
+  sources:
+    - title: Walther von Brauchitsch
+      url: https://en.wikipedia.org/wiki/Walther_von_Brauchitsch
+    - title: Oberkommando des Heeres
+      url: https://en.wikipedia.org/wiki/Oberkommando_des_Heeres
+
+- id: dec-19420120-wannsee
+  coord: [13.164, 52.433]
+  type: conference
+  name_ja: ヴァンゼー会議
+  name_en: Wannsee Conference
+  date: 1942-01-20
+  end: null
+  actors: [de]
+  persons: [ハイドリヒ, アイヒマン]
+  place: ベルリン・ヴァンゼー
+  summary_ja: |
+    親衛隊と各省庁の次官級を集め、すでに始まっていたユダヤ人の組織的殺害を
+    行政機構の間で調整した会議。ここで殺害が決定されたのではなく、
+    実施中の政策に各官庁を巻き込み、責任と手順を分担させたという位置づけで
+    理解されている。議事録（ヴァンゼー議定書）が現存する。
+  decisions_ja:
+    - 「ユダヤ人問題の最終的解決」を各省庁の協力のもとで進めることを確認する
+    - 親衛隊（国家保安本部）が実施の主導権を持つことを確認する
+  license: pd
+  verified: false
+  sources:
+    - title: Wannsee Conference
+      url: https://en.wikipedia.org/wiki/Wannsee_Conference
+    - title: House of the Wannsee Conference（記念館・議定書の所蔵）
+      url: https://www.ghwk.de/en/
+
+- id: dec-19420323-weisung-40
+  coord: [13.405, 52.52]
+  type: directive
+  name_ja: 総統指令第 40 号（沿岸防衛の指揮系統＝大西洋の壁）
+  name_en: Führer Directive No. 40
+  date: 1942-03-23
+  end: null
+  actors: [de]
+  persons: [ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    大西洋岸で連合軍の上陸に備える体制を定めた指令。沿岸の防衛は
+    陸海空軍の別なく現地の指揮官に一元化し、要塞線（のちに「大西洋の壁」と
+    呼ばれる）の構築を命じた。2 年後のノルマンディーで問われる縦深と
+    予備兵力の配置は、ここで作られた枠組みの上にある。
+  decisions_ja:
+    - 沿岸防衛の指揮を現地指揮官に一元化する
+    - 上陸されたら水際で撃退することを原則とする
+    - 沿岸要塞線の構築を優先する
+  license: pd
+  verified: false
+  sources:
+    - title: List of Adolf Hitler's directives（総統指令の一覧）
+      url: https://en.wikipedia.org/wiki/List_of_Adolf_Hitler%27s_directives
+      note: locator。原文の所在は要確認
+    - title: Atlantic Wall
+      url: https://en.wikipedia.org/wiki/Atlantic_Wall
+
+- id: dec-19440916-wacht-am-rhein
+  coord: [21.494, 54.078]
+  type: order
+  name_ja: アルデンヌ攻勢（「ラインの守り」作戦）の決定
+  name_en: Decision for Operation Wacht am Rhein
+  date: 1944-09-16
+  end: null
+  actors: [de]
+  persons: [ヒトラー, ヨードル, モーデル]
+  place: 総統大本営「狼の巣」
+  summary_ja: |
+    西部の全戦線が後退するなか、ヒトラーが幕僚会議の席でアルデンヌからの
+    反攻を宣言した。アントワープを衝いて英米軍を分断するという構想で、
+    軍集団側は兵力不足を理由に規模の縮小を求めたが通らなかった。
+    実行は 12 月 16 日のバルジの戦い。
+  decisions_ja:
+    - アルデンヌから反攻に出て、アントワープを目標とする
+    - 東部戦線ではなく西部に新編の装甲軍を投入する
+    - 準備は最高度の秘匿のもとで進める
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of the Bulge
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Bulge
+    - title: Alfred Jodl
+      url: https://en.wikipedia.org/wiki/Alfred_Jodl

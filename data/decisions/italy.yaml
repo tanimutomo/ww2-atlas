@@ -80,3 +80,110 @@
       url: https://en.wikipedia.org/wiki/Grand_Council_of_Fascism
     - title: Armistice of Cassibile
       url: https://en.wikipedia.org/wiki/Armistice_of_Cassibile
+
+# ── P1 追加分（2026-09-10）───────────────────────────────────────────────
+
+- id: dec-19390522-pact-of-steel
+  coord: [13.405, 52.52]
+  type: treaty
+  name_ja: 鋼鉄条約（独伊軍事同盟条約）
+  name_en: Pact of Steel
+  date: 1939-05-22
+  end: null
+  actors: [it, de]
+  persons: [チアーノ, リッベントロップ, ムッソリーニ, ヒトラー]
+  place: ベルリン
+  summary_ja: |
+    一方が交戦状態に入ったとき、他方が自動的に全力で援助する義務を負う
+    という異例に強い同盟条約。イタリア側は「3 年は戦争をしない」という
+    了解のもとで署名したが、条文には条件が書かれていない。
+    4 か月後にドイツがポーランドに侵攻したとき、イタリアは
+    準備不足を理由に参戦を見送り、条約の実効性はこの時点で揺らいだ。
+  decisions_ja:
+    - 一方が交戦したら他方が全力で援助する
+    - 単独講和をしない
+  license: pd
+  verified: false
+  sources:
+    - title: Pact of Steel
+      url: https://en.wikipedia.org/wiki/Pact_of_Steel
+    - title: Galeazzo Ciano
+      url: https://en.wikipedia.org/wiki/Galeazzo_Ciano
+
+- id: dec-19400624-villa-incisa
+  coord: [12.44, 41.98]
+  type: treaty
+  name_ja: 伊仏休戦協定（ヴィラ・インチーザ協定）
+  name_en: Armistice of Villa Incisa
+  date: 1940-06-24
+  end: null
+  actors: [it, fr]
+  persons: [バドリオ, ハンツィジェ]
+  place: ローマ近郊ヴィラ・インチーザ
+  summary_ja: |
+    独仏休戦（コンピエーニュ）の 2 日後に結ばれた、イタリアとフランスの休戦協定。
+    参戦から 2 週間の戦闘でイタリア軍はほとんど前進できておらず、
+    占領地域は国境沿いの狭い帯にとどまった。ムッソリーニが求めた
+    ニース・コルシカ・チュニジアの割譲はドイツが認めず、実現していない。
+  decisions_ja:
+    - 実際に占領した地域に限って非武装地帯を設ける
+    - フランス艦隊の引き渡しは求めない
+  license: pd
+  verified: false
+  sources:
+    - title: Armistice of Villa Incisa
+      url: https://en.wikipedia.org/wiki/Armistice_of_Villa_Incisa
+    - title: Italian invasion of France
+      url: https://en.wikipedia.org/wiki/Italian_invasion_of_France
+
+- id: dec-19430908-armistice-announced
+  coord: [12.482, 41.896]
+  type: declaration
+  name_ja: 休戦の公表（バドリオ声明）
+  name_en: Public announcement of the Armistice of Cassibile
+  date: 1943-09-08
+  end: null
+  actors: [it, us, uk]
+  persons: [バドリオ, アイゼンハワー, ヴィットーリオ・エマヌエーレ 3 世]
+  place: ローマ
+  summary_ja: |
+    9 月 3 日にカッシビレで秘密裏に調印した休戦を、連合軍のサレルノ上陸に
+    合わせて公表した。国王と政府はローマを脱出し、軍には統一した指示が
+    届かないまま各地で崩壊した。ドイツ軍はあらかじめ用意していた
+    アクセ作戦でイタリア半島の要地を数日で押さえている。
+  decisions_ja:
+    - 連合国との休戦を公表する
+    - 政府と王室はローマを離れてブリンディジに移る
+  license: pd
+  verified: false
+  sources:
+    - title: Armistice of Cassibile
+      url: https://en.wikipedia.org/wiki/Armistice_of_Cassibile
+    - title: Operation Achse
+      url: https://en.wikipedia.org/wiki/Operation_Achse
+
+- id: dec-19431013-declare-war-germany
+  coord: [17.945, 40.632]
+  type: declaration
+  name_ja: イタリア王国の対独宣戦布告（共同交戦国化）
+  name_en: Italian declaration of war on Germany
+  date: 1943-10-13
+  end: null
+  actors: [it, de]
+  persons: [バドリオ, ヴィットーリオ・エマヌエーレ 3 世]
+  place: ブリンディジ
+  summary_ja: |
+    南部を実効支配下に置いた王国政府がドイツに宣戦し、連合国から
+    「共同交戦国」の地位を得た。北部にはドイツの支援でイタリア社会共和国が
+    立っており、以後の半島は 2 つの政府と 2 つのイタリア軍が並存する
+    内戦の様相を帯びる。
+  decisions_ja:
+    - ドイツに対して宣戦を布告する
+    - 連合国の共同交戦国として戦列に加わる
+  license: pd
+  verified: false
+  sources:
+    - title: Italian Co-belligerent Army
+      url: https://en.wikipedia.org/wiki/Italian_Co-belligerent_Army
+    - title: Italian Social Republic
+      url: https://en.wikipedia.org/wiki/Italian_Social_Republic

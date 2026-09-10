@@ -480,3 +480,216 @@
       url: https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%89%8D%E4%BC%9A%E8%AD%B0
     - title: 日本の降伏
       url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F
+
+# ── P1 追加分（2026-09-10）───────────────────────────────────────────────
+# 開戦に至る「進駐 → 禁輸 → 開戦」の連鎖と、内閣の交代（＝戦争指導の転換点）を足す。
+
+- id: dec-19400922-hokubu-futsuin
+  coord: [105.854, 21.028]
+  type: order
+  name_ja: 北部仏印進駐
+  name_en: Japanese entry into northern French Indochina
+  date: 1940-09-22
+  end: 1940-09-26
+  actors: [jp, vichy]
+  persons: [西原一策, ドクー]
+  place: ハノイ（仏印総督府）
+  summary_ja: |
+    援蒋ルートの遮断を名目に、フランス領インドシナ北部への進駐を
+    ヴィシー政権と協定のうえ実施した。現地では第 5 師団が協定発効前に
+    越境して戦闘になっている。アメリカはこの直後に屑鉄の対日全面禁輸に
+    踏み切り、対日制裁が段階的に強まっていく起点になった。
+  decisions_ja:
+    - 仏印北部への進駐を実施し、飛行場と鉄道を確保する
+    - 援蒋ルート（ハノイ〜昆明）を遮断する
+  license: pd
+  verified: false
+  sources:
+    - title: Japanese invasion of French Indochina
+      url: https://en.wikipedia.org/wiki/Japanese_invasion_of_French_Indochina
+    - title: French Indochina in World War II
+      url: https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II
+
+- id: dec-19410728-nanbu-futsuin
+  coord: [106.700, 10.776]
+  type: order
+  name_ja: 南部仏印進駐
+  name_en: Japanese occupation of southern French Indochina
+  date: 1941-07-28
+  end: null
+  actors: [jp, vichy]
+  persons: [近衛文麿, 松岡洋右, 東條英機]
+  place: サイゴン
+  summary_ja: |
+    7 月 2 日の御前会議「情勢ノ推移ニ伴フ帝国国策要綱」で決めた南進の
+    具体化として、仏印南部に進駐した。サイゴン・カムラン湾は
+    マレー・蘭印を射程に入れる位置にあり、アメリカ・イギリス・オランダは
+    これを侵攻の準備と受け取った。2 日前にアメリカは在米日本資産を
+    凍結しており、8 月には石油の対日輸出が事実上止まる。
+  decisions_ja:
+    - 仏印南部に進駐し、航空基地と港湾を確保する
+    - 南方作戦の発起点を前進させる
+  license: pd
+  verified: false
+  sources:
+    - title: Japanese invasion of French Indochina
+      url: https://en.wikipedia.org/wiki/Japanese_invasion_of_French_Indochina
+    - title: Attack on Pearl Harbor（開戦に至る経緯の節）
+      url: https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor
+
+- id: dec-19411016-tojo-cabinet
+  coord: [139.752, 35.685]
+  type: conference
+  name_ja: 第 3 次近衛内閣の総辞職と東條内閣の成立
+  name_en: Formation of the Tōjō cabinet
+  date: 1941-10-16
+  end: 1941-10-18
+  actors: [jp]
+  persons: [近衛文麿, 東條英機, 木戸幸一]
+  place: 東京
+  summary_ja: |
+    9 月 6 日の御前会議が「10 月下旬を目途に対米交渉が成らなければ開戦」と
+    期限を切ったため、交渉継続を望む近衛と撤兵に応じない陸軍が対立し、
+    内閣が倒れた。後継に陸相の東條が指名され、同時に
+    9 月 6 日の決定を白紙に戻して国策を再検討せよという言葉が添えられた。
+    現役軍人が首相・陸相・内相を兼ねる体制になる。
+  decisions_ja:
+    - 近衛内閣が総辞職する
+    - 東條英機を後継首相とし、陸相・内相を兼ねさせる
+    - 9 月 6 日御前会議の決定を白紙還元して国策を再検討する
+  license: pd
+  verified: false
+  sources:
+    - title: Hideki Tojo
+      url: https://en.wikipedia.org/wiki/Hideki_Tojo
+    - title: Fumimaro Konoe
+      url: https://en.wikipedia.org/wiki/Fumimaro_Konoe
+
+- id: dec-19411105-daikairei-1
+  coord: [139.752, 35.685]
+  type: order
+  name_ja: 大海令第 1 号（連合艦隊への作戦準備命令）
+  name_en: Navy Directive No. 1
+  date: 1941-11-05
+  end: null
+  actors: [jp]
+  persons: [永野修身, 山本五十六]
+  place: 東京（大本営海軍部）
+  summary_ja: |
+    同じ日の御前会議が「12 月初頭の開戦」を決めたのを受け、
+    軍令部総長から連合艦隊司令長官に対して対米英蘭戦の作戦準備を命じた。
+    ハワイ作戦を含む機動部隊の展開はこの命令を根拠に動き出す。
+  decisions_ja:
+    - 連合艦隊に対米英蘭戦の作戦準備を命じる
+    - 開戦日を 12 月上旬と予定して部隊を展開させる
+  license: pd
+  verified: false
+  sources:
+    - title: Imperial General Headquarters
+      url: https://en.wikipedia.org/wiki/Imperial_General_Headquarters
+    - title: Attack on Pearl Harbor
+      url: https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor
+
+- id: dec-19440107-u-go
+  coord: [96.157, 16.871]
+  type: order
+  name_ja: ウ号作戦（インパール作戦）の認可
+  name_en: Authorisation of Operation U-Go
+  date: 1944-01-07
+  end: null
+  actors: [jp]
+  persons: [東條英機, 河辺正三, 牟田口廉也]
+  place: 東京・ラングーン（南方軍／ビルマ方面軍）
+  summary_ja: |
+    ビルマ防衛のために印英軍の策源地インパールを衝くという第 15 軍の
+    構想を、大本営が大陸指をもって認可した。補給の見通しについては
+    現地の複数の司令部から疑義が出ていたが、作戦は縮小されずに発動される。
+    3 月開始、7 月に中止、日本側の損害は戦病死を含めて甚大なものになった。
+  decisions_ja:
+    - 第 15 軍によるインパール攻略作戦を認可する
+    - 補給はチンドウィン川以西を現地調達に依存する前提を容認する
+  license: pd
+  verified: false
+  sources:
+    - title: Operation U-Go
+      url: https://en.wikipedia.org/wiki/Operation_U-Go
+    - title: Battle of Imphal
+      url: https://en.wikipedia.org/wiki/Battle_of_Imphal
+
+- id: dec-19440718-tojo-resign
+  coord: [139.752, 35.685]
+  type: conference
+  name_ja: 東條内閣の総辞職（サイパン陥落の責任）
+  name_en: Resignation of the Tōjō cabinet
+  date: 1944-07-18
+  end: 1944-07-22
+  actors: [jp]
+  persons: [東條英機, 小磯國昭, 米内光政, 木戸幸一]
+  place: 東京
+  summary_ja: |
+    サイパンの失陥で本土が B-29 の行動圏に入り、重臣層の倒閣運動が
+    まとまって東條内閣が倒れた。後継は小磯國昭と米内光政の連立という形をとり、
+    翌 8 月には最高戦争指導会議が設けられて、戦争終結の議論が
+    公式の場で扱えるようになる。
+  decisions_ja:
+    - 東條内閣が総辞職する
+    - 小磯・米内の連立内閣を組織する
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of Saipan
+      url: https://en.wikipedia.org/wiki/Battle_of_Saipan
+    - title: Kuniaki Koiso
+      url: https://en.wikipedia.org/wiki/Kuniaki_Koiso
+
+- id: dec-19450407-suzuki-cabinet
+  coord: [139.752, 35.685]
+  type: conference
+  name_ja: 鈴木貫太郎内閣の成立
+  name_en: Formation of the Suzuki cabinet
+  date: 1945-04-07
+  end: null
+  actors: [jp]
+  persons: [鈴木貫太郎, 東郷茂徳, 木戸幸一]
+  place: 東京
+  summary_ja: |
+    沖縄戦の開始とソ連の中立条約不延長通告を受けて小磯内閣が倒れ、
+    枢密院議長だった鈴木貫太郎が組閣した。表向きは戦争完遂を掲げつつ、
+    外相に東郷茂徳を据えて終戦工作の余地を残した布陣で、
+    以後の最高戦争指導会議はこの内閣のもとで動く。
+  decisions_ja:
+    - 鈴木貫太郎を首相とする内閣を組織する
+    - 外相に東郷茂徳を起用する
+  license: pd
+  verified: false
+  sources:
+    - title: Kantarō Suzuki
+      url: https://en.wikipedia.org/wiki/Kantar%C5%8D_Suzuki
+    - title: Shigenori Tōgō
+      url: https://en.wikipedia.org/wiki/Shigenori_T%C5%8Dg%C5%8D
+
+- id: dec-19450728-mokusatsu
+  coord: [139.752, 35.685]
+  type: declaration
+  name_ja: 鈴木首相の「黙殺」談話（ポツダム宣言への対応）
+  name_en: The mokusatsu statement on the Potsdam Declaration
+  date: 1945-07-28
+  end: null
+  actors: [jp]
+  persons: [鈴木貫太郎]
+  place: 東京
+  summary_ja: |
+    7 月 26 日のポツダム宣言に対し、鈴木首相が記者会見で
+    「ただ黙殺するだけである」と述べた。政府内では回答を保留して
+    ソ連の仲介を待つ方針だったが、この語が対外的には「拒否」と訳されて伝わった。
+    受諾までの 3 週間に広島・長崎への原爆投下とソ連参戦が起きている。
+  decisions_ja:
+    - ポツダム宣言に正式な回答を出さない
+    - ソ連を通じた和平仲介の可能性を引き続き探る
+  license: pd
+  verified: false
+  sources:
+    - title: Mokusatsu
+      url: https://en.wikipedia.org/wiki/Mokusatsu
+    - title: Potsdam Declaration
+      url: https://en.wikipedia.org/wiki/Potsdam_Declaration

@@ -498,3 +498,218 @@
       url: https://en.wikipedia.org/wiki/United_Nations_Conference_on_International_Organization
     - title: Charter of the United Nations（全文・Wikisource）
       url: https://en.wikisource.org/wiki/Charter_of_the_United_Nations
+
+# ── P1 追加分（2026-09-10）───────────────────────────────────────────────
+# 「参戦以前のアメリカ」と、原爆・オーヴァーロードの発動決定を足す。
+
+- id: dec-19391104-neutrality-act
+  coord: [-77.036, 38.895]
+  type: declaration
+  name_ja: 中立法の改正（現金自国船主義）
+  name_en: Neutrality Act of 1939 (cash and carry)
+  date: 1939-11-04
+  end: null
+  actors: [us]
+  persons: [ローズヴェルト]
+  place: ワシントン
+  summary_ja: |
+    交戦国への武器禁輸を解き、代金前払い・買い手の船での輸送を条件に
+    武器を売れるようにした改正。海上を支配していた英仏だけが実際には
+    利用でき、中立を掲げたまま連合国側に物資を流す仕組みになった。
+    武器貸与法（1941 年 3 月）に至る第一歩にあたる。
+  decisions_ja:
+    - 交戦国への武器禁輸を解除する
+    - 代金前払いと買い手側の船による輸送を条件とする
+  license: pd
+  verified: false
+  sources:
+    - title: Neutrality Acts of the 1930s
+      url: https://en.wikipedia.org/wiki/Neutrality_Acts_of_the_1930s
+    - title: Cash and carry (World War II)
+      url: https://en.wikipedia.org/wiki/Cash_and_carry_(World_War_II)
+
+- id: dec-19400902-destroyers-for-bases
+  coord: [-77.036, 38.895]
+  type: treaty
+  name_ja: 駆逐艦・基地協定
+  name_en: Destroyers-for-bases deal
+  date: 1940-09-02
+  end: null
+  actors: [us, uk]
+  persons: [ローズヴェルト, チャーチル]
+  place: ワシントン
+  summary_ja: |
+    アメリカが旧式駆逐艦 50 隻をイギリスに引き渡し、代わりに
+    ニューファンドランドからカリブ海にかけての基地を 99 年租借した。
+    議会の承認を経ない大統領の行政協定として結ばれており、
+    中立国の建前を保ったまま実質的に一方の陣営に加担した例になっている。
+  decisions_ja:
+    - 駆逐艦 50 隻をイギリスに引き渡す
+    - 大西洋・カリブ海の 8 か所の基地を 99 年租借する
+    - 議会承認を要さない行政協定の形をとる
+  license: pd
+  verified: false
+  sources:
+    - title: Destroyers-for-bases deal
+      url: https://en.wikipedia.org/wiki/Destroyers-for-bases_deal
+    - title: Lend-Lease
+      url: https://en.wikipedia.org/wiki/Lend-Lease
+
+- id: dec-19410726-freeze-japanese-assets
+  coord: [-77.036, 38.895]
+  type: order
+  name_ja: 在米日本資産の凍結（と事実上の石油禁輸）
+  name_en: Freezing of Japanese assets in the United States
+  date: 1941-07-26
+  end: null
+  actors: [us, uk, nl]
+  persons: [ローズヴェルト, ハル, アチソン]
+  place: ワシントン
+  summary_ja: |
+    南部仏印進駐に対する報復として、在米日本資産を凍結した。
+    形式上は輸出許可制で石油を止めたわけではないが、決済を許可する
+    運用が行われなかったため、8 月以降は石油の対日輸出が事実上ゼロになる。
+    英蘭も同調し、日本は「輸入の道を絶たれた状態で交渉するか、開戦するか」
+    という時間の制約を負うことになった。
+  decisions_ja:
+    - 在米日本資産を凍結する
+    - 対日輸出を許可制とし、実際には石油の輸出許可を出さない
+    - イギリス・オランダ領東インドも同調させる
+  license: pd
+  verified: false
+  sources:
+    - title: Events leading to the attack on Pearl Harbor
+      url: https://en.wikipedia.org/wiki/Events_leading_to_the_attack_on_Pearl_Harbor
+    - title: Export Control Act（対日輸出許可制の根拠法）
+      url: https://en.wikipedia.org/wiki/Export_Control_Act
+
+- id: dec-19420617-manhattan-project
+  coord: [-77.036, 38.895]
+  type: order
+  name_ja: マンハッタン計画の発足（陸軍への移管と全面着手）
+  name_en: Launch of the Manhattan Project
+  date: 1942-06-17
+  end: null
+  actors: [us, uk, ca]
+  persons: [ローズヴェルト, ブッシュ, グローヴス]
+  place: ワシントン
+  summary_ja: |
+    ウラン研究を科学者主体の体制から陸軍工兵隊の大規模事業に切り替え、
+    核兵器の製造を国家事業として進める決定。9 月にグローヴス准将が
+    責任者になり、オークリッジ・ハンフォード・ロスアラモスの建設が始まる。
+    3 年後の広島・長崎はこの決定の帰結にあたる。
+  decisions_ja:
+    - 核兵器の開発・製造を陸軍工兵隊の管轄で全面的に進める
+    - 濃縮・生産施設の建設に最優先の資材配分を与える
+  license: pd
+  verified: false
+  sources:
+    - title: Manhattan Project
+      url: https://en.wikipedia.org/wiki/Manhattan_Project
+    - title: Leslie Groves
+      url: https://en.wikipedia.org/wiki/Leslie_Groves
+
+- id: dec-19431207-eisenhower-appointed
+  coord: [-77.036, 38.895]
+  type: order
+  name_ja: アイゼンハワーの連合国遠征軍最高司令官任命
+  name_en: Appointment of Eisenhower as Supreme Allied Commander
+  date: 1943-12-07
+  end: null
+  actors: [us, uk]
+  persons: [ローズヴェルト, アイゼンハワー, マーシャル]
+  place: ワシントン（テヘラン会談の帰路に決定）
+  summary_ja: |
+    テヘラン会談でオーヴァーロード作戦の 1944 年 5 月実施が確約されたのを受け、
+    その最高司令官を決めた。マーシャルを充てる案があったが、参謀総長を
+    ワシントンから動かせないという判断でアイゼンハワーになった。
+    連合国遠征軍最高司令部（SHAEF）は翌 1 月に発足する。
+  decisions_ja:
+    - アイゼンハワーを連合国遠征軍最高司令官に任命する
+    - マーシャルは参謀総長にとどめる
+  license: pd
+  verified: false
+  sources:
+    - title: Supreme Headquarters Allied Expeditionary Force
+      url: https://en.wikipedia.org/wiki/Supreme_Headquarters_Allied_Expeditionary_Force
+    - title: Dwight D. Eisenhower
+      url: https://en.wikipedia.org/wiki/Dwight_D._Eisenhower
+
+- id: dec-19440605-overlord-go
+  coord: [-1.203, 50.869]
+  type: order
+  name_ja: オーヴァーロード作戦の実施決断（「よろしい、行こう」）
+  name_en: Eisenhower's decision to launch Overlord
+  date: 1944-06-05
+  end: null
+  actors: [us, uk, ca]
+  persons: [アイゼンハワー, モンゴメリー, スタッグ]
+  place: サウスウィック・ハウス（ポーツマス近郊）
+  summary_ja: |
+    悪天候で 6 月 5 日から延期していた上陸を、気象班が示した
+    「6 月 6 日に短い好天の窓がある」という予報にもとづいて発動した。
+    次の潮汐と月齢の条件が揃うのは 2 週間後で、そこまで待てば
+    部隊の秘匿が持たないという判断が背景にある。
+  decisions_ja:
+    - 上陸決行日を 6 月 6 日とする
+    - 気象の窓が短いことを承知のうえで実施する
+  license: pd
+  verified: false
+  sources:
+    - title: Normandy landings
+      url: https://en.wikipedia.org/wiki/Normandy_landings
+    - title: Southwick House
+      url: https://en.wikipedia.org/wiki/Southwick_House
+
+- id: dec-19450412-truman-succeeds
+  coord: [-77.036, 38.895]
+  type: declaration
+  name_ja: ローズヴェルトの死去とトルーマンの大統領就任
+  name_en: Truman succeeds Roosevelt
+  date: 1945-04-12
+  end: null
+  actors: [us]
+  persons: [ローズヴェルト, トルーマン, スティムソン]
+  place: ワシントン
+  summary_ja: |
+    4 期目に入って 3 か月でローズヴェルトが急死し、副大統領トルーマンが
+    昇格した。トルーマンは副大統領時代に核兵器計画を知らされておらず、
+    就任翌日にスティムソン陸軍長官から説明を受けている。
+    ポツダム会談と原爆使用の判断はこの交代のあとに来る。
+  decisions_ja:
+    - トルーマンが大統領に昇格する
+    - 核兵器計画（S-1）を新大統領に説明する
+  license: pd
+  verified: false
+  sources:
+    - title: Death of Franklin D. Roosevelt
+      url: https://en.wikipedia.org/wiki/Death_of_Franklin_D._Roosevelt
+    - title: Harry S. Truman
+      url: https://en.wikipedia.org/wiki/Harry_S._Truman
+
+- id: dec-19450725-atomic-bomb-order
+  coord: [-77.036, 38.895]
+  type: order
+  name_ja: 原子爆弾の投下命令（ハンディ指令）
+  name_en: The Handy directive authorising atomic attacks
+  date: 1945-07-25
+  end: null
+  actors: [us]
+  persons: [ハンディ, スパーツ, トルーマン, スティムソン]
+  place: ワシントン（陸軍参謀本部）
+  summary_ja: |
+    参謀総長代理ハンディから戦略空軍のスパーツ宛に出された命令で、
+    8 月 3 日以降、天候が許し次第、広島・小倉・新潟・長崎のいずれかに
+    特殊爆弾を投下せよという内容。以後の投下は追加の命令を要さない
+    包括的な授権になっており、実際の日時と目標は現地の判断で決まった。
+  decisions_ja:
+    - 1945 年 8 月 3 日以降、目視爆撃が可能になり次第に投下する
+    - 目標は広島・小倉・新潟・長崎から選ぶ
+    - 追加の爆弾も準備でき次第、同じ授権のもとで使用する
+  license: pd
+  verified: false
+  sources:
+    - title: Atomic bombings of Hiroshima and Nagasaki
+      url: https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki
+    - title: Interim Committee
+      url: https://en.wikipedia.org/wiki/Interim_Committee
