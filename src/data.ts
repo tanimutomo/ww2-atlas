@@ -106,6 +106,12 @@ export type Atlas = {
   actors: Actor[];
   frontlines: FrontLine[];
   keyframes: string[];
+  /**
+   * 軍事的な支配を月次で持つレイヤ（Commons の月次図から機械変換）。
+   * 政体境界では描けない占領地域を埋めるためのもので、
+   * ヨーロッパの 1939-08〜1942-12 しか無い。
+   */
+  controlMonths: string[];
   /** id → レコード（Event / Decision / HomeFront をまとめて引く） */
   byId: Map<string, EventRec | Decision | HomeFront>;
   /** id → その id が from か to になっているリンク */
@@ -132,6 +138,11 @@ export async function loadAtlas(): Promise<Atlas> {
     getJson<{ frontlines: FrontLine[] }>('frontlines.json'),
   ]);
 
+  // 支配レイヤはまだ無いこともある（npm run fetch:control 未実行）ので、落とさない
+  const control = await getJson<{ months: { month: string }[] }>('territory/control/index.json').catch(
+    () => ({ months: [] }),
+  );
+
   const byId = new Map<string, EventRec | Decision | HomeFront>();
   for (const r of ev.events) byId.set(r.id, r);
   for (const r of dec.decisions) byId.set(r.id, r);
@@ -156,6 +167,7 @@ export async function loadAtlas(): Promise<Atlas> {
     actors: ac.actors,
     frontlines: fl.frontlines,
     keyframes: tf.keyframes,
+    controlMonths: control.months.map((m) => m.month),
     byId,
     linksOf,
     actorById: new Map(ac.actors.map((a) => [a.id, a])),
@@ -177,7 +189,7 @@ export const CONTROL_LABEL: Record<Control, string> = {
   axis_occupied: '枢軸の占領・傀儡',
   allied: '連合国',
   allied_occupied: '連合国の占領',
-  su: 'ソ連',
+  su: 'ソ連（独ソ戦まで）',
   neutral: '中立・その他',
 };
 
@@ -261,6 +273,32 @@ export const DISCREPANCY_LABEL: Record<string, string> = {
   euphemism: '言い換えた',
   accurate: 'ほぼ実態どおり',
 };
+
+/**
+ * その日に出す支配レイヤの月を選ぶ。
+ *
+ * 原図は「その月末時点」を描いたもの（凡例が "Ende Nov. 1942"）なので、
+ * 月末がいちばん近い枚を出す。前月末に固定すると、フランス降伏のように
+ * 月の途中で大きく塗りが変わる回で 1 か月遅れて見えてしまう。
+ * 収録範囲の外（1943 年以降・1939-08 より前）では null を返して、
+ * OHM の政体境界だけを出す。
+ */
+export function controlMonthFor(months: string[], date: string): string | null {
+  if (!months.length) return null;
+  const d = toDayNumber(date);
+  const endOf = (m: string) => {
+    const [y, mm] = m.split('-').map(Number);
+    return toDayNumber(new Date(Date.UTC(mm === 12 ? y + 1 : y, mm === 12 ? 0 : mm, 0)).toISOString().slice(0, 10));
+  };
+  let best: string | null = null;
+  let bd = Infinity;
+  for (const m of months) {
+    const gap = Math.abs(endOf(m) - d);
+    if (gap < bd) { bd = gap; best = m; }
+  }
+  // 端の外まで引き伸ばさない（収録は 1939-08〜1942-12 のヨーロッパだけ）
+  return bd <= 31 ? best : null;
+}
 
 /** YYYY-MM-DD → 数値（比較・スライダー用の通し日数） */
 export const toDayNumber = (iso: string): number => Math.floor(Date.parse(`${iso}T00:00:00Z`) / 86_400_000);

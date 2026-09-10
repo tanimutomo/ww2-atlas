@@ -334,6 +334,36 @@ async function main() {
     );
   }
 
+  // ─────────────────────────────────── 軍事的な支配（Commons の月次図から機械変換）
+  // OHM は「政体の境界」しか持たないので、独ソ戦のようにソ連領内へ食い込んだ占領地域が
+  // 面として描けない。Commons の月次図（PD）は軍事的な支配で塗り分けられていて、
+  // 凡例の 5 区分がこちらの control とそのまま対応する。
+  // ⚠ ヨーロッパのみ・1939-08〜1942-12。それ以外の時期と地域は従来どおり OHM。
+  const controlDir = resolve(DATA, 'territory/control');
+  const controlIdxPath = resolve(controlDir, 'index.json');
+  let controlMonths = [];
+  let controlMeta = null;
+  if (existsSync(controlIdxPath)) {
+    const idx = JSON.parse(await readFile(controlIdxPath, 'utf8'));
+    controlMeta = idx._meta ?? null;
+    for (const m of idx.months ?? []) {
+      const p = resolve(controlDir, m.file);
+      if (!existsSync(p)) {
+        warn(`territory/control/${m.file} が無い（npm run fetch:control）`);
+        continue;
+      }
+      const fc = JSON.parse(await readFile(p, 'utf8'));
+      for (const f of fc.features ?? []) {
+        const c = f.properties?.control;
+        if (!CONTROLS.includes(c)) err(`territory/control/${m.file}: 未知の control "${c}"`);
+      }
+      controlMonths.push({ month: m.month, fc, rmse_px: m.rmse_px ?? null });
+    }
+    if (!controlMonths.length) warn('territory/control/ が空（npm run fetch:control）');
+  } else {
+    warn('data/territory/control/index.json が無い（npm run fetch:control）');
+  }
+
   // ------------------------------------------------------------- 前線ライン
   // OHM の面は「政体の境界」しか持たないので、独ソ戦のようにソ連領内へ食い込んだ
   // 戦線は面として描けない。折れ線で補う。
@@ -380,6 +410,7 @@ async function main() {
     links: links.length,
     territory: territoryOut.length,
     frontlines: frontlines.length,
+    control: controlMonths.length,
   };
   if (CHECK_ONLY) {
     console.log('\n✓ 検証だけ実行（--check）');
@@ -454,12 +485,26 @@ async function main() {
   for (const { date, polities } of territoryOut) {
     await write(`territory/${date}.json`, { date, polities });
   }
+  if (controlMonths.length) {
+    await mkdir(resolve(OUT, 'territory/control'), { recursive: true });
+    for (const { month, fc } of controlMonths) await write(`territory/control/${month}.json`, fc);
+    await write('territory/control/index.json', {
+      _meta: meta('military control (Commons)', { count: controlMonths.length, source: controlMeta }),
+      months: controlMonths.map(({ month, rmse_px }) => ({ month, rmse_px })),
+    });
+  }
 
   // 帰属一覧。公開時に書き直さないよう source フィールドから自動生成する
   const datasets = [
     { title: 'Wikidata', url: 'https://www.wikidata.org/', license: 'CC0', use: 'イベントの名称・座標・日付・参加者' },
     { title: 'OpenHistoricalMap', url: 'https://www.openhistoricalmap.org/', license: 'ODbL / CC0 (contributor terms)', use: '支配領域の境界（時点指定）' },
     { title: 'Natural Earth', url: 'https://www.naturalearthdata.com/', license: 'Public Domain', use: 'ベースマップ（陸・海）' },
+    {
+      title: 'Wikimedia Commons「Second World War Europe MM YYYY de.svg」（作者 San Jose）',
+      url: 'https://commons.wikimedia.org/wiki/Category:Maps_of_World_War_II',
+      license: 'Public Domain',
+      use: '軍事的な支配領域（ヨーロッパ・1939-08〜1942-12 の月次）。図の投影指定から逆投影して取り込み',
+    },
   ];
   const recordSources = new Map();
   for (const r of [...events, ...decisions, ...homefront]) {

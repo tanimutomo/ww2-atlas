@@ -1,0 +1,260 @@
+{
+  "_meta": {
+    "generator": "scripts/fetch-commons-control.mjs",
+    "generated_at": "2026-09-10T10:34:18.798Z",
+    "source": "Wikimedia Commons「Second World War Europe MM YYYY de.svg」（作者 San Jose・パブリックドメイン）",
+    "source_category": "https://commons.wikimedia.org/wiki/Category:Maps_of_World_War_II",
+    "method": "SVG の metadata に残っていた GMT の投影指定（-JL15/0/45/60/15c -R-10/30/80/60r）を再現し、図上の都市点で係数を当てて逆投影した。残差は各月 index の rmse_px（1px ≒ 3.2km）。",
+    "license": "pd",
+    "coverage": "ヨーロッパのみ・1939-08 〜 1942-12 の月次",
+    "caveat": "原図そのものが二次的な編集地図で、日単位の前線ではなく「その月末時点のおおよその支配」を示す。"
+  },
+  "months": [
+    {
+      "month": "1939-08",
+      "file": "1939-08.json",
+      "source_file": "Second_World_War_Europe_08_1939_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1939-09",
+      "file": "1939-09.json",
+      "source_file": "Second_World_War_Europe_09_1939_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1939-10",
+      "file": "1939-10.json",
+      "source_file": "Second_World_War_Europe_10_1939_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1939-11",
+      "file": "1939-11.json",
+      "source_file": "Second_World_War_Europe_11_1939_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1939-12",
+      "file": "1939-12.json",
+      "source_file": "Second_World_War_Europe_12_1939_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-01",
+      "file": "1940-01.json",
+      "source_file": "Second_World_War_Europe_01_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-02",
+      "file": "1940-02.json",
+      "source_file": "Second_World_War_Europe_02_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-03",
+      "file": "1940-03.json",
+      "source_file": "Second_World_War_Europe_03_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-04",
+      "file": "1940-04.json",
+      "source_file": "Second_World_War_Europe_04_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-05",
+      "file": "1940-05.json",
+      "source_file": "Second_World_War_Europe_05_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-06",
+      "file": "1940-06.json",
+      "source_file": "Second_World_War_Europe_06_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-07",
+      "file": "1940-07.json",
+      "source_file": "Second_World_War_Europe_07_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-08",
+      "file": "1940-08.json",
+      "source_file": "Second_World_War_Europe_08_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-09",
+      "file": "1940-09.json",
+      "source_file": "Second_World_War_Europe_09_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-10",
+      "file": "1940-10.json",
+      "source_file": "Second_World_War_Europe_10_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-11",
+      "file": "1940-11.json",
+      "source_file": "Second_World_War_Europe_11_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1940-12",
+      "file": "1940-12.json",
+      "source_file": "Second_World_War_Europe_12_1940_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-01",
+      "file": "1941-01.json",
+      "source_file": "Second_World_War_Europe_01_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-02",
+      "file": "1941-02.json",
+      "source_file": "Second_World_War_Europe_02_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-03",
+      "file": "1941-03.json",
+      "source_file": "Second_World_War_Europe_03_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-04",
+      "file": "1941-04.json",
+      "source_file": "Second_World_War_Europe_04_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-05",
+      "file": "1941-05.json",
+      "source_file": "Second_World_War_Europe_05_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-06",
+      "file": "1941-06.json",
+      "source_file": "Second_World_War_Europe_06_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-07",
+      "file": "1941-07.json",
+      "source_file": "Second_World_War_Europe_07_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-08",
+      "file": "1941-08.json",
+      "source_file": "Second_World_War_Europe_08_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-09",
+      "file": "1941-09.json",
+      "source_file": "Second_World_War_Europe_09_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-10",
+      "file": "1941-10.json",
+      "source_file": "Second_World_War_Europe_10_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-11",
+      "file": "1941-11.json",
+      "source_file": "Second_World_War_Europe_11_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1941-12",
+      "file": "1941-12.json",
+      "source_file": "Second_World_War_Europe_12_1941_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-01",
+      "file": "1942-01.json",
+      "source_file": "Second_World_War_Europe_01_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-02",
+      "file": "1942-02.json",
+      "source_file": "Second_World_War_Europe_02_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-03",
+      "file": "1942-03.json",
+      "source_file": "Second_World_War_Europe_03_1942_de.svg",
+      "rmse_px": 0.462
+    },
+    {
+      "month": "1942-04",
+      "file": "1942-04.json",
+      "source_file": "Second_World_War_Europe_04_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-05",
+      "file": "1942-05.json",
+      "source_file": "Second_World_War_Europe_05_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-06",
+      "file": "1942-06.json",
+      "source_file": "Second_World_War_Europe_06_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-07",
+      "file": "1942-07.json",
+      "source_file": "Second_World_War_Europe_07_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-08",
+      "file": "1942-08.json",
+      "source_file": "Second_World_War_Europe_08_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-09",
+      "file": "1942-09.json",
+      "source_file": "Second_World_War_Europe_09_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-10",
+      "file": "1942-10.json",
+      "source_file": "Second_World_War_Europe_10_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-11",
+      "file": "1942-11.json",
+      "source_file": "Second_World_War_Europe_11_1942_de.svg",
+      "rmse_px": 0.458
+    },
+    {
+      "month": "1942-12",
+      "file": "1942-12.json",
+      "source_file": "Second_World_War_Europe_12_1942_de.svg",
+      "rmse_px": 0.458
+    }
+  ]
+}

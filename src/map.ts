@@ -12,6 +12,7 @@ import {
   CATEGORY_COLOR,
   CONTROL_COLOR,
   keyframeFor,
+  controlMonthFor,
   mapPoints,
   toDayNumber,
   type Atlas,
@@ -33,6 +34,8 @@ export class AtlasMap {
   private geometry: Record<string, Geometry> | null = null;
   /** 組み立て済みの日付フレーム */
   private territoryCache = new Map<string, FeatureCollection>();
+  private controlCache = new Map<string, FeatureCollection>();
+  private currentControl: string | null = null;
   private currentKeyframe: string | null = null;
   private onSelect: (id: string) => void;
   private labels: MapLabels | null = null;
@@ -134,6 +137,41 @@ export class AtlasMap {
       paint: { 'line-color': '#0d141a', 'line-width': 0.5, 'line-opacity': 0.7 },
     });
 
+    // 軍事的な支配（Commons の月次図から機械変換）。政体境界の上に重ねる。
+    // OHM は国境しか持たないので、独ソ戦のようにソ連領内へ食い込んだ占領地域は
+    // こちらでしか塗れない。収録はヨーロッパ・1939-08〜1942-12 だけなので、
+    // それ以外の地域と時期では下の territory-fill がそのまま見える。
+    this.map.addSource('control', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'control-fill',
+      type: 'fill',
+      source: 'control',
+      paint: {
+        'fill-color': [
+          'match',
+          ['get', 'control'],
+          'axis', CONTROL_COLOR.axis,
+          'axis_occupied', CONTROL_COLOR.axis_occupied,
+          'allied', CONTROL_COLOR.allied,
+          'allied_occupied', CONTROL_COLOR.allied_occupied,
+          CONTROL_COLOR.neutral,
+        ],
+        'fill-opacity': [
+          'match',
+          ['get', 'control'],
+          'axis_occupied', 0.55,
+          'allied_occupied', 0.55,
+          0.8,
+        ],
+      },
+    });
+    this.map.addLayer({
+      id: 'control-line',
+      type: 'line',
+      source: 'control',
+      paint: { 'line-color': '#0d141a', 'line-width': 0.5, 'line-opacity': 0.7 },
+    });
+
     // 前線ライン。面（政体境界）では描けない戦線を折れ線で補う
     this.map.addSource('frontlines', { type: 'geojson', data: emptyFc() });
     this.map.addLayer({
@@ -222,6 +260,16 @@ export class AtlasMap {
       // 取得を待つあいだに日付が変わっていたら、古い枠を描かない
       if (this.currentKeyframe === kf) {
         (this.map.getSource('territory') as GeoJSONSource | undefined)?.setData(fc as never);
+      }
+    }
+
+    // 軍事的な支配（月次）。収録の外に出たら空にして政体境界だけに戻す
+    const cm = controlMonthFor(this.atlas.controlMonths, date);
+    if (cm !== this.currentControl) {
+      this.currentControl = cm;
+      const fc = cm ? await this.controlFrame(cm) : emptyFc();
+      if (this.currentControl === cm) {
+        (this.map.getSource('control') as GeoJSONSource | undefined)?.setData(fc as never);
       }
     }
 
@@ -329,6 +377,17 @@ export class AtlasMap {
       }),
     };
     this.territoryCache.set(kf, fc);
+    return fc;
+  }
+
+  /** 支配レイヤは月ごとに 1 ファイル（20〜35KB）。共有幾何は要らない */
+  private async controlFrame(month: string): Promise<FeatureCollection> {
+    const cached = this.controlCache.get(month);
+    if (cached) return cached;
+    const fc: FeatureCollection = await fetch(`${BASE}data/territory/control/${month}.json`).then((r) =>
+      r.json(),
+    );
+    this.controlCache.set(month, fc);
     return fc;
   }
 
