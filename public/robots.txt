@@ -1,0 +1,4 @@
+# 非公開で始める方針なので、クローラを一切入れない。
+# 公開に切り替えるときは、このファイルと vercel.json の X-Robots-Tag を両方外す。
+User-agent: *
+Disallow: /
