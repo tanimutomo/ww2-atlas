@@ -388,6 +388,57 @@ async function main() {
   }
   frontlines.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
+  // ─────────────────────────── 概略の支配領域（前線と範囲から導出したもの）
+  // Commons の面が無い期間・地域（1943 年以降のヨーロッパ・中国全期間）を、
+  // frontlines.yaml と approx-zones.yaml から導出した層。精度は折れ線と同じ。
+  const zonesPath = resolve(DATA, 'territory/approx-zones.yaml');
+  const approxZones = existsSync(zonesPath) ? ((await readYaml(zonesPath)) ?? []) : [];
+  for (const z of approxZones) {
+    const where = 'territory/approx-zones.yaml';
+    checkCommon(z, where);
+    if (!/^(pk|zn)-/.test(z.id ?? '')) err(`${where} (${z.id}): id は pk-（孤立陣地）か zn-（範囲）で始める`);
+    if (!CONTROLS.includes(z.control)) err(`${where} (${z.id}): 未知の control "${z.control}"`);
+    for (const k of ['from', 'to']) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(String(z[k] ?? ''))) err(`${where} (${z.id}): ${k} は YYYY-MM-DD`);
+    }
+    if (z.from && z.to && z.to < z.from) err(`${where} (${z.id}): to < from`);
+    if (!z.clip_to) err(`${where} (${z.id}): clip_to（切り抜く政体名の正規表現）が無い`);
+    if (!Array.isArray(z.coords) || z.coords.length < 3) {
+      err(`${where} (${z.id}): coords は 3 点以上の [経度, 緯度] の配列`);
+    } else {
+      for (const c of z.coords) {
+        if (!Array.isArray(c) || c.length !== 2 || typeof c[0] !== 'number' || typeof c[1] !== 'number') {
+          err(`${where} (${z.id}): coords の要素が [経度, 緯度] でない`);
+          break;
+        }
+      }
+    }
+  }
+
+  const approxDir = resolve(DATA, 'territory/approx');
+  const approxIdxPath = resolve(approxDir, 'index.json');
+  let approxDates = [];
+  let approxMeta = null;
+  if (existsSync(approxIdxPath)) {
+    const idx = JSON.parse(await readFile(approxIdxPath, 'utf8'));
+    approxMeta = idx._meta ?? null;
+    for (const d of idx.dates ?? []) {
+      const p = resolve(approxDir, d.file);
+      if (!existsSync(p)) {
+        warn(`territory/approx/${d.file} が無い（npm run build:approx）`);
+        continue;
+      }
+      const fc = JSON.parse(await readFile(p, 'utf8'));
+      for (const f of fc.features ?? []) {
+        const c = f.properties?.control;
+        if (!CONTROLS.includes(c)) err(`territory/approx/${d.file}: 未知の control "${c}"`);
+      }
+      approxDates.push({ date: d.date, fc, parts: d.parts ?? [] });
+    }
+  } else if (approxZones.length || frontlines.some((f) => f.theatre === 'europe_east' && f.date >= '1943-01-01')) {
+    warn('data/territory/approx/index.json が無い（npm run build:approx）');
+  }
+
   // --------------------------------------------------------------- 検証結果
   if (warnings.length) {
     console.warn(`\n⚠ 警告 ${warnings.length} 件`);
@@ -411,6 +462,7 @@ async function main() {
     territory: territoryOut.length,
     frontlines: frontlines.length,
     control: controlMonths.length,
+    approx: approxDates.length,
   };
   if (CHECK_ONLY) {
     console.log('\n✓ 検証だけ実行（--check）');
@@ -484,6 +536,14 @@ async function main() {
   await write('territory/geometry.json', geomOut);
   for (const { date, polities } of territoryOut) {
     await write(`territory/${date}.json`, { date, polities });
+  }
+  if (approxDates.length) {
+    await mkdir(resolve(OUT, 'territory/approx'), { recursive: true });
+    for (const { date, fc } of approxDates) await write(`territory/approx/${date}.json`, fc);
+    await write('territory/approx/index.json', {
+      _meta: meta('approximate control (derived)', { count: approxDates.length, source: approxMeta }),
+      dates: approxDates.map(({ date, parts }) => ({ date, parts })),
+    });
   }
   if (controlMonths.length) {
     await mkdir(resolve(OUT, 'territory/control'), { recursive: true });

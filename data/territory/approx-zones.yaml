@@ -1,0 +1,186 @@
+# 折れ線からは導出できない支配領域を、範囲そのもので書く。
+#
+# 使いどころは 2 つ:
+#   ① 連続した前線から切り離された孤立陣地（クールラント包囲）
+#   ② そもそも「線」で表せない占領地域（日本占領下の中国）
+#
+# ここに書いた多角形は `clip_to` に当たる OHM の政体で切り抜かれる。
+# つまり海岸線の細かさは OHM 側から来るので、**粗く・陸より外まで囲っておけばよい**
+# （海に振り切った点を置いても切り落とされる）。
+#
+# ⚠ 範囲は概略。数十 km 単位の精度は無い。全件 verified: false。
+#   coords は [経度, 緯度]。clip_to は政体名にかける正規表現。
+
+- id: pk-kurland
+  name_ja: クールラント包囲（北方軍集団の孤立）
+  note_ja: |
+    1944 年 10 月にメーメルが落ちて陸の連絡が切れたあと、
+    ドイツ北方軍集団（のちクールラント軍集団）が
+    ラトビア西部で降伏まで持ちこたえた区域。
+    OHM は 1944 年以降オストラント国家弁務官区の面を持たないので、
+    ここを書かないとラトビア西部が 1945 年までソ連領として塗られてしまう。
+  from: 1944-10-10
+  to: 1945-05-09
+  control: axis_occupied
+  clip_to: 'Soviet|ソビエト|ソ連'
+  coords:
+    - [20.8, 56.0]
+    - [22.6, 56.1]
+    - [23.3, 56.9]
+    - [23.0, 57.5]
+    - [20.8, 57.8]
+  license: pd
+  verified: false
+  sources:
+    - title: Courland Pocket
+      url: https://en.wikipedia.org/wiki/Courland_Pocket
+    - title: Baltic offensive
+      url: https://en.wikipedia.org/wiki/Baltic_offensive
+
+# ─────────────────────────────── 日本占領下の中国
+#
+# OHM は 1939-04-09〜1945-10-25 の「中國」relation を 1 本しか持たず、36 キーフレーム
+# すべてで同一。つまり日中戦争の 8 年間、中国大陸はまったく塗り分けられない。
+# Commons の月次図系列はヨーロッパのみで、中国を含む自由ライセンスのベクタ系列は無い
+# （`Japanese Occupation of China 1940.svg` は CC BY-SA で 1940 年の 1 枚だけ）。
+#
+# ⚠ 大きな留保: 日本軍が握っていたのは実際には**都市と鉄道線**で、面ではない
+#   （いわゆる「点と線」の支配）。ここでベタ塗りしているのは、
+#   同時代の戦況図・現在の概説図がどれもそうしている慣例に合わせたもので、
+#   実効支配の密度を表しているわけではない。省の内陸部には最後まで
+#   国民政府軍・共産党軍の支配地域が残っている。
+
+- id: zn-china-1937
+  name_ja: 日本軍の占領地域（華北・長江下流）
+  note_ja: |
+    南京陥落から武漢作戦の直前まで。華北平原・山東・江蘇と、
+    上海〜南京の長江下流をおさえた段階。黄河の線から西は
+    まだ国民政府側にある（1938 年 6 月の黄河決壊も効いている）。
+  from: 1937-12-13
+  to: 1938-10-24
+  control: axis_occupied
+  clip_to: '中國|China'
+  coords:
+    - [113.5, 41.2]   # 察哈爾南部（張家口方面）
+    - [111.0, 40.7]   # 大同
+    - [110.6, 38.4]   # 山西西部（黄河）
+    - [112.0, 36.0]   # 山西南部
+    - [113.9, 34.8]   # 開封西方（鄭州は国民政府側に残る）
+    - [116.0, 33.5]   # 徐州
+    - [117.5, 32.0]   # 蚌埠
+    - [118.8, 32.0]   # 南京
+    - [120.5, 31.0]   # 蘇州・上海方面
+    - [126.0, 31.0]   # 東シナ海（閉じるための点）
+    - [126.0, 41.2]   # 黄海（同）
+  license: pd
+  verified: false
+  sources:
+    - title: Second Sino-Japanese War
+      url: https://en.wikipedia.org/wiki/Second_Sino-Japanese_War
+    - title: Battle of Xuzhou
+      url: https://en.wikipedia.org/wiki/Battle_of_Xuzhou
+
+- id: zn-china-1938
+  name_ja: 日本軍の占領地域（武漢・広州の攻略後）
+  note_ja: |
+    武漢と広州が落ちたあと、降伏まで大きくは動かなかった範囲。
+    長江を宜昌まで遡り、岳陽から南昌にかけての線で 5 年半膠着した。
+    福建省の内陸と沿岸の大半は最後まで国民政府側にある。
+    1944 年の大陸打通作戦で足された回廊は zn-china-ichigo に分けてある
+    （この範囲が縮んだわけではなく、南に伸びた）。
+  from: 1938-10-25
+  to: 1945-09-02
+  control: axis_occupied
+  clip_to: '中國|China'
+  coords:
+    - [113.5, 41.2]   # 察哈爾南部
+    - [111.0, 40.7]   # 大同
+    - [110.6, 38.4]   # 山西西部（黄河）
+    - [112.0, 36.0]   # 山西南部
+    - [113.9, 34.8]   # 開封西方（鄭州は国民政府側に残る）
+    - [114.3, 32.9]   # 信陽
+    - [112.8, 31.8]   # 襄陽方面
+    - [111.3, 30.7]   # 宜昌
+    - [112.6, 29.4]   # 岳陽西方
+    - [113.5, 28.2]   # 湘北
+    - [115.0, 27.8]   # 贛西
+    - [116.5, 28.2]   # 南昌南方
+    - [119.0, 29.0]   # 浙江中部（ここから南は国民政府側）
+    - [126.0, 29.0]   # 東シナ海（閉じるための点）
+    - [126.0, 41.2]   # 黄海（同）
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of Wuhan
+      url: https://en.wikipedia.org/wiki/Battle_of_Wuhan
+    - title: Second Sino-Japanese War
+      url: https://en.wikipedia.org/wiki/Second_Sino-Japanese_War
+
+- id: zn-china-canton
+  name_ja: 広州・珠江デルタの占領地域
+  note_ja: |
+    1938 年 10 月のバイアス湾上陸で広州が落ち、以後は華南の飛び地として
+    降伏まで維持された。香港は 1941 年 12 月まで英領なので別に塗られる。
+  from: 1938-10-21
+  to: 1945-09-02
+  control: axis_occupied
+  clip_to: '中國|China'
+  coords:
+    - [112.3, 23.9]
+    - [114.9, 23.9]
+    - [115.2, 21.5]
+    - [111.8, 21.5]
+  license: pd
+  verified: false
+  sources:
+    - title: Canton Operation
+      url: https://en.wikipedia.org/wiki/Canton_Operation
+    - title: Second Sino-Japanese War
+      url: https://en.wikipedia.org/wiki/Second_Sino-Japanese_War
+
+- id: zn-china-hainan
+  name_ja: 海南島の占領
+  note_ja: 1939 年 2 月の上陸で占領し、降伏まで維持された。南方作戦の航空基地になる。
+  from: 1939-02-10
+  to: 1945-09-02
+  control: axis_occupied
+  clip_to: '中國|China'
+  coords:
+    - [108.3, 20.2]
+    - [111.4, 20.2]
+    - [111.4, 17.8]
+    - [108.3, 17.8]
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of Hainan Island
+      url: https://en.wikipedia.org/wiki/Battle_of_Hainan_Island
+    - title: Hainan
+      url: https://en.wikipedia.org/wiki/Hainan
+
+- id: zn-china-ichigo
+  name_ja: 大陸打通作戦で貫かれた回廊（湖南・広西）
+  note_ja: |
+    1944 年 4 月に始まった一号作戦で、湖南・広西を縦に貫いて
+    仏印まで陸路をつないだ範囲。B-29 の桂林・柳州の飛行場を潰すのが目的の一つで、
+    国民政府軍は大きく後退した。⚠ 実際に確保したのは鉄道沿いの回廊で、
+    湖南西部などには国民政府軍が残っている。ここでの塗りは相当に粗い。
+  from: 1944-06-01
+  to: 1945-09-02
+  control: axis_occupied
+  clip_to: '中國|China'
+  coords:
+    - [115.8, 29.2]
+    - [115.8, 24.5]
+    - [113.0, 22.0]
+    - [106.5, 21.5]
+    - [106.5, 25.5]
+    - [110.0, 28.0]
+    - [112.0, 29.5]
+  license: pd
+  verified: false
+  sources:
+    - title: Operation Ichi-Go
+      url: https://en.wikipedia.org/wiki/Operation_Ichi-Go
+    - title: Battle of Guilin–Liuzhou
+      url: https://en.wikipedia.org/wiki/Battle_of_Guilin%E2%80%93Liuzhou

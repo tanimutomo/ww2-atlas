@@ -11,8 +11,10 @@ import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import {
   CATEGORY_COLOR,
   CONTROL_COLOR,
+  APPROX_COLOR,
   keyframeFor,
   controlMonthFor,
+  approxDateFor,
   mapPoints,
   toDayNumber,
   type Atlas,
@@ -36,6 +38,8 @@ export class AtlasMap {
   private territoryCache = new Map<string, FeatureCollection>();
   private controlCache = new Map<string, FeatureCollection>();
   private currentControl: string | null = null;
+  private approxCache = new Map<string, FeatureCollection>();
+  private currentApprox: string | null = null;
   private currentKeyframe: string | null = null;
   private onSelect: (id: string) => void;
   private labels: MapLabels | null = null;
@@ -135,6 +139,29 @@ export class AtlasMap {
       type: 'line',
       source: 'territory',
       paint: { 'line-color': '#0d141a', 'line-width': 0.5, 'line-opacity': 0.7 },
+    });
+
+    // 概略の支配領域（前線と範囲から導出）。政体境界の上、正確な面の下。
+    // 輪郭線を引かず薄めに塗ることが「ここは概略」という合図になっている
+    // （はっきりした境界を描くと、実測の面と同じ確かさに見えてしまう）。
+    this.map.addSource('approx', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'approx-fill',
+      type: 'fill',
+      source: 'approx',
+      paint: {
+        // 下の政体境界と混ざらないよう、混色済みの色を不透明で塗る（data.ts の APPROX_COLOR）
+        'fill-color': [
+          'match',
+          ['get', 'control'],
+          'axis', APPROX_COLOR.axis,
+          'axis_occupied', APPROX_COLOR.axis_occupied,
+          'allied', APPROX_COLOR.allied,
+          'allied_occupied', APPROX_COLOR.allied_occupied,
+          APPROX_COLOR.neutral,
+        ],
+        'fill-opacity': 1,
+      },
     });
 
     // 軍事的な支配（Commons の月次図から機械変換）。政体境界の上に重ねる。
@@ -273,6 +300,16 @@ export class AtlasMap {
       }
     }
 
+    // 概略の面（1943 年以降のヨーロッパと中国）
+    const ad = approxDateFor(this.atlas.approxDates, date);
+    if (ad !== this.currentApprox) {
+      this.currentApprox = ad;
+      const fc = ad ? await this.approxFrame(ad) : emptyFc();
+      if (this.currentApprox === ad) {
+        (this.map.getSource('approx') as GeoJSONSource | undefined)?.setData(fc as never);
+      }
+    }
+
     // その日までに起きたことは消さずに残す。
     // 消してしまうと「どのあたりで何が積み重なったか」が読めなくなるので、
     // 3 段階に落として、古いものほど小さく薄くする。
@@ -377,6 +414,17 @@ export class AtlasMap {
       }),
     };
     this.territoryCache.set(kf, fc);
+    return fc;
+  }
+
+  /** 概略の面は日付ごとに 1 ファイル（5〜17KB） */
+  private async approxFrame(date: string): Promise<FeatureCollection> {
+    const cached = this.approxCache.get(date);
+    if (cached) return cached;
+    const fc: FeatureCollection = await fetch(`${BASE}data/territory/approx/${date}.json`).then((r) =>
+      r.json(),
+    );
+    this.approxCache.set(date, fc);
     return fc;
   }
 

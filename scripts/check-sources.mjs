@@ -19,7 +19,7 @@ const UA =
   'Mozilla/5.0 (compatible; ww2-atlas/0.1; +https://github.com/tanimutomo/ww2-atlas)';
 
 const DIRS = ['data/decisions', 'data/homefront', 'data/events/overrides', 'data/seed-wikipedia'];
-const FILES = ['data/territory/frontlines.yaml'];
+const FILES = ['data/territory/frontlines.yaml', 'data/territory/approx-zones.yaml'];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

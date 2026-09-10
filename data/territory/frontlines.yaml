@@ -36,7 +36,7 @@
     - [30.5, 56.3]   # ヴェリキエ・ルキ
     - [32.5, 54.8]   # スモレンスク東方
     - [36.1, 53.0]   # オリョール
-    - [36.2, 50.0]   # ハリコフ
+    - [36.6, 50.0]   # ハリコフ東方（市街は枢軸側）
     - [38.9, 47.2]   # タガンログ
   license: pd
   verified: false
@@ -146,3 +146,280 @@
       url: https://archive.org/details/atlasofworldbatt00unse
     - title: Battle of Remagen
       url: https://en.wikipedia.org/wiki/Battle_of_Remagen
+
+# ══════════════════ 1943 年以降（面のベクタ系列が存在しない期間）2026-09-10 追加
+#
+# Commons の月次図はヨーロッパの 1942-12 で終わる。1943 年以降で唯一まとまった系列は
+# 米陸軍参謀総長『Atlas of the World Battle Fronts』（半月刻み・PD）だが**ラスタ**なので、
+# Commons のようにメタデータから解けない。ジオリファレンスとトレースが要る。
+#
+# そこまでの繋ぎとして、よく知られた都市の位置と「そこが前線のどちら側だったか」から
+# 概略線を引く。⚠ 数十 km 単位の精度は無い。全件 verified: false。
+# この線から `scripts/build-approx-occupation.mjs` が「線より西のソ連領」を面として導出する
+# （＝面も同じ精度しか無い。UI でも薄く塗って区別している）。
+
+- id: fl-19430320-east
+  date: 1943-03-20
+  theatre: europe_east
+  name_ja: 東部戦線（第三次ハリコフ戦の後・クルスク突出部の成立）
+  note_ja: |
+    スターリングラードの降伏で崩れた戦線を、マンシュタインの反撃が
+    ハリコフ・ベルゴロドの線で押し戻して安定した時点の概略線。
+    ソ連側がクルスクを保ったまま西へ張り出し、7 月のツィタデレ作戦が
+    狙う突出部がここで形になった。
+  coords:
+    - [30.3, 59.9]   # レニングラード（包囲）
+    - [31.2, 57.1]   # ホルム
+    - [31.2, 55.6]   # ヴェリジ
+    - [34.3, 54.1]   # キーロフ（カルーガ州）
+    - [35.0, 52.9]   # 突出部の北肩（オリョール西方）
+    - [34.5, 52.1]   # セーフスク
+    - [35.3, 51.5]   # 突出部の西縁
+    - [36.6, 50.6]   # ベルゴロド
+    - [36.6, 50.0]   # ハリコフ東方（市街は枢軸側）
+    - [37.3, 49.4]   # 北ドネツ河畔
+    - [37.6, 48.8]   # スラビャンスク
+    - [38.9, 47.2]   # タガンログ（アゾフ海）
+  license: pd
+  verified: false
+  sources:
+    - title: Third Battle of Kharkov
+      url: https://en.wikipedia.org/wiki/Third_Battle_of_Kharkov
+    - title: Battle of Kursk
+      url: https://en.wikipedia.org/wiki/Battle_of_Kursk
+
+- id: fl-19431106-east
+  date: 1943-11-06
+  theatre: europe_east
+  name_ja: 東部戦線（キエフ解放・ドニエプル渡河）
+  note_ja: |
+    ソ連軍がドニエプル川を渡ってキエフを回復した時点の概略線。
+    川を防衛線にする「東方の壁」の構想が破れ、以後ドイツ軍は
+    ウクライナで支えを失う。ドニエプル下流とクリミアは孤立しつつ枢軸側に残る。
+  coords:
+    - [30.3, 59.9]   # レニングラード（包囲は継続）
+    - [29.9, 56.0]   # ネヴェリ
+    - [30.5, 54.4]   # オルシャ
+    - [31.4, 52.6]   # ゴメリ東方
+    - [30.2, 50.5]   # キエフ西方
+    - [31.5, 49.6]   # チェルカースイ方面
+    - [33.5, 48.2]   # クリヴォイログ方面
+    - [34.8, 47.6]   # ニコポリ（ドニエプル湾曲部の突出部）
+    - [33.7, 46.3]   # ペレコープ地峡（クリミアの入口）
+  # 面を導出するときだけ使う閉じ方（線としては描かない）。
+  # 前線はペレコープで止まるが、その南のクリミア半島は枢軸側にあったので、
+  # 面を作るときはケルチ海峡まで回り込ませる。
+  mask_close:
+    - [35.0, 45.9]   # アゾフ海南岸
+    - [36.6, 45.4]   # ケルチ海峡
+    - [36.6, 42.0]   # 黒海（閉じるための点）
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of the Dnieper
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Dnieper
+    - title: Battle of Kiev (1943)
+      url: https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)
+
+- id: fl-19440114-east
+  date: 1944-01-14
+  theatre: europe_east
+  name_ja: 東部戦線（レニングラード＝ノヴゴロド攻勢の直前）
+  note_ja: |
+    900 日にわたる包囲を解く攻勢が始まる直前の概略線。
+    南部ではすでにドニエプルを越えて西へ動いており、
+    クリミアとニコポリの橋頭堡が孤立した形で残っている。
+  coords:
+    - [30.3, 59.9]   # レニングラード（包囲・2 週間後に解ける）
+    - [31.3, 58.5]   # ノヴゴロド
+    - [29.9, 56.0]   # ネヴェリ
+    - [30.2, 55.2]   # ヴィテブスク
+    - [30.0, 52.9]   # ジロビン
+    - [29.3, 52.0]   # モズィリ
+    - [27.6, 50.9]   # コロステン西方
+    - [28.0, 49.4]   # ベルディチェフ南方
+    - [31.5, 48.5]   # キロヴォグラード方面
+    - [34.4, 47.6]   # ニコポリ橋頭堡
+    - [33.7, 46.3]   # ペレコープ地峡
+  mask_close:
+    - [35.0, 45.9]   # アゾフ海南岸
+    - [36.6, 45.4]   # ケルチ海峡
+    - [36.6, 42.0]   # 黒海（閉じるための点）
+  license: pd
+  verified: false
+  sources:
+    - title: Leningrad–Novgorod offensive
+      url: https://en.wikipedia.org/wiki/Leningrad%E2%80%93Novgorod_offensive
+    - title: Dnieper–Carpathian offensive
+      url: https://en.wikipedia.org/wiki/Dnieper%E2%80%93Carpathian_offensive
+
+- id: fl-19440415-east
+  date: 1944-04-15
+  theatre: europe_east
+  name_ja: 東部戦線（ドニエプル＝カルパチア攻勢の終わり）
+  note_ja: |
+    冬から続いた南部の攻勢が一段落した時点の概略線。
+    ソ連軍は 1941 年の国境を越えてルーマニアに入り、中部・北部の戦線はまだ動いていない。
+    クリミアはこの時点で本土から切り離された孤立陣地になっており（5 月に降伏）、
+    連続した前線ではないのでこの折れ線には含めていない。
+  coords:
+    - [28.2, 59.4]   # ナルヴァ
+    - [27.6, 57.5]   # プスコフ付近
+    - [30.2, 55.2]   # ヴィテブスク
+    - [29.2, 53.1]   # ボブルイスク
+    - [26.5, 51.9]   # ピンスク方面
+    - [25.5, 50.7]   # コーヴェリ西方
+    - [26.0, 49.3]   # テルノーピリ方面
+    - [26.8, 47.6]   # ヤシ北方（ルーマニア領内）
+  license: pd
+  verified: false
+  sources:
+    - title: Dnieper–Carpathian offensive
+      url: https://en.wikipedia.org/wiki/Dnieper%E2%80%93Carpathian_offensive
+    - title: Crimean offensive
+      url: https://en.wikipedia.org/wiki/Crimean_offensive
+
+- id: fl-19440820-east
+  date: 1944-08-20
+  theatre: europe_east
+  name_ja: 東部戦線（バグラチオン後・ヤシ＝キシニョフ攻勢の開始）
+  note_ja: |
+    中央軍集団が崩壊し、戦線がヴィスワ川と東プロイセン国境まで
+    一気に西へ動いた時点の概略線。この日ルーマニア方面で攻勢が始まり、
+    3 日後にルーマニアが枢軸を離脱する。
+  coords:
+    - [24.1, 56.9]   # リガ湾（北方軍集団の退路）
+    - [22.5, 54.7]   # 東プロイセン国境
+    - [21.0, 52.2]   # ワルシャワ（ヴィスワ川・蜂起の最中）
+    - [21.4, 50.7]   # サンドミェシュ橋頭堡
+    - [22.5, 49.3]   # カルパチア北麓
+    - [25.0, 47.9]   # 北ブコヴィナ
+    - [27.6, 47.2]   # ヤシ
+    - [29.8, 46.3]   # ドニエストル下流
+  license: pd
+  verified: false
+  sources:
+    - title: Operation Bagration
+      url: https://en.wikipedia.org/wiki/Operation_Bagration
+    - title: Second Jassy–Kishinev offensive
+      url: https://en.wikipedia.org/wiki/Second_Jassy%E2%80%93Kishinev_offensive
+
+- id: fl-19441015-east
+  date: 1944-10-15
+  theatre: europe_east
+  name_ja: 東部戦線（バルカン崩壊後・東プロイセンとハンガリー）
+  note_ja: |
+    ルーマニア・ブルガリアが枢軸を離れ、戦線が東プロイセン国境と
+    ハンガリー平原に達した時点の概略線。北方軍集団はクールラントで
+    包囲され、ドイツ本土での戦闘が始まる。
+  coords:
+    - [21.0, 57.0]   # クールラント包囲の北縁
+    - [21.5, 55.8]   # メーメル（この頃に切断される）
+    - [22.5, 54.4]   # 東プロイセン国境
+    - [21.0, 52.2]   # ヴィスワ川
+    - [21.4, 50.7]   # サンドミェシュ橋頭堡
+    - [21.8, 49.2]   # ドゥクラ峠
+    - [21.3, 47.6]   # デブレツェン方面
+    - [20.2, 46.2]   # ティサ川下流
+    - [19.5, 45.2]   # ベオグラード北方
+  license: pd
+  verified: false
+  sources:
+    - title: Baltic offensive
+      url: https://en.wikipedia.org/wiki/Baltic_offensive
+    - title: Budapest offensive
+      url: https://en.wikipedia.org/wiki/Budapest_offensive
+
+- id: fl-19450215-east
+  date: 1945-02-15
+  theatre: europe_east
+  name_ja: 東部戦線（オーデル川到達）
+  note_ja: |
+    ヴィスワ＝オーデル攻勢が終わり、ソ連軍がベルリンの東 70km の
+    オーデル川に橋頭堡を得た時点の概略線。東プロイセンとクールラントは
+    切り離されたまま、ブダペストは陥落直前。
+  coords:
+    - [21.0, 57.0]   # クールラント包囲（孤立を継続）
+    - [20.0, 54.4]   # 東プロイセン（包囲下）
+    - [14.6, 52.9]   # シュテッティン方面
+    - [14.6, 52.4]   # キュストリン橋頭堡
+    - [15.0, 51.3]   # ナイセ川方面
+    - [17.5, 50.0]   # 上シレジア
+    - [18.5, 48.9]   # 西スロバキア
+    - [19.1, 47.5]   # ブダペスト（陥落直前）
+    - [17.6, 45.9]   # ドラーヴァ川方面
+  license: pd
+  verified: false
+  sources:
+    - title: Vistula–Oder offensive
+      url: https://en.wikipedia.org/wiki/Vistula%E2%80%93Oder_offensive
+    - title: Siege of Budapest
+      url: https://en.wikipedia.org/wiki/Siege_of_Budapest
+
+- id: fl-19450416-east
+  date: 1945-04-16
+  theatre: europe_east
+  name_ja: 東部戦線（ベルリン攻勢の開始）
+  note_ja: |
+    オーデル＝ナイセ線から最後の攻勢が始まった日の概略線。
+    2 週間でベルリンが陥落し、5 月 8 日に戦線が消える。
+  coords:
+    - [14.3, 54.0]   # バルト海沿岸（シュヴィーネミュンデ方面）
+    - [14.6, 52.9]   # オーデル川下流
+    - [14.6, 52.4]   # キュストリン
+    - [14.8, 51.5]   # ナイセ川
+    - [16.9, 50.4]   # ズデーテン北縁
+    - [18.5, 49.3]   # モラヴィア
+    - [17.1, 48.2]   # ブラチスラヴァ方面
+    - [16.4, 47.5]   # ウィーン西方（4/13 に陥落）
+    - [15.4, 46.4]   # シュタイアーマルク方面
+  license: pd
+  verified: false
+  sources:
+    - title: Battle of Berlin
+      url: https://en.wikipedia.org/wiki/Battle_of_Berlin
+    - title: Vienna offensive
+      url: https://en.wikipedia.org/wiki/Vienna_offensive
+
+- id: fl-19440630-west
+  date: 1944-06-30
+  theatre: europe_west
+  name_ja: 西部戦線（ノルマンディー橋頭堡）
+  note_ja: |
+    上陸から 3 週間、連合軍がコタンタン半島とシェルブールを確保して
+    橋頭堡を固めた時点の概略線。カーンの南で膠着し、突破は 7 月末になる。
+  coords:
+    - [-1.62, 49.64]  # シェルブール（6/27 に確保）
+    - [-1.30, 49.10]  # カランタン方面
+    - [-0.80, 49.05]  # ティリー＝シュル＝スュル方面
+    - [-0.36, 49.18]  # カーン北縁
+    - [-0.20, 49.30]  # ウィストルアム（橋頭堡の東端）
+  license: pd
+  verified: false
+  sources:
+    - title: Operation Overlord
+      url: https://en.wikipedia.org/wiki/Operation_Overlord
+    - title: Battle of Cherbourg
+      url: https://en.wikipedia.org/wiki/Battle_of_Cherbourg
+
+- id: fl-19450425-west
+  date: 1945-04-25
+  theatre: europe_west
+  name_ja: 西部戦線（エルベ川での東西合流）
+  note_ja: |
+    トルガウで米軍とソ連軍が接触し、ドイツが南北に断ち切られた時点の概略線。
+    ルール包囲は 4/18 に終わり、残る戦闘は北ドイツとアルプス方面だけになる。
+  coords:
+    - [10.0, 53.6]   # エルベ下流（ハンブルク方面）
+    - [11.6, 52.1]   # マクデブルク
+    - [13.0, 51.6]   # トルガウ（4/25 に東西が接触）
+    - [12.1, 50.3]   # ケムニッツ方面
+    - [11.4, 48.8]   # ミュンヘン北方
+    - [11.4, 47.3]   # アルプス北縁
+  license: pd
+  verified: false
+  sources:
+    - title: Elbe Day
+      url: https://en.wikipedia.org/wiki/Elbe_Day
+    - title: Western Front (World War II)
+      url: https://en.wikipedia.org/wiki/Western_Front_(World_War_II)

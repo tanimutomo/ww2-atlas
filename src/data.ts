@@ -112,6 +112,12 @@ export type Atlas = {
    * ヨーロッパの 1939-08〜1942-12 しか無い。
    */
   controlMonths: string[];
+  /**
+   * 概略の支配領域の日付（前線と範囲から導出したもの）。
+   * Commons の面が無い期間・地域 ― 1943 年以降のヨーロッパと中国全期間 ― を埋める。
+   * 精度は元の折れ線と同じなので、UI では薄く塗って区別している。
+   */
+  approxDates: string[];
   /** id → レコード（Event / Decision / HomeFront をまとめて引く） */
   byId: Map<string, EventRec | Decision | HomeFront>;
   /** id → その id が from か to になっているリンク */
@@ -139,9 +145,10 @@ export async function loadAtlas(): Promise<Atlas> {
   ]);
 
   // 支配レイヤはまだ無いこともある（npm run fetch:control 未実行）ので、落とさない
-  const control = await getJson<{ months: { month: string }[] }>('territory/control/index.json').catch(
-    () => ({ months: [] }),
-  );
+  const [control, approx] = await Promise.all([
+    getJson<{ months: { month: string }[] }>('territory/control/index.json').catch(() => ({ months: [] })),
+    getJson<{ dates: { date: string }[] }>('territory/approx/index.json').catch(() => ({ dates: [] })),
+  ]);
 
   const byId = new Map<string, EventRec | Decision | HomeFront>();
   for (const r of ev.events) byId.set(r.id, r);
@@ -168,6 +175,7 @@ export async function loadAtlas(): Promise<Atlas> {
     frontlines: fl.frontlines,
     keyframes: tf.keyframes,
     controlMonths: control.months.map((m) => m.month),
+    approxDates: approx.dates.map((d) => d.date),
     byId,
     linksOf,
     actorById: new Map(ac.actors.map((a) => [a.id, a])),
@@ -183,6 +191,30 @@ export const CONTROL_COLOR: Record<Control, string> = {
   su: '#7a4a2f',
   neutral: '#6b6558',
 };
+
+/**
+ * 概略の面に使う色。
+ *
+ * 概略の面は OHM の政体境界の**上に**重なる。素直に半透明で塗ると
+ * 下のソ連の青と混ざって紫になり、「占領地」ではなく別の区分に見えてしまう。
+ * そこで「陸の色の上に occupied を 0.55 で塗ったとき」の色をあらかじめ計算し、
+ * 不透明で塗る。ほかの占領地とまったく同じ見え方になり、下の層も隠れる。
+ * ここが概略であることは、上に重なる前線の破線と凡例の注記で示している。
+ */
+const LAND_MIX = '#2b3238'; // map.ts の LAND と揃える
+const mix = (fg: string, bg: string, a: number): string => {
+  const hex = (c: string) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16));
+  const [r1, g1, b1] = hex(fg);
+  const [r2, g2, b2] = hex(bg);
+  const to = (v: number) => Math.round(v).toString(16).padStart(2, '0');
+  return `#${to(r1 * a + r2 * (1 - a))}${to(g1 * a + g2 * (1 - a))}${to(b1 * a + b2 * (1 - a))}`;
+};
+export const APPROX_COLOR: Record<Control, string> = Object.fromEntries(
+  (Object.keys(CONTROL_COLOR) as Control[]).map((k) => [
+    k,
+    mix(CONTROL_COLOR[k], LAND_MIX, k.endsWith('_occupied') ? 0.55 : 0.8),
+  ]),
+) as Record<Control, string>;
 
 export const CONTROL_LABEL: Record<Control, string> = {
   axis: '枢軸国',
@@ -283,6 +315,13 @@ export const DISCREPANCY_LABEL: Record<string, string> = {
  * 収録範囲の外（1943 年以降・1939-08 より前）では null を返して、
  * OHM の政体境界だけを出す。
  */
+/** 概略の面は「その日以下で最新」を出す。前線と同じステップ表示 */
+export function approxDateFor(dates: string[], date: string): string | null {
+  let hit: string | null = null;
+  for (const d of dates) if (d <= date) hit = d;
+  return hit;
+}
+
 export function controlMonthFor(months: string[], date: string): string | null {
   if (!months.length) return null;
   const d = toDayNumber(date);
