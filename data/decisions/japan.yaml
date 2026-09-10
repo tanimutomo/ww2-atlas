@@ -29,8 +29,10 @@
     - 締約国が第三国から攻撃された場合、相互に援助する
     - ソ連との既存の関係には影響しないと明記する
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 日本國、獨逸國及伊太利國間三國條約（条文・Wikisource／条約第九號）
+      url: https://ja.wikisource.org/wiki/%E6%97%A5%E6%9C%AC%E5%9C%8B%E3%80%81%E7%8D%A8%E9%80%B8%E5%9C%8B%E5%8F%8A%E4%BC%8A%E5%A4%AA%E5%88%A9%E5%9C%8B%E9%96%93%E4%B8%89%E5%9C%8B%E6%A2%9D%E7%B4%84
     - title: Tripartite Pact（条文・Wikisource ほか）
       url: https://en.wikipedia.org/wiki/Tripartite_Pact
     - title: 国立公文書館デジタルアーカイブ
@@ -339,8 +341,12 @@
     - 米英に対し宣戦を布告する
     - 自存自衛のためやむを得ない措置であると位置づける
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 米國及英國ニ對スル宣戰ノ詔書（原文・Wikisource／底本は官報号外 1941-12-08）
+      url: https://ja.wikisource.org/wiki/%E7%B1%B3%E5%9C%8B%E5%8F%8A%E8%8B%B1%E5%9C%8B%E3%83%8B%E5%B0%8D%E3%82%B9%E3%83%AB%E5%AE%A3%E6%88%B0%E3%83%8E%E8%A9%94%E6%9B%B8
+    - title: 官報 号外 昭和16年12月8日（国立国会図書館デジタルコレクション）
+      url: https://dl.ndl.go.jp/pid/2960976
     - title: 大東亜戦争
       url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E6%88%A6%E4%BA%89
     - title: Attack on Pearl Harbor

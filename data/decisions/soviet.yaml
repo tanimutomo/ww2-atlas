@@ -84,8 +84,10 @@
     - 一方が第三国と戦争になった場合、他方は中立を守る
     - 有効期間を 5 年とする
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 大日本帝國及「ソヴィエト」社會主義共和國聯邦間中立條約（条文・Wikisource／昭和16年条約第6号）
+      url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9C%8B%E5%8F%8A%EF%BD%A2%E3%82%BD%E3%83%B4%E3%82%A3%E3%82%A8%E3%83%88%EF%BD%A3%E7%A4%BE%E6%9C%83%E4%B8%BB%E7%BE%A9%E5%85%B1%E5%92%8C%E5%9C%8B%E8%81%AF%E9%82%A6%E9%96%93%E4%B8%AD%E7%AB%8B%E6%A2%9D%E7%B4%84
     - title: Soviet–Japanese Neutrality Pact
       url: https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact
     - title: 日ソ中立条約

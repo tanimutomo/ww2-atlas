@@ -249,8 +249,10 @@
     - 国際連合の設立会議を 4 月にサンフランシスコで開く
     - ソ連はドイツ降伏の 2〜3 か月後に対日参戦する（秘密協定）
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Yalta (Crimea) Conference — Protocol of Proceedings（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/yalta.asp
     - title: FRUS — The Conferences at Malta and Yalta, 1945
       url: https://history.state.gov/historicaldocuments/frus1945Malta
     - title: Yalta Conference
@@ -386,8 +388,10 @@
     - 三国同盟を事実上無効化することを求める
     - 通商条約の再締結と資産凍結の解除を提示する
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: United States Note to Japan, November 26, 1941（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/p1.asp
     - title: Hull note
       url: https://en.wikipedia.org/wiki/Hull_note
     - title: ハル・ノート
@@ -707,8 +711,10 @@
     - 目標は広島・小倉・新潟・長崎から選ぶ
     - 追加の爆弾も準備でき次第、同じ授権のもとで使用する
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Order from General Handy to General Spaatz, 25 July 1945（原文・Wikisource／NARA ARC 542193）
+      url: https://en.wikisource.org/wiki/Order_from_General_Thomas_Handy_to_General_Carl_Spaatz_authorizing_the_dropping_of_the_first_atomic_bomb
     - title: Atomic bombings of Hiroshima and Nagasaki
       url: https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki
     - title: Interim Committee
