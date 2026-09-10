@@ -7,3 +7,4 @@ public/data/
 data/raw/ohm
 data/raw/cache
 data/raw/commons
+.env*
