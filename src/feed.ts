@@ -45,6 +45,8 @@ export type FeedEntry = {
   flags: string[];
   /** 本文が Wikipedia 由来（CC BY-SA）のときに立てる。印を出すために要る */
   bodyFromWikipedia?: boolean;
+  /** 一次史料に当たって確認済みか。既定が未検証なので、確認済みの側に印を出す */
+  verified?: boolean;
 };
 
 const esc = (s: unknown): string =>
@@ -150,6 +152,7 @@ export function buildFeed(atlas: Atlas): FeedEntry[] {
       // タイトルだけだと何が起きたのか分からない、というのを直すため
       body: e.summary_ja ?? atlas.wikiSummaries.get(e.id) ?? null,
       bodyFromWikipedia: !e.summary_ja && atlas.wikiSummaries.has(e.id),
+      verified: e.verified,
       flags: [TYPE_LABEL[e.type] ?? e.type],
     });
   }
@@ -165,6 +168,7 @@ export function buildFeed(atlas: Atlas): FeedEntry[] {
       account: commandAccount(atlas, d),
       title: d.name_ja,
       body: d.summary_ja ?? null,
+      verified: d.verified,
       flags: drives ? [`動かした作戦 ${drives}`] : [],
     });
   }
@@ -178,6 +182,7 @@ export function buildFeed(atlas: Atlas): FeedEntry[] {
       account: homeAccount(atlas, h),
       title: h.headline_ja,
       body: h.body_ja ?? null,
+      verified: h.verified,
       flags: disc ? [DISCREPANCY_LABEL[disc.kind] ?? '発表と実態に差'] : [],
     });
   }
@@ -212,6 +217,9 @@ export function renderFeed(
       const flags = e.flags
         .map((f) => `<span class="post-flag">${esc(f)}</span>`)
         .join('');
+      const ok = e.verified
+        ? '<span class="post-verified" title="一次史料の全文に当たって確認済み">原典確認済み</span>'
+        : '';
       const wp = e.bodyFromWikipedia
         ? '<span class="post-wp" title="Wikipedia のリード文にもとづく要約（CC BY-SA）">W</span>'
         : '';
@@ -231,7 +239,7 @@ export function renderFeed(
               <span class="post-handle">@${esc(e.account.handle)}</span>
               <time class="post-date">${esc(formatJa(e.date))}</time>
             </span>
-            <span class="post-title">${esc(e.title)}</span>
+            <span class="post-title">${esc(e.title)}${ok}</span>
             ${body}
             ${flags ? `<span class="post-flags">${flags}</span>` : ''}
           </span>

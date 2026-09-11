@@ -432,8 +432,12 @@ function buildChrome(atlas: Atlas, state: State): void {
   const unverified = [...atlas.events, ...atlas.decisions, ...atlas.homefront].filter(
     (r) => !r.verified,
   ).length;
-  $('#counts').textContent =
-    `現場 ${atlas.events.length} ・ 司令部 ${atlas.decisions.length} ・ 国内 ${atlas.homefront.length} ・ つながり ${atlas.links.length}（未確認 ${unverified}）`;
+  // 中身は件数だけなので innerHTML でよい（外から来る文字列は混ざらない）
+  $('#counts').innerHTML =
+    `現場 ${atlas.events.length} ・ 司令部 ${atlas.decisions.length} ・ 国内 ${atlas.homefront.length} ・ つながり ${atlas.links.length}` +
+    `（<span class="unverified-count" title="一次史料に当たって確認できたのは ${
+      atlas.events.length + atlas.decisions.length + atlas.homefront.length - unverified
+    } 件だけです。残りは LLM の下書きか、Wikipedia など二次情報に拠っています。点や投稿を開くと「この記述を訂正する」から誤りを報告できます">未確認 ${unverified}</span>）`;
 }
 
 main().catch((err) => {

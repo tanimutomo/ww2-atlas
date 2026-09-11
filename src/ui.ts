@@ -49,11 +49,34 @@ const titleOf = (r: EventRec | Decision | HomeFront): string =>
 const dateOf = (r: EventRec | Decision | HomeFront): string =>
   'start' in r ? r.start : r.date;
 
-/** 未確認・出典・ライセンスの注記。中立性のために必ず出す */
-function provenance(r: { verified: boolean; license: string; sources: { title: string; url: string }[] }): string {
+const REPO = 'https://github.com/tanimutomo/ww2-atlas';
+
+/**
+ * 「この記述を訂正する」の行き先。Issue フォームの各欄に id で流し込む。
+ * 報告する側が id を書き写さなくて済むようにするのが狙い
+ * ― 手で書かせると間違えるし、そこで面倒になって報告が止まる。
+ */
+function correctionUrl(id: string, title: string): string {
+  const q = new URLSearchParams({
+    template: 'error-report.yml',
+    title: `[誤り] ${title}`,
+    'record-id': id,
+  });
+  return `${REPO}/issues/new?${q}`;
+}
+
+/**
+ * 未確認・出典・ライセンスの注記と、訂正の導線。中立性のために必ず出す。
+ * 未確認のものほど目立つように出すのが方針（既定が未確認なので隠さない）。
+ */
+function provenance(
+  r: { verified: boolean; license: string; sources: { title: string; url: string }[] },
+  id: string,
+  title: string,
+): string {
   const badge = r.verified
-    ? '<span class="badge ok">原典確認済み</span>'
-    : '<span class="badge warn">未確認（下書き）</span>';
+    ? '<span class="badge ok" title="一次史料の全文に当たって確認済み">原典確認済み</span>'
+    : '<span class="badge warn" title="LLM の下書きか、Wikipedia など二次情報に拠っています">未検証</span>';
   const lic =
     r.license === 'link-only'
       ? '<span class="badge">本文非収録・リンクのみ</span>'
@@ -61,7 +84,13 @@ function provenance(r: { verified: boolean; license: string; sources: { title: s
   const src = r.sources
     .map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noreferrer noopener">${esc(s.title)}</a></li>`)
     .join('');
-  return `<div class="prov">${badge}${lic}<ul class="src">${src}</ul></div>`;
+  const note = r.verified
+    ? ''
+    : `<p class="prov-note">この記述はまだ一次史料に当たっていません。誤りを見つけたら教えてください。</p>`;
+  const fix =
+    `<a class="fix-link" href="${esc(correctionUrl(id, title))}" target="_blank" rel="noreferrer noopener"` +
+    ` title="GitHub の Issue が開きます（レコード id は入力済み）">この記述を訂正する</a>`;
+  return `<div class="prov">${badge}${lic}<ul class="src">${src}</ul>${note}${fix}</div>`;
 }
 
 /** リンク（決定→作戦 / 発表→実態）。discrepancy があれば発表と実態を並べる */
@@ -131,7 +160,7 @@ export function renderDetail(atlas: Atlas, id: string): string {
         }
         ${inferred}
         ${linkBlock(atlas, id)}
-        ${provenance(e)}
+        ${provenance(e, e.id, e.name_ja)}
       </div>`;
   }
 
@@ -151,7 +180,7 @@ export function renderDetail(atlas: Atlas, id: string): string {
         ${d.summary_ja ? `<p>${esc(d.summary_ja)}</p>` : ''}
         ${bullets}
         ${linkBlock(atlas, id)}
-        ${provenance(d)}
+        ${provenance(d, d.id, d.name_ja)}
       </div>`;
   }
 
@@ -163,7 +192,7 @@ export function renderDetail(atlas: Atlas, id: string): string {
       <div class="when">${esc(formatJa(h.date))}</div>
       ${h.body_ja ? `<p>${esc(h.body_ja)}</p>` : ''}
       ${linkBlock(atlas, id)}
-      ${provenance(h)}
+      ${provenance(h, h.id, h.headline_ja)}
     </div>`;
 }
 

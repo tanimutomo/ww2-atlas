@@ -206,6 +206,14 @@ body.resizing { cursor: col-resize; user-select: none; }
 .post-handle { color: var(--muted); }
 .post-date { color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
 .post-title { display: block; font-size: 13px; margin-top: 2px; line-height: 1.5; }
+/* 原典に当たって確認できたものの印。634 件中 14 件しかないので、
+   「未検証」を全件に付けるより、確認済み側に付けるほうが情報量がある */
+.post-verified {
+  display: inline-block; margin-left: 6px; vertical-align: 1px;
+  font-size: 9.5px; line-height: 1.5; padding: 0 5px;
+  color: #9ae86a; border: 1px solid #3d5c30; border-radius: 3px;
+  cursor: help;
+}
 .post-body {
   /* 要約は 140 字までに詰めてあるので、途中で切らず全部出す */
   margin: 4px 0 0; font-size: 11.5px; color: var(--muted); line-height: 1.6;
@@ -318,7 +326,20 @@ body.resizing { cursor: col-resize; user-select: none; }
 }
 .badge.ok { color: #9ae86a; border-color: #3d5c30; }
 .badge.warn { color: var(--claimed); border-color: #5c412c; }
+/* ヘッダの「未確認 N」。何の数字かを説明したいので当たり判定を残す */
+.unverified-count { color: var(--claimed); border-bottom: 1px dotted #5c412c; cursor: help; }
 .src { list-style: none; margin: 4px 0 0; padding: 0; font-size: 11.5px; }
+/* 訂正の導線。未検証が既定なので、目立たせすぎず・埋もれさせない */
+.prov-note {
+  margin: 7px 0 0; font-size: 11px; line-height: 1.6; color: var(--claimed);
+}
+.fix-link {
+  display: inline-block; margin-top: 7px;
+  font-size: 11.5px; color: var(--muted); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 4px; padding: 4px 9px;
+}
+.fix-link::before { content: '✎ '; }
+.fix-link:hover { color: var(--text); border-color: #4a5763; }
 .src li { margin: 2px 0; }
 
 /* ------------------------------------------------------------ 地図上のラベル */
