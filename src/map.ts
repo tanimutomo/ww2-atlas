@@ -66,14 +66,8 @@ export class AtlasMap {
       attributionControl: false,
     });
     this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-left');
-    this.map.addControl(
-      new maplibregl.AttributionControl({
-        compact: true,
-        customAttribution:
-          'Natural Earth (PD) / OpenHistoricalMap (CC0) / Wikidata (CC0)',
-      }),
-      'bottom-right',
-    );
+    // 出典表示は地図の下端のバー（index.html の .mb-attr）に出しているので、
+    // MapLibre のコントロールは足さない。全件の一覧は public/data/sources.json
   }
 
   async init(): Promise<void> {

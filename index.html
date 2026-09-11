@@ -24,40 +24,54 @@
       <section id="map-pane">
         <div id="map"></div>
         <div id="map-overlay">
-          <div class="filters">
-            <div class="filters-title">戦域</div>
-            <div id="theatres" class="theatres"></div>
-            <div class="key-block">
-              <div class="filters-title">点の色</div>
-              <div id="type-key" class="type-key"></div>
-              <p class="key-note">
-                会議・発表も起きた場所に置いています。同じ場所に重なるものは輪状にずらして表示。
-              </p>
-            </div>
-            <div class="key-block">
-              <div class="filters-title">前線</div>
-              <div class="dot-key">
-                <span class="dk"><i class="dk-front"></i>戦線（破線＝概略。地図のトレースではない）</span>
-              </div>
-            </div>
-            <div class="key-block">
-              <div class="filters-title">点の大きさ ＝ 重要度と新しさ</div>
-              <div class="dot-key">
-                <span class="dk"><i class="dk-now"></i>進行中</span>
-                <span class="dk"><i class="dk-recent"></i>直近</span>
-                <span class="dk"><i class="dk-past"></i>それ以前（痕跡）</span>
-              </div>
-            </div>
+          <!-- 押したときだけ出る注記。常に出しておくと地図を隠すので畳んである -->
+          <div id="map-notes" class="map-notes" hidden>
+            <button id="notes-close" class="notes-close" aria-label="閉じる（Esc）" title="閉じる（Esc）">×</button>
+            <p>
+              <b>点について</b> ― 会議・発表も「どこで起きたか」の場所に置いています。
+              同じ場所に重なるものは輪状にずらして表示。大きさは重要度と新しさで、
+              過ぎた出来事も小さな痕跡として残ります。
+            </p>
+            <p>
+              <b>戦線の破線</b> ― 概略です。地図をトレースしたものではありません。
+            </p>
+            <p>
+              <b>支配領域</b>は 3 つを重ねています。①<strong>ヨーロッパの 1939 年 8 月〜1942 年 12 月</strong>は
+              Wikimedia Commons の月次図（PD）を逆投影した<strong>軍事的な支配</strong>で、月末時点・誤差 1.5km 前後。
+              ②<strong>1943 年以降の東部戦線と日本占領下の中国</strong>は、前線の折れ線と範囲指定から
+              <strong>導出した概略</strong>（数十 km 単位・<strong>薄く塗ってある面がこれ</strong>）。
+              ③それ以外は OpenHistoricalMap の<strong>政体境界</strong>（キーフレーム・補間なし）。
+              中国をベタ塗りしているのは同時代の戦況図の慣例に合わせたもので、
+              日本軍が実際に握っていたのは都市と鉄道です。
+            </p>
           </div>
-          <p class="caveat">
-            支配領域は 3 つを重ねています。①<strong>ヨーロッパの 1939 年 8 月〜1942 年 12 月</strong>は
-            Wikimedia Commons の月次図（PD）を逆投影した<strong>軍事的な支配</strong>で、月末時点・誤差 1.5km 前後。
-            ②<strong>1943 年以降の東部戦線と日本占領下の中国</strong>は、前線の折れ線と範囲指定から
-            <strong>導出した概略</strong>（数十 km 単位・<strong>薄く塗ってある面がこれ</strong>）。
-            ③それ以外は OpenHistoricalMap の<strong>政体境界</strong>（キーフレーム・補間なし）。
-            中国をベタ塗りしているのは同時代の戦況図の慣例に合わせたもので、
-            日本軍が実際に握っていたのは都市と鉄道です。
-          </p>
+
+          <!-- 地図の下端に横長で置く凡例。説明文は注記に逃がして 1〜2 行に収める -->
+          <div class="mapbar">
+            <span class="mb-label">戦域</span>
+            <div id="theatres" class="theatres"></div>
+            <span class="mb-break"></span>
+            <span class="mb-label">点</span>
+            <div id="type-key" class="type-key"></div>
+            <span class="mb-sep"></span>
+            <div class="dot-key">
+              <span class="dk"><i class="dk-now"></i>進行中</span>
+              <span class="dk"><i class="dk-recent"></i>直近</span>
+              <span class="dk"><i class="dk-past"></i>痕跡</span>
+              <span class="dk"><i class="dk-front"></i>戦線</span>
+            </div>
+            <button
+              id="notes-toggle"
+              class="mb-notes"
+              type="button"
+              aria-expanded="false"
+              aria-controls="map-notes"
+            >地図の注記</button>
+            <span
+              class="mb-attr"
+              title="Natural Earth (PD) / OpenHistoricalMap (CC0) / Wikimedia Commons (PD) / Wikidata (CC0)"
+            >Natural Earth / OpenHistoricalMap / Commons / Wikidata</span>
+          </div>
         </div>
         <aside id="detail-panel" class="detail-panel" hidden>
           <div class="detail-panel-head">

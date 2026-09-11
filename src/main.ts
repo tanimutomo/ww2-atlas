@@ -312,7 +312,19 @@ async function main(): Promise<void> {
     );
 
   $('#detail-close').addEventListener('click', () => select(null));
+
+  // 地図の注記。常時出しておくと地図が隠れるので、押したときだけ開く
+  const notes = $('#map-notes');
+  const notesToggle = $('#notes-toggle');
+  const showNotes = (open: boolean) => {
+    notes.hidden = !open;
+    notesToggle.setAttribute('aria-expanded', String(open));
+  };
+  notesToggle.addEventListener('click', () => showNotes(notes.hidden));
+  $('#notes-close').addEventListener('click', () => showNotes(false));
+
   window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !notes.hidden) return showNotes(false);
     if (e.key === 'Escape' && state.selected) return select(null);
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
       // 入力欄（スライダー）にフォーカスがあるときは邪魔しない
