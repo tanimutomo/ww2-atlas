@@ -289,8 +289,13 @@
     - 国体護持（天皇の地位）について連合国の回答を受け入れる
     - 終戦の詔書を発し、放送により国民に伝える
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 大東亞戰爭終結ノ詔書（原文・Wikisource／底本は官報号外 1945-08-14）
+      url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9E%E6%88%B0%E7%88%AD%E7%B5%82%E7%B5%90%E3%83%8E%E8%A9%94%E6%9B%B8
+      note: この日付の詔書に「朕ハ帝國政府ヲシテ米英支蘇四國ニ對シ其ノ共同宣言ヲ受諾スル旨通告セシメタリ」「朕ハ茲ニ國體ヲ護持シ得テ」とある
+    - title: 官報 号外 昭和20年8月14日（国立国会図書館デジタルコレクション）
+      url: https://dl.ndl.go.jp/pid/2962077
     - title: 大東亞戰爭終結ノ詔書（原文・Wikisource）
       url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9E%E6%88%B0%E7%88%AD%E7%B5%82%E7%B5%90%E3%83%8E%E8%A9%94%E6%9B%B8
     - title: 日本の降伏
