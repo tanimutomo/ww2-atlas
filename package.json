@@ -12,6 +12,7 @@
     "fetch:territory": "node scripts/fetch-ohm-territory.mjs",
     "fetch:control": "node scripts/fetch-commons-control.mjs",
     "build:approx": "node scripts/build-approx-occupation.mjs",
+    "fetch:summaries": "node scripts/fetch-wikipedia-summaries.mjs",
     "check": "node scripts/build-data.mjs --check",
     "check:sources": "node scripts/check-sources.mjs"
   },

@@ -313,6 +313,48 @@ async function main(): Promise<void> {
 
   $('#detail-close').addEventListener('click', () => select(null));
 
+  // 右ペインの幅をドラッグで変える。地図側は ResizeObserver が追随する
+  {
+    const DEFAULT = 440;
+    const MIN = 300;
+    const KEY = 'ww2-atlas:side-width';
+    const stage = $('#stage');
+    const setWidth = (px: number) => {
+      // 地図が潰れないよう、ステージの幅から最低限を残す
+      const max = Math.max(MIN, stage.getBoundingClientRect().width - 360);
+      const w = Math.round(Math.min(max, Math.max(MIN, px)));
+      document.documentElement.style.setProperty('--side', `${w}px`);
+      return w;
+    };
+    const saved = Number(localStorage.getItem(KEY));
+    if (Number.isFinite(saved) && saved > 0) setWidth(saved);
+
+    const handle = $('#side-resizer');
+    handle.addEventListener('pointerdown', (e) => {
+      const ev = e as PointerEvent;
+      if (ev.button !== 0) return;
+      ev.preventDefault();
+      handle.setPointerCapture(ev.pointerId);
+      document.body.classList.add('resizing');
+      const right = stage.getBoundingClientRect().right;
+      const move = (m: PointerEvent) => setWidth(right - m.clientX);
+      const up = () => {
+        handle.releasePointerCapture(ev.pointerId);
+        document.body.classList.remove('resizing');
+        handle.removeEventListener('pointermove', move);
+        handle.removeEventListener('pointerup', up);
+        const now = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--side'), 10);
+        if (Number.isFinite(now)) localStorage.setItem(KEY, String(now));
+      };
+      handle.addEventListener('pointermove', move);
+      handle.addEventListener('pointerup', up);
+    });
+    handle.addEventListener('dblclick', () => {
+      setWidth(DEFAULT);
+      localStorage.removeItem(KEY);
+    });
+  }
+
   // 地図の注記。常時出しておくと地図が隠れるので、押したときだけ開く
   const notes = $('#map-notes');
   const notesToggle = $('#notes-toggle');

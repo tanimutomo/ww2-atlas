@@ -198,6 +198,8 @@
       note: CC0
 
 - id: Q8641370
+  # ノルマンディーは Q16470 / Q16471 と 3 件並ぶので、名前で書き分ける
+  name_ja: オーヴァーロード作戦
   type: landing
   theatre: europe_west
   significance: 3
