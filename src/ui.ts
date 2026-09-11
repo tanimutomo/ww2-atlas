@@ -120,7 +120,15 @@ export function renderDetail(atlas: Atlas, id: string): string {
         ${e.name_en ? `<div class="sub">${esc(e.name_en)}</div>` : ''}
         <div class="when">${esc(period)}</div>
         <div class="chips">${actors}</div>
-        ${e.summary_ja ? `<p>${esc(e.summary_ja)}</p>` : ''}
+        ${
+          e.summary_ja
+            ? `<p>${esc(e.summary_ja)}</p>`
+            : atlas.wikiSummaries.has(e.id)
+              // 自前の要約が無いときは Wikipedia のリード文で埋める。
+              // ライセンスが違うので出どころを添える
+              ? `<p>${esc(atlas.wikiSummaries.get(e.id)!)}<span class="wp-note">Wikipedia より（CC BY-SA）</span></p>`
+              : ''
+        }
         ${inferred}
         ${linkBlock(atlas, id)}
         ${provenance(e)}

@@ -43,6 +43,8 @@ export type FeedEntry = {
   body: string | null;
   /** 「発表と実態に差」など、カードに出す小さな印 */
   flags: string[];
+  /** 本文が Wikipedia 由来（CC BY-SA）のときに立てる。印を出すために要る */
+  bodyFromWikipedia?: boolean;
 };
 
 const esc = (s: unknown): string =>
@@ -144,7 +146,10 @@ export function buildFeed(atlas: Atlas): FeedEntry[] {
       kind: 'field',
       account: fieldAccount(atlas, e),
       title: e.name_ja,
-      body: e.summary_ja,
+      // 自前の要約が無いものは Wikipedia のリード文で埋める。
+      // タイトルだけだと何が起きたのか分からない、というのを直すため
+      body: e.summary_ja ?? atlas.wikiSummaries.get(e.id) ?? null,
+      bodyFromWikipedia: !e.summary_ja && atlas.wikiSummaries.has(e.id),
       flags: [TYPE_LABEL[e.type] ?? e.type],
     });
   }
@@ -207,8 +212,11 @@ export function renderFeed(
       const flags = e.flags
         .map((f) => `<span class="post-flag">${esc(f)}</span>`)
         .join('');
+      const wp = e.bodyFromWikipedia
+        ? '<span class="post-wp" title="Wikipedia のリード文にもとづく要約（CC BY-SA）">W</span>'
+        : '';
       const body = e.body
-        ? `<p class="post-body">${esc(e.body.replace(/\n+/g, ' ').trim())}</p>`
+        ? `<p class="post-body">${esc(e.body.replace(/\n+/g, ' ').trim())}${wp}</p>`
         : '';
       return `<li class="post kind-${e.kind}${isNew ? ' is-new' : ''}">
         <button class="post-btn" data-id="${esc(e.id)}">

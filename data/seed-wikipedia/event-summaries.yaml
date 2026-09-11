@@ -1,0 +1,2637 @@
+# Wikipedia 日本語版のリード文を、フィードに出す短い要約として取り込んだもの。
+# scripts/fetch-wikipedia-summaries.mjs が生成する（手で書き換えない）。
+#
+# ⚠ CC BY-SA。自前の要約（license: pd）とは混ぜない約束なので、
+#   このファイルにだけ置き、出力も public/data/event-summaries.cc-by-sa.json に分ける。
+#   画面にも「Wikipedia」の印を出している。
+#
+# 文の切れ目で 140 字以下に詰めてある（130 件は元が長いので途中まで）。
+# 英語版しか無いものはここには入らない。event-summaries-from-en.yaml を見ること。
+
+- id: Q219230
+  lang: ja
+  text: "盧溝橋事件 は、1937年（昭和12年）7月7日に中華民国北平市（現在の北京市）西南方向の盧溝橋で起きた日本軍と中国国民革命軍第二十九軍との衝突事件。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "盧溝橋事件（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%9B%A7%E6%BA%9D%E6%A9%8B%E4%BA%8B%E4%BB%B6
+
+- id: Q254599
+  lang: ja
+  text: "第二次上海事変 、あるいは上海の戦い（シャンハイのたたかい）は、1937年（昭和12年）8月13日から始まった、国民革命軍と日本軍との軍事衝突。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第二次上海事変（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%8A%E6%B5%B7%E4%BA%8B%E5%A4%89
+
+- id: Q10872254
+  lang: ja
+  text: "中国空軍の上海爆撃（ちゅうごくくうぐんのしゃんはいばくげき）は、第二次上海事変中の1937年8月14日に上海で発生した中華民国空軍による誤爆事件である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "中国空軍の上海爆撃_(1937年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A9%BA%E8%BB%8D%E3%81%AE%E4%B8%8A%E6%B5%B7%E7%88%86%E6%92%83_(1937%E5%B9%B4)
+
+- id: Q709521
+  lang: ja
+  text: "太原作戦（たいげんさくせん）とは、日中戦争（支那事変）中の1937年（昭和12年）9月から11月までの間、日本の北支方面軍及び関東軍部隊によって行われた、山西省太原への進攻作戦である。太原攻略戦、山西作戦（さんせいさくせん）などとも呼ばれる。中国側呼称は太原会戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "太原作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%8E%9F%E4%BD%9C%E6%88%A6
+
+- id: Q1973870
+  lang: ja
+  text: "四行倉庫の戦い（しこうそうこのたたかい）は、日中戦争初期の上海戦末期、第88師第524団団長附謝晉元率いる400余名が、1937年（昭和12年）10月27日から10月31日にかけ、蘇州河北岸の四行倉庫に立て籠った戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "四行倉庫の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%9B%9B%E8%A1%8C%E5%80%89%E5%BA%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q701180
+  lang: ja
+  text: "南京戦 は、日中戦争における戦闘の1つで、1937年（昭和12年/民国26年）8月以降の上海戦の戦線が拡大し、12月に中華民国の首都南京市で展開した。日本軍は国民革命軍（中国軍）を追撃し、南京を陥落させた。日本軍からは南京攻略戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "南京戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E6%88%A6
+
+- id: Q2049158
+  lang: ja
+  text: "パナイ号事件 は、日中戦争初期の1937年12月12日、揚子江上において、米国民間人を南京から避難させるために乗せたアメリカ合衆国アジア艦隊河川砲艦「パナイ」を日本海軍機が攻撃して沈没させ、同艦に護衛されていたスタンダードオイル社のタンカー3隻を破壊し、さらにその際に機銃掃射を…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "パナイ号事件（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%8A%E3%82%A4%E5%8F%B7%E4%BA%8B%E4%BB%B6
+
+- id: Q705165
+  lang: ja
+  text: "重慶爆撃（じゅうけいばくげき）は、日中戦争中の1938年（昭和13年）12月から1941年（昭和16年）9月にかけ、大日本帝国陸海軍航空部隊が当時中華民国の首都であった重慶に対して反復実施した大規模な空襲。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "重慶爆撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%87%8D%E6%85%B6%E7%88%86%E6%92%83
+
+- id: Q626796
+  lang: ja
+  text: "台児荘の戦い（たいじそう/だいじそうのたたかい）とは、日中戦争中の1938年3月から4月7日までの間、山東省最南部の台児荘（台児庄ともいう）付近で行われた戦闘である。台児荘の攻略を企図した日本軍部隊が、中国軍の大部隊に包囲されて撤退し、徐州作戦の引き金となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "台児荘の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8F%B0%E5%85%90%E8%8D%98%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q709421
+  lang: ja
+  text: "徐州会戦（じょしゅうかいせん）または徐州作戦とは、日中戦争（支那事変）中の1938年（昭和13年）4月7日から6月7日まで、江蘇省・山東省・安徽省・河南省の一帯で行われた日本陸軍と中国軍（国民革命軍）による戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "徐州会戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%BE%90%E5%B7%9E%E4%BC%9A%E6%88%A6
+
+- id: Q2038907
+  lang: ja
+  text: "武漢作戦（ぶかんさくせん）は、日中戦争で行われた戦いの一つである。武漢三鎮攻略戦、武漢攻略戦とも呼称される。中国側の呼称は武漢会戦。武漢保衛戦という呼称もある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "武漢作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%AD%A6%E6%BC%A2%E4%BD%9C%E6%88%A6
+
+- id: Q709385
+  lang: ja
+  text: "南昌作戦（なんしょうさくせん）は、日中戦争において、中華民国の中国軍と大日本帝国の日本軍との間で行われた戦闘。江西省南昌市を中心に行われた。武漢作戦が終結してからは初めての大規模な戦闘となった。別名を南昌会戦ともいう。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "南昌作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8D%97%E6%98%8C%E4%BD%9C%E6%88%A6
+
+- id: Q2890074
+  lang: ja
+  text: "襄東会戦（じょうとうかいせん）は、日中戦争中の1939年5月1日から5月20日まで、湖北省の襄東地区で行われた日本陸軍と国民革命軍による戦闘である。反攻を企図して集結した中国軍を日本軍が撃滅しようとした。襄東とは、襄河（漢水の別称）以東の地域を指す。作戦名称は「そ号作戦」。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "襄東会戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E8%A5%84%E6%9D%B1%E4%BC%9A%E6%88%A6
+
+- id: Q564388
+  lang: ja
+  text: "ダンツィヒのポーランド郵便局の攻防は、ダンツィヒ（現在のグダニスク）で行われた、第二次世界大戦のドイツによるポーランド侵攻における初戦の戦いの1つである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ダンツィヒのポーランド郵便局での攻防（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%83%84%E3%82%A3%E3%83%92%E3%81%AE%E3%83%9D%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E9%83%B5%E4%BE%BF%E5%B1%80%E3%81%A7%E3%81%AE%E6%94%BB%E9%98%B2
+
+- id: Q2305266
+  lang: ja
+  text: "ソビエト連邦によるポーランド侵攻（ソビエトれんぽうによるポーランドしんこう）は、宣戦布告がないまま開始された軍事作戦であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ソビエト連邦によるポーランド侵攻（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%93%E3%82%A8%E3%83%88%E9%80%A3%E9%82%A6%E3%81%AB%E3%82%88%E3%82%8B%E3%83%9D%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E4%BE%B5%E6%94%BB
+
+- id: Q709704
+  lang: ja
+  text: "南寧作戦（なんねいさくせん）とは、日中戦争中の1939年11月15日から12月1日までの間、「援蔣ルート」の遮断を目的として広西省の南寧を攻略した日本軍の作戦である。中国側呼称は桂南会戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "南寧作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8D%97%E5%AF%A7%E4%BD%9C%E6%88%A6
+
+- id: Q715182
+  lang: ja
+  text: "サッラの戦い（サッラのたたかい）は、冬戦争の戦いの一つで、ソ連軍とフィンランド軍がフィンランド北部サッラ近郊で行った戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "サッラの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%83%E3%83%A9%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q477095
+  lang: ja
+  text: "スオムッサルミの戦い は、冬戦争における戦闘の一つ。スオムッサルミ近郊では冬戦争開始から一月末にかけての期間中戦闘が起こっていたが、一般的には1939年12月7日から1940年1月8日までの間続いた戦闘を言う。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スオムッサルミの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AA%E3%83%A0%E3%83%83%E3%82%B5%E3%83%AB%E3%83%9F%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q934266
+  lang: ja
+  text: "コッラの戦い は、1939年12月7日から1940年3月13日までの間ラドガ湖北部周辺で行われた戦い。冬戦争の一部。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コッラの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%83%E3%83%A9%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q639989
+  lang: ja
+  text: "トルヴァヤルヴィの戦いは冬戦争でフィンランド軍とソ連軍によって1939年12月12日から行われた戦い。フィンランド側が攻勢による最初の大規模な勝利を得た。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "トルヴァヤルヴィの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%A4%E3%83%AB%E3%83%B4%E3%82%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q713529
+  lang: ja
+  text: "ラプラタ沖海戦（ラプラタおきかいせん）は、第二次世界大戦中の1939年12月13日にラプラタ川河口の沖合いで生起した海戦。開戦以来大西洋、インド洋で通商破壊を行っていたドイツのドイッチュラント級装甲艦「アドミラル・グラーフ・シュペー」がイギリスの巡洋艦3隻と交戦した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ラプラタ沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%97%E3%83%A9%E3%82%BF%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q3486941
+  lang: ja
+  text: "スンマの戦い は、冬戦争の間に起きた戦闘。レニングラード-ヴィープリ間の主要な街スンマ（現在のソルダットスコーイェ付近）とそこを通る道で行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スンマの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%B3%E3%83%9E%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2446643
+  lang: ja
+  text: "ラーテ林道の戦い は、冬戦争の戦い。1940年1月のスオムッサルミの戦いの一部である。この戦いでフィンランド軍のモッティ戦術の効果が発揮された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ラーッテ林道の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%BC%E3%83%83%E3%83%86%E6%9E%97%E9%81%93%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q177283
+  lang: ja
+  text: "アルトマルク号事件 は、第二次世界大戦中の1940年2月16日、当時中立だったノルウェーの領海を舞台に、イギリスとドイツ国の間で発生した軍事衝突である。イギリス海軍の駆逐艦が、ドイツ海軍のタンカーを臨検し、捕虜299名を奪還した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アルトマルク号事件（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%88%E3%83%9E%E3%83%AB%E3%82%AF%E5%8F%B7%E4%BA%8B%E4%BB%B6
+
+- id: Q470571
+  lang: ja
+  text: "ヴィーキンガー作戦 は第二次世界大戦中のドイツ軍の作戦の一つ。その内容は、北海でイギリス漁船を拿捕または撃沈するというもので駆逐艦6隻が参加し1940年2月22日に発動された。作戦中ドイツ空軍機による誤爆、またはイギリス軍により敷設された機雷で駆逐艦2隻が沈み、作戦は中止された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヴィーキンガー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%AC%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q2594918
+  lang: ja
+  text: "ホンカニエミの戦いは冬戦争後期にカレリア地峡で行われた戦闘。戦況の悪化するカレリア地峡戦線でフィンランド軍がソ連軍に崩壊しかけていた戦線を突破されないために行った攻勢。冬戦争でフィンランドが戦車を投入し、ソ連戦車との間で戦闘になった、冬戦争でほとんど唯一の戦車戦といえる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ホンカニエミの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%B3%E3%82%AB%E3%83%8B%E3%82%A8%E3%83%9F%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q695285
+  lang: ja
+  text: "モスクワ講和条約 は、1940年3月12日にフィンランドとソビエト連邦により署名され、同21日に批准された講和条約である。これにより105日間に渡って続いた冬戦争は終結した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "モスクワ講和条約（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A2%E3%82%B9%E3%82%AF%E3%83%AF%E8%AC%9B%E5%92%8C%E6%9D%A1%E7%B4%84
+
+- id: Q705279
+  lang: ja
+  text: "後套進攻作戦（こうとうしんこうさくせん）とは、日中戦争中の1940年（昭和15年）1月から3月までの間、日本の駐蒙軍により二次に亘って行われた、綏遠省後套地区（五原地方）への進攻作戦である。当初の作戦秘匿名は八号作戦。別名の五原作戦（ごげんさくせん）でも知られる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "後套進攻作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%BE%8C%E5%A5%97%E9%80%B2%E6%94%BB%E4%BD%9C%E6%88%A6
+
+- id: Q150939
+  lang: ja
+  text: "ヴェーザー演習作戦 は、第二次世界大戦中の1940年4月にナチス・ドイツが実行したノルウェーとデンマークへの侵攻作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヴェーザー演習作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A7%E3%83%BC%E3%82%B6%E3%83%BC%E6%BC%94%E7%BF%92%E4%BD%9C%E6%88%A6
+
+- id: Q708217
+  lang: ja
+  text: "ナルヴィクの戦いは、第二次世界大戦中の1940年に、ノルウェーの北極圏の都市ナルヴィクをめぐって行われた戦い。4月9日に、ドイツ軍は、ヴェーザー演習作戦で、ノルウェーとデンマークに侵攻したが、その一環で、山岳兵1個連隊がナルヴィクを無血占領した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ナルヴィクの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%AB%E3%83%B4%E3%82%A3%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q717963
+  lang: ja
+  text: "宜昌作戦（ぎしょうさくせん）は、日中戦争中の1940年（昭和15年）5月から6月まで湖北省で行われた日本軍の作戦である。日本軍の第11軍が、中国軍第5戦区軍の撃破と宜昌の攻略を目的として実行した。中国側の呼称は棗宜会戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "宜昌作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%AE%9C%E6%98%8C%E4%BD%9C%E6%88%A6
+
+- id: Q714288
+  lang: ja
+  text: "エバン・エマール要塞の戦い（エバン・エマールようさいのたたかい）は、第二次世界大戦中の1940年5月10日、11日両日に行われたベルギー軍とドイツ国防軍間の戦いであり、ドイツ軍のフランス、低地諸国侵攻作戦である黄作戦 におけるオランダの戦い、ベルギーの戦いの一部。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エバン・エマール要塞の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%90%E3%83%B3%E3%83%BB%E3%82%A8%E3%83%9E%E3%83%BC%E3%83%AB%E8%A6%81%E5%A1%9E%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2032618
+  lang: ja
+  text: "アニューの戦いは、第二次世界大戦中、ベルギーの戦いのさなか、ベルギーのアニューで1940年5月12日から14日の間行われた戦いのことである。この戦いは第二次世界大戦における初めての大規模戦車戦であり、北アフリカ戦線、独ソ戦が行われるまでは世界最大の戦車戦だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アニューの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%8B%E3%83%A5%E3%83%BC%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q714349
+  lang: ja
+  text: "ロッテルダム爆撃 とは、第二次世界大戦中の1940年5月14日、ドイツ空軍がオランダのロッテルダムに対して行った空襲である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ロッテルダム爆撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%83%E3%83%86%E3%83%AB%E3%83%80%E3%83%A0%E7%88%86%E6%92%83
+
+- id: Q696839
+  lang: ja
+  text: "アラスの戦い は、第二次世界大戦中の1940年5月21日に、英仏軍とドイツ軍の間でアラス近郊で行われた戦い。5月10日に始まったドイツ軍のフランス侵攻作戦は、ドイツ軍装甲部隊が5月20日に英仏海峡に到達し、ベルギー領に進出した英仏軍左翼は、包囲された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アラスの戦い_(1940年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A9%E3%82%B9%E3%81%AE%E6%88%A6%E3%81%84_(1940%E5%B9%B4)
+
+- id: Q2219890
+  lang: ja
+  text: "カレー包囲戦 は、ナチス・ドイツのフランス侵攻中に起きたカレー港をめぐる1940年の戦闘。この包囲戦はブローニュの戦いと同時に起こったもので、イギリス海外派遣軍がダンケルクに撤退するダイナモ作戦直前に勃発した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カレー包囲戦_(1940年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AC%E3%83%BC%E5%8C%85%E5%9B%B2%E6%88%A6_(1940%E5%B9%B4)
+
+- id: Q208529
+  lang: ja
+  text: "ダンケルクの戦い は、第二次世界大戦の西部戦線における戦闘の一つで、ドイツ軍のフランス侵攻の1940年5月24日から6月4日の間に起こった戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ダンケルクの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%82%B1%E3%83%AB%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q911972
+  lang: ja
+  text: "ダイナモ作戦 は、第二次世界大戦のダンケルクの戦いにおいて、1940年5月26日から6月4日にかけて行われた、連合軍の大規模撤退作戦のイギリス側コードネームである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ダイナモ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A2%E4%BD%9C%E6%88%A6
+
+- id: Q2553164
+  lang: ja
+  text: "エスペロ船団の戦い は、第二次世界大戦中に地中海で生起した海戦。1940年6月28日に、北アフリカへの輸送任務についていたイタリア海軍の駆逐艦3隻と、船団護衛のために出撃したイギリス海軍およびオーストラリア海軍の巡洋艦5隻が交戦し、イタリア側が駆逐艦1隻を失った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エスペロ船団の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%AD%E8%88%B9%E5%9B%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2238977
+  lang: ja
+  text: "ナチス・ドイツによるチャンネル諸島占領の項目では、第二次世界大戦下の1940年から1945年にかけて、イギリス王室属領であったチャンネル諸島がドイツによって占領された期間を扱う。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ナチス・ドイツによるチャンネル諸島占領（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%81%E3%82%B9%E3%83%BB%E3%83%89%E3%82%A4%E3%83%84%E3%81%AB%E3%82%88%E3%82%8B%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E8%AB%B8%E5%B3%B6%E5%8D%A0%E9%A0%98
+
+- id: Q503347
+  lang: ja
+  text: "メルセルケビール海戦 は、第二次世界大戦でのイギリス海軍とフランス海軍との間の海戦。北アフリカ仏領アルジェリアの主要港オラン（メルス・エル・ケビール）に停泊していたヴィシー陣営の海軍艦艇に対し、1940年7月3日にイギリス海軍のH部隊が艦砲射撃を加えて甚大な被害を与えた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "メルセルケビール海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%AB%E3%82%B1%E3%83%93%E3%83%BC%E3%83%AB%E6%B5%B7%E6%88%A6
+
+- id: Q635150
+  lang: ja
+  text: "カラブリア沖海戦（カラブリアおきかいせん）は、第二次世界大戦中の1940年7月9日にイタリア半島のつま先であるカラブリア半島沖の東48kmでイギリス海軍及びオーストラリア海軍の艦艇からなる連合国艦隊とイタリア海軍の艦隊の間で行われた海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カラブリア沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%83%96%E3%83%AA%E3%82%A2%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q154720
+  lang: ja
+  text: "バトル・オブ・ブリテン とは、第二次世界大戦におけるドイツ空軍とイギリス空軍の戦いのうちで、ドイツによるアシカ作戦（イギリス本土上陸作戦）の前哨戦としてイギリスの制空権の獲得のために行われた一連の航空戦を指す。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バトル・オブ・ブリテン（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%88%E3%83%AB%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%96%E3%83%AA%E3%83%86%E3%83%B3
+
+- id: Q1636800
+  lang: ja
+  text: "スパダ岬沖海戦 は、第二次世界大戦中の地中海攻防戦において、1940年7月19日に地中海のクレタ島北西沖で発生した海戦。 イギリス海軍およびオーストラリア海軍の水雷戦隊と、イタリア王立海軍の軽巡洋艦2隻が交戦した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スパダ岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%91%E3%83%80%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q709261
+  lang: ja
+  text: "百団大戦（ひゃくだんたいせん）は、日中戦争（支那事変）中の1940年8月から12月にかけ、山西省・河北省周辺一帯において、中華民国国民革命軍に参加中の中国共産党軍と、大日本帝国陸軍の間で起きた一連の戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "百団大戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%99%BE%E5%9B%A3%E5%A4%A7%E6%88%A6
+
+- id: Q698421
+  lang: ja
+  text: "イタリアのエジプト侵攻（イタリアのエジプトしんこう）は、第二次世界大戦の北アフリカ戦線においてイタリア王国（以下「イタリア」と記す。）がイギリス、イギリス連邦及び自由フランスに対し取った攻勢である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イタリアのエジプト侵攻（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%81%AE%E3%82%A8%E3%82%B8%E3%83%97%E3%83%88%E4%BE%B5%E6%94%BB
+
+- id: Q696829
+  lang: ja
+  text: "ダカール沖海戦（ダカールおきかいせん）は、第二次世界大戦中の1940年9月下旬、イギリス海軍を主力とする連合国軍と、フランス海軍（ヴィシー政権）との間で行われた戦闘。作戦名はメネス作戦、Operation Menace。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ダカール沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%AB%E3%83%BC%E3%83%AB%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q2122172
+  lang: ja
+  text: "パッセロ岬沖海戦 は、第二次世界大戦の地中海攻防戦において、1940年（昭和15年）10月11日深夜から10月12日未明にシチリア島南東沖でイギリス海軍の地中海艦隊と、イタリア王立海軍の駆逐艦及び水雷艇との間で戦われた海戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "パッセロ岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%83%E3%82%BB%E3%83%AD%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q4354480
+  lang: ja
+  text: "MB8作戦はイギリス軍が1940年11月に地中海で行った作戦である。地中海艦隊とH部隊の5隻の戦艦、2隻の空母、10隻の巡洋艦などが出撃した。この作戦は以下のようなものを含む。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "MB8作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/MB8%E4%BD%9C%E6%88%A6
+
+- id: Q714684
+  lang: ja
+  text: "ガボンの戦い（ガボンのたたかい、Battle_of_Gabon）は、第二次世界大戦中の1940年11月にアフリカのガボンで発生した自由フランス軍とヴィシー・フランス軍（フランス国）の戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ガボンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%9C%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q543255
+  lang: ja
+  text: "タラント空襲（タラントくうしゅう）、ジャッジメント作戦 は第二次世界大戦中の1940年11月11日から12日に実行された、イギリス海軍の空母艦載機によるイタリアのタラント（ターラント）軍港空襲。MB8作戦の一部として実行された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "タラント空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%A9%E3%83%B3%E3%83%88%E7%A9%BA%E8%A5%B2
+
+- id: Q2200263
+  lang: ja
+  text: "オトラント海峡海戦 は、第二次世界大戦の地中海戦域において、1940年（昭和15年）11月12日に地中海のオトラント海峡で生起した海戦。イギリス海軍を基幹とする地中海艦隊がタラント港に奇襲を敢行するにあたり、その一部艦艇が陽動を兼ねてアドリア海に進出した（MB8作戦）。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "オトラント海峡海戦_(1940年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%88%E3%83%A9%E3%83%B3%E3%83%88%E6%B5%B7%E5%B3%A1%E6%B5%B7%E6%88%A6_(1940%E5%B9%B4)
+
+- id: Q1541340
+  lang: ja
+  text: "イギリス側呼称スパルティヴェント岬沖海戦 、イタリア側呼称テウラダ岬沖海戦 は、第二次世界大戦中の地中海攻防戦において生起した海戦の一つ。1940年11月27日にイギリス海軍とイタリア王立海軍が地中海戦域で交戦した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スパルティヴェント岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%91%E3%83%AB%E3%83%86%E3%82%A3%E3%83%B4%E3%82%A7%E3%83%B3%E3%83%88%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q696018
+  lang: ja
+  text: "コンパス作戦 は、1940年12月8日から1941年2月9日まで行われた、イギリス軍による北アフリカ方面での反攻作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コンパス作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9%E4%BD%9C%E6%88%A6
+
+- id: Q2389095
+  lang: ja
+  text: "MC4作戦（MC4さくせん）は、第二次世界大戦の地中海攻防戦において、1941年（昭和16年）1月上旬に連合国軍が地中海で実行したギリシャと英領マルタへの補給作戦。 エクセス船団 、MW5 1/2船団、ME5 1/2船団、ME6船団の護衛が含まれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "MC4作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/MC4%E4%BD%9C%E6%88%A6
+
+- id: Q702579
+  lang: ja
+  text: "コーチャン島沖海戦 とは、1941年1月17日に起きたタイ海軍とフランス海軍の戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コーチャン島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%81%E3%83%A3%E3%83%B3%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q709364
+  lang: ja
+  text: "予南作戦（よなんさくせん）とは、日中戦争（支那事変）中の1941年1月20日から2月12日までの間、河南省南部で行われた日本軍の作戦である。湯恩伯将軍の指揮する中国軍部隊が接近したため、日本の第11軍がこれに先制攻撃をかけて撃破しようとした。作戦の秘匿名称は和号作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "予南作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E4%BA%88%E5%8D%97%E4%BD%9C%E6%88%A6
+
+- id: Q1970005
+  lang: ja
+  text: "ケレンの戦い とは、第二次世界大戦の東アフリカ戦線中の1941年2月3日から3月27日まで、イタリア領東アフリカ（エリトリア行政区域）のケレンにて展開されたイタリア王国と連合国の戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ケレンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%AC%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q708223
+  lang: ja
+  text: "ゾネンブルーメ作戦 は、1941年3月24日から開始されたドイツ国防軍によるイギリス軍への反攻作戦。 ゾネンブルーメはドイツ語で「ひまわり」のこと。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ゾネンブルーメ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BE%E3%83%8D%E3%83%B3%E3%83%96%E3%83%AB%E3%83%BC%E3%83%A1%E4%BD%9C%E6%88%A6
+
+- id: Q599648
+  lang: ja
+  text: "アブステンション作戦 は第二次世界大戦中のイギリス軍の作戦の一つで、1941年2月後半に実行されたカステロリゾ島の占領作戦。カステロリゾ島はトルコの沿岸にある当時イタリア領であった島。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アブステンション作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%82%B9%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q1233004
+  lang: ja
+  text: "クレイモア作戦 は第二次世界大戦中、ブリティッシュ・コマンドスによるノルウェーのロフォーテン諸島への奇襲作戦。ロフォーテン諸島はドイツの軍需産業で使われる魚油とグリセリンの産地として知られていた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クレイモア作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%A2%E3%82%A2%E4%BD%9C%E6%88%A6
+
+- id: Q709830
+  lang: ja
+  text: "錦江作戦（きんこうさくせん）とは、日中戦争中の1941年3月15日から4月2日までの間、江西省贛江の支流・錦江周辺で行われた日本軍の作戦である。上高を拠点とする中国軍に打撃を与えるため出撃した日本軍が、反撃を受けて撃退された。この戦闘の中国側の呼称は上高会戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "錦江作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%8C%A6%E6%B1%9F%E4%BD%9C%E6%88%A6
+
+- id: Q1953194
+  lang: ja
+  text: "スダ湾襲撃（スダわんしゅうげき）は、1941年3月26日にイタリア海軍が小型艇によりクレタ島のスダ湾 を襲撃した事件である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スダ湾襲撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%80%E6%B9%BE%E8%A5%B2%E6%92%83
+
+- id: Q544090
+  lang: ja
+  text: "マタパン岬沖海戦 は、第二次世界大戦中のギリシャ・イタリア戦争において、1941年（昭和16年）3月下旬に地中海でイギリス海軍及びオーストラリア海軍を基幹とする連合国軍と、イタリア王立海軍 の間で行われた海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マタパン岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%BF%E3%83%91%E3%83%B3%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q2888837
+  lang: ja
+  text: "ギリシャの戦い（ギリシャのたたかい）は、第二次世界大戦中にギリシャおよびアルバニア南部地方で起こった戦いである。戦いは連合国（ギリシャ、イギリス連邦）と枢軸国（ドイツ、イタリア、ブルガリア）の間で行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ギリシャの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q697842
+  lang: ja
+  text: "ユーゴスラビア侵攻（ユーゴスラビアしんこう）は、第二次世界大戦中の1941年4月6日から同年4月17日にかけて、ドイツやイタリアを中心とする枢軸国軍とユーゴスラビアとの間で行われた戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ユーゴスラビア侵攻（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%BC%E3%82%B4%E3%82%B9%E3%83%A9%E3%83%93%E3%82%A2%E4%BE%B5%E6%94%BB
+
+- id: Q611089
+  lang: ja
+  text: "トブルク包囲戦 は、ゾネンブルーメ作戦に基づき、1941年4月10日から11月27日まで行われたドイツアフリカ軍団によるトブルクの包囲。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "トブルク包囲戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%96%E3%83%AB%E3%82%AF%E5%8C%85%E5%9B%B2%E6%88%A6
+
+- id: Q2553656
+  lang: ja
+  text: "タリゴ船団の戦い は、第二次世界大戦の地中海攻防戦において、1941年（昭和16年）4月16日未明に生起したイギリス海軍とイタリア海軍の海戦である。戦いの名前はイタリア側の旗艦ルカ・タリゴに由来する。スファックス沖海戦 と表記する場合もある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "タリゴ船団の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%AA%E3%82%B4%E8%88%B9%E5%9B%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q709346
+  lang: ja
+  text: "中原会戦（ちゅうげんかいせん）は、日中戦争中の1941年（昭和16年）5月から6月の間、山西省南部で行われた日本軍と中国軍の戦闘である。北支那方面軍が中国第1戦区軍の包囲殲滅を狙い、大きな戦果を上げた。百号作戦とも呼ばれる。中国側の呼称は中条山戦役、または晋南会戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "中原会戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%8E%9F%E4%BC%9A%E6%88%A6
+
+- id: Q154164
+  lang: ja
+  text: "ライン演習作戦 とは、第二次世界大戦中の1941年5月18日から27日に実施されたドイツ海軍の通商破壊作戦。作戦名はドイツの大河であるライン川に由来する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ライン演習作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%B3%E6%BC%94%E7%BF%92%E4%BD%9C%E6%88%A6
+
+- id: Q153316
+  lang: ja
+  text: "クレタ島の戦い は、第二次世界大戦中の地中海攻防戦における一局面。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クレタ島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AC%E3%82%BF%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q696607
+  lang: ja
+  text: "デンマーク海峡海戦 は、第二次世界大戦中の1941年5月24日、イギリス海軍とドイツ海軍の間で行われた海戦。通商破壊のために大西洋に進出しようとするドイツ戦隊と、それを阻止しようとするイギリス戦隊によって戦われ、ドイツ側が戦術的に勝利した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "デンマーク海峡海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%B3%E3%83%9E%E3%83%BC%E3%82%AF%E6%B5%B7%E5%B3%A1%E6%B5%B7%E6%88%A6
+
+- id: Q682399
+  lang: ja
+  text: "バトルアクス作戦 は、第二次世界大戦中の1941年6月15日から17日にかけて行われた、イギリス軍の作戦。北アフリカ戦線において、枢軸国軍に包囲されたトブルクを解囲するために行われた攻勢。ドイツ軍の反撃により、作戦は失敗した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バトルアクス作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%88%E3%83%AB%E3%82%A2%E3%82%AF%E3%82%B9%E4%BD%9C%E6%88%A6
+
+- id: Q29025221
+  lang: ja
+  text: "コンスタンツァ襲撃 は1941年6月26日に行われた、ソビエト連邦の黒海艦隊によるルーマニア王国領コンスタンツァへの襲撃。第二次世界大戦の黒海の戦いにおける唯一の大規模な海戦となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コンスタンツァ襲撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%84%E3%82%A1%E8%A5%B2%E6%92%83
+
+- id: Q313442
+  lang: ja
+  text: "銀狐作戦 は、ナチス・ドイツとフィンランドが第二次世界大戦中の1941年に、フィンランド北中部で行った軍事作戦。二国間の協定で、作戦は、ノルウェー駐留ドイツ軍（ニコラス・フォン・ファルケンホルスト上級大将）が行うことになった。フィンランド軍部隊も、指揮下に組み込まれた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "銀狐作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%8A%80%E7%8B%90%E4%BD%9C%E6%88%A6
+
+- id: Q162357
+  lang: ja
+  text: "スモレンスクの戦い（スモレンスクのたたかい）は、第二次世界大戦の独ソ戦中に、ドイツ中央軍集団所属の第2装甲軍集団（司令官ハインツ・グデーリアン）、第3装甲集団（ヘルマン・ホト）らがソビエト赤軍4個軍を包囲した戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スモレンスクの戦い_(1941年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A2%E3%83%AC%E3%83%B3%E3%82%B9%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84_(1941%E5%B9%B4)
+
+- id: Q327078
+  lang: ja
+  text: "ウーマニの戦い は、独ソ戦におけるバルバロッサ作戦中の1941年8月に、ウクライナの都市ウーマニ近くのブーフ川東岸で行われた、枢軸軍によるソビエト赤軍の包囲戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ウーマニの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%BC%E3%83%9E%E3%83%8B%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q162284
+  lang: ja
+  text: "キエフの戦い（キエフのたたかい）は、第二次世界大戦中、キエフ（現在のキーウ）近郊でソビエト赤軍がドイツ軍に包囲された戦いである。この包囲戦では歴史の中でも稀有な大包囲が行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "キエフの戦い_(1941年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A8%E3%83%95%E3%81%AE%E6%88%A6%E3%81%84_(1941%E5%B9%B4)
+
+- id: Q682409
+  lang: ja
+  text: "オデッサの戦い は、独ソ戦初期の1941年8月から10月まで、黒海沿岸の軍港都市であるオデッサ を巡って行われた戦闘。攻略は、ルーマニア軍が担当したが、ソ連軍の堅固な防衛陣地を破るのに難渋し、約2ヶ月の攻囲の末、大損害を被った後に、オデッサは陥落した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "オデッサの戦い_(1941年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%87%E3%83%83%E3%82%B5%E3%81%AE%E6%88%A6%E3%81%84_(1941%E5%B9%B4)
+
+- id: Q1324220
+  lang: ja
+  text: "ゴーントレット作戦 は第二次世界大戦中の1941年8月25日から9月3日まで、カナダ軍の奇襲、イギリス軍の運輸支援と自由ノルウェー軍による連合作戦。作戦は北極点から600マイル南にあるノルウェー領スヴァールバル諸島のスピッツベルゲン島で行われ、成功した。ガントレット作戦とも。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ゴーントレット作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E3%83%B3%E3%83%88%E3%83%AC%E3%83%83%E3%83%88%E4%BD%9C%E6%88%A6
+
+- id: Q541369
+  lang: ja
+  text: "第二次世界大戦中のイラン進駐（イランしんちゅう）は、1941年8月25日から9月17日まで行われた、イギリスとソビエト連邦によるイランへの侵攻作戦である。作戦名はカウンタナンス作戦 と呼ばれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イラン進駐_(1941年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%A9%E3%83%B3%E9%80%B2%E9%A7%90_(1941%E5%B9%B4)
+
+- id: Q714211
+  lang: ja
+  text: "エリニャ攻勢（えりにゃこうせい）は、独ソ戦初期の1941年8月30日から9月8日にかけて、バルバロッサ作戦におけるスモレンスクの戦いの一環として行われた赤軍の軍事作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エリニャ攻勢（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AA%E3%83%8B%E3%83%A3%E6%94%BB%E5%8B%A2
+
+- id: Q2701353
+  lang: ja
+  text: "フィンランドのカレリア地峡再占領は、1941年の継続戦争中の8月に、フィンランド軍によりカレリア地峡の旧領を回復した戦い。この後、フィンランド軍の占領は、1944年6月のソ連軍のヴィボルグ-ペトロザヴォーツク攻勢まで続いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "フィンランドのカレリア地峡再占領（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%89%E3%81%AE%E3%82%AB%E3%83%AC%E3%83%AA%E3%82%A2%E5%9C%B0%E5%B3%A1%E5%86%8D%E5%8D%A0%E9%A0%98
+
+- id: Q1759660
+  lang: ja
+  text: "第一次長沙作戦（だいいちじちょうささくせん）とは、日中戦争（支那事変）中の1941年9月18日から10月6日の間に湖南省の長沙周辺で行われた日本陸軍の作戦である。長沙を拠点とする中国軍第9戦区軍に、日本の第11軍が打撃を与えた。当初の作戦呼称は加号作戦（後に長沙作戦と命名）。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第一次長沙作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%95%B7%E6%B2%99%E4%BD%9C%E6%88%A6
+
+- id: Q151860
+  lang: ja
+  text: "レニングラード包囲戦 は、第二次世界大戦の独ソ戦における戦闘のひとつ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "レニングラード包囲戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%BC%E3%83%89%E5%8C%85%E5%9B%B2%E6%88%A6
+
+- id: Q3062545
+  lang: ja
+  text: "ハルバード作戦 は、第二次世界大戦の地中海攻防戦において、1941年（昭和16年）9月下旬に連合国軍が地中海で実施したマルタ増援輸送作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ハルバード作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%AB%E3%83%90%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%A6
+
+- id: Q151290
+  lang: ja
+  text: "モスクワの戦い は、第二次世界大戦中の1941年10月2日から1942年1月7日にかけてモスクワ近郊で行われた戦闘である。この戦いは600kmの防衛区域で二段階に分かれて行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "モスクワの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A2%E3%82%B9%E3%82%AF%E3%83%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q700937
+  lang: ja
+  text: "クリミアの戦いは、1941年9月から1942年7月にかけての、クリミア半島とセヴァストポリ要塞をめぐる枢軸国軍とソ連軍の戦闘である。ロシア語ではクリミア防衛作戦 と呼ばれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クリミアの戦い_(1941年-1942年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AA%E3%83%9F%E3%82%A2%E3%81%AE%E6%88%A6%E3%81%84_(1941%E5%B9%B4-1942%E5%B9%B4)
+
+- id: Q697658
+  lang: ja
+  text: "第一次ハリコフ攻防戦 は、第二次世界大戦における独ソ戦中、1941年10月20日に開始されたドイツ南方軍集団所属の第6軍によって行われたバルバロッサ作戦最終段階におけるハリコフ を巡る戦いである。ヴィルヘルム・カイテルによって名づけられた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第一次ハリコフ攻防戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E3%83%8F%E3%83%AA%E3%82%B3%E3%83%95%E6%94%BB%E9%98%B2%E6%88%A6
+
+- id: Q3636255
+  lang: ja
+  text: "デュースブルク船団の戦い は、1941年（昭和16年）11月8日から9日にかけて行われた夜間水上戦闘。メッシナ海峡の戦いとも。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "デュースブルク船団の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%83%96%E3%83%AB%E3%82%AF%E8%88%B9%E5%9B%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2737158
+  lang: ja
+  text: "フリッパー作戦 とは、第二次世界大戦においてイギリス軍が行ったエルヴィン・ロンメルを標的とした暗殺計画である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "フリッパー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%83%E3%83%91%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q327085
+  lang: ja
+  text: "クルセーダー作戦 は、第二次世界大戦中の1941年11月18日から12月30日に北アフリカで行われた枢軸国軍に対するイギリス連邦諸国軍を含むイギリス軍（以下「イギリス軍」と記す。）の反攻作戦のことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クルセーダー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AB%E3%82%BB%E3%83%BC%E3%83%80%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q696462
+  lang: ja
+  text: "フィリピンの戦い では、1941年から1942年のフィリピンでの戦闘について述べる。1941年12月8日の太平洋戦争勃発とともに日本軍はフィリピンの連合国軍と戦闘を開始、1942年6月9日までに孤立した部隊を除き連合国軍の全部隊が降伏して戦闘は終了した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "フィリピンの戦い_(1941年-1942年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84_(1941%E5%B9%B4-1942%E5%B9%B4)
+
+- id: Q1141380
+  lang: ja
+  text: "ウェーク島の戦い は第二次世界大戦における日本軍とアメリカ軍の戦い。戦いの後のウェーク島日本軍部隊の状況についても記す。なお当時の日本語表記は「ウエーキ島」であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ウェーク島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A7%E3%83%BC%E3%82%AF%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q524272
+  lang: ja
+  text: "ビスマルク作戦（ビスマルクさくせん）は、太平洋戦争で日本軍が実施した南方作戦内の作戦の一つ。陸海軍中央協定で定められた作戦名称はR作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ビスマルク作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%93%E3%82%B9%E3%83%9E%E3%83%AB%E3%82%AF%E4%BD%9C%E6%88%A6
+
+- id: Q697059
+  lang: ja
+  text: "香港の戦い は、太平洋戦争での南方作戦中の香港作戦において、同作戦を行う日本軍と、イギリス領香港を統治するイギリス帝国のイギリス軍との間で勃発した戦闘である。なおこの戦闘で日本軍は勝利し、その後終戦まで香港地域を占領する事となる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "香港の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%A6%99%E6%B8%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q700569
+  lang: ja
+  text: "マレー沖海戦（マレーおきかいせん）は、第二次世界大戦（太平洋戦争･大東亜戦争）中の1941年 12月10日にマレー半島東方沖で日本海軍の陸上攻撃機とイギリス海軍の東洋艦隊の間で行われた戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マレー沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AC%E3%83%BC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q714242
+  lang: ja
+  text: "ボン岬沖海戦 は、第二次世界大戦中の地中海攻防戦において、1941年（昭和16年）12月13日にチュニジア・ボン岬半島沖合の地中海で発生した、イギリス海軍とイタリア海軍との海戦（夜戦）。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ボン岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%B3%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q1362319
+  lang: ja
+  text: "第1次シルテ湾海戦（だいいちじシルテわんかいせん）は、第二次世界大戦における地中海攻防戦において、イギリス海軍とイタリア海軍との間で戦われた海戦である。1941年（昭和16年）12月17日にマルタの西、シルテ湾の北の地中海戦域で生起した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第1次シルテ湾海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC1%E6%AC%A1%E3%82%B7%E3%83%AB%E3%83%86%E6%B9%BE%E6%B5%B7%E6%88%A6
+
+- id: Q2606324
+  lang: ja
+  text: "アレクサンドリア港攻撃 は、第二次世界大戦の地中海攻防戦において、1941年（昭和16年）12月18日から12月19日にかけて地中海戦域でおこなわれたコマンド作戦。 アレクサンドリア港に停泊するイギリス地中海艦隊に、イタリア王立海軍の潜水艦1隻と人間魚雷3隻が特殊作戦を敢行する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アレクサンドリア港攻撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AC%E3%82%AF%E3%82%B5%E3%83%B3%E3%83%89%E3%83%AA%E3%82%A2%E6%B8%AF%E6%94%BB%E6%92%83
+
+- id: Q161033
+  lang: ja
+  text: "デミャンスク包囲戦 は、第二次世界大戦中、独ソ戦、レニングラード近郊のデミャンスク周辺において、ドイツ国防軍がソビエト赤軍に包囲された戦いのことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "デミャンスク包囲戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%9F%E3%83%A3%E3%83%B3%E3%82%B9%E3%82%AF%E5%8C%85%E5%9B%B2%E6%88%A6
+
+- id: Q709303
+  lang: ja
+  text: "第二次長沙作戦（だいにじちょうささくせん）とは、日中戦争中の1941年12月24日から1942年1月16日まで、湖南省の長沙周辺で行われた日本陸軍の作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第二次長沙作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%95%B7%E6%B2%99%E4%BD%9C%E6%88%A6
+
+- id: Q1572785
+  lang: ja
+  text: "ラバウルの戦いは第二次世界大戦（大東亜戦争）中、1942年（昭和17年）の1月から2月にかけてオーストラリア委任統治領ニューギニア（現パプアニューギニア、ビスマルク諸島）ニューブリテン島で行われた戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ラバウルの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%90%E3%82%A6%E3%83%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q305133
+  lang: ja
+  text: "ホルムの戦い 、あるいはホルム包囲戦 とは、第二次世界大戦中の東部戦線で起こった戦いである。1942年1月18日、ドイツ国防軍占領下のホルムに対する赤軍パルチザンの攻撃から始まり、数日後には赤軍主力が到着、市街を包囲下に置いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ホルムの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%AB%E3%83%A0%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q610048
+  lang: ja
+  text: "バリクパパン沖海戦 は、太平洋戦争初期の1942年（昭和17年）1月24日未明にボルネオ島南部バリクパパンで発生した海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バリクパパン沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%AA%E3%82%AF%E3%83%91%E3%83%91%E3%83%B3%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q543312
+  lang: ja
+  text: "マーシャル・ギルバート諸島機動空襲（マーシャル・ギルバートしょとうきどうくうしゅう）とは、第二次世界大戦における太平洋戦争初期の1942年（昭和17年）2月1日に、アメリカ海軍の空母機動部隊が行ったマーシャル諸島およびギルバート諸島の日本軍に対する航空攻撃である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マーシャル・ギルバート諸島機動空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%BB%E3%82%AE%E3%83%AB%E3%83%90%E3%83%BC%E3%83%88%E8%AB%B8%E5%B3%B6%E6%A9%9F%E5%8B%95%E7%A9%BA%E8%A5%B2
+
+- id: Q80264
+  lang: ja
+  text: "ジャワ沖海戦（ジャワおきかいせん）は、第二次世界大戦の太平洋戦線において、1942年（昭和17年）2月4日に東南アジアで生起した日本海軍航空隊と連合軍ABDA艦隊との間の海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ジャワ沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%AF%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q296754
+  lang: ja
+  text: "シンガポールの戦い は、第二次世界大戦/大東亜戦争（太平洋戦争）初期の1942年2月8日から2月15日にかけて、イギリスの海峡植民地のシンガポールで大日本帝国陸軍と連合国軍の間で行われた戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "シンガポールの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q859612
+  lang: ja
+  text: "ツェルベルス作戦、またはケルベルス作戦、ケルベロス作戦 は、第二次世界大戦中の1942年2月にフランスのブレスト港にいたドイツの巡洋戦艦シャルンホルスト、グナイゼナウ、重巡洋艦プリンツ・オイゲンなどが、フランスの基地にいるドイツ空軍の航空支援を受けドーバー海峡を通ってドイツ本国…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ツェルベルス作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%84%E3%82%A7%E3%83%AB%E3%83%99%E3%83%AB%E3%82%B9%E4%BD%9C%E6%88%A6
+
+- id: Q2117492
+  lang: ja
+  text: "バリ島沖海戦（バリとうおきかいせん）は、太平洋戦争中の海戦で、蘭印作戦の一局面である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バリ島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%AA%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q696557
+  lang: ja
+  text: "ダーウィン空襲 、別名ダーウィンの戦い は、第二次世界大戦中の1942年2月19日、日本海軍がオーストラリア本土に対して行った最初にして最大規模の空襲。オーストラリア史上で最大規模の他国勢力による攻撃である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ダーウィン空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%BC%E3%82%A6%E3%82%A3%E3%83%B3%E7%A9%BA%E8%A5%B2
+
+- id: Q263142
+  lang: ja
+  text: "スラバヤ沖海戦（スラバヤおきかいせん）は、太平洋戦争中の1942年（昭和17年）2月27日から3月1日にかけて、インドネシア・スラバヤ沖で日本軍のジャワ島攻略部隊を連合国軍が迎撃し、日本海軍が連合軍の艦隊を撃破した海戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スラバヤ沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A9%E3%83%90%E3%83%A4%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q243709
+  lang: ja
+  text: "第2次シルテ湾海戦（だいにじシルテわんかいせん）は、1942年（昭和17年）3月22日に地中海戦域で連合国軍と枢軸国軍の艦隊が交戦した海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第2次シルテ湾海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC2%E6%AC%A1%E3%82%B7%E3%83%AB%E3%83%86%E6%B9%BE%E6%B5%B7%E6%88%A6
+
+- id: Q572676
+  lang: ja
+  text: "サン＝ナゼール強襲 またはチャリオット作戦 は、第二次世界大戦中にイギリス軍が展開した特殊作戦である。1942年3月28日、イギリス軍はドイツ占領下のフランスにて厳重に警備されていたサン＝ナゼール港の乾ドック、通称「ノルマンディ・ドック」を海上から強襲した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "サン＝ナゼール強襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%EF%BC%9D%E3%83%8A%E3%82%BC%E3%83%BC%E3%83%AB%E5%BC%B7%E8%A5%B2
+
+- id: Q1361210
+  lang: ja
+  text: "日本軍のクリスマス島占領（にほんぐんのクリスマスとうせんりょう）は、太平洋戦争（大東亜戦争）中の1942年（昭和17年）3月31日に起きた、大日本帝国海軍による、クリスマス島を占領するための戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "日本軍のクリスマス島占領（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%BB%8D%E3%81%AE%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E5%B3%B6%E5%8D%A0%E9%A0%98
+
+- id: Q757871
+  lang: ja
+  text: "セイロン沖海戦（セイロンおきかいせん）は、1942年4月5～9日にインド洋セイロン島沖で日本海軍とイギリス海軍の間で行われた戦闘。インド洋作戦の過程で発生した。本記事では、セイロン沖海戦前後に日本海軍が実施および計画した通商破壊作戦（ベンガル湾機動作戦、Ｂ作戦）についても述べる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "セイロン沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%AD%E3%83%B3%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q713516
+  lang: ja
+  text: "ドーリットル空襲 は、太平洋戦争（第二次世界大戦）中の1942年（昭和17年）4月18日にアメリカ軍がアメリカ陸軍航空軍の爆撃機（航空母艦より発進）によって実施した日本本土に対する空襲のこと。名称は爆撃機隊の指揮官であったジミー・ドーリットル中佐に由来する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ドーリットル空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%BC%E3%83%AA%E3%83%83%E3%83%88%E3%83%AB%E7%A9%BA%E8%A5%B2
+
+- id: Q207165
+  lang: ja
+  text: "珊瑚海海戦 は、太平洋戦争中の1942年（昭和17年）5月上旬、MO作戦中に日本海軍と連合国（アメリカ合衆国・オーストラリア）軍の間で発生した戦闘。ニューギニア作戦の一環としてポートモレスビー攻略を目指して珊瑚海に進出する日本軍の計画を、連合国は暗号解読で察知する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "珊瑚海海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%8F%8A%E7%91%9A%E6%B5%B7%E6%B5%B7%E6%88%A6
+
+- id: Q1052651
+  lang: ja
+  text: "マダガスカルの戦い は、第二次世界大戦中の1942年5月5日から同年11月6日にかけて起きた戦い。イギリス軍がヴィシー・フランス支配下のフランス領マダガスカルに侵攻し、フランス軍を撃破してマダガスカル島を奪取した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マダガスカルの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%80%E3%82%AC%E3%82%B9%E3%82%AB%E3%83%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q155620
+  lang: ja
+  text: "第二次ハリコフ攻防戦（だいにじハリコフこうぼうせん）は、1942年5月にウクライナの大都市ハリコフ の周辺で行われた、ハリコフ奪還を目指すソ連軍と枢軸軍の戦いのこと。チモシェンコ攻勢あるいはバルベンコボ攻勢とも呼ばれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第二次ハリコフ攻防戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E3%83%8F%E3%83%AA%E3%82%B3%E3%83%95%E6%94%BB%E9%98%B2%E6%88%A6
+
+- id: Q327035
+  lang: ja
+  text: "ガザラの戦い は、 第二次世界大戦中の北アフリカ戦線におけるリビアのトブルクをめぐり1942年5月26日から6月21日にかけて枢軸国軍と連合国軍との間で行われた戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ガザラの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%82%B6%E3%83%A9%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q836128
+  lang: ja
+  text: "ビル・ハケイムの戦いは、ガザラの戦い中、1942年5月26日から6月11日にわたり、マリー＝ピエール・ケーニグ将軍率いる自由フランス第1旅団が、エルヴィン・ロンメル指揮下のドイツ、イタリア軍を相手にビル・ハケイムで16日間抵抗し、最終的に包囲網を破った戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ビル・ハケイムの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AB%E3%83%BB%E3%83%8F%E3%82%B1%E3%82%A4%E3%83%A0%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q715264
+  lang: ja
+  text: "エンスラポイド作戦 は、第二次世界大戦中、イギリスとチェコスロバキア亡命政府により計画された、ナチス・ドイツのベーメン・メーレン保護領副総督ラインハルト・ハイドリヒ暗殺作戦のコードネームである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エンスラポイド作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%A9%E3%83%9D%E3%82%A4%E3%83%89%E4%BD%9C%E6%88%A6
+
+- id: Q2659473
+  lang: ja
+  text: "特殊潜航艇によるシドニー港攻撃（とくしゅせんこうていによるシドニーこうこうげき）とは、太平洋戦争中の1942年5月31日に、オーストラリアのシドニーの沖合いで母艦の潜水艦を発進した日本海軍の特殊潜航艇3隻が、シドニー港に停泊中の連合軍艦船に対して行った攻撃である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "特殊潜航艇によるシドニー港攻撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%89%B9%E6%AE%8A%E6%BD%9C%E8%88%AA%E8%89%87%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B7%E3%83%89%E3%83%8B%E3%83%BC%E6%B8%AF%E6%94%BB%E6%92%83
+
+- id: Q158287
+  lang: ja
+  text: "ブラウ作戦 、「ブラウ」はドイツ語で青の意である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ブラウ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%82%A6%E4%BD%9C%E6%88%A6
+
+- id: Q249708
+  lang: ja
+  text: "アリューシャン方面の戦い（アリューシャンほうめんのたたかい）は、第二次世界大戦における太平洋戦争（大東亜戦争）において、1942年6月から1943年8月にかけて、日本軍と連合国軍（アメリカ軍とカナダ軍）の間でアラスカ準州のアリューシャン列島や周辺海域で行われた一連の作戦および戦…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アリューシャン方面の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%B3%E6%96%B9%E9%9D%A2%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1758518
+  lang: ja
+  text: "日本軍によるキスカ島の占領（にほんぐんによるキスカとうのせんりょう）は、1942年6月6日から1943年7月28日にかけてアリューシャン方面の戦いの一部として発生したアメリカ戦線および太平洋戦争の出来事である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "日本軍によるキスカ島の占領（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%BB%8D%E3%81%AB%E3%82%88%E3%82%8B%E3%82%AD%E3%82%B9%E3%82%AB%E5%B3%B6%E3%81%AE%E5%8D%A0%E9%A0%98
+
+- id: Q6158901
+  lang: ja
+  text: "日本軍によるアッツ島の占領（にほんぐんによるアッツとうのせんりょう）は、第二次世界大戦の太平洋戦争において、アリューシャン方面の戦いにおけるAL作戦の一環。1942年（昭和17年）6月上旬、大日本帝国軍がアッツ島を占領した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "日本軍によるアッツ島の占領（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%BB%8D%E3%81%AB%E3%82%88%E3%82%8B%E3%82%A2%E3%83%83%E3%83%84%E5%B3%B6%E3%81%AE%E5%8D%A0%E9%A0%98
+
+- id: Q10130
+  lang: ja
+  text: "ハープーン作戦 は、第二次世界大戦の地中海攻防戦において、1942年（昭和17年）6月10日から15日に、イギリス軍を主軸とする連合国軍が地中海で実施したジブラルタルからマルタ島への増援輸送作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ハープーン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%97%E3%83%BC%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q4940507
+  lang: ja
+  text: "フォート・スティーブンス砲撃は、第二次世界大戦中に日本海軍が実施したアメリカ本土砲撃の1つである。1942年6月、日本海軍の伊号第二十五潜水艦がコロンビア川河口に位置するフォート・スティーブンス陸軍基地を砲撃した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "フォート・スティーブンス砲撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%83%BB%E3%82%B9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%96%E3%83%B3%E3%82%B9%E7%A0%B2%E6%92%83
+
+- id: Q162250
+  lang: ja
+  text: "エル・アラメインの戦い（エル・アラメインのたたかい）は、第二次世界大戦の北アフリカ戦線における枢軸国軍と連合国軍の戦いである。第一次会戦は1942年7月1日から31日。第二次会戦は同年10月23日から11月11日に行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エル・アラメインの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AB%E3%83%BB%E3%82%A2%E3%83%A9%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q4677367
+  lang: ja
+  text: "7月5日の海戦は、第二次世界大戦中の1942年（昭和17年）7月5日（連合軍記録、7月4日）、太平洋戦争のアメリカ本土戦線において、アリューシャン列島のキスカ島沖で発生した小規模な海戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "7月5日の海戦_(1942年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/7%E6%9C%885%E6%97%A5%E3%81%AE%E6%B5%B7%E6%88%A6_(1942%E5%B9%B4)
+
+- id: Q2299343
+  lang: ja
+  text: "ポートモレスビー作戦（ポートモレスビーさくせん）は、第二次世界大戦中のニューギニア戦線において、日本軍と連合国軍とがポートモレスビーの支配を巡って行った戦闘。当時はスタンレー作戦と呼ばれ、連合軍側の名称を和訳して、前半をココダ道の戦い 、後半をブナとゴナの戦い とも呼ぶ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ポートモレスビー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%A2%E3%83%AC%E3%82%B9%E3%83%93%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q1927362
+  lang: ja
+  text: "ペデスタル作戦 は、第二次世界大戦の地中海攻防戦において、1942年（昭和17年）8月中旬に連合国軍が地中海で実施した増援輸送作戦。ジブラルタルからマルタ島へむかう連合国軍輸送船団と地中海艦隊（H部隊）を、枢軸国軍が邀撃した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ペデスタル作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%87%E3%82%B9%E3%82%BF%E3%83%AB%E4%BD%9C%E6%88%A6
+
+- id: Q1497996
+  lang: ja
+  text: "フロリダ諸島の戦いとは、太平洋戦争（大東亜戦争）中の1942年8月7日から1942年8月8日の間にフロリダ諸島内のツラギ島、ガブツ島、タナンボゴ島（現在のソロモン諸島）で行われた日本軍守備隊と米軍との間の戦闘のことであり、旧日本軍守備隊初の玉砕が生じた戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "フロリダ諸島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AD%E3%83%AA%E3%83%80%E8%AB%B8%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q217145
+  lang: ja
+  text: "ガダルカナル島の戦い は、第二次世界大戦において1942年8月以降日本軍と連合軍が西太平洋ソロモン諸島のガダルカナル島を巡って繰り広げた戦いである。ミッドウェー海戦と共に太平洋戦争における攻守の転換点となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ガダルカナル島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%80%E3%83%AB%E3%82%AB%E3%83%8A%E3%83%AB%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q700032
+  lang: ja
+  text: "第一次ソロモン海戦（だいいちじソロモンかいせん）は、第二次世界大戦（太平洋戦争）時の1942年8月8日 - 9日に日本海軍と連合国軍（アメリカ海軍、オーストラリア海軍）の間で行われた海戦で、連合軍側の呼称はBattle of Savo Island。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第一次ソロモン海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E3%82%BD%E3%83%AD%E3%83%A2%E3%83%B3%E6%B5%B7%E6%88%A6
+
+- id: Q660232
+  lang: ja
+  text: "マキン奇襲（マキンきしゅう）とは、第二次世界大戦（大東亜戦争）中の1942年（昭和17年）8月17日から翌日にかけて、ギルバート諸島マキン環礁（現ブタリタリ）で、アメリカ軍が日本軍に対して行ったコマンド作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マキン奇襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%AD%E3%83%B3%E5%A5%87%E8%A5%B2
+
+- id: Q270517
+  lang: ja
+  text: "ディエップの戦い は、1942年8月19日に行われた連合軍のフランスへの奇襲上陸作戦。正式な作戦名は「ジュビリー作戦 」。不充分な兵力と作戦のため最初から勝算は薄かった上、事前に作戦実行の秘密がドイツ側に漏れていたため、連合軍は大損害を受け、完全な失敗に終わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ディエップの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%82%A8%E3%83%83%E3%83%97%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1414998
+  lang: ja
+  text: "イル川渡河戦 は、第二次世界大戦中の1942年（昭和17年）8月21日、ガダルカナル島において日本軍とアメリカ合衆国海兵隊を主力とする連合国軍との間に起きた陸上戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イル川渡河戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AB%E5%B7%9D%E6%B8%A1%E6%B2%B3%E6%88%A6
+
+- id: Q38789
+  lang: ja
+  text: "スターリングラード攻防戦 は、第二次世界大戦の独ソ戦において、ソビエト連邦領内のヴォルガ川西岸に広がる工業都市スターリングラード（現ヴォルゴグラード）を巡り繰り広げられた、ドイツ、ルーマニア、イタリア、ハンガリー、およびクロアチアからなる枢軸軍とソビエト赤軍の戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スターリングラード攻防戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%BC%E3%83%89%E6%94%BB%E9%98%B2%E6%88%A6
+
+- id: Q696479
+  lang: ja
+  text: "第二次ソロモン海戦（だいにじソロモンかいせん）は、第二次世界大戦の太平洋戦争において、1942年（昭和17年）8月23日から25日にかけてソロモン諸島の北で戦われた大日本帝国軍と連合国軍との間の海戦。連合軍側の呼称は東部ソロモン海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第二次ソロモン海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E3%82%BD%E3%83%AD%E3%83%A2%E3%83%B3%E6%B5%B7%E6%88%A6
+
+- id: Q113621
+  lang: ja
+  text: "ラビの戦い は、太平洋戦争（大東亜戦争）中の1942年8月下旬から9月初旬に渡り、東部ニューギニアのミルン湾ラビにおいて、日本軍とオーストラリア・アメリカ連合軍との間で行われた戦闘である。連合軍が建設した飛行場に対し、日本軍が海軍陸戦隊を上陸させて占領を試みたが敗退した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ラビの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%93%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1091132
+  lang: ja
+  text: "アグリーメント作戦 は、第二次世界大戦中の1942年9月13日から14日まで、枢軸軍が占領していたトブルクへ敵前上陸するためイギリス軍、ローデシア軍、ニュージーランド軍によって実施された水陸両用作戦。ドイツ語に堪能な特別尋問グループの小部隊が、敵戦線背後における任務に参加した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アグリーメント作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%A1%E3%83%B3%E3%83%88%E4%BD%9C%E6%88%A6
+
+- id: Q1475243
+  lang: ja
+  text: "サボ島沖海戦（サボとうおきかいせん）は、第二次世界大戦のガダルカナル島周辺において1942年（昭和17年）10月11日深夜〜12日に日本軍とアメリカ軍の間で行われた海戦である。連合軍側の呼称はBattle of Cape Esperance （エスペランス岬沖海戦）。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "サボ島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%9C%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q699669
+  lang: ja
+  text: "南太平洋海戦（みなみたいへいようかいせん）は、1942年10月26日にソロモン海域で行われた日本海軍とアメリカ海軍の空母機動部隊同士の海戦。アメリカ軍の呼称はサンタ・クルーズ諸島海戦(Battle of the Santa Cruz Islands)。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "南太平洋海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8D%97%E5%A4%AA%E5%B9%B3%E6%B4%8B%E6%B5%B7%E6%88%A6
+
+- id: Q194132
+  lang: ja
+  text: "トーチ作戦 は、1942年11月8日より行われた、連合国軍によるモロッコとアルジェリアへの上陸作戦である。この作戦は当初は「Gymnast（ジムナスト、体育家）」と呼ばれていたが、後に「Torch（トーチ、たいまつ）」となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "トーチ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%BC%E3%83%81%E4%BD%9C%E6%88%A6
+
+- id: Q3273519
+  lang: ja
+  text: "カサブランカ沖海戦 は、第二次世界大戦中の1942年11月に実行された連合国の北アフリカ侵攻（トーチ作戦）の際に、モロッコのカサブランカ周辺海域で生起したアメリカ軍とフランス軍との間の戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カサブランカ沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%B5%E3%83%96%E3%83%A9%E3%83%B3%E3%82%AB%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q696438
+  lang: ja
+  text: "第三次ソロモン海戦（だいさんじソロモンかいせん）は、1942年11月12日 - 15日にソロモン海で行われた日本海軍とアメリカ海軍、オーストラリア海軍との間で行われた海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第三次ソロモン海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E6%AC%A1%E3%82%BD%E3%83%AD%E3%83%A2%E3%83%B3%E6%B5%B7%E6%88%A6
+
+- id: Q2917077
+  lang: ja
+  text: "ポートモレスビー作戦（ポートモレスビーさくせん）は、第二次世界大戦中のニューギニア戦線において、日本軍と連合国軍とがポートモレスビーの支配を巡って行った戦闘。当時はスタンレー作戦と呼ばれ、連合軍側の名称を和訳して、前半をココダ道の戦い 、後半をブナとゴナの戦い とも呼ぶ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ポートモレスビー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%A2%E3%83%AC%E3%82%B9%E3%83%93%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q155008
+  lang: ja
+  text: "ウラヌス作戦 は、第二次世界大戦中の1942年11月下旬に、ソ連軍が、スターリングラード攻囲中のドイツ第6軍の南北側面を攻撃して包囲した反攻作戦の名前。作戦構想は1942年9月の早い時期に決まり、9月から反攻用戦力の集積が始まった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ウラヌス作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%8C%E3%82%B9%E4%BD%9C%E6%88%A6
+
+- id: Q690197
+  lang: ja
+  text: "トゥーロン港自沈 は、1942年11月27日にフランスのトゥーロン軍港で起きたフランス海軍艦艇の一斉自沈である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "トゥーロン港自沈（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AD%E3%83%B3%E6%B8%AF%E8%87%AA%E6%B2%88
+
+- id: Q1475679
+  lang: ja
+  text: "ルンガ沖夜戦（ルンガおきやせん）は、1942年11月30日夜にガダルカナル島ルンガ岬の沖にて日本海軍とアメリカ海軍の間で行われた海戦である。連合軍側の名称は「タサファロンガ沖海戦 」。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ルンガ沖夜戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%B3%E3%82%AC%E6%B2%96%E5%A4%9C%E6%88%A6
+
+- id: Q699411
+  lang: ja
+  text: "バレンツ海海戦（バレンツかいかいせん）、バレンツ海戦 は、第二次世界大戦中の1942年12月31日に、ノルウェーの北岬沖バレンツ海で生起した、ドイツ海軍とイギリス海軍との海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バレンツ海海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%AC%E3%83%B3%E3%83%84%E6%B5%B7%E6%B5%B7%E6%88%A6
+
+- id: Q233278
+  lang: ja
+  text: "イスクラ作戦 は、独ソ戦中の1943年初頭、ラドガ湖南岸において展開されたドイツ北方軍集団第18軍とソビエト赤軍レニングラード戦線およびヴォルホフ戦線との戦いのことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イスクラ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%B9%E3%82%AF%E3%83%A9%E4%BD%9C%E6%88%A6
+
+- id: Q2314453
+  lang: ja
+  text: "ガダルカナル島撤収作戦（がだるかなるとうてっしゅうさくせん）は第二次世界大戦中に行われた日本軍の撤退作戦。作戦呼称は「ケ号作戦」。由来は捲土重来 による。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ガダルカナル島撤収作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%80%E3%83%AB%E3%82%AB%E3%83%8A%E3%83%AB%E5%B3%B6%E6%92%A4%E5%8F%8E%E4%BD%9C%E6%88%A6
+
+- id: Q16207310
+  lang: ja
+  text: "第二次世界大戦中の1943年1月19日から20日の夜、リビアのズワーラ沖でイギリスの駆逐艦2隻がイタリアの掃海艇などからなる部隊を攻撃し壊滅させた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "1943年1月20日の海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/1943%E5%B9%B41%E6%9C%8820%E6%97%A5%E3%81%AE%E6%B5%B7%E6%88%A6
+
+- id: Q610242
+  lang: ja
+  text: "レンネル島沖海戦は、太平洋戦争（大東亜戦争）の1943年（昭和18年）1月29日から30日にかけて、日本軍とアメリカ軍の間でおこなわれた海空戦。ガダルカナル島攻防戦の終盤、ガダルカナル島撤収作戦時にソロモン諸島レンネル島沖において発生した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "レンネル島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%B3%E3%83%8D%E3%83%AB%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q157873
+  lang: ja
+  text: "第三次ハリコフ攻防戦（だいさんじハリコフこうぼうせん）は、1943年2月19日から3月まで、ハリコフ を中心にウクライナで行われたドイツ軍とソ連軍の戦闘のことである。ドイツではドネツ戦役と呼ばれ、ソ連側ではドンバス・ハリコフ作戦と呼ばれている。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第三次ハリコフ攻防戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E6%AC%A1%E3%83%8F%E3%83%AA%E3%82%B3%E3%83%95%E6%94%BB%E9%98%B2%E6%88%A6
+
+- id: Q327099
+  lang: ja
+  text: "カセリーヌ峠の戦い は、第二次世界大戦中、チュニジアで行われた戦いであり、カセリーヌ峠（チュニジアを中部から西部へそびえるアトラス山脈にある幅2kmの隙間であった）の周辺で行われた一連の戦いを含んでいる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カセリーヌ峠の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%BB%E3%83%AA%E3%83%BC%E3%83%8C%E5%B3%A0%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1753578
+  lang: ja
+  text: "ビスマルク海海戦 は、第二次世界大戦中の1943年（昭和18年）3月2日から3月3日に、ビスマルク海からダンピール海峡にかけての海域で、ダグラス・マッカーサー陸軍大将指揮下の連合国軍ニューギニア・オーストラリア方面部隊が日本軍の輸送船団に対し航空攻撃を行ったことで発生した戦闘の…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ビスマルク海海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%93%E3%82%B9%E3%83%9E%E3%83%AB%E3%82%AF%E6%B5%B7%E6%B5%B7%E6%88%A6
+
+- id: Q2597051
+  lang: ja
+  text: "ビラ・スタンモーア夜戦 は、太平洋戦争中の1943年（昭和18年）3月5日にソロモン群島ニュージョージア諸島で生起した海戦のこと。ブラケット海峡の戦い とも呼ばれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ビラ・スタンモーア夜戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%A9%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%A2%E3%83%BC%E3%82%A2%E5%A4%9C%E6%88%A6
+
+- id: Q548819
+  lang: ja
+  text: "アッツ島沖海戦（アッツとうおきかいせん）は、第二次世界大戦（大東亜戦争）の1943年3月下旬に、ソビエト連邦のコマンドルスキー諸島近海で起きた日本海軍とアメリカ海軍との間の海戦。連合国軍側の呼称はコマンドルスキー諸島海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アッツ島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%83%E3%83%84%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q3636253
+  lang: ja
+  text: "チーニョ船団の戦い（チーニョせんだんのたたかい）は、第二次世界大戦中の1943年4月16日に地中海のマレッティモ島南東沖で発生した海戦。イギリス海軍の駆逐艦2隻とイタリア海軍の水雷艇2隻が交戦し双方とも1隻を失った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "チーニョ船団の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%BC%E3%83%8B%E3%83%A7%E8%88%B9%E5%9B%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q7097460
+  lang: ja
+  text: "レトリビューション作戦 、リトリビューション作戦(Operation Retribution) は、第二次世界大戦中の枢軸国軍がチュニジア北部で孤立し連合国軍の最終段階の攻撃に直面している時期に実行された、枢軸国軍の海路によるチュニジアからシチリアへの撤退阻止を目的とした空と海…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "レトリビューション作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q700572
+  lang: ja
+  text: "アッツ島の戦い は第二次世界大戦（太平洋戦争）の戦いの一つであり、1942年6月7日以来日本軍が占領していたアッツ島を、アメリカ軍が奪還を目指して始まった戦いである。1812年に始まった米英戦争以来、131年ぶりにアメリカ領土を敵から奪還する戦いとなった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アッツ島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%83%E3%83%84%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q717521
+  lang: ja
+  text: "江南殲滅作戦（こうなんせんめつさくせん）とは、日中戦争中の1943年4月から6月の間に行われた、湖北省西部での日本軍と中国軍の戦闘である。湖北作戦とも。中国側呼称は鄂西会戦。同時に行われた日本海軍側の作戦名はG作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "江南殲滅作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%B1%9F%E5%8D%97%E6%AE%B2%E6%BB%85%E4%BD%9C%E6%88%A6
+
+- id: Q1558441
+  lang: ja
+  text: "コークスクリュー作戦 は、第二次世界大戦中の1943年6月11日に行われた、連合国軍のパンテッレリーア島侵攻作戦である。パンテッレリーア島はシチリア島とチュニジアの間にあるイタリア領の島である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コークスクリュー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%82%AF%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%A5%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q1970470
+  lang: ja
+  text: "ニュージョージア島の戦い は、太平洋戦争におけるソロモン諸島のニュージョージア諸島を巡る戦闘の一つ。1943年（昭和18年）6月30日から10月初旬にかけて、日本陸海軍と連合国の間で島嶼戦・航空戦・水上戦闘が繰り広げられた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ニュージョージア島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E3%82%A2%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2026016
+  lang: ja
+  text: "カートホイール作戦 は、太平洋戦争中の連合国軍の作戦である。日本軍の拠点ラバウルの孤立化を目的として、南西太平洋方面の連合国軍総司令官ダグラス・マッカーサーの指揮の下アメリカ軍とオーストラリア軍により実行された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カートホイール作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%88%E3%83%9B%E3%82%A4%E3%83%BC%E3%83%AB%E4%BD%9C%E6%88%A6
+
+- id: Q130861
+  lang: ja
+  text: "クルスクの戦い は、第二次世界大戦中の1943年、東部戦線（独ソ戦）ソビエト連邦（以下ソ連）の都市であるクルスク周辺をめぐり、ナチス・ドイツ（以下ドイツ）軍とソ連軍（赤軍）との間で行われた戦闘の名称である。ドイツ軍の正式作戦名「ツィタデレ（城塞）作戦」。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クルスクの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AB%E3%82%B9%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q702096
+  lang: ja
+  text: "クラ湾夜戦 は、太平洋戦争（大東亜戦争）中、ソロモン諸島で1943年7月5日 - 6日に生起した日本軍とアメリカ軍との間の海戦。なお、ここではクラ湾夜戦の前夜にクラ湾で行われた水上戦闘についても合わせて述べる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クラ湾夜戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E6%B9%BE%E5%A4%9C%E6%88%A6
+
+- id: Q217981
+  lang: ja
+  text: "ハスキー作戦 は、第二次世界大戦中の1943年7月10日より行われた、連合軍によるイタリアのシチリア島への上陸作戦。イタリア本土上陸への前段階として敢行された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ハスキー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%B9%E3%82%AD%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q1668495
+  lang: ja
+  text: "コロンバンガラ島沖海戦（コロンバンガラとうおきかいせん）、またはコロンバンガラ島沖夜戦は、太平洋戦争（大東亜戦争）中の1943年7月12日にソロモン諸島コロンバンガラ島沖で発生した海戦。日本海軍のコロンバンガラ島への輸送部隊とアメリカ海軍、ニュージーランド海軍が交戦した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コロンバンガラ島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%AD%E3%83%B3%E3%83%90%E3%83%B3%E3%82%AC%E3%83%A9%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q541506
+  lang: ja
+  text: "プロホロフカの戦い(英語Battle of Prokhorovka)とは第二次世界大戦の東部戦線（独ソ戦）で、1943年7月に行われたクルスクの戦い(ドイツの作戦計画ツィタデレ作戦)のなかの、7月12日にクルスク南東87kmにあるプロホロフカで起きた、独ソ両軍による史上最大の戦…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "プロホロフカの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%83%9B%E3%83%AD%E3%83%95%E3%82%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q3636616
+  lang: ja
+  text: "ファスティアン作戦 は、第二次世界大戦中の1943年7月、連合軍によるシチリア島侵攻の一環として行われた空挺作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ファスティアン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q702142
+  lang: ja
+  text: "ベラ湾夜戦（ベラわんやせん）は、太平洋戦争中の1943年（昭和18年）8月6日、ソロモン諸島ベラ湾で生起した海戦。日本軍のコロンバンガラ島への輸送部隊が、アメリカ軍の水雷戦隊に邀撃され、日本側駆逐艦3隻が沈没した。 アメリカ軍側の呼称はヴェラ湾海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ベラ湾夜戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%A9%E6%B9%BE%E5%A4%9C%E6%88%A6
+
+- id: Q275019
+  lang: ja
+  text: "スモレンスクの戦い（スモレンスクのたたかい）とは、1943年8月7日から10月2日にかけてスモレンスクで行われた2回目の戦い。この戦いにおけるソビエト赤軍の戦略的攻撃は1943年夏秋の作戦の一部として行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スモレンスクの戦い_(1943年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A2%E3%83%AC%E3%83%B3%E3%82%B9%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84_(1943%E5%B9%B4)
+
+- id: Q2033079
+  lang: ja
+  text: "コテージ作戦 は、太平洋戦争中の1943年8月に行われた、アメリカ軍などによるアリューシャン諸島のキスカ島への上陸作戦である。本作戦は、日本海軍によりキスカ島守備隊が撤退した後に実行された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コテージ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%86%E3%83%BC%E3%82%B8%E4%BD%9C%E6%88%A6
+
+- id: Q515168
+  lang: ja
+  text: "第一次ベララベラ海戦 は、太平洋戦争中の1943年（昭和18年）8月17日にソロモン諸島のコロンバンガラ島とベララベラ島近海のベラ湾で発生した海戦である。アメリカ軍側の呼称は、ウィキペディア英文版では前記のようにホラニウ海戦としているが、特に記していない資料もある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第一次ベララベラ海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E3%83%99%E3%83%A9%E3%83%A9%E3%83%99%E3%83%A9%E6%B5%B7%E6%88%A6
+
+- id: Q714777
+  lang: ja
+  text: "第二次世界大戦における連合国軍のイタリア侵攻 は、1943年9月にハロルド・アレキサンダー大将率いる第15軍集団（マーク・クラークのアメリカ第5軍、バーナード・モントゴメリーのイギリス第8軍から構成）がイタリア半島本土に侵攻を行った作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イタリア侵攻_(第二次世界大戦)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E4%BE%B5%E6%94%BB_(%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%A6)
+
+- id: Q1447505
+  lang: ja
+  text: "アヴァランチ作戦 、アヴァランシュ作戦は、第二次世界大戦中、1943年9月9日に実行された連合国軍によるイタリア、サレルノへの上陸作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アヴァランチ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B4%E3%82%A1%E3%83%A9%E3%83%B3%E3%83%81%E4%BD%9C%E6%88%A6
+
+- id: Q934889
+  lang: ja
+  text: "スラップスティック作戦 は、第二次世界大戦における連合国軍のイタリア侵攻作戦の一部で、1943年9月9日に実行された英第一空挺師団によるタラント上陸作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スラップスティック作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%A9%E3%83%83%E3%83%97%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E4%BD%9C%E6%88%A6
+
+- id: Q698778
+  lang: ja
+  text: "グラン・サッソ襲撃 は、第二次世界大戦中の1943年9月12日、ドイツ軍によって実施されたベニート・ムッソリーニの救出作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "グラン・サッソ襲撃（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%BB%E3%82%B5%E3%83%83%E3%82%BD%E8%A5%B2%E6%92%83
+
+- id: Q701908
+  lang: ja
+  text: "第二次ベララベラ海戦 は、1943年（昭和18年）10月6日に中部ソロモン諸島のベララベラ島沖で発生した海戦である。連合国軍側の呼称はベララベラ海戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第二次ベララベラ海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E3%83%99%E3%83%A9%E3%83%A9%E3%83%99%E3%83%A9%E6%B5%B7%E6%88%A6
+
+- id: Q18330893
+  lang: ja
+  text: "セット＝イル沖海戦 は第二次世界大戦中の1943年10月22日から23日にかけての夜、大西洋の戦いの一環として生起した海戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "セット＝イル沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%83%E3%83%88%EF%BC%9D%E3%82%A4%E3%83%AB%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q2165486
+  lang: ja
+  text: "ブーゲンビル島沖海戦（ブーゲンビルとうおきかいせん）は、1943年（昭和18年）11月2日、太平洋戦争のソロモン諸島の戦いにおいて、ブーゲンビル島の攻防で生起した海戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ブーゲンビル島沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%BC%E3%82%B2%E3%83%B3%E3%83%93%E3%83%AB%E5%B3%B6%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q704785
+  lang: ja
+  text: "ブーゲンビル島の戦い（ブーゲンビルとうのたたかい）は、太平洋戦争（大東亜戦争）中の戦闘の一つである。日本軍が占領したブーゲンビル島で、アメリカ軍が上陸した1943年11月1日から停戦の1945年8月21日まで戦われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ブーゲンビル島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%BC%E3%82%B2%E3%83%B3%E3%83%93%E3%83%AB%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2089635
+  lang: ja
+  text: "ラバウル空襲（ラバウルくうしゅう）は、第二次世界大戦中にラバウルで日本軍と連合国軍との戦闘で行われた空襲。1942年のラバウル攻略時に日本軍が実施した空襲をはじめ、1943年に連合国軍がブーゲンビル島の戦いの援護を目的として実施した大きい規模の空襲などがある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ラバウル空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%90%E3%82%A6%E3%83%AB%E7%A9%BA%E8%A5%B2
+
+- id: Q712505
+  lang: ja
+  text: "常徳殲滅作戦（じょうとくせんめつさくせん）とは、日中戦争中の1943年11月から12月の間に行われた、湖南省北部での日本軍と中華民国軍の戦闘である。常徳を拠点とする中国国民党軍の第6戦区軍に、日本の第11軍が相当の打撃を加えた。日本軍の秘匿名はよ号作戦。中国側での名称は常徳会戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "常徳殲滅作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%B8%B8%E5%BE%B3%E6%AE%B2%E6%BB%85%E4%BD%9C%E6%88%A6
+
+- id: Q250309
+  lang: ja
+  text: "タラワの戦い は太平洋戦争の戦いの一つで、1943年11月にギルバート諸島のタラワで勃発した日本軍とアメリカ軍の間の戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "タラワの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%A9%E3%83%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2670873
+  lang: ja
+  text: "マキンの戦い（マキンのたたかい）は、第二次世界大戦（大東亜戦争）中の1943年11月20日から1943年11月23日にかけて、ギルバート諸島マキン環礁（現ブタリタリ）で行われた日本軍守備隊とアメリカ軍との戦闘。アメリカ軍はガルヴァニック作戦 の一環として攻略した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マキンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%AD%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q714253
+  lang: ja
+  text: "バーリ空襲（バーリくうしゅう）は、第二次世界大戦中の1943年12月2日にドイツ空軍爆撃機がアドリア海に面したイタリアの港湾都市バーリの連合国軍部隊及び輸送艦船に対し行った空襲である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バーリ空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%83%AA%E7%A9%BA%E8%A5%B2
+
+- id: Q3293566
+  lang: ja
+  text: "グロスター岬の戦い は、太平洋戦争（大東亜戦争）中のニューギニア戦線における日本軍とアメリカ・オーストラリア軍の間の戦闘であり、1943年12月末から約1か月間続いた。日本側の呼称はツルブの戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "グロスター岬の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%AD%E3%82%B9%E3%82%BF%E3%83%BC%E5%B2%AC%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q715886
+  lang: ja
+  text: "北岬沖海戦 は、第二次世界大戦中の1943年12月26日に発生したドイツ海軍とイギリス海軍との間で戦われた海戦である。ノール岬沖海戦やノール岬海戦とも。北岬とはノルウェーの最北端に近い岬の英語名の和訳で、一般にノールカップと呼ばれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "北岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8C%97%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q335288
+  lang: ja
+  text: "モンテ・カッシーノの戦い は、第二次世界大戦中、1944年1月17日から5月19日にかけてイタリアのモンテ・カッシーノで行われた戦い。連合軍のイタリア戦線におけるグスタフ・ラインの突破およびローマ解放のために計画された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "モンテ・カッシーノの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%83%86%E3%83%BB%E3%82%AB%E3%83%83%E3%82%B7%E3%83%BC%E3%83%8E%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q696844
+  lang: ja
+  text: "アンツィオの戦い は、第二次世界大戦においてイタリアのアンツィオおよびネットゥーノで行われた戦い。ここでは連合軍のアンツィオおよびネットゥーノ上陸 から包囲網突破およびローマ解放 までを述べる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アンツィオの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%84%E3%82%A3%E3%82%AA%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q509417
+  lang: ja
+  text: "コルスン包囲戦とは、第二次世界大戦中、独ソ戦において1944年1月14日から2月16日まで行われた戦いのことであり、ドニエプル＝カルパチアン攻勢の一部であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コルスン包囲戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%AB%E3%82%B9%E3%83%B3%E5%8C%85%E5%9B%B2%E6%88%A6
+
+- id: Q4391729
+  lang: ja
+  text: "グリーン諸島の戦い（グリーンしょとうのたたかい）は、太平洋戦争での島嶼をめぐる戦闘の一つであり、1944年（昭和19年）1月から2月にかけてブカ島の北西方の海域に位置するグリーン諸島でニュージーランド軍およびアメリカ軍と日本軍守備隊が戦い、日本軍守備隊の玉砕によって戦闘が終わっ…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "グリーン諸島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E8%AB%B8%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1789376
+  lang: ja
+  text: "クェゼリン島の戦い（クェゼリンとうのたたかい）とは、第二次世界大戦末期の1944年（昭和19年）1月30日に、日本軍の守るクェゼリン環礁へアメリカ軍が侵攻して行われた戦闘である。アメリカ軍の作戦名はフリントロック作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クェゼリンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%A7%E3%82%BC%E3%83%AA%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q7885422
+  lang: ja
+  text: "ナルヴァの戦い とは、ドイツ国防軍ナルヴァ軍集団とソビエト赤軍レニングラード方面軍との間でナルヴァ地峡をめぐり、1944年2月3日から8月10日まで行われた戦いのことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ナルヴァの戦い_(1944年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%AB%E3%83%B4%E3%82%A1%E3%81%AE%E6%88%A6%E3%81%84_(1944%E5%B9%B4)
+
+- id: Q4872826
+  lang: ja
+  text: "第二次アキャブ作戦（ハ号作戦）とは、1944年（昭和19年）2月に行なわれた日本陸軍による作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第二次アキャブ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E3%82%A2%E3%82%AD%E3%83%A3%E3%83%96%E4%BD%9C%E6%88%A6
+
+- id: Q1935947
+  lang: ja
+  text: "エニウェトクの戦い（エニウェトクのたたかい）は、第二次世界大戦（大東亜戦争）中の1944年2月18日から2月23日にかけて戦われた、日本軍とアメリカ軍のマーシャル諸島エニウェトク環礁を巡る戦い。アメリカ軍の作戦名はキャッチポール作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エニウェトクの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%8B%E3%82%A6%E3%82%A7%E3%83%88%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2026138
+  lang: ja
+  text: "トラック島空襲（トラックとうくうしゅう）は、太平洋戦争中の1944年2月17日-18日にかけて、アメリカ軍機動部隊が実施した日本軍の拠点トラック島への攻撃である。 アメリカ軍の作戦名はヘイルストーン作戦 で、エニウェトク環礁攻略を目的としたキャッチポール作戦 の支作戦であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "トラック島空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF%E5%B3%B6%E7%A9%BA%E8%A5%B2
+
+- id: Q3257552
+  lang: ja
+  text: "サ第一号作戦（さだいいちごうさくせん）とは、第二次世界大戦中に日本海軍が行ったインド洋方面での海上交通破壊作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "サ第一号作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B5%E7%AC%AC%E4%B8%80%E5%8F%B7%E4%BD%9C%E6%88%A6
+
+- id: Q707238
+  lang: ja
+  text: "インパール作戦 とは、第二次世界大戦（大東亜戦争）のビルマ戦線において、1944年（昭和19年）3月に大日本帝国陸軍により開始、7月初旬まで継続された、イギリス領インド帝国（英領インド）北東部の都市であるインパール攻略を目指した作戦のことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "インパール作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%91%E3%83%BC%E3%83%AB%E4%BD%9C%E6%88%A6
+
+- id: Q6484643
+  lang: ja
+  text: "エミラウ島の無血占領（エミラウとうのむけつせんりょう）とは、太平洋戦争での島嶼をめぐる戦闘の一つであり、ダグラス・マッカーサー陸軍大将が進めていた日本軍の主要基地の一つであるラバウルへの包囲網構築の最終戦として行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "エミラウ島の無血占領（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%9F%E3%83%A9%E3%82%A6%E5%B3%B6%E3%81%AE%E7%84%A1%E8%A1%80%E5%8D%A0%E9%A0%98
+
+- id: Q691968
+  lang: ja
+  text: "カメネツ＝ポドリスキー包囲戦 は、第二次世界大戦の東部戦線において、ドイツ国防軍に対して赤軍が行った包囲戦のことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カメネツ＝ポドリスキー包囲戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A1%E3%83%8D%E3%83%84%EF%BC%9D%E3%83%9D%E3%83%89%E3%83%AA%E3%82%B9%E3%82%AD%E3%83%BC%E5%8C%85%E5%9B%B2%E6%88%A6
+
+- id: Q3354882
+  lang: ja
+  text: "タングステン作戦 はイギリス軍が1944年3月末から4月初めにかけて実行したドイツ戦艦「ティルピッツ」攻撃。空母「ヴィクトリアス」、「フューリアス」および護衛空母4隻などが参加し、ノルウェーのコーフィヨルドで「ティルピッツ」に対して航空攻撃を実施した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "タングステン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%86%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q4382262
+  lang: ja
+  text: "第一次トゥルグ・フルモス攻防戦 とは第二次世界大戦中、オットー・ヴェーラー率いる枢軸軍部隊とイワン・コーネフ率いるソビエト赤軍の間で行われたヤッシー＝キシナウ攻勢の一方面の戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "第一次トゥルグ・フルモス攻防戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E3%83%88%E3%82%A5%E3%83%AB%E3%82%B0%E3%83%BB%E3%83%95%E3%83%AB%E3%83%A2%E3%82%B9%E6%94%BB%E9%98%B2%E6%88%A6
+
+- id: Q16844223
+  lang: ja
+  text: "ホーランジアの戦い とは、第二次世界大戦中の1944年4月下旬から6月下旬に、日本軍とアメリカ軍の間で、ニューギニア島北岸の町ホーランジア（現在のジャヤプラ）で行われた戦闘である。アメリカ軍の作戦名はレックレス作戦 である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ホーランジアの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%BC%E3%83%A9%E3%83%B3%E3%82%B8%E3%82%A2%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2748496
+  lang: ja
+  text: "タイガー演習 は第二次世界大戦中、イギリス海峡に臨むデヴォン州、ダートマス付近のスラプトン・サンズでアメリカ・イギリス両国の軍が実施した軍事演習である。ここで連合軍は1944年4月まで、ノルマンディーへの上陸（Dデイ）に備えて訓練していた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "タイガー演習_(1944年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%82%AC%E3%83%BC%E6%BC%94%E7%BF%92_(1944%E5%B9%B4)
+
+- id: Q471955
+  lang: ja
+  text: "1944年の長沙の戦い は、日中戦争末期に日本軍が中華民国湖南省に侵攻した戦闘で、長沙と衡陽への侵攻の2つがある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "長沙の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%95%B7%E6%B2%99%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q712181
+  lang: ja
+  text: "ビアク島の戦い は、太平洋戦争中のニューギニア戦線における戦闘の1つ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ビアク島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%93%E3%82%A2%E3%82%AF%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q16470
+  lang: ja
+  text: "ノルマンディー上陸作戦 は、第二次世界大戦中の1944年6月6日に連合国軍によって行われた、ナチス・ドイツ占領下のフランス北部であるノルマンディー地方への上陸作戦であり、連合軍最大の作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ノルマンディー上陸作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%AB%E3%83%9E%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E4%B8%8A%E9%99%B8%E4%BD%9C%E6%88%A6
+
+- id: Q28703
+  lang: ja
+  text: "ブレクール砲塁攻略戦 は、第二次世界大戦におけるノルマンディー上陸作戦の一部として戦われた戦闘である。アメリカ陸軍落下傘歩兵部隊がドイツ軍砲台陣地を攻略した。少数の部隊をもってより多数の部隊に対峙した場合の戦術と、リーダーシップのあり方についての古典的な実例として取り上げられる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ブレクール砲塁攻略戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AC%E3%82%AF%E3%83%BC%E3%83%AB%E7%A0%B2%E5%A1%81%E6%94%BB%E7%95%A5%E6%88%A6
+
+- id: Q516202
+  lang: ja
+  text: "シェルブールの戦い とは第二次世界大戦中、ノルマンディー上陸作戦中の1944年6月6日に行われた、空挺部隊が降下に成功した戦いである。アメリカ空挺部隊は孤立しながらも、ノルマンディー上陸作戦に不可欠である港を占領するために約3週間にわたって困難な闘いを強いられた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "シェルブールの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%96%E3%83%BC%E3%83%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q700710
+  lang: ja
+  text: "ヴィレル・ボカージュの戦い は、第二次世界大戦中の1944年6月13日、フランスのカーン南方の村、ヴィレル・ボカージュで行われたイギリス軍とドイツ軍の戦闘。イギリス陸軍第7機甲師団の先鋒とドイツ軍第101SS重戦車大隊および装甲教導師団が衝突し、ドイツ軍が勝利した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヴィレル・ボカージュの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%83%AC%E3%83%AB%E3%83%BB%E3%83%9C%E3%82%AB%E3%83%BC%E3%82%B8%E3%83%A5%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q7114127
+  lang: ja
+  text: "クーテルセルカの戦いは継続戦争での戦い。クーテルセルカ近郊でVT線を防衛するフィンランド側とソ連側が衝突した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "クーテルセルカの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%BC%E3%83%86%E3%83%AB%E3%82%BB%E3%83%AB%E3%82%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q11391098
+  lang: ja
+  text: "八幡空襲（やはたくうしゅう）は、第二次世界大戦中の1944年6月16日未明、アメリカ陸軍航空軍第58爆撃団の戦略爆撃機B-29が行った初めての日本本土空襲。九州北部の八幡製鉄所を第一目標とし計75機のB-29が出撃、うち47機が八幡市などを爆撃した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "八幡空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A9%BA%E8%A5%B2
+
+- id: Q504347
+  lang: ja
+  text: "マリアナ沖海戦 は、太平洋戦争末期の海戦。1944年（昭和19年）6月19日から6月20日にかけて、西太平洋のマリアナ諸島沖で勃発した大日本帝国（日本）とアメリカ合衆国（アメリカ）の海軍空母機動部隊同士の戦いである。アメリカ軍が勝利し、日本軍の連合艦隊は壊滅的な敗北を喫した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マリアナ沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AA%E3%82%A2%E3%83%8A%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q5251446
+  lang: ja
+  text: "衡陽の戦い(こうようのたたかい、中: 衡陽保衛戰)は、日中戦争における戦いの中でも、最も長く一つの都市を巡った戦闘が行われた事で知られる。1944年6月18日に長沙が日本軍により陥落すると、衡陽は日本軍の次の攻略目標となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "衡陽の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E8%A1%A1%E9%99%BD%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q697680
+  lang: ja
+  text: "タリ＝イハンタラの戦いは、継続戦争で起こった戦い。フィンランドとドイツの援軍はこの地域でソ連軍と激突した。北欧史随一の大戦闘である。フィンランドはソ連側に三倍以上の被害を与え、カレリア地峡でのソ連軍の進軍を停止させた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "タリ＝イハンタラの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%AA%EF%BC%9D%E3%82%A4%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%A9%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2081621
+  lang: ja
+  text: "ヴィープリ湾上陸作戦 は継続戦争の戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヴィープリ湾上陸作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%83%BC%E3%83%97%E3%83%AA%E6%B9%BE%E4%B8%8A%E9%99%B8%E4%BD%9C%E6%88%A6
+
+- id: Q2663546
+  lang: ja
+  text: "ヴオサルミの戦いは、継続戦争でフィンランドとソビエト連邦の間で行われた戦闘の一つ。おおよそ1944年7月4日から7月17日に行われた。アイラパー・ヴオサルミの戦いとしても知られる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヴオサルミの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%AA%E3%82%B5%E3%83%AB%E3%83%9F%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q4870924
+  lang: ja
+  text: "アイタペの戦い（アイタペのたたかい）は、第二次世界大戦中のニューギニア戦線における日本軍対オーストラリア軍とアメリカとの間の戦闘である。パプアニューギニア北岸のアイタペ東方において、1944年7月10日から同年8月上旬まで行われた。オーストラリアとアメリカの連合国軍側が勝利した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アイタペの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%82%BF%E3%83%9A%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q15264166
+  lang: ja
+  text: "マスコット作戦 は1944年7月に実行されたイギリス軍によるドイツ戦艦「ティルピッツ」攻撃作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マスコット作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%B9%E3%82%B3%E3%83%83%E3%83%88%E4%BD%9C%E6%88%A6
+
+- id: Q105570
+  lang: ja
+  text: "7月20日事件 は、1944年7月20日に発生したドイツ総統アドルフ・ヒトラー暗殺未遂とナチ党政権に対するクーデター未遂事件。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "7月20日事件（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/7%E6%9C%8820%E6%97%A5%E4%BA%8B%E4%BB%B6
+
+- id: Q176915
+  lang: ja
+  text: "テニアンの戦い（テニアンのたたかい）は、第二次世界大戦中、1944年7月24日から8月2日にマリアナ諸島テニアン島において行われた日本軍とアメリカ軍との戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "テニアンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%8B%E3%82%A2%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q700674
+  lang: ja
+  text: "コブラ作戦 は、第二次世界大戦において1944年7月25日から7月31日にかけてアメリカ第1軍により行われた攻勢の作戦名である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コブラ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%96%E3%83%A9%E4%BD%9C%E6%88%A6
+
+- id: Q2354840
+  lang: ja
+  text: "イロマンツィの戦いは継続戦争の戦いの一つ。1944年7月26日から8月13日にかけてフィンランド軍とソビエト連邦軍がソフィン国境のフィンランド 北カルヤラ（北カレリア）イロマンツィ村近郊の40km×30kmの範囲で行った戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イロマンツィの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%84%E3%82%A3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q698220
+  lang: ja
+  text: "リュティヒ作戦 とはノルマンディーの戦いの中で行われたドイツ軍の反攻作戦に与えられたコード名であり、1944年8月7日から13日にかけて、モルタン近郊にいたアメリカ軍との間で戦われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "リュティヒ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%A5%E3%83%86%E3%82%A3%E3%83%92%E4%BD%9C%E6%88%A6
+
+- id: Q696900
+  lang: ja
+  text: "1944年のグアムの戦い は、第二次世界大戦におけるマリアナ-パラオ戦役の戦いの一つ。サイパンの戦いに次ぐ死傷者を出した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "グアムの戦い_(1944年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B0%E3%82%A2%E3%83%A0%E3%81%AE%E6%88%A6%E3%81%84_(1944%E5%B9%B4)
+
+- id: Q602744
+  lang: ja
+  text: "ファレーズ・ポケット は、1944年8月12日から21日まで行われたノルマンディー上陸作戦（オーバーロード作戦）の主要な戦いのことである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ファレーズ・ポケット（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%AC%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88
+
+- id: Q221111
+  lang: ja
+  text: "ドラグーン作戦 は、第二次世界大戦中の1944年8月に行われた、南フランスのプロヴァンス地方への連合国軍の上陸作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ドラグーン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%82%B0%E3%83%BC%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q700646
+  lang: ja
+  text: "桂柳会戦 は、日中戦争の大陸打通作戦中に行われた日本軍と中国軍の戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "桂柳会戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%A1%82%E6%9F%B3%E4%BC%9A%E6%88%A6
+
+- id: Q696835
+  lang: ja
+  text: "第二次世界大戦における連合国によるパリの解放 は、1944年8月19日から8月25日に行われた戦い。西部戦線とフランスの歴史における大きな節目であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "パリの解放（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AA%E3%81%AE%E8%A7%A3%E6%94%BE
+
+- id: Q17513584
+  lang: ja
+  text: "「グッドウッド作戦」 は、1944年8月末に占領下ノルウェーのコーフィヨルドを錨地としていたドイツ海軍戦艦ティルピッツに対して遂行された、イギリス海軍空母による一連の航空攻撃である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "グッドウッド作戦_(1944年8月)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%83%E3%83%89%E3%82%A6%E3%83%83%E3%83%89%E4%BD%9C%E6%88%A6_(1944%E5%B9%B48%E6%9C%88)
+
+- id: Q162287
+  lang: ja
+  text: "ヒュルトゲンの森の戦い は、第二次世界大戦後期、ドイツ（ナチス・ドイツ）とベルギーの国境にあるヒュルトゲンの森において行われたアメリカ軍とドイツ軍の戦いである。第二次世界大戦中のドイツ国内での戦いの中で最も長い戦いで、アメリカ軍はかつてない長期戦を強いられた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヒュルトゲンの森の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%A5%E3%83%AB%E3%83%88%E3%82%B2%E3%83%B3%E3%81%AE%E6%A3%AE%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1538855
+  lang: ja
+  text: "アンガウルの戦い は、第二次世界大戦におけるパラオ＝マリアナ戦役における最後の戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アンガウルの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%82%AC%E3%82%A6%E3%83%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q2889417
+  lang: ja
+  text: "モロタイ島の戦い（モロタイとうのたたかい）は、太平洋戦争後期にインドネシア東部マルク諸島のモロタイ島で守備する日本軍と上陸したアメリカ軍主力の連合国軍の間で行われた戦いである。 アメリカ軍の作戦名はトレードウィンド作戦（Operation Tradewind)。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "モロタイ島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%AD%E3%82%BF%E3%82%A4%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q609030
+  lang: ja
+  text: "ペリリューの戦い は、太平洋戦争中の1944年（昭和19年）9月15日から11月27日にかけペリリュー島（現在のパラオ共和国）で行われた、日本軍守備隊とアメリカ軍の陸上戦闘である。アメリカ側の作戦名はステールメイトII作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ペリリューの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AA%E3%83%AA%E3%83%A5%E3%83%BC%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q7097375
+  lang: ja
+  text: "パラヴェーン作戦 は、第二次世界大戦中のイギリス軍空母搭載機によるドイツ戦艦ティルピッツに対する航空攻撃作戦。1944年9月15日にイギリス空軍により実行された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "パラヴェーン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%83%B4%E3%82%A7%E3%83%BC%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q189930
+  lang: ja
+  text: "マーケット・ガーデン作戦 は、第二次世界大戦中の1944年9月に行われた連合国軍の作戦。連合軍が、ミューズ川、ライン川、ネーデルライン川及びそれらの川の運河に架かる橋に空挺部隊を降下させて確保させ、ドイツ本土進攻の進撃路にする作戦であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マーケット・ガーデン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88%E3%83%BB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q1723307
+  lang: ja
+  text: "メスの戦い（メスのたたかい）は、第二次世界大戦中にアメリカ軍とドイツ国防軍との間で行われた戦いのことである。この戦いはノルマンディー上陸直後、フランスのメスで行われた。アメリカ第3軍によるメスへの攻撃は防衛側のドイツ軍の激しい抵抗に直面、両軍とも多大な犠牲者を出すこととなった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "メスの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%B9%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q327052
+  lang: ja
+  text: "アーヘンの戦い は、1944年10月にドイツの都市アーヘンをめぐって行われた戦いである。この戦いが行われたとき、アーヘンには20,000名の住民しかいなかった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "アーヘンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%BC%E3%83%98%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q697022
+  lang: ja
+  text: "スヘルデの戦い は、第二次世界大戦中の1944年10月2日から11月8日までの間に、ベルギー北部及びオランダ南西部で、連合国軍とドイツ第15軍との間で行われた戦闘。連合国軍はガイ・シモンズ 中将指揮下のカナダ第1軍 が基幹となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "スヘルデの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%98%E3%83%AB%E3%83%87%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q717004
+  lang: ja
+  text: "レイテ島の戦い（レイテとうのたたかい）は、1944年（昭和19年）10月20日から終戦までフィリピン・レイテ島で行われた、日本軍とアメリカ軍の陸上戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "レイテ島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%A4%E3%83%86%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q308999
+  lang: ja
+  text: "レイテ沖海戦 は、第二次世界大戦中の1944年10月20日から25日にかけて、フィリピン周辺の広大な海域を舞台に、日本海軍とアメリカ及びオーストラリア両海軍からなる連合軍との間で交わされた一連の海戦の総称である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "レイテ沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%A4%E3%83%86%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q7097348
+  lang: ja
+  text: "オブヴィエイト作戦 は、第二次世界大戦中のイギリス軍空母搭載機によるドイツ戦艦ティルピッツに対する航空攻撃作戦。1944年10月にイギリス空軍により実行された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "オブヴィエイト作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%96%E3%83%B4%E3%82%A3%E3%82%A8%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%A6
+
+- id: Q718805
+  lang: ja
+  text: "多号作戦（たごうさくせん）は、大東亜戦争末期のフィリピンの戦いで、日本陸軍と日本海軍が協同で実施したレイテ増援輸送作戦のこと。 主な揚陸地の名をとりオルモック輸送作戦とも呼ばれる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "多号作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%A4%9A%E5%8F%B7%E4%BD%9C%E6%88%A6
+
+- id: Q151018
+  lang: ja
+  text: "バルジの戦い は、第二次世界大戦の西部戦線において、1944年12月から1945年1月の間アルデンヌ高地で行われた、ナチス・ドイツのドイツ国防軍および武装親衛隊（以下「ドイツ軍」）とアメリカ軍を主体とする連合軍との戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バルジの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%AB%E3%82%B8%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q708181
+  lang: ja
+  text: "バストーニュの戦い とはバルジの戦いの最中、ベルギーの町バストーニュで行われた戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "バストーニュの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%B9%E3%83%88%E3%83%BC%E3%83%8B%E3%83%A5%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q155103
+  lang: ja
+  text: "ブダペスト包囲戦（ブダペストほういせん）はハンガリーの首都ブダペストの包囲戦であり、第二次世界大戦末期、赤軍によるブダペスト攻勢によって行われた戦いのひとつである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ブダペスト包囲戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%80%E3%83%9A%E3%82%B9%E3%83%88%E5%8C%85%E5%9B%B2%E6%88%A6
+
+- id: Q703962
+  lang: ja
+  text: "ルソン島の戦い（ルソンとうのたたかい）は、1945年1月6日から（日本の）終戦までフィリピン・ルソン島で行われた、日本軍 とアメリカ軍の陸上戦闘のことを言う。首都マニラは3月にアメリカ軍が制圧したが、その後も終戦まで戦闘が続いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ルソン島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AB%E3%82%BD%E3%83%B3%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q710000
+  lang: ja
+  text: "ラムリー島の戦い（ラムリーとうのたたかい）は、太平洋戦争中の1945年1月21日に、ビルマ（現ミャンマー）のラムリー島を奪還するためにイギリス軍が上陸し、日本軍と戦った戦闘。約1ヶ月の戦闘で日本軍は敗れて撤退し、イギリス軍が島を占領した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ラムリー島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%A0%E3%83%AA%E3%83%BC%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q696931
+  lang: ja
+  text: "マニラの戦い（マニラのたたかい）は、第二次世界大戦末期の1945年2月3日から同年3月3日までフィリピンの首都のマニラで行われた日本軍と連合軍の市街戦のことを指す。日本軍は敗れ、3年間に及んだ日本のフィリピン支配は幕を閉じた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "マニラの戦い_(1945年)（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%8B%E3%83%A9%E3%81%AE%E6%88%A6%E3%81%84_(1945%E5%B9%B4)
+
+- id: Q180182
+  lang: ja
+  text: "硫黄島の戦い は、第二次世界大戦末期に小笠原諸島の硫黄島において日本軍とアメリカ軍との間で行われた戦いである。アメリカ軍側の作戦名はデタッチメント作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "硫黄島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%A1%AB%E9%BB%84%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q708253
+  lang: ja
+  text: "コルマールの戦い（コルマールのたたかい）は、現在のフランス東部、アルザスにあるコルマール周辺で行われた、第二次世界大戦中の1945年1月20日から1945年2月9日の期間に連合国軍とドイツ軍との間で起こった戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "コルマールの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%AB%E3%83%9E%E3%83%BC%E3%83%AB%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q155995
+  lang: ja
+  text: "春の目覚め作戦 は、1945年3月6日から3月15日にかけてハンガリー西部のバラトン湖周辺で展開された、第二次世界大戦におけるドイツ軍の攻勢。バラトン湖の戦い（Plattenseeoffensive）とも呼ばれる。交戦相手であるソ連からはバラトン防衛作戦 と呼称されている。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "春の目覚め作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%98%A5%E3%81%AE%E7%9B%AE%E8%A6%9A%E3%82%81%E4%BD%9C%E6%88%A6
+
+- id: Q2694984
+  lang: ja
+  text: "レマーゲンの戦い は、第二次世界大戦末期、西部戦線においてライン川を越え進撃するアメリカ軍とそれを防ぐドイツ軍との間で行われたルーデンドルフ橋を巡る攻防戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "レマーゲンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%9E%E3%83%BC%E3%82%B2%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q710912
+  lang: ja
+  text: "ミンダナオ島の戦い（ミンダナオとうのたたかい）は、太平洋戦争中の1945年3月10日から終戦までフィリピン諸島ミンダナオ島で行われた、日本軍とアメリカ軍及びフィリピン人ゲリラの間の戦いである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ミンダナオ島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%B3%E3%83%80%E3%83%8A%E3%82%AA%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q1810832
+  lang: ja
+  text: "カルタゴ作戦 は、1945年3月21日に実施されたイギリス空軍の作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カルタゴ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AB%E3%82%BF%E3%82%B4%E4%BD%9C%E6%88%A6
+
+- id: Q1360624
+  lang: ja
+  text: "ヴァーシティー作戦 は、第二次世界大戦末期の1945年3月にアメリカ軍とイギリス軍が共同して行ったライン川渡河作戦の一つである。ルール工業地帯包囲が目的だった。結果は連合国軍が勝利しライン川渡河がより円滑に行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ヴァーシティー作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%BC%E4%BD%9C%E6%88%A6
+
+- id: Q192660
+  lang: ja
+  text: "沖縄戦（おきなわせん）または沖縄の戦い（おきなわのたたかい）とは、第二次世界大戦末期の1945年（昭和20年）、沖縄諸島に上陸した米軍と英軍を主体とする連合国軍と日本軍との間で行われた戦いの総称である。連合軍側の作戦名はアイスバーグ作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "沖縄戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E6%88%A6
+
+- id: Q671528
+  lang: ja
+  text: "ケーニヒスベルクの戦い は、1945年4月6日から4月9日にかけて、東プロイセンのケーニヒスベルク（現カリーニングラード）で行われたドイツ国防軍、武装親衛隊と赤軍との間の戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ケーニヒスベルクの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%BC%E3%83%8B%E3%83%92%E3%82%B9%E3%83%99%E3%83%AB%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q379433
+  lang: ja
+  text: "坊ノ岬沖海戦 は、太平洋戦争末期の1945年（昭和20年）4月7日、沖縄へ海上特攻隊として向かっていた日本海軍の戦艦大和とその護衛艦艇群をアメリカ海軍の空母艦載機部隊が東シナ海で攻撃した戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "坊ノ岬沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%9D%8A%E3%83%8E%E5%B2%AC%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q154182
+  lang: ja
+  text: "ベルリンの戦い（ベルリンのたたかい、ドイツ語: Schlacht um Berlin、英語: Battle of Berlin)は、第二次世界大戦末期、1945年4月16日のソビエト赤軍のゼーロウ高地攻撃開始から、総統地下壕におけるアドルフ・ヒトラーの自殺、国会議事堂の陥落、5…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ベルリンの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AB%E3%83%AA%E3%83%B3%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q246553
+  lang: ja
+  text: "ニュルンベルクの戦い は、第二次世界大戦末期、バイエルン州、フランケン地方の都市ニュルンベルクにおいて行われた戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ニュルンベルクの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%AB%E3%83%B3%E3%83%99%E3%83%AB%E3%82%AF%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q7879625
+  lang: ja
+  text: "ゼーロウ高地の戦い は、ベルリンの戦いにおける前哨戦であり、1945年4月16日から19日までの4日間行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ゼーロウ高地の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%BC%E3%83%AD%E3%82%A6%E9%AB%98%E5%9C%B0%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q699093
+  lang: ja
+  text: "ルール・ポケット は、第二次世界大戦末期の1945年3月から4月にかけてドイツのルール地方で行われた包囲戦である。これは西部戦線におけるナチス・ドイツの最後の組織的抵抗であり、30万人以上の兵士が捕虜となった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ルール・ポケット（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88
+
+- id: Q713400
+  lang: ja
+  text: "ベルリン市街戦 は、ベルリンの戦いにおける一方面の戦いである。ベルリンの戦いは第二次世界大戦における終末期のナチス・ドイツと連合国との間における支配地をめぐる戦いで、本市街戦はその局地戦のひとつであった。ソ連赤軍3方面軍によるベルリン占領まで続いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ベルリン市街戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AB%E3%83%AA%E3%83%B3%E5%B8%82%E8%A1%97%E6%88%A6
+
+- id: Q282438
+  lang: ja
+  text: "ハルベの戦い（ハルベのたたかい、独: Kessel von Halbe、露: Хальбский \"котел\", Halbe cauldron、英: Battle of Halbeは、1945年4月25日から4月29日ベルリン東南部の森林帯でソビエト赤軍と米軍に包囲されていた…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ハルベの戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%AB%E3%83%99%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q110517047
+  lang: ja
+  text: "カウボーイ作戦 は、第二次世界大戦のヨーロッパ戦域末期である1945年4月28日に、ズデーテンラント帝国大管区ホストウニ (現在のチェコ共和国プルゼニ州ドマジュリツェ郡ホストウニ)で行われた軍事作戦である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "カウボーイ作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%A6%E3%83%9C%E3%83%BC%E3%82%A4%E4%BD%9C%E6%88%A6
+
+- id: Q14303815
+  lang: ja
+  text: "イッター城の戦い は、第二次世界大戦末期のオーストリアで起こった戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "イッター城の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E5%9F%8E%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q552392
+  lang: ja
+  text: "ペナン沖海戦（ペナンおきかいせん）は、第二次世界大戦中の1945年5月16日夜にマレー半島北西岸、マラッカ海峡内に位置するペナン島沖で起きた日本海軍とイギリス海軍との間の海戦（夜戦）。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ペナン沖海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%8A%E3%83%B3%E6%B2%96%E6%B5%B7%E6%88%A6
+
+- id: Q4993248
+  lang: ja
+  text: "インメイト作戦 は第二次世界大戦中の1945年6月にイギリス太平洋艦隊により実行されたトラック諸島攻撃。空母「インプラカブル」などが参加し、太平洋に到着したばかりの艦艇に戦闘を経験させることが目的であった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "インメイト作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%A1%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%A6
+
+- id: Q7830654
+  lang: ja
+  text: "豊橋空襲（とよはしくうしゅう）は、第二次世界大戦中の1945年6月19日深夜から20日未明にかけ、愛知県豊橋市に対して行われた、ボーイングB-29戦略爆撃機による空襲。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "豊橋空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E8%B1%8A%E6%A9%8B%E7%A9%BA%E8%A5%B2
+
+- id: Q16207303
+  lang: ja
+  text: "シッタン作戦（シッタンさくせん）とは、第二次世界大戦末期の1945年（昭和20年）7月から終戦にかけて、ビルマ戦線において日本軍とイギリス軍の間で行われた戦闘である。日本の第28軍がシッタン川を越えてビルマ東部へ撤退しようとして発生した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "シッタン作戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%83%E3%82%BF%E3%83%B3%E4%BD%9C%E6%88%A6
+
+- id: Q11378048
+  lang: ja
+  text: "仙台空襲（せんだいくうしゅう）は、第二次世界大戦末期の1945年（昭和20年）7月10日にアメリカ軍によって行われた宮城県仙台市への空襲（戦略爆撃）。この空襲によって仙台の中心部は焼け野原になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "仙台空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E4%BB%99%E5%8F%B0%E7%A9%BA%E8%A5%B2
+
+- id: Q11430886
+  lang: ja
+  text: "多治見空襲（たじみくうしゅう）は、第二次世界大戦（大東亜戦争）中の1945年（昭和20年）にアメリカ軍により行われた岐阜県多治見市に対する空襲である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "多治見空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%B2%BB%E8%A6%8B%E7%A9%BA%E8%A5%B2
+
+- id: Q717511
+  lang: ja
+  text: "本稿では、太平洋戦争末期の1945年7月22日-23日に、房総半島の野島崎沖で起きた海戦について説明する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "1945年7月22-23日の海戦（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/1945%E5%B9%B47%E6%9C%8822-23%E6%97%A5%E3%81%AE%E6%B5%B7%E6%88%A6
+
+- id: Q11385816
+  lang: ja
+  text: "保戸島空襲（ほとじまくうしゅう）は、第二次世界大戦中の1945年（昭和20年）7月25日午前10時頃、大分県北海部郡保戸島村（現・津久見市保戸島）に対して行われたアメリカ軍による空襲。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "保戸島空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E4%BF%9D%E6%88%B8%E5%B3%B6%E7%A9%BA%E8%A5%B2
+
+- id: Q11434597
+  lang: ja
+  text: "大山口列車空襲（だいせんぐちれっしゃくうしゅう）は、第二次世界大戦末期の1945年（昭和20年）7月28日午前8時ごろ、鳥取県西伯郡所子村（現在の大山町）の山陰本線大山口駅東方約600m地点で発生した、満員状態の非武装（傷病兵輸送の赤十字標章付の車輌も含む）列車に対してF6Fヘ…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "大山口列車空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E5%8F%A3%E5%88%97%E8%BB%8A%E7%A9%BA%E8%A5%B2
+
+- id: Q710614
+  lang: ja
+  text: "呉軍港空襲（くれぐんこうくうしゅう）は、太平洋戦争中、1945年（昭和20年）の3月19日、7月24日、7月25日、7月28日、7月29日など複数回に渡って行われたアメリカ海軍を中心とした連合国軍空母機動部隊航空隊、及び、沖縄伊江島のアメリカ陸軍航空軍による呉軍港および瀬戸内海…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "呉軍港空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%91%89%E8%BB%8D%E6%B8%AF%E7%A9%BA%E8%A5%B2
+
+- id: Q11642865
+  lang: ja
+  text: "那賀川鉄橋空襲（なかがわてっきょうくうしゅう）は、アメリカ軍が1945年（昭和20年）7月30日、徳島県那賀郡平島村 、那賀川下流にある牟岐線の鉄橋を走る列車に対して行った空襲である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "那賀川鉄橋空襲（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%82%A3%E8%B3%80%E5%B7%9D%E9%89%84%E6%A9%8B%E7%A9%BA%E8%A5%B2
+
+- id: Q488
+  lang: ja
+  text: "日本への原子爆弾投下（にほんへのげんしばくだんとうか）は、第二次世界大戦（大東亜戦争/太平洋戦争）の末期である1945年（昭和20年）8月に、連合国のアメリカ合衆国が枢軸国の日本に投下した2発の原子爆弾による空爆。これらの投下は世界で唯一核兵器が実戦使用されたものである。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "日本への原子爆弾投下（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%B8%E3%81%AE%E5%8E%9F%E5%AD%90%E7%88%86%E5%BC%BE%E6%8A%95%E4%B8%8B
+
+- id: Q11602962
+  lang: ja
+  text: "筑紫駅列車空襲事件（ちくしえきれっしゃくうしゅうじけん）は、第二次世界大戦末期の昭和20年（1945年）8月8日午前に、福岡県筑紫郡筑紫村 内の西日本鉄道（西鉄）大牟田線筑紫駅付近で発生した空襲事件である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "筑紫駅列車空襲事件（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E7%AD%91%E7%B4%AB%E9%A7%85%E5%88%97%E8%BB%8A%E7%A9%BA%E8%A5%B2%E4%BA%8B%E4%BB%B6
+
+- id: Q4382340
+  lang: ja
+  text: "長崎市への原子爆弾投下（ながさきしへのげんしばくだんとうか）は、第二次世界大戦（太平洋戦争）末期の1945年（昭和20年）8月9日（木曜日）に、連合国のアメリカ合衆国が枢軸国の日本の長崎に対して原子爆弾「ファットマン」（以下原爆と記す）を投下し、午前11時2分に炸裂した出来事で…"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "長崎市への原子爆弾投下（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E5%B8%82%E3%81%B8%E3%81%AE%E5%8E%9F%E5%AD%90%E7%88%86%E5%BC%BE%E6%8A%95%E4%B8%8B
+
+- id: Q6165880
+  lang: ja
+  text: "ソビエト連邦による満洲侵攻 は、1945年8月9日に、ソビエト連邦が大日本帝国の傀儡政権、満洲国に侵攻したことで始まった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "ソビエト連邦による満洲侵攻（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%93%E3%82%A8%E3%83%88%E9%80%A3%E9%82%A6%E3%81%AB%E3%82%88%E3%82%8B%E6%BA%80%E6%B4%B2%E4%BE%B5%E6%94%BB
+
+- id: Q14565619
+  lang: ja
+  text: "占守島の戦い（しゅむしゅとうのたたかい）は、太平洋戦争終結直後の1945年（昭和20年）8月18日 - 21日に、千島列島東端の占守島で行われたソ連労農赤軍と大日本帝国陸軍との間の戦闘である。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "占守島の戦い（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E5%8D%A0%E5%AE%88%E5%B3%B6%E3%81%AE%E6%88%A6%E3%81%84
+
+- id: Q665554
+  lang: ja
+  text: "日本の降伏文書（にほんのこうふくぶんしょ）は、1945年（昭和20年）9月2日、日本と連合国（事実上、アメリカ合衆国）との間で交わされた休戦協定の名称。この協定により日本の降伏が確認され、ポツダム宣言の受諾は外交文書として固定された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "日本の降伏文書（Wikipedia 日本語版）"
+      url: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F%E6%96%87%E6%9B%B8

@@ -205,6 +205,46 @@ async function main() {
       }
     }
   }
+  // ───────────────────── フィードに出す短い要約（Wikipedia 由来・CC BY-SA）
+  // Event は 493 件のうち自前の要約があるのが 16 件だけで、
+  // 残りはフィードにタイトルしか出ず「何が起きたのか分からない」状態だった。
+  // Wikipedia のリード文を短く詰めたものを添えるが、本文は CC BY-SA なので
+  // 自前要約（license: pd）とは混ぜず、出力も別ファイルにして画面にも印を出す。
+  const summaryFiles = (await readYamlDir(resolve(DATA, 'seed-wikipedia'))).filter((g) =>
+    /^event-summaries/.test(g.file),
+  );
+  const eventSummaries = new Map();
+  const eventIds = new Set(events.map((e) => e.id));
+  for (const { file, records } of summaryFiles) {
+    for (const rec of records) {
+      const where = `seed-wikipedia/${file}`;
+      checkCommon(rec, where);
+      if (!rec.text) err(`${where} (${rec.id}): text が無い`);
+      else if ([...rec.text].length > 160) {
+        err(`${where} (${rec.id}): text が長すぎる（${[...rec.text].length} 字・160 まで）`);
+      }
+      if (!eventIds.has(rec.id)) {
+        err(`${where} (${rec.id}): selection.yaml に無い Event の要約`);
+        continue;
+      }
+      if (eventSummaries.has(rec.id)) err(`${where} (${rec.id}): 要約が重複`);
+      eventSummaries.set(rec.id, { id: rec.id, text: rec.text, sources: rec.sources });
+    }
+  }
+  // 自前の要約がある Event に Wikipedia の要約を重ねない（混ぜない約束）
+  for (const ev of events) {
+    if (ev.summary_ja && eventSummaries.has(ev.id)) eventSummaries.delete(ev.id);
+  }
+  {
+    const without = events.filter((e) => !e.summary_ja && !eventSummaries.has(e.id));
+    if (without.length) {
+      warn(
+        `要約がまったく無い Event ${without.length} 件（フィードにタイトルしか出ない）:\n` +
+          without.slice(0, 20).map((e) => `      - ${e.id} ${e.name_ja}`).join('\n'),
+      );
+    }
+  }
+
   decisions.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : a.id.localeCompare(b.id)));
 
   // ------------------------------------------------------------- homefront
@@ -463,6 +503,7 @@ async function main() {
     frontlines: frontlines.length,
     control: controlMonths.length,
     approx: approxDates.length,
+    summaries: eventSummaries.size,
   };
   if (CHECK_ONLY) {
     console.log('\n✓ 検証だけ実行（--check）');
@@ -509,6 +550,16 @@ async function main() {
   }
 
   await write('links.json', { _meta: meta('links', { count: links.length }), links });
+  if (eventSummaries.size) {
+    await write('event-summaries.cc-by-sa.json', {
+      _meta: meta('event summaries (CC BY-SA)', {
+        count: eventSummaries.size,
+        license: 'CC BY-SA 4.0',
+        note: 'Wikipedia のリード文にもとづく短い要約。帰属表示と同一ライセンスでの継承が必要',
+      }),
+      summaries: [...eventSummaries.values()],
+    });
+  }
   await write('frontlines.json', {
     _meta: meta('frontlines', {
       count: frontlines.length,
@@ -559,6 +610,12 @@ async function main() {
     { title: 'Wikidata', url: 'https://www.wikidata.org/', license: 'CC0', use: 'イベントの名称・座標・日付・参加者' },
     { title: 'OpenHistoricalMap', url: 'https://www.openhistoricalmap.org/', license: 'ODbL / CC0 (contributor terms)', use: '支配領域の境界（時点指定）' },
     { title: 'Natural Earth', url: 'https://www.naturalearthdata.com/', license: 'Public Domain', use: 'ベースマップ（陸・海）' },
+    {
+      title: 'Wikipedia（日本語版・英語版）',
+      url: 'https://ja.wikipedia.org/',
+      license: 'CC BY-SA 4.0',
+      use: 'フィードに出す Event の短い要約（リード文にもとづく）。本体とは別ファイルに分けている',
+    },
     {
       title: 'Wikimedia Commons「Second World War Europe MM YYYY de.svg」（作者 San Jose）',
       url: 'https://commons.wikimedia.org/wiki/Category:Maps_of_World_War_II',

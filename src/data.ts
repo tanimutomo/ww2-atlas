@@ -118,6 +118,12 @@ export type Atlas = {
    * 精度は元の折れ線と同じなので、UI では薄く塗って区別している。
    */
   approxDates: string[];
+  /**
+   * Event の短い要約（Wikipedia のリード文にもとづく・CC BY-SA）。
+   * 自前の要約（summary_ja）がある Event はここに入らない。
+   * ライセンスが違うので本体と混ぜず、別に持って画面でも印を出す。
+   */
+  wikiSummaries: Map<string, string>;
   /** id → レコード（Event / Decision / HomeFront をまとめて引く） */
   byId: Map<string, EventRec | Decision | HomeFront>;
   /** id → その id が from か to になっているリンク */
@@ -149,6 +155,9 @@ export async function loadAtlas(): Promise<Atlas> {
     getJson<{ months: { month: string }[] }>('territory/control/index.json').catch(() => ({ months: [] })),
     getJson<{ dates: { date: string }[] }>('territory/approx/index.json').catch(() => ({ dates: [] })),
   ]);
+  const wiki = await getJson<{ summaries: { id: string; text: string }[] }>(
+    'event-summaries.cc-by-sa.json',
+  ).catch(() => ({ summaries: [] }));
 
   const byId = new Map<string, EventRec | Decision | HomeFront>();
   for (const r of ev.events) byId.set(r.id, r);
@@ -176,6 +185,7 @@ export async function loadAtlas(): Promise<Atlas> {
     keyframes: tf.keyframes,
     controlMonths: control.months.map((m) => m.month),
     approxDates: approx.dates.map((d) => d.date),
+    wikiSummaries: new Map(wiki.summaries.map((s) => [s.id, s.text])),
     byId,
     linksOf,
     actorById: new Map(ac.actors.map((a) => [a.id, a])),

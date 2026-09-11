@@ -1,0 +1,1859 @@
+# 英語版 Wikipedia のリード文を読んで、日本語で書き起こした短い要約。
+# 日本語版に記事が無い Event（185 件）ぶん。
+#
+# ⚠ 事実の出どころは英語版 Wikipedia なので、CC BY-SA の区画に置いている。
+#   自動生成ではなく手で書いたもの。scripts/fetch-wikipedia-summaries.mjs は
+#   このファイルを触らない（上書きされない）。
+#   全件 verified: false ― 原典に当てたわけではなく、英語版の記述に拠っている。
+#
+# 日本語版から取れたものは event-summaries.yaml のほう。
+
+- id: Q717505
+  lang: ja
+  text: "太原の攻略をめぐる会戦の山場。国民革命軍と日本軍が山西省の忻口で約 2 か月にわたって対峙し、日中戦争の 22 の主要会戦のうち 2 番目にあたる激戦になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Xinkou（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Xinkou
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q709396
+  lang: ja
+  text: "日中戦争が全面化したあと、山西省北西部で最初の本格的な衝突。平型関で中国軍が待ち伏せをかけて日本軍の一部を撃退し、緒戦の中国側の数少ない戦果として宣伝された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Pingxingguan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Pingxingguan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4748012
+  lang: ja
+  text: "中国を海上から封鎖して武器や物資の輸入を断つ作戦の一環。厦門（アモイ）島を押さえることで、福建省沿岸の封鎖を締め上げる足場を得た。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Amoy Operation（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Amoy_Operation
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q7654052
+  lang: ja
+  text: "同じく中国の海上封鎖を強めるための作戦。汕頭（スワトウ）と港を押さえ、広東省沿岸を封鎖する拠点にした。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Swatow Operation（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Swatow_Operation
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q13569936
+  lang: ja
+  text: "ポーランド侵攻の初日、グダニスク湾でポーランド海軍の艦艇がドイツ空軍の攻撃を受けた。第二次世界大戦で最初の海と空の戦闘とされる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Danzig Bay（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Danzig_Bay
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3846240
+  lang: ja
+  text: "開戦初日の早朝、ドイツ空軍の急降下爆撃機がポーランドの小都市ヴィエルニを爆撃した。第二次世界大戦で最初の大規模な軍事行動のひとつに数えられる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Bombing of Wieluń（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Bombing_of_Wielu%C5%84
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q443587
+  lang: ja
+  text: "ポーランド北部ムワヴァの北で、モドリン軍がドイツ軍の進撃を 3 日間食い止めた。ポーランド侵攻の緒戦のひとつ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Mława（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_M%C5%82awa
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q469416
+  lang: ja
+  text: "開戦初日の夕方、ポメラニアのクロヤンティ村付近でポーランド騎兵が突撃した戦闘。トゥホラ森の戦いの一部で、のちに「騎兵が戦車に突撃した」という誤った伝説の元になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Charge at Krojanty（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Charge_at_Krojanty
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q473983
+  lang: ja
+  text: "ポーランド侵攻の初期、ポンメルン回廊を断ち切るための戦い。9 月 1 日から 5 日まで続き、ドイツ軍の大勝に終わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Tuchola Forest（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Tuchola_Forest
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871145
+  lang: ja
+  text: "ヴィスワ川沿いのグルジョンツをめぐる戦い。9 月 1 日に始まり 4 日にドイツ軍が占領した。トゥホラ森の戦いの一部として扱われることが多い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Grudziądz（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Grudzi%C4%85dz
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871764
+  lang: ja
+  text: "チェンストホヴァ北西のモクラ村付近での戦闘。ポーランド侵攻の初日にポーランド側が挙げた数少ない勝利で、ドイツ軍にとって最初の敗北になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Mokra（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Mokra
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q533034
+  lang: ja
+  text: "ダンツィヒ港のヴェステルプラッテ半島にあったポーランドの軍事物資中継所を、ドイツ軍が攻撃した。ヨーロッパにおける第二次世界大戦の最初の戦闘とされる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Westerplatte（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Westerplatte
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q679556
+  lang: ja
+  text: "ドイツ第 18 装甲軍団と、マチェク大佐のポーランド第 10 自動車化騎兵旅団が正面から衝突した 3 日間の戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Jordanów（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Jordan%C3%B3w
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q85756209
+  lang: ja
+  text: "正規軍が退いたあとのカトヴィツェを、小規模な義勇民兵が 2 日間防いだ。9 月 4 日の終わりにドイツ軍が市街を制圧した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Defense of Katowice（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Defense_of_Katowice
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872223
+  lang: ja
+  text: "ナレフ川沿いのルジャンで、第一次大戦期の 3 つの堡塁に拠るポーランドの小部隊が、ドイツの装甲師団を丸一昼夜食い止めた橋頭堡の防衛戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Różan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_R%C3%B3%C5%BCan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q713519
+  lang: ja
+  text: "ポーランド侵攻への対応として、フランス軍がザールラントへ進んだ攻勢。当初の計画より大幅に縮小されたまま進まず、10 月には元の線へ退いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Saar Offensive（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Saar_Offensive
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q182240
+  lang: ja
+  text: "ワルシャワに立てこもったポーランド軍と、包囲したドイツ軍との 3 週間の攻防。9 月 28 日の降伏で、首都をめぐる戦いが終わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Siege of Warsaw (1939)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Siege_of_Warsaw_(1939)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872749
+  lang: ja
+  text: "ストルィクフ近郊のヴォラ・ツィルソヴァで、ポーランドのピョトルクフ作戦群がドイツ第 10 歩兵師団に対して行った遅滞戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Wola Cyrusowa（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Wola_Cyrusowa
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q98107490
+  lang: ja
+  text: "ポーランド北部の港町グディニャをめぐる戦い。9 月 1 日から始まったドイツ軍の攻勢で 14 日に陥落し、戦いはオクスィヴィエ台地へ移った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Gdynia（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Gdynia
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q165549
+  lang: ja
+  text: "ポーランド軍がブズラ川沿いで行った大規模な反撃。ポーランド侵攻で最大の会戦になったが、10 日で包囲され壊滅した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Bzura（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Bzura
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q704550
+  lang: ja
+  text: "バルト海に突き出たヘル半島の要塞地帯での戦い。ワルシャワ陥落後も抵抗を続け、10 月 2 日まで降伏しなかった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Hel（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Hel
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3636512
+  lang: ja
+  text: "ルヴフをめぐる戦い。西からドイツ軍、東から赤軍が迫り、ルーマニア橋頭堡の鍵とされた都市が 二方向から包囲された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Lwów (1939)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Lw%C3%B3w_(1939)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q668634
+  lang: ja
+  text: "モドリン要塞に拠ったポーランド軍の防衛戦。9 月 13 日から 29 日まで持ちこたえ、ワルシャワの翌日に降伏した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Modlin（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Modlin
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q709333
+  lang: ja
+  text: "日本軍が湖南省の長沙を落とそうとした 4 度の試みの 1 回目。ポーランド侵攻の 2 週間後で、第二次世界大戦の期間に入る最初の大規模な会戦にあたる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Changsha (1939)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Changsha_(1939)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1809645
+  lang: ja
+  text: "ソ連軍のポーランド進駐に対して、ポーランド軍が抵抗した戦闘のひとつ。シャツク（現ウクライナ）付近で赤軍と交戦した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Szack（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Szack
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q641183
+  lang: ja
+  text: "コツク付近で、クレーベルグ将軍のポレシェ独立作戦群がドイツ軍と戦った。ポーランド侵攻の最後の戦闘で、10 月 5 日の降伏をもって組織的抵抗が終わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kock (1939)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kock_(1939)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1861428
+  lang: ja
+  text: "ヘルゴラント湾上空の航空戦。イギリス空軍の爆撃機編隊がドイツ軍戦闘機に大きな損害を受け、昼間の無護衛爆撃が成り立たないことがはっきりした。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Heligoland Bight (1939)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Heligoland_Bight_(1939)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q751002
+  lang: ja
+  text: "冬戦争でクフモ付近で続いた一連の戦闘。ソ連第 54 狙撃師団が包囲されたが、講和まで持ちこたえた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kuhmo（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kuhmo
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q24997628
+  lang: ja
+  text: "ヴェーザー演習作戦の初日、ノルウェー海軍の基地カール・ヨハンスヴェルンがあるホルテンにドイツ軍が上陸した。いったんは撃退されたが、陸路から回り込んで基地を押さえた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Horten Harbour（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Horten_Harbour
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q5036979
+  lang: ja
+  text: "ドイツの水雷艇が自転車部隊をアーレンダルに揚陸し、橋頭堡を確保した。狙いのひとつはイギリスとつながる海底電信線を切ることだった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Capture of Arendal（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Capture_of_Arendal
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q567787
+  lang: ja
+  text: "オスロ・フィヨルド最奥のドロバク海峡で、オスカルスボルグ要塞の沿岸砲と魚雷が重巡洋艦ブリュッヘルを撃沈した。首都占領が遅れ、国王と政府は脱出できた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Drøbak Sound（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Dr%C3%B8bak_Sound
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1061048
+  lang: ja
+  text: "エルヴェルム西方のミッドスコーゲン農場で、国王らを追ったドイツの襲撃隊を、急ごしらえのノルウェー部隊が阻んだ小規模な夜戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Midtskogen（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Midtskogen
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1891631
+  lang: ja
+  text: "ドイツの降下猟兵がハーグ周辺に降下し、飛行場と首都の占領を狙った。オランダ軍の反撃で失敗し、多くの捕虜を出した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Hague (1940)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Hague_(1940)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q269207
+  lang: ja
+  text: "黄色作戦の要になった突破。アルデンヌを抜けたドイツ A 軍集団がムーズ川を渡り、ここから海岸へ向かう進撃が始まって連合軍主力がベルギーに閉じ込められた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sedan (1940)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sedan_(1940)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q714265
+  lang: ja
+  text: "ダイル計画で前進したフランス軍と、ベルギー平原を進むドイツ軍が正面からぶつかった 2 日間の戦い。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Gembloux (1940)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Gembloux_(1940)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1581815
+  lang: ja
+  text: "降伏の直前にベルギー軍が戦った最後の大きな戦い。18 日間戦役でもっとも損害の大きい戦闘になり、5 月 28 日の降伏につながった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Lys (1940)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Lys_(1940)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q714207
+  lang: ja
+  text: "ダンケルクへの退却路を守るため、包囲されたフランス第 1 軍の 2 個軍団が 4 日間持ちこたえた。その間に海岸では撤退が続いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Siege of Lille (1940)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Siege_of_Lille_(1940)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2237269
+  lang: ja
+  text: "英仏軍がソンム川南岸のドイツ軍橋頭堡を潰そうとした一連の攻撃。ド・ゴールの第 4 装甲師団も加わったが、突破できなかった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Abbeville（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Abbeville
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q625798
+  lang: ja
+  text: "エジプトとリビアの砂漠で 2 年半以上続いた、北アフリカ戦線の主戦場。イタリアの参戦とエジプト侵攻に始まり、英軍のコンパス作戦、ロンメルの反攻、エル・アラメインへと続く。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Western Desert campaign（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Western_Desert_campaign
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q682452
+  lang: ja
+  text: "地中海の要となるマルタ島をめぐる 2 年半の戦い。枢軸の航空・海上戦力が島を締め上げ、イギリスは船団を犠牲にして補給を通し続けた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Siege of Malta (World War II)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Siege_of_Malta_(World_War_II)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2750804
+  lang: ja
+  text: "結成まもないイギリス・コマンドーによる 2 回目の襲撃。ドイツ占領下のガーンジー島を襲ったが、ほとんど成果は無かった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Ambassador（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Ambassador
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2638412
+  lang: ja
+  text: "イタリア空軍が中東のイギリス勢力圏を叩くために行った、委任統治領パレスチナへの爆撃。ドイツ空軍とヴィシー・フランス空軍も攻撃に加わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Italian bombing of Mandatory Palestine in World War II（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Italian_bombing_of_Mandatory_Palestine_in_World_War_II
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871136
+  lang: ja
+  text: "撃墜されたドイツ爆撃機の乗員と、イギリスの守備部隊が撃ち合った小さな戦闘。組織された外国部隊が関わった地上戦としては、イギリス本土で最後のものになった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Graveney Marsh（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Graveney_Marsh
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q716722
+  lang: ja
+  text: "ギリシャ・イタリア戦争の初期、ピンドス山脈でイタリアのアルピーニ「ユリア」師団が侵攻した。ギリシャ軍が包囲して押し返し、イタリアの攻勢は 2 週間で破綻した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Pindus（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Pindus
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1772340
+  lang: ja
+  text: "エピルスでの初期の防衛戦。イタリア軍の主攻をギリシャ軍がエラィア＝カラマスの線で食い止め、以後の反攻の足場になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Elaia–Kalamas（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Elaia%E2%80%93Kalamas
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871791
+  lang: ja
+  text: "ギリシャ軍がギリシャ・イタリア戦争で初めて行った大規模な攻勢。東翼のモラヴァ＝イヴァン山地でイタリア軍の防御を破り、アルバニア領内へ攻め込んだ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Morava–Ivan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Morava%E2%80%93Ivan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3636549
+  lang: ja
+  text: "コンパス作戦の最初の一撃。エジプトのニベイワにあったイタリア軍マレッティ集団の築城陣地を、イギリス・インド軍が急襲して制圧した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Attack on Nibeiwa（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Attack_on_Nibeiwa
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q7508662
+  lang: ja
+  text: "コンパス作戦の緒戦。エジプト沿岸のシディ・バッラニに拠ったイタリア第 10 軍の陣地を英軍が 2 日で崩し、以後の西部砂漠での大進撃につながった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sidi Barrani（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sidi_Barrani
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q18216807
+  lang: ja
+  text: "リビア南東部のオアシス、ジャラブーブに孤立したイタリア守備隊を、英連邦軍が 3 か月近く包囲して降伏させた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Siege of Giarabub（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Siege_of_Giarabub
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2426368
+  lang: ja
+  text: "コンパス作戦の一環で、リビア東端の要塞都市バルディアを攻略した戦い。オーストラリア軍の部隊が編成単位で参加した最初の戦闘でもある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Bardia（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Bardia
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q76643875
+  lang: ja
+  text: "バルディアに続き、英連邦軍がリビアの要港トブルクを 2 日で落とした。オーストラリア第 6 師団と第 7 機甲師団が主力だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "British capture of Tobruk（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/British_capture_of_Tobruk
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2616448
+  lang: ja
+  text: "リビア砂漠南東部のオアシス群クフラを、自由フランス軍と英長距離砂漠挺身隊が 1 か月かけて奪った。ルクレールの部隊の最初の大きな戦果。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Capture of Kufra（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Capture_of_Kufra
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q15310269
+  lang: ja
+  text: "キレナイカから退くイタリア第 10 軍の退路を、砂漠を横断した英第 7 機甲師団が先回りして遮断した。第 10 軍はここで壊滅する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Beda Fomm（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Beda_Fomm
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3557530
+  lang: ja
+  text: "アルバニア領内へ攻め込んでいたギリシャ軍を押し返そうとした、イタリア軍最後の攻勢。ムッソリーニが現地で観戦したが 1 週間で頓挫した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Italian spring offensive（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Italian_spring_offensive
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q472100
+  lang: ja
+  text: "三国同盟への調印を覆したクーデタへの報復として、ドイツ空軍がベオグラードを爆撃した。ユーゴスラビア侵攻の初日にあたる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "German bombing of Belgrade（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/German_bombing_of_Belgrade
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871459
+  lang: ja
+  text: "ヴィツィ山とシニアツィコ山の間の隘路をめぐる戦い。ギリシャ第 20 歩兵師団の組織的抵抗は 14 日正午に崩れた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kleisoura Pass（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kleisoura_Pass
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872118
+  lang: ja
+  text: "プトレマイダの南北 2 か所で行われた遅滞戦闘。ギリシャへ進むドイツ軍に対し、連合軍部隊が退却の時間を稼いだ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Ptolemaida（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Ptolemaida
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872531
+  lang: ja
+  text: "ドイツ軍が中部ギリシャへ進むなか、オーストラリア軍とニュージーランド軍がテンペ渓谷で行った後衛戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Tempe Gorge（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Tempe_Gorge
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2544250
+  lang: ja
+  text: "北アフリカのバーディアに英コマンドーが夜間上陸した襲撃。第 7 コマンドーと戦車連隊の小部隊が実施した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Raid on Bardia（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Raid_on_Bardia
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q704248
+  lang: ja
+  text: "ドイツ軍のギリシャ侵攻の終盤、古代の戦場と同じテルモピュライの隘路で連合軍が後衛戦闘を行い、撤退の時間を稼いだ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Thermopylae (1941)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Thermopylae_(1941)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1410792
+  lang: ja
+  text: "ケレンで敗れたイタリア東アフリカ軍が、アオスタ公のもとで山塊アンバ・アラギに立てこもった最後の抵抗。5 月 19 日に降伏した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Amba Alagi (1941)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Amba_Alagi_(1941)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q764714
+  lang: ja
+  text: "ソルム〜カプッツォ〜バーディアの線にいる枢軸軍を叩こうとした、英中東軍の短期の攻勢。得た地歩はすぐ奪い返された。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Brevity（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Brevity
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871210
+  lang: ja
+  text: "クレタ島の戦いの一部。イラクリオンの港と飛行場を、イギリス・オーストラリア・ギリシャの部隊がドイツ降下猟兵から 10 日間守り抜いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Heraklion（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Heraklion
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872174
+  lang: ja
+  text: "クレタ島の戦いの一部。レティムノンの町と飛行場を、オーストラリア軍とギリシャ軍がドイツ降下猟兵の攻撃から 9 日間守った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Rethymno（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Rethymno
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2756836
+  lang: ja
+  text: "ブレビティ作戦で英軍が得た地歩を、フォン・ヘルフ大佐の指揮する枢軸軍が奪い返した反撃。ハルファヤ峠が再び枢軸側に戻った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Skorpion（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Skorpion
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q6497833
+  lang: ja
+  text: "ブレスト沖およそ 550km の大西洋上で、イギリス海軍の艦艇と航空機がドイツ戦艦ビスマルクを捕捉して撃沈した。フッド撃沈から 3 日後のことだった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Last battle of Bismarck（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Last_battle_of_Bismarck
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4671621
+  lang: ja
+  text: "シリア・レバノン戦役で、連合軍によるダマスカス進撃の最後の戦闘。ヴィシー・フランス軍が守る市街が陥落した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Damascus (1941)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Damascus_(1941)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q611789
+  lang: ja
+  text: "バルバロッサ作戦の最初の戦闘。ドイツ軍は初日で落とすつもりだったが、ブレスト要塞のソ連守備隊は 1 週間持ちこたえ、超大型砲の砲撃を受けてようやく陥落した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Defense of Brest Fortress（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Defense_of_Brest_Fortress
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1528565
+  lang: ja
+  text: "リトアニアのラセイニャイ付近で、ドイツ第 4 装甲集団とソ連の 2 個機械化軍団がぶつかった大規模な戦車戦。独ソ戦の初期最大級の戦車戦のひとつ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Raseiniai（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Raseiniai
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q708213
+  lang: ja
+  text: "ドゥブノ・ルーツク・ブロディを結ぶ三角地帯で、ドイツ第 1 装甲集団とソ連の 5 個機械化軍団が 1 週間戦った。大戦でも屈指の規模の戦車戦になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Brody (1941)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Brody_(1941)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q105064210
+  lang: ja
+  text: "ドイツ戦艦ティルピッツを含む艦隊が船団 PQ17 を狙って出撃した際、ソ連潜水艦 K-21 が遠距離から魚雷 4 本を放った。命中したかどうかは今も定まっていない。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Attack on the battleship Tirpitz by submarine K-21（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Attack_on_the_battleship_Tirpitz_by_submarine_K-21
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q7858261
+  lang: ja
+  text: "トブルク包囲戦のさなか、イギリス・コマンドーとオーストラリア工兵がイタリア軍陣地を襲った。襲撃自体は完全に成功したが、包囲は 11 月まで続いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Twin Pimples raid（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Twin_Pimples_raid
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q319581
+  lang: ja
+  text: "エストニア沖のサーレマー島・ヒーウマー島・ムフ島を占領するためのドイツ軍の上陸作戦。9 月 9 日に始まり、10 月下旬までに目的を達した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Beowulf（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Beowulf
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q6807078
+  lang: ja
+  text: "地中海で 3 年続いたドイツ潜水艦の通商破壊。北アフリカへの枢軸補給船団が大きな損害を受けていたことへの対抗として始まった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Mediterranean U-boat campaign of World War II（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Mediterranean_U-boat_campaign_of_World_War_II
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q40765
+  lang: ja
+  text: "ユーゴスラビアの占領地でドイツ軍が行った最初の大規模な掃討作戦。パルチザンが解放した「ウジツェ共和国」が標的になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Uzice（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Uzice
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q154860
+  lang: ja
+  text: "クリミアの要港セヴァストポリをめぐる 8 か月の攻防。ドイツ・ルーマニア軍が超重砲まで投入して締め上げ、1942 年 7 月に陥落した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Siege of Sevastopol (1941–1942)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941%E2%80%931942)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q58459
+  lang: ja
+  text: "西オーストラリア沖で、オーストラリア軽巡洋艦シドニーとドイツの仮装巡洋艦コルモランが至近距離で撃ち合い、双方とも沈んだ。シドニーは乗員 645 名全員が失われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Sinking of HMAS Sydney（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Sinking_of_HMAS_Sydney
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1280169
+  lang: ja
+  text: "日本軍のタイ進駐に対して、プラチュアップキリカンの飛行場でタイ軍が抵抗した戦闘。翌日タイ政府の命令で停戦した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Prachuap Khiri Khan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Prachuap_Khiri_Khan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871343
+  lang: ja
+  text: "マレー作戦の初期、ジットラの防御陣地が日本軍の攻撃で崩れた。この敗北を受けてパーシバルはマレー半島の全航空部隊をシンガポールへ下げた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Jitra（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Jitra
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871165
+  lang: ja
+  text: "ジットラの敗北のあと、インド第 11 師団が日本軍の進撃を遅らせようとした小規模な戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Gurun（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Gurun
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2310240
+  lang: ja
+  text: "イギリス・コマンドーによるロフォーテン諸島への 2 度目の襲撃。3 か国の艦艇 22 隻に支援され、300 名が上陸した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Anklet（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Anklet
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1964451
+  lang: ja
+  text: "ノルウェーのヴォーグス島にあるドイツ軍陣地を、イギリスの統合作戦軍が襲撃した。ヒトラーにノルウェー防衛を厚くさせる効果があった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Archery（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Archery
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q713006
+  lang: ja
+  text: "マニラ湾口のコレヒドール島に立てこもった米比軍が、フィリピン戦の最後の抵抗を行った。1942 年 5 月 6 日に降伏し、フィリピン全土が日本の手に落ちた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Corregidor（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Corregidor
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872395
+  lang: ja
+  text: "マレー半島西岸のスリム川で、日本軍の戦車部隊がインド軍の防御を一気に突破した。マレー防衛の崩壊を決定づけた戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Slim River（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Slim_River
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q703482
+  lang: ja
+  text: "ルソン島のバターン半島に退いた米比軍が 3 か月持ちこたえた戦い。フィリピン侵攻でもっとも激しい局面で、降伏後の移送が「バターン死の行進」になる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Bataan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Bataan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2165376
+  lang: ja
+  text: "対蘭宣戦の翌日、日本軍がボルネオ北東沖のタラカン島に上陸した。700 本の油井と製油所・飛行場が狙いだった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Tarakan (1942)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Tarakan_(1942)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2587905
+  lang: ja
+  text: "セレベス島北部のメナドに日本軍が上陸した戦い。日本が史上初めて落下傘部隊を実戦に投入した作戦でもある。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Manado（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Manado
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1775224
+  lang: ja
+  text: "ギニア湾のスペイン領フェルナンド・ポー島に停泊していた枢軸側の商船を、イギリスの特殊部隊が中立国の港から夜間に持ち出した作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Postmaster（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Postmaster
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871087
+  lang: ja
+  text: "マレー半島のゲメンチェ橋で、オーストラリア軍が待ち伏せをかけて日本第 5 師団に大きな損害を与えた。マレー作戦で連合軍が挙げた数少ない戦果。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Gemas（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Gemas
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q558137
+  lang: ja
+  text: "クロアチア独立国の南東部で、ドイツ軍主導の枢軸軍がユーゴスラビア・パルチザンを掃討しようとした大規模な作戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Southeast Croatia（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Southeast_Croatia
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2392991
+  lang: ja
+  text: "蘭印攻略の一環で、日本軍がアンボン島とその飛行場を数日で占領した。降伏後に捕虜が大量に殺害され、戦後の裁判で問題になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Ambon（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Ambon
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872083
+  lang: ja
+  text: "ポートモレスビー上空で 1 年半続いた航空戦。豪空軍と米陸軍航空隊が、ラバウルから来る日本の陸海軍機と争い、守勢から次第に優勢へ転じた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Port Moresby（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Port_Moresby
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q23965844
+  lang: ja
+  text: "イリメニ湖の南で赤軍が行った冬季攻勢。ホルム包囲とデミャンスク包囲を作り出し、ドイツ第 2 軍団を閉じ込めた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Toropets–Kholm offensive（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Toropets%E2%80%93Kholm_offensive
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2583233
+  lang: ja
+  text: "スマトラ島のパレンバンをめぐる戦い。日本軍が落下傘部隊で製油所を急襲して確保した。対日石油禁輸を受けた日本にとって最大級の目標だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Palembang（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Palembang
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4208426
+  lang: ja
+  text: "シンガポール攻略の最終局面。島西部のパシル・パンジャン尾根で、マレー連隊が日本軍の精鋭を相手に最後まで抵抗した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Pasir Panjang（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Pasir_Panjang
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q384413
+  lang: ja
+  text: "ビルマ戦役の初期、ビリン川の線で日本軍がイギリス・インド軍を押し崩した。直後のシッタン橋の惨事につながる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Bilin River（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Bilin_River
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1440764
+  lang: ja
+  text: "日本軍が上陸したティモール島で、オーストラリア軍主体の小部隊とポルトガル・東ティモールの住民が 1 年近くゲリラ戦を続けた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Timor（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Timor
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1749008
+  lang: ja
+  text: "シッタン川の唯一の橋を、退却中のインド軍が渡りきる前に自ら爆破した。川の東岸に大兵力が取り残され、ビルマ防衛が崩れる決定打になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sittang Bridge（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sittang_Bridge
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q543075
+  lang: ja
+  text: "日本海軍の空母機動部隊がアリューシャン列島のダッチハーバーを 2 度空襲した。アリューシャン方面の戦いの始まりで、ミッドウェー作戦と同時に行われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Dutch Harbor（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Dutch_Harbor
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q304403
+  lang: ja
+  text: "北フランスのブリュヌヴァルにあるドイツ軍レーダー基地を、イギリスの空挺部隊が夜襲して部品を持ち帰った。レーダー技術の解明が目的だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Biting（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Biting
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1875552
+  lang: ja
+  text: "西オーストラリアの町ブルームを日本軍戦闘機が襲った。蘭印から避難してきた飛行艇が多数停泊しており、88 人以上が死亡した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Attack on Broome（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Attack_on_Broome
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q83834887
+  lang: ja
+  text: "蘭印攻略戦で、ジャワ島のチアテル峠をめぐって日本軍とオランダ植民地軍が 3 日間戦った。バンドン防衛の最後の線だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Tjiater Pass（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Tjiater_Pass
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2237206
+  lang: ja
+  text: "ラングーン防衛のための戦い。ペグー付近に展開したイギリス・インド軍に日本軍が迫り、首都放棄が決まった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Pegu（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Pegu
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872484
+  lang: ja
+  text: "雲南・ビルマ公路をめぐる戦いの最初の衝突。中国遠征軍と日本軍がビルマ中部で初めてぶつかった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Tachiao（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Tachiao
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871936
+  lang: ja
+  text: "雲南・ビルマ公路をめぐる戦いの 2 番目の戦闘。トングーの手前で中国軍が日本軍の進撃を遅らせた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Oktwin（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Oktwin
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3631507
+  lang: ja
+  text: "ノーフォーク沖 550km の大西洋で、アメリカの偽装商船（Q シップ）がドイツ潜水艦と遭遇し、浮上砲戦になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Action of 27 March 1942（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Action_of_27_March_1942
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q16822683
+  lang: ja
+  text: "ビルマ中部のプロームをめぐる戦い。蔣介石は「イギリスがプロームを保つ限りトングーは保てる」と見ていたが、どちらも失われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Prome (1942)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Prome_(1942)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q691273
+  lang: ja
+  text: "雲南・ビルマ公路をめぐる戦いの要。中国軍がトングーを保てなかったことで、日本軍が連合軍の側面を回ってラシオへ突進する道が開いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Toungoo（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Toungoo
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1645870
+  lang: ja
+  text: "ドン川西岸のカラチ付近で、ソ連第 62・第 64 軍がドイツ第 6 軍の進撃を食い止めようとした。突破されてスターリングラード市街戦へ移る。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kalach（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kalach
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q48734760
+  lang: ja
+  text: "スターリング少佐率いるイギリス SAS が、エジプトのシディ・ハニシュ飛行場をジープで夜襲した。枢軸の補給を運ぶ輸送機を多数破壊した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Raid on Sidi Haneish Airfield（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Raid_on_Sidi_Haneish_Airfield
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q478881
+  lang: ja
+  text: "レニングラード包囲を破って確実な補給路を開くための攻勢。同じ地域でドイツ軍も攻勢を準備しており、双方の作戦が正面から衝突した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Sinyavino offensive (1942)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Sinyavino_offensive_(1942)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q541997
+  lang: ja
+  text: "エル・アラメインの南で、ロンメルのアフリカ装甲軍が英第 8 軍を包み込もうとした最後の攻勢。アラム・エル・ハルファの高地で止められ、以後は守勢に回る。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Alam el Halfa（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Alam_el_Halfa
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1754443
+  lang: ja
+  text: "ガダルカナル島のヘンダーソン飛行場を見下ろす尾根で、米海兵隊が日本軍の夜襲を 2 晩しのいだ。飛行場確保の分かれ目になった戦闘。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Edson's Ridge（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Edson's_Ridge
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1646284
+  lang: ja
+  text: "ガダルカナル島のマタニカウ川周辺で、米軍と日本軍が繰り返し衝突した一連の戦闘。飛行場の西側の線をめぐる押し合いだった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Actions along the Matanikau（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Actions_along_the_Matanikau
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2225555
+  lang: ja
+  text: "ドイツ占領下のチャンネル諸島サーク島への小規模な襲撃。捕虜を後ろ手に縛ったことが、ヒトラーのコマンドー指令の口実に使われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Basalt（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Basalt
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q104841141
+  lang: ja
+  text: "イタリア軍とクロアチア独立国軍が、チェトニックの支援を受けて共産パルチザンの解放区を叩こうとした攻勢。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Alfa（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Alfa
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q153376
+  lang: ja
+  text: "エジプトのエル・アラメインで英第 8 軍が仕掛けた大攻勢。2 週間の消耗戦の末に枢軸軍の戦線を破り、北アフリカ戦線の転回点になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Second Battle of El Alamein（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2277035
+  lang: ja
+  text: "ガダルカナル島のヘンダーソン飛行場を日本軍が総力で奪おうとした 4 日間。陸海空すべてで戦われたが失敗し、以後は日本側の攻勢能力が尽きていく。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle for Henderson Field（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_for_Henderson_Field
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1748629
+  lang: ja
+  text: "地中海のスケルキ礁付近で、イギリス海軍の巡洋艦・駆逐艦部隊がイタリアの輸送船団を夜襲し、ほぼ全滅させた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Skerki Bank（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Skerki_Bank
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2394315
+  lang: ja
+  text: "ガダルカナル島内陸の高地群をめぐる 1 か月以上の戦い。日本軍が築いた「ギフ」陣地の掃討に米軍は大きな手間を要した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Mount Austen, the Galloping Horse, and the Sea Horse（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Mount_Austen%2C_the_Galloping_Horse%2C_and_the_Sea_Horse
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q743889
+  lang: ja
+  text: "ラバウルから来た日本軍が陸路ワウのオーストラリア軍基地へ迫った。滑走路のすぐ際まで押し込まれたが、空輸された増援が間に合って撃退した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Wau（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Wau
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2389861
+  lang: ja
+  text: "黒海のミスハコ岬にソ連軍が上陸して確保した橋頭堡。「小さな大地」と呼ばれ、7 か月以上保持されてノヴォロシースク奪回の足場になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Malaya Zemlya（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Malaya_Zemlya
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2597597
+  lang: ja
+  text: "レニングラード包囲を完全に解こうとしたソ連の攻勢の一部。クラースヌイ・ボル付近でスペイン人義勇兵の青師団が大損害を受けながら持ちこたえた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Krasny Bor（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Krasny_Bor
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1983926
+  lang: ja
+  text: "チュニジア戦線で、ドイツ・イタリア軍がシディ・ブジド周辺のアメリカ軍部隊を各個に撃破した。直後のカセリーヌ峠の敗北につながる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sidi Bou Zid（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sidi_Bou_Zid
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q20203098
+  lang: ja
+  text: "チュニジア北部で枢軸軍が仕掛けた攻勢。ベジャへ通じる道を押さえようとしたが、シディ・ンシルとハンツ・ギャップで止められた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Ochsenkopf（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Ochsenkopf
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872340
+  lang: ja
+  text: "チュニジア北部、ビゼルトへ通じる鉄道沿いのセジェナネをめぐる戦い。枢軸軍の攻勢でいったん失われ、4 月に連合軍が奪回した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sedjenane（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sedjenane
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q372958
+  lang: ja
+  text: "マレス線への英第 8 軍の攻撃を遅らせるため、枢軸軍が先手を打った攻撃。ウルトラ情報で察知されていて待ち構えられ、戦車を多数失って失敗した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Medenine（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Medenine
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1154689
+  lang: ja
+  text: "英第 8 軍がチュニジア南部のマレス線を破った攻勢。エル・アラメイン以来 4 か月半ぶりの大作戦で、正面攻撃と内陸の大迂回を組み合わせた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Mareth Line（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Mareth_Line
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2363492
+  lang: ja
+  text: "チュニジア中南部で、アメリカ第 2 軍団が初めてドイツ軍の攻撃を正面から支え切った戦い。カセリーヌの敗北からの立て直しを示した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of El Guettar（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_El_Guettar
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872704
+  lang: ja
+  text: "マレス線を破られた枢軸軍が退いたワジ・アカリットの線を、連合軍が 2 日で突破した。チュニジア南部の防御線がこれで無くなった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Wadi Akarit（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Wadi_Akarit
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q16165490
+  lang: ja
+  text: "チュニジアのロングストップ・ヒル（ジェベル・エル・アフメラ）の高地をめぐる戦い。ヴァルカン作戦の一部で、チュニス平野への入口を開いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Longstop Hill（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Longstop_Hill
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3533209
+  lang: ja
+  text: "イタリアからチュニジアの枢軸軍への空輸を断つための航空作戦。輸送機の大群を連合軍戦闘機が待ち伏せし、枢軸の補給を事実上止めた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Flax（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Flax
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871224
+  lang: ja
+  text: "チュニジア北西部の高地 609 をめぐる戦い。アメリカ第 2 軍団が要衝を奪い、ビゼルトへの道を開いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Hill 609（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Hill_609
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q7096887
+  lang: ja
+  text: "ノルウェーのハウゲスンに停泊する船舶を狙った、イギリス・コマンドーの小規模な襲撃。吸着機雷で 1 隻を沈めたが、隊員は捕らえられた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Checkmate (commando raid)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Checkmate_(commando_raid)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1419973
+  lang: ja
+  text: "ユーゴスラビア・パルチザンの主力を包囲殲滅しようとした枢軸軍の大規模攻勢。最終局面のスチェスカ川の戦いで、パルチザンは大損害を出しつつ包囲を破った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Schwarz（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Schwarz
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q115816255
+  lang: ja
+  text: "ギリシャ人民解放軍（ELAS）のゲリラが、ドイツ第 117 猟兵師団の車列をサランダポロで待ち伏せした。シチリア上陸から目をそらす陽動作戦の一環。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sarantaporos (1943)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sarantaporos_(1943)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q7096900
+  lang: ja
+  text: "ラバウルへ向かう大車輪作戦の一部として、連合軍がウッドラーク島とキリウィナ島に上陸した。抵抗はほとんど無く、飛行場を建設した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Chronicle（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Chronicle
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872735
+  lang: ja
+  text: "ニュージョージア戦役の緒戦。米海兵隊と陸軍がバングヌ島に上陸し、内陸を進んで日本軍の舟艇泊地を制圧した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Wickham Anchorage（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Wickham_Anchorage
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q113409402
+  lang: ja
+  text: "ウクライナ蜂起軍（UPA）とドイツ軍の間で起きた最大規模の戦闘のひとつ。ヴォルィーニ州ラドヴィチ村付近で、約 1,000 人の蜂起軍が 1,570 人のドイツ軍を破った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Radovychi（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Radovychi
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q537576
+  lang: ja
+  text: "カッシビレ休戦の公表後、ケファロニア島でイタリア軍アックイ師団の将兵がドイツ軍に武装解除を拒み、降伏後に約 5,000 人が殺害された。戦後に戦争犯罪として扱われた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Massacre of the Acqui Division（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Massacre_of_the_Acqui_Division
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q543077
+  lang: ja
+  text: "日本の潜水艦がカリフォルニア州サンタバーバラ近郊の石油施設を砲撃した。被害はわずかだったが、西海岸の侵攻不安をあおり、日系人の強制収容の判断にも影響した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Bombardment of Ellwood（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Bombardment_of_Ellwood
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2344279
+  lang: ja
+  text: "ドデカネス諸島戦役の中心になった戦い。イタリア降伏後にイギリス軍が確保したレロス島を、ドイツ軍が空挺と上陸で 7 週間かけて奪った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Leros（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Leros
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1752889
+  lang: ja
+  text: "エーゲ海のコス島をめぐる戦い。イタリア降伏の直後、強力な航空支援を受けたドイツ軍が英伊の守備隊を 2 日で制圧した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kos (1943)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kos_(1943)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2909620
+  lang: ja
+  text: "ローマとヴァチカン市国は 1943〜44 年に何度も空襲を受けた。ピウス 12 世の無防備都市宣言の働きかけは実らず、解放は 1944 年 6 月まで待つことになる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Bombing of the Vatican（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Bombing_of_Rome_in_World_War_II
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3636532
+  lang: ja
+  text: "イタリア戦線のベルンハルト線を破るレインコート作戦の一環。米加混成の第 1 特殊任務部隊が断崖を登ってモンテ・ラ・ディフェンサの頂を奪った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Monte la Difensa（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Monte_la_Difensa
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872384
+  lang: ja
+  text: "マッカーサーのヒューオン半島戦役の追撃段階。オーストラリア軍が海岸沿いに退く日本軍を 3 か月追い、シオを経てサイドールで米軍と合流した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Sio（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Sio
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2091385
+  lang: ja
+  text: "ニューブリテン島の戦役の一部。12 月末のグロスター岬上陸の前に、連合軍が注意をそらすためアラウェに上陸した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Arawe（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Arawe
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q18326240
+  lang: ja
+  text: "ビスケー湾で、イギリス海軍の軽巡洋艦 2 隻がドイツの駆逐艦・水雷艇の一群と交戦した。封鎖突破船を護衛していたドイツ側は駆逐艦 3 隻を失った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Bay of Biscay（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_the_Bay_of_Biscay
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3636398
+  lang: ja
+  text: "アンツィオの戦いの一部。橋頭堡から内陸のチステルナを突こうとした米レンジャー部隊が包囲されてほぼ全滅し、ドイツ側の明白な勝利に終わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Cisterna（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Cisterna
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q23751276
+  lang: ja
+  text: "ニューブリテン島西部での戦い。連合軍がタラセアの飛行場を押さえ、ラバウル包囲の環をさらに狭めた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Talasea（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Talasea
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q383614
+  lang: ja
+  text: "インパール作戦の転回点。インド北東部コヒマの町とその周辺で 3 段階にわたる戦闘が続き、日本軍の補給が尽きて攻勢が崩れた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kohima（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kohima
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2890796
+  lang: ja
+  text: "中央フランスのモン・ムーシェに拠ったマキ（レジスタンス）の集団と、掃討に来たドイツ軍との戦い。ノルマンディー上陸に呼応した蜂起のひとつ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Maquis du Mont Mouchet（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Maquis_du_Mont_Mouchet
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q16471
+  lang: ja
+  text: "ドイツ占領下の西ヨーロッパ解放の口火を切った連合軍の大作戦。6 月 6 日、1,200 機の空挺降下に続いて 5 個海岸に上陸し、橋頭堡を築いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Invasion of Normandy（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Overlord
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871715
+  lang: ja
+  text: "ノルマンディー上陸の前夜、イギリス空挺部隊がソード海岸を射程に収めるメルヴィル砲台を襲った。降下が散り散りになるなか、少人数で制圧した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Merville Gun Battery（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Merville_Gun_Battery
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q696823
+  lang: ja
+  text: "ノルマンディーの要衝カーンをめぐる 2 か月の攻防。イギリス第 2 軍とドイツ西方装甲集団が消耗戦を続け、その間に西側で米軍の突破準備が整った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle for Caen（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_for_Caen
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q576774
+  lang: ja
+  text: "米空挺部隊がカランタンを占領し、ユタ海岸とオマハ海岸の橋頭堡をつないだ。ドイツ側の逆襲を戦車の増援で退けた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Carentan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Carentan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q714192
+  lang: ja
+  text: "イタリア戦線で、イギリス軍の一翼を担うポーランド第 2 軍団がアドリア海沿岸の港町アンコーナを攻略した。補給港の確保が目的だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Ancona（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Ancona
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871905
+  lang: ja
+  text: "オランダ領ニューギニアのヌンホル島に連合軍が上陸し、日本軍の飛行場を奪った。フィリピンへ向かう跳躍の一段。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Noemfoor（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Noemfoor
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4872038
+  lang: ja
+  text: "ブレスト沖で、カナダ海軍の駆逐艦隊がドイツ潜水艦とその護衛艦艇を襲ったドレッジャー作戦の一戦。護衛を数隻沈めたが潜水艦は逃した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Pierres Noires（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Pierres_Noires
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2237217
+  lang: ja
+  text: "ノルマンディーの生垣地帯（ボカージュ）での 3 つの戦いのひとつ。米軍が交通の要衝サン＝ローを奪い、直後のコブラ作戦の踏み台にした。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Saint-Lô（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Saint-L%C3%B4
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q714223
+  lang: ja
+  text: "大西洋岸の港ブレストを確保するための 6 週間の攻防。港湾設備は徹底的に破壊されてしまい、補給港としては使えなかった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle for Brest（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_for_Brest
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2887891
+  lang: ja
+  text: "ロレーヌでアメリカ第 4 機甲師団とドイツ第 5 装甲軍が戦った戦車戦。新編のドイツ装甲旅団は数で勝りながら大損害を出して退いた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Arracourt（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Arracourt
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1332237
+  lang: ja
+  text: "オランダ南東部オーフェルローン周辺での戦い。ヨーロッパでは数少ない大規模な戦車戦のひとつで、連合軍が村を奪って勝利した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Overloon（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Overloon
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q705222
+  lang: ja
+  text: "赤軍が北極圏でドイツ軍を追い出した攻勢。モスクワ休戦でソ連に割譲されたペツァモを回復し、ノルウェー北部のキルケネスまで進んだ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Petsamo–Kirkenes offensive（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Petsamo%E2%80%93Kirkenes_offensive
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q24943339
+  lang: ja
+  text: "レイテ沖海戦の一局面。シブヤン海で米空母機が栗田艦隊を襲い、戦艦武蔵を撃沈した。栗田艦隊はいったん反転する。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of the Sibuyan Sea（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Leyte_Gulf
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2890604
+  lang: ja
+  text: "スヘルデ河口の戦いの一部。ワルヘレン島へ渡る細い土手道を、カナダ・イギリスの部隊がドイツ第 15 軍と奪い合った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Walcheren Causeway（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Walcheren_Causeway
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q835874
+  lang: ja
+  text: "イギリス第 30 軍団がガイレンキルヒェンの突出部を削った攻勢。ルール渓谷とヒュルトゲンの森を狙う大作戦クイーンの前哨戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Clipper（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Clipper
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q7096876
+  lang: ja
+  text: "イギリス空軍の重爆撃機 29 機がトロムソ沖に停泊するドイツ戦艦ティルピッツを爆撃し、転覆させた。3 年にわたる追跡がここで終わった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Catechism（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Catechism
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1818854
+  lang: ja
+  text: "イタリア戦線のゴシック線で 3 か月続いた高地の争奪。ブラジル遠征軍が繰り返し攻撃し、4 度目でモンテ・カステッロを奪った。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Monte Castello（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Monte_Castello
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q15197283
+  lang: ja
+  text: "ベルギー国境すぐ内側の村ケスターニヒで 2 度の激しい戦闘があった。ヒュルトゲンの森の戦いとルール川ダム攻略に直結する場所だった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Kesternich（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Kesternich
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4871535
+  lang: ja
+  text: "バルジの戦いの初日、ベルギーのランツェラート付近で米軍の小さな偵察小隊がドイツ降下猟兵連隊を丸一日足止めした。北翼の進撃の遅れにつながった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Lanzerath Ridge（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Lanzerath_Ridge
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q1533594
+  lang: ja
+  text: "バルジの戦いで、ドイツ軍が米軍後方の高地に降下猟兵を投下した作戦。悪天候と練度不足で散り散りになり、ほとんど効果を上げられなかった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Stösser（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_St%C3%B6sser
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q714298
+  lang: ja
+  text: "アルデンヌ攻勢の初期、道路の結節点サン・ヴィトを米軍が 6 日間持ちこたえた。ドイツ軍の時間表を大きく狂わせた防御戦。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of St. Vith（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_St._Vith
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3535104
+  lang: ja
+  text: "バルジの戦いで、ドイツ軍が唯一まったく前進できなかった北翼の戦線。エルゼンボルン尾根からモンシャウまでを米軍が守り抜き、攻勢の形が崩れた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Elsenborn Ridge（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Elsenborn_Ridge
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q16208094
+  lang: ja
+  text: "バルジの戦いの終盤、連合軍の反攻の一環としてイギリス軍がベルギーのビュール村を 3 日かけて奪回した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Bure（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Bure
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q664581
+  lang: ja
+  text: "ドイツの都市ブレスラウをめぐる 80 日の包囲戦。完全に包囲されながら守備隊は抵抗を続け、ベルリン陥落後の 5 月 6 日にようやく降伏した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Siege of Breslau（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Siege_of_Breslau
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q123279245
+  lang: ja
+  text: "イタリア戦線でゴシック線を破るために行われた攻勢。アメリカ第 10 山岳師団とブラジル遠征軍が、ボローニャへ通じる街道を見下ろす高地を確保した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Operation Encore（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Operation_Encore
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3403811
+  lang: ja
+  text: "1945 年春のイタリア攻勢の一部。ポーランド第 2 軍団を中心とする連合軍が 4 月 21 日にボローニャを解放した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Bologna（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Bologna
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q3944397
+  lang: ja
+  text: "ブラジル遠征軍とイタリアのパルチザンが、米軍の機甲部隊の支援を受けて、退却するドイツ第 148 歩兵師団などを包囲・降伏させた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Collecchio（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Collecchio
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q12804486
+  lang: ja
+  text: "ユーゴスラビア・パルチザンとニュージーランド第 2 師団が、それぞれトリエステを目指して進んだ。共同で占領したものの領有をめぐってすぐ対立し、戦後の係争地になる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Race for Trieste（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Race_for_Trieste
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4870163
+  lang: ja
+  text: "プラハのラジオ局からの放送が蜂起の口火になり、放送局をめぐって激しい市街戦になった。放送を押さえたことで、チェコの抵抗組織は市内に指示を流し続けられた。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle for Czech Radio（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_for_Czech_Radio
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q2889635
+  lang: ja
+  text: "ヨーロッパの戦闘が終わったあと、ユーゴスラビア軍が退却する枢軸側 3 万人の縦隊をポリャナで捕捉した。ヨーロッパ戦線で最後の大きな戦闘のひとつ。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Poljana（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Poljana
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q18920234
+  lang: ja
+  text: "オーストラリア軍による北ボルネオ上陸の一部。ブルネイ湾一帯を確保するため、ラブアン島の日本軍守備隊を制圧した。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Labuan（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Labuan
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q4271928
+  lang: ja
+  text: "ボルネオ解放（オーボエ作戦）の締めくくり。オーストラリア第 7 師団が石油の町バリクパパンに上陸した。大戦最後の大規模な上陸作戦になった。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Battle of Balikpapan (1945)（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Battle_of_Balikpapan_(1945)
+      note: 英語版の記述にもとづく自前の要約
+
+- id: Q16056966
+  lang: ja
+  text: "太平洋戦争末期の海戦のひとつ。日本海軍が人間魚雷「回天」を積んだ潜水艦で連合軍艦艇を狙った作戦の一環にあたる。"
+  license: cc-by-sa
+  verified: false
+  sources:
+    - title: "Action of 24 July 1945（Wikipedia 英語版）"
+      url: https://en.wikipedia.org/wiki/Action_of_24_July_1945
+      note: 英語版の記述にもとづく自前の要約
