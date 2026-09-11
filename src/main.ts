@@ -21,7 +21,7 @@ import {
   type Control,
   type EventRec,
 } from './data';
-import { AtlasMap } from './map';
+import { AtlasMap, type CameraView } from './map';
 import { renderDetail, shift } from './ui';
 import { buildFeed, countOn, eventDays, renderFeed, type FeedEntry, type FeedKind } from './feed';
 
@@ -147,14 +147,26 @@ async function main(): Promise<void> {
     if (target) setDate(target, { flash: dir === 1 });
   }
 
+  /** 詳細を開く前の視点。閉じたときにここへ戻す */
+  let homeView: CameraView | null = null;
+
   function select(id: string | null, pan = true): void {
+    const wasOpen = state.selected !== null;
     state.selected = id;
     const detail = $('#detail');
     const panel = $('#detail-panel');
     if (!id) {
       panel.hidden = true;
       atlasMap.highlight([]);
+      // 閉じたら開く前の視点に戻す。ただし自分で地図を動かしたあとは戻さない
+      if (wasOpen && homeView && !atlasMap.hasUserMoved()) atlasMap.easeToView(homeView);
+      homeView = null;
       return;
+    }
+    // 続けて別の点を選んだときは、最初に開く前の視点を保ったままにする
+    if (!wasOpen && pan) {
+      homeView = atlasMap.view();
+      atlasMap.clearUserMoved();
     }
     panel.hidden = false;
     detail.scrollTop = 0;

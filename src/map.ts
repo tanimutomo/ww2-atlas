@@ -40,6 +40,7 @@ export class AtlasMap {
   private currentControl: string | null = null;
   private approxCache = new Map<string, FeatureCollection>();
   private currentApprox: string | null = null;
+  private userMoved = false;
   private currentKeyframe: string | null = null;
   private onSelect: (id: string) => void;
   private labels: MapLabels | null = null;
@@ -270,6 +271,11 @@ export class AtlasMap {
       this.map.on('mouseenter', layer, () => (this.map.getCanvas().style.cursor = 'pointer'));
       this.map.on('mouseleave', layer, () => (this.map.getCanvas().style.cursor = ''));
     }
+
+    // 利用者の手による移動だけを拾う（自前の easeTo には originalEvent が無い）
+    this.map.on('movestart', (e) => {
+      if ((e as { originalEvent?: unknown }).originalEvent) this.userMoved = true;
+    });
   }
 
   /** 日付を変える。領域はキーフレームが変わったときだけ読み直す */
@@ -464,7 +470,32 @@ export class AtlasMap {
       duration: 600,
     });
   }
+
+  /** いまの視点。詳細を閉じたときに戻すため、寄る前に控えておく */
+  view(): CameraView {
+    const c = this.map.getCenter();
+    return { center: [c.lng, c.lat], zoom: this.map.getZoom() };
+  }
+
+  /** 控えておいた視点へ戻す */
+  easeToView(v: CameraView): void {
+    this.map.easeTo({ center: v.center, zoom: v.zoom, offset: [0, 0], duration: 600 });
+  }
+
+  /**
+   * 詳細を開いたあとで利用者が自分で地図を動かしたか。
+   * 動かしたのなら閉じたときに戻さない（せっかく見ている場所を奪わないため）。
+   * 自前の easeTo と手の操作は originalEvent の有無で見分ける。
+   */
+  hasUserMoved(): boolean {
+    return this.userMoved;
+  }
+  clearUserMoved(): void {
+    this.userMoved = false;
+  }
 }
+
+export type CameraView = { center: [number, number]; zoom: number };
 
 const emptyFc = () => ({ type: 'FeatureCollection' as const, features: [] });
 
