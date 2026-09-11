@@ -25,7 +25,7 @@ const OUT_DIR = resolve(ROOT, 'data/territory');
 const FRAME_DIR = resolve(OUT_DIR, 'frames');
 
 const ENDPOINT = 'https://overpass-api.openhistoricalmap.org/api/interpreter';
-const UA = 'ww2-atlas/0.1 (https://github.com/tanimutomo/ww2-atlas; t.tanimura@ispec.tech)';
+const UA = 'ww2-atlas/0.1 (https://github.com/tanimutomo/ww2-atlas)';
 
 // admin_level=3 は原則スコープ外だが、占領行政体はここにしか無いので名前で拾う。
 // admin_level=4 の Reichsgau は Deutsches Reich の内側なので取らない（面が二重になる）。

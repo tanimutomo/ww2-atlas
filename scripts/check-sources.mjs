@@ -57,18 +57,30 @@ async function collect() {
 }
 
 async function check(url) {
-  try {
-    // HEAD を拒む相手が多いので GET で開いて、本文は読まずに切る
-    const res = await fetch(url, {
-      method: 'GET',
-      headers: { 'User-Agent': UA, Accept: 'text/html,*/*' },
-      redirect: 'follow',
-      signal: AbortSignal.timeout(30_000),
-    });
-    res.body?.cancel();
-    return res.status;
-  } catch (err) {
-    return `ERR ${err.message}`;
+  // CI から 700 件以上を順に叩くので、一時的な失敗で落ちないように 1 回だけ待って再試行する。
+  // 「実在しない URL」を捕まえるのが目的なので、404 はそのまま返す（再試行しない）
+  for (let attempt = 0; ; attempt++) {
+    try {
+      // HEAD を拒む相手が多いので GET で開いて、本文は読まずに切る
+      const res = await fetch(url, {
+        method: 'GET',
+        headers: { 'User-Agent': UA, Accept: 'text/html,*/*' },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(30_000),
+      });
+      res.body?.cancel();
+      if (res.status >= 500 && attempt < 1) {
+        await sleep(3000);
+        continue;
+      }
+      return res.status;
+    } catch (err) {
+      if (attempt < 1) {
+        await sleep(3000);
+        continue;
+      }
+      return `ERR ${err.message}`;
+    }
   }
 }
 

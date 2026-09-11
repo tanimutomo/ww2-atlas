@@ -608,7 +608,13 @@ async function main() {
   // 帰属一覧。公開時に書き直さないよう source フィールドから自動生成する
   const datasets = [
     { title: 'Wikidata', url: 'https://www.wikidata.org/', license: 'CC0', use: 'イベントの名称・座標・日付・参加者' },
-    { title: 'OpenHistoricalMap', url: 'https://www.openhistoricalmap.org/', license: 'ODbL / CC0 (contributor terms)', use: '支配領域の境界（時点指定）' },
+    {
+      title: 'OpenHistoricalMap',
+      url: 'https://www.openhistoricalmap.org/',
+      license: 'CC0 1.0',
+      use: '支配領域の境界（時点指定）',
+      note: 'Map data courtesy of the OpenHistoricalMap project, in the public domain unless otherwise noted.',
+    },
     { title: 'Natural Earth', url: 'https://www.naturalearthdata.com/', license: 'Public Domain', use: 'ベースマップ（陸・海）' },
     {
       title: 'Wikipedia（日本語版・英語版）',

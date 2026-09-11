@@ -1,0 +1,88 @@
+# ライセンス ― data/ 配下 / Licensing for data/
+
+このディレクトリには出どころの違うものが混ざっています。区画ごとに条件が違います。
+This directory mixes material from several sources. Terms differ per area.
+
+日本語が原文で、英語は同じ内容の訳です。/ Japanese is the original; English follows.
+
+---
+
+## 1. 自前で書いたもの ― CC BY 4.0
+
+対象:
+
+- `data/decisions/**` `data/homefront/**` `data/links.yaml` `data/actors.yaml`
+- `data/events/overrides/**`（要約・名前・戦域・日付の上書き）
+- `data/events/selection.yaml`（どの出来事を地図に出すかの選別）
+- `data/territory/frontlines.yaml` `data/territory/approx-zones.yaml`
+  `data/territory/faction-map.yaml` `data/territory/keyframes.yaml`
+- `data/territory/approx/**`（上の 2 つから導出した概略の面）
+
+要約・分類・選別・概略線はこのリポジトリで書いたものです。
+**表示（帰属）だけを求め、継承は付けません**（CC BY 4.0）。
+<https://creativecommons.org/licenses/by/4.0/>
+
+帰属の書き方の例:
+> ww2-atlas (https://github.com/tanimutomo/ww2-atlas), CC BY 4.0
+
+## 2. Wikipedia 由来の要約 ― CC BY-SA 4.0
+
+対象: `data/seed-wikipedia/**`
+
+日本語版・英語版 Wikipedia のリード文にもとづく短い要約です。
+元が CC BY-SA なので**同じ条件（表示 ＋ 継承）**が付きます。
+レコードごとに記事 URL を `sources` に持たせてあります。
+<https://creativecommons.org/licenses/by-sa/4.0/>
+
+ビルドの出力も `public/data/event-summaries.cc-by-sa.json` として
+本体（CC BY 4.0 / CC0）から分離しています。混ぜて再配布しないでください。
+
+## 3. 外部データの生データ ― 元のライセンスのまま
+
+| 対象 | 出どころ | ライセンス |
+|---|---|---|
+| `data/raw/wikidata-events.json` | Wikidata | CC0 1.0 |
+| `data/territory/geometry.json`・`data/territory/frames/**` | OpenHistoricalMap | CC0 1.0 |
+| `data/territory/control/**` | Wikimedia Commons「Second World War Europe MM YYYY de.svg」（作者 San Jose） | パブリックドメイン |
+
+OpenHistoricalMap の希望する表記:
+> Map data courtesy of the OpenHistoricalMap project, in the public domain unless otherwise noted.
+
+## 4. 本文を持たないもの ― 対象外
+
+`license: link-only` のレコード（23 件）は、転載できない資料を指しています。
+**日付・自前の要約・原本 URL の 3 点しか持っていません。**本文は入れません。
+
+---
+
+# English
+
+## 1. Original work — CC BY 4.0
+
+`data/decisions/`, `data/homefront/`, `data/links.yaml`, `data/actors.yaml`,
+`data/events/overrides/`, `data/events/selection.yaml`,
+`data/territory/frontlines.yaml`, `approx-zones.yaml`, `faction-map.yaml`,
+`keyframes.yaml`, and `data/territory/approx/`.
+
+Summaries, classifications, the selection of which events to show, and the
+approximate front lines were written for this project. Licensed
+**CC BY 4.0 — attribution only, no share-alike.**
+
+## 2. Wikipedia-derived summaries — CC BY-SA 4.0
+
+`data/seed-wikipedia/` holds short summaries based on the lead paragraphs of
+Japanese and English Wikipedia. Because the source is CC BY-SA, these carry
+**attribution and share-alike**. Each record links its source article. The
+build keeps them in a separate output file
+(`public/data/event-summaries.cc-by-sa.json`) — do not merge them back into
+the CC BY 4.0 / CC0 material when redistributing.
+
+## 3. Third-party raw data — original licences
+
+Wikidata (CC0 1.0), OpenHistoricalMap (CC0 1.0), and Wikimedia Commons maps by
+user San Jose (public domain). See the table above.
+
+## 4. Link-only records — not covered
+
+23 records point at material that cannot be reproduced. They carry only a date,
+an original summary, and a URL. No source text is stored.

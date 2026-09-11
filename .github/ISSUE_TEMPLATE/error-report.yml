@@ -1,0 +1,74 @@
+name: 誤りの報告 / Report an error
+description: 日付・地名・名前・数字などの間違いを報告する / Report a factual error
+title: "[誤り] "
+labels: ["error-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ありがとうございます。直すために **3 つだけ**必要です。
+
+        このデータは 634 件中 14 件しか一次史料に当たれていません。
+        間違いがあるのは想定内です。遠慮なく出してください。
+
+        ⚠️ **根拠の一次史料 URL が無いものは直せません。**
+        「間違っている」という指摘だけでは、どちらが正しいか判断できないためです。
+
+        ---
+        Thank you. Three things are needed. **Corrections without a primary-source
+        URL cannot be acted on** — there is no way to tell which version is right.
+
+  - type: input
+    id: record-id
+    attributes:
+      label: レコードの id / Record id
+      description: >
+        地図の点、または右のカードをクリックすると詳細パネルに出ます。
+        例 `Q173034`（現場）/ `dec-19401218-weisung-21`（司令部）/
+        `hf-19420610-daihonei-midway`（国内）/ `fl-19430801-east`（前線）
+      placeholder: Q173034
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: 何が間違っているか / What is wrong
+      description: いまの記述と、正しい記述を書いてください
+      placeholder: |
+        いま: 開始日が 1941-07-05 になっている
+        正しくは: 1942-07-05（船団 PQ17 を狙った出撃は 1942 年）
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: 根拠の一次史料 URL / Primary source URL
+      description: >
+        官報・条約集・公文書・Avalon Project・Wikisource・
+        国立国会図書館デジタルコレクション・FRUS など。
+        できれば全文が読めるものを。個人ブログ・まとめサイト・生成 AI の出力は不可
+      placeholder: https://dl.ndl.go.jp/pid/2960976
+    validations:
+      required: true
+
+  - type: textarea
+    id: note
+    attributes:
+      label: 補足（任意） / Notes (optional)
+      description: 該当箇所のページ・条文番号・引用など
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: 確認 / Acknowledgement
+      options:
+        - label: >
+            解釈や評価ではなく、事実の誤りの報告です /
+            This is a factual error, not a matter of interpretation
+          required: true
+        - label: >
+            メンテナは 1 人で、返事ができない場合があることを理解しています /
+            I understand this is maintained by one person and may go unanswered
+          required: true

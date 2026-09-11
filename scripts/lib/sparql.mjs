@@ -3,7 +3,7 @@
 
 const ENDPOINT = 'https://query.wikidata.org/sparql';
 const UA =
-  'ww2-atlas/0.1 (https://github.com/tanimutomo/ww2-atlas; t.tanimura@ispec.tech) node-fetch';
+  'ww2-atlas/0.1 (https://github.com/tanimutomo/ww2-atlas) node-fetch';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

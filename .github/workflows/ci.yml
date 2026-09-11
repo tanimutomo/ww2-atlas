@@ -1,0 +1,72 @@
+# PR と main への push で、データの整合と出典 URL を確かめる。
+#
+# 受け取れる修正の条件が「一次史料の URL が付いていること」なので、
+# そこは人のレビューではなく CI で見る。落ちた PR はマージできない。
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: データの整合とビルド
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      # license / sources の欠落、未知の enum、参照切れのリンク、
+      # 座標の順番違いなどはここで落ちる
+      - name: 検証（npm run check）
+        run: npm run check
+
+      - name: 型チェック
+        run: npx tsc --noEmit
+
+      # 生成物が実際に出るところまで見る（data と vite build）
+      - name: ビルド
+        run: npm run build
+
+  sources:
+    name: 出典 URL の到達確認
+    runs-on: ubuntu-latest
+    # 732 件を順に叩くので数分かかる。データを触った PR だけで十分
+    if: github.event_name == 'push' || github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: データに変更があるか
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif git diff --name-only "origin/${{ github.base_ref }}...HEAD" | grep -q '^data/'; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "data/ に変更が無いので飛ばします"
+          fi
+
+      # 「書いたのに実在しない出典 URL」がいちばんたちの悪い壊れ方なので、
+      # ここは必ず通す。403/429（bot 避け）は OK 扱い
+      - name: 出典 URL を叩く
+        if: steps.changed.outputs.run == 'true'
+        run: npm run check:sources
