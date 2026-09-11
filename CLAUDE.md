@@ -9,6 +9,7 @@
 - Wikipedia 由来テキストは `data/seed-wikipedia/` に隔離（`cc-by-sa`）
 - LLM 下書きの要約は `verified: false`。原典確認したときだけ `true` にする
 - 静的サイト（Vite + MapLibre GL）。サーバ・DB なし。Vercel にデプロイ
+- **公開方針（2026-09-11 決定）: OSS として 2 段階で公開する**。Stage 1＝ライセンス 3 本（コード MIT／自前データ CC BY 4.0／`data/seed-wikipedia/` CC BY-SA 4.0）・README 日英・CONTRIBUTING・Issue テンプレ・CI を整えてリポを public に（noindex は維持）。Stage 2＝レコード毎の「未検証」バッジと「訂正する」Issue リンクを画面に付け、主要 50 件を verified にしてから noindex を外して発信（**別途 GO が要る**）。設計の詳細は garden 設計ページ §5、手順は vault 引き継ぎノート「次にやること 0」
 
 ## 実装状況（2026-09-09）
 
