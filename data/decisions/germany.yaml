@@ -557,8 +557,12 @@
     - アメリカ合衆国に対して宣戦を布告する
     - 日本・イタリアと単独不講和を約する追加協定を結ぶ
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: German Declaration of War with the United States, December 11, 1941（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/gerdec41.asp
+    - title: Pact Between the Axis Powers Barring a Separate Peace, December 11, 1941（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/tripart.asp
     - title: German declaration of war against the United States
       url: https://en.wikipedia.org/wiki/German_declaration_of_war_against_the_United_States
     - title: Tripartite Pact
@@ -608,8 +612,11 @@
     - 「ユダヤ人問題の最終的解決」を各省庁の協力のもとで進めることを確認する
     - 親衛隊（国家保安本部）が実施の主導権を持つことを確認する
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Wannsee Protocol（議事録全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Wannsee_Protocol
+      note: 1942 年 1 月 20 日ベルリン・大ヴァンゼー 56/58。ハイドリヒが「最終的解決」の全権を委ねられた旨と出席者の一覧
     - title: Wannsee Conference
       url: https://en.wikipedia.org/wiki/Wannsee_Conference
     - title: House of the Wannsee Conference（記念館・議定書の所蔵）

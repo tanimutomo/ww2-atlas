@@ -427,8 +427,10 @@
     - 大東亜共同宣言を採択する
     - 共存共栄・独立の尊重・互恵の経済発展・人種差別撤廃を掲げる
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 大東亜共同宣言（原文・Wikisource／底本は外務省条約局『大東亜条約集』第一巻・JACAR Ref.B13090817500）
+      url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E5%85%B1%E5%90%8C%E5%AE%A3%E8%A8%80
     - title: 大東亜会議
       url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E4%BC%9A%E8%AD%B0
     - title: Greater East Asia Conference

@@ -103,8 +103,11 @@
     - 一方が交戦したら他方が全力で援助する
     - 単独講和をしない
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Pact of Steel — Pact of Friendship and Alliance between Germany and Italy（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Pact_of_Steel
+      note: 第 3 条に自動参戦、第 5 条に「休戦も講和も相互の完全な合意によってのみ行う」
     - title: Pact of Steel
       url: https://en.wikipedia.org/wiki/Pact_of_Steel
     - title: Galeazzo Ciano
@@ -155,8 +158,11 @@
     - 連合国との休戦を公表する
     - 政府と王室はローマを離れてブリンディジに移る
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Armistice of Cassibile（休戦条項の全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Armistice_of_Cassibile
+      note: 第 1 条「イタリア軍による一切の敵対行動の即時停止」、第 4 条に艦隊の引き渡し
     - title: Armistice of Cassibile
       url: https://en.wikipedia.org/wiki/Armistice_of_Cassibile
     - title: Operation Achse

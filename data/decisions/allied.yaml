@@ -112,6 +112,9 @@
   license: pd
   verified: false
   sources:
+    - title: Casablanca Conference 1943 — ローズヴェルトの報告（Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/casablan.asp
+      note: 「無条件降伏」の方針は確認できるが、シチリア上陸・連合爆撃攻勢・U ボート対策は記載が無い
     - title: FRUS — The Conferences at Washington, 1941–1942, and Casablanca, 1943
       url: https://history.state.gov/historicaldocuments/frus1941-43
     - title: Casablanca Conference
@@ -219,10 +222,12 @@
     - オーヴァーロード作戦を 1944 年 5 月に実行する
     - あわせて南フランスへの上陸作戦を行う
     - ソ連は東部戦線で呼応する攻勢を発起する
-    - ソ連はドイツ降伏後に対日参戦する意向を示す
+    - ソ連はドイツ降伏後に対日参戦する意向を示す（公表された軍事的結論には含まれず、会談の記録による）
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: The Tehran Conference — Declaration of the Three Powers / Military Conclusions（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/tehran.asp
     - title: FRUS — The Conferences at Cairo and Tehran, 1943
       url: https://history.state.gov/historicaldocuments/frus1943CairoTehran
     - title: Tehran Conference
@@ -306,8 +311,11 @@
     - ドイツに対し宣戦を布告する
     - ポーランドへの保障を履行する立場を取る
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: War with Germany declared — チェンバレンのラジオ放送（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/War_with_Germany_declared
+      note: 「11 時までに撤兵の回答が無ければ戦争状態に入る」という最後通牒が無視されたと述べ、フランスも同じ行動を取ることで合意していたとある
     - title: Declarations of war during World War II
       url: https://en.wikipedia.org/wiki/Declarations_of_war_during_World_War_II
     - title: Chamberlain's declaration of war broadcast
@@ -360,8 +368,11 @@
     - 現金決済・自国船輸送の原則（中立法）を実質的に外す
     - のちにソ連・中国も対象に加える
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Lend Lease Act, 11 March 1941 — An Act to Promote the Defense of the United States（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Lend_Lease_Act,_11_March_1941
+      note: 大統領が「防衛上死活的と認める国」に defense article を売却・譲渡・交換・貸与できると定める
     - title: Lend-Lease
       url: https://en.wikipedia.org/wiki/Lend-Lease
     - title: レンドリース法
@@ -442,10 +453,12 @@
     - 一般的安全保障に関する宣言を出す（国際機構の設立を約す）
     - ドイツの残虐行為について責任者を訴追する
     - オーストリアの独立回復を目標とする
-    - ヨーロッパ諮問委員会を設置する
+    - ヨーロッパ諮問委員会を設置する（公表された 4 つの宣言には含まれず、会議の議定書による）
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: The Moscow Conference, October 1943 — 四国宣言・イタリア・オーストリア・残虐行為の各宣言（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/moscow.asp
     - title: Moscow Conference (1943)
       url: https://en.wikipedia.org/wiki/Moscow_Conference_(1943)
     - title: Declaration of the Four Nations on General Security（Avalon Project）

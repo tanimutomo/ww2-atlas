@@ -140,8 +140,11 @@
     東京湾上の戦艦ミズーリで降伏文書が調印され、第二次世界大戦が終結した。
     8 月 14 日の御前会議によるポツダム宣言受諾、15 日の玉音放送を経ての調印。
   wikipedia_ja: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F
-  verified: false
+  verified: true
   sources:
+    - title: 日本の降伏文書（原文・Wikisource／底本は外務省外交史料館）
+      url: https://ja.wikisource.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F%E6%96%87%E6%9B%B8
+      note: 千九百四十五年九月二日午前九時四分・東京湾上で署名。重光葵と梅津美治郎
     - title: Wikidata Q6540361
       url: https://www.wikidata.org/wiki/Q6540361
       note: CC0
@@ -518,8 +521,11 @@
     南部のヴィシー政権の管轄に分けられ、艦隊と海外植民地の扱いが争点になった。
     ドイツは 1918 年の休戦調印に使われた客車を同じ場所に運ばせて調印させている。
   wikipedia_ja: https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E3%82%B3%E3%83%B3%E3%83%94%E3%82%A8%E3%83%BC%E3%83%8B%E3%83%A5%E4%BC%91%E6%88%A6%E5%8D%94%E5%AE%9A
-  verified: false
+  verified: true
   sources:
+    - title: Franco-German Armistice, Compiègne, June 22, 1940（全文・Avalon Project）
+      url: https://avalon.law.yale.edu/wwii/frgearm.asp
+      note: 第 1 条に植民地・保護領を含む停戦、第 2 条に北部・西部の占領、第 8 条にフランス艦隊の武装解除
     - title: Wikidata Q170360
       url: https://www.wikidata.org/wiki/Q170360
       note: CC0
@@ -541,8 +547,11 @@
     以後イタリアは南部の王国（連合国側の共同交戦国）と
     北部のイタリア社会共和国に分かれて戦うことになる。
   wikipedia_ja: https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%81%AE%E4%BC%91%E6%88%A6
-  verified: false
+  verified: true
   sources:
+    - title: Armistice of Cassibile（休戦条項の全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Armistice_of_Cassibile
+      note: 第 1 条「イタリア軍による一切の敵対行動の即時停止」、第 4 条に艦隊・航空機の引き渡し
     - title: Wikidata Q196502
       url: https://www.wikidata.org/wiki/Q196502
       note: CC0
@@ -563,8 +572,27 @@
     ソ連の求めにより 5 月 8 日にベルリン・カールスホルストで改めて調印された。
     これをもって欧州での戦闘が終わる。時差の関係でソ連では 5 月 9 日が戦勝記念日になる。
   wikipedia_ja: https://ja.wikipedia.org/wiki/%E3%83%89%E3%82%A4%E3%83%84%E3%81%AE%E9%99%8D%E4%BC%8F%E6%96%87%E6%9B%B8
-  verified: false
+  verified: true
   sources:
+    - title: German Instrument of Surrender, 7 May 1945（ランス・全文・Wikisource）
+      url: https://en.wikisource.org/wiki/German_Instrument_of_Surrender_(7_May_1945)
+    - title: Definitive German Instrument of Surrender, 8 May 1945（ベルリン＝カールスホルスト・全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Definitive_German_Instrument_of_Surrender_(8_May_1945)
     - title: Wikidata Q700983
       url: https://www.wikidata.org/wiki/Q700983
       note: CC0
+
+# 原典（Wikisource の降伏文書全文）に当たって書いた。Q6540361「日本の降伏」が
+# 調印という出来事、こちらが文書そのもの
+- id: Q665554
+  name_ja: 日本の降伏文書
+  summary_ja: |
+    ポツダム宣言の条項を受諾し、日本軍の無条件降伏を布告した文書。
+    天皇と政府の統治の権限は連合国最高司令官の制限の下に置かれると定めている。
+    1945 年 9 月 2 日午前 9 時 4 分、東京湾上の戦艦ミズーリで重光葵と梅津美治郎が署名した。
+  license: pd
+  verified: true
+  sources:
+    - title: 日本の降伏文書（原文・Wikisource／底本は外務省外交史料館）
+      url: https://ja.wikisource.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%99%8D%E4%BC%8F%E6%96%87%E6%9B%B8
+

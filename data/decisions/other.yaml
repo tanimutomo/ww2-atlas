@@ -23,10 +23,13 @@
     宥和政策から転じる。
   decisions_ja:
     - ズデーテン地方をドイツに割譲する
-    - チェコスロヴァキアの残余の国境を 4 か国で保障する
+    - 残余の国境は英仏が直ちに保障し、独伊は少数民族問題の解決後に保障するとした（附属書）
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Munich Pact（協定本文と附属書・全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Munich_Pact
+      note: 附属書で英仏は新国境を直ちに保障し、独伊はポーランド系・ハンガリー系少数民族の問題が片づいた後に保障するとしている
     - title: Munich Agreement
       url: https://en.wikipedia.org/wiki/Munich_Agreement
     - title: German occupation of Czechoslovakia
@@ -159,8 +162,13 @@
     - 日本・ドイツ・イタリアに対して宣戦を布告する
     - 日本と結んだ一切の条約を無効とする
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Chinese declaration of war against Japan, 9 December 1941（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Chinese_declaration_of_war_against_Japan,_9_December_1941
+      note: 「all treaties, conventions, agreements and contracts regarding relations between China and Japan are and remain null and void」
+    - title: Chinese declaration of war against Germany and Italy, 9 December 1941（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Chinese_declaration_of_war_against_Germany_and_Italy,_9_December_1941
     - title: Second Sino-Japanese War
       url: https://en.wikipedia.org/wiki/Second_Sino-Japanese_War
     - title: China in World War II

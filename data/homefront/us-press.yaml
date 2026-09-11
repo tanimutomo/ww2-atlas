@@ -35,8 +35,11 @@
     武器を供給する「民主主義の兵器廠」になるべきだと訴えた。
     翌 1941 年 3 月の武器貸与法（レンドリース）につながる世論形成の起点になった。
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Roosevelt's Fireside Chat, 29 December 1940（全文・Wikisource）
+      url: https://en.wikisource.org/wiki/Roosevelt%27s_Fireside_Chat,_29_December_1940
+      note: 「We must be the great arsenal of democracy」の一節を含む
     - title: Franklin D. Roosevelt — Fireside Chats（米政府著作物）
       url: https://en.wikisource.org/wiki/Author:Franklin_Delano_Roosevelt
     - title: Arsenal of Democracy
@@ -159,8 +162,11 @@
     日本側の同じ出来事の発表は「新型爆弾により相当の被害」であり、
     同じ事象に対する日米の発表の落差がそのまま並ぶ。
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: Statement by the President Announcing the Use of the A-Bomb at Hiroshima（全文・トルーマン図書館）
+      url: https://www.trumanlibrary.gov/library/public-papers/93/statement-president-announcing-use-bomb-hiroshima
+      note: 「If they do not now accept our terms they may expect a rain of ruin from the air」の警告を含む
     - title: Statement by the President Announcing the Use of the A-Bomb at Hiroshima（Truman Library・米政府著作物）
       url: https://www.trumanlibrary.gov/library/public-papers/93/statement-president-announcing-use-bomb-hiroshima
     - title: Chronicling America（米議会図書館・1945-08-07 の紙面）
