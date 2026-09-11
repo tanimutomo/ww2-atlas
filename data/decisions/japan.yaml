@@ -255,11 +255,14 @@
     翌年サイパンが陥落してこの線が破られると、東條内閣は総辞職に至る。
   decisions_ja:
     - 千島・小笠原・内南洋・西部ニューギニア・スンダ・ビルマを絶対国防圏とする
-    - 圏外の要地は戦力を消耗させない範囲で持久する
+    - 戦争を通じて圏内の海上交通を確保する
     - 1944 年中期までに圏内の防備と航空戦力を整備する
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 今後採ルヘキ戦争指導ノ大綱（全文・Wikisource）
+      url: https://ja.wikisource.org/wiki/%E4%BB%8A%E5%BE%8C%E6%8E%A1%E3%83%AB%E3%83%98%E3%82%AD%E6%88%A6%E4%BA%89%E6%8C%87%E5%B0%8E%E3%83%8E%E5%A4%A7%E7%B6%B1
+      note: 昭和 18 年 9 月 30 日。「絶対確保スヘキ要域ヲ千島、小笠原、内南洋（中西部）及西部「ニューギニア」「スンダ」「ビルマ」ヲ含ム圏域トス」
     - title: 絶対国防圏
       url: https://ja.wikipedia.org/wiki/%E7%B5%B6%E5%AF%BE%E5%9B%BD%E9%98%B2%E5%9C%8F
     - title: JACAR（アジア歴史資料センター）
@@ -400,8 +403,11 @@
     - マレー・スマトラ・ジャワ・ボルネオ・セレベスは帝国領土とする
     - 大東亜会議を開催して結束を示す
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 大東亜政略指導大綱（全文・Wikisource）
+      url: https://ja.wikisource.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E6%94%BF%E7%95%A5%E6%8C%87%E5%B0%8E%E5%A4%A7%E7%B6%B1
+      note: 昭和十八年五月二十九日 連絡会議決定・五月三十一日 御前会議決定。「マライ」「スマトラ」「ジャワ」「ボルネオ」「セレベス」は帝国領土と決定し当分発表せず、とある
     - title: 大東亜共栄圏
       url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E4%BA%9C%E5%85%B1%E6%A0%84%E5%9C%8F
     - title: JACAR（アジア歴史資料センター）

@@ -55,8 +55,11 @@
     - 休戦に応じず抵抗を続けることを宣言する
     - ロンドンに亡命フランス軍の結集を呼びかける
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: 6 月 18 日の呼びかけ（フランス語原文・Wikisource）
+      url: https://ja.wikisource.org/wiki/6%E6%9C%8818%E6%97%A5%E3%81%AE%E5%91%BC%E3%81%B3%E3%81%8B%E3%81%91
+      note: 英国内のフランス将兵と軍需産業の技術者・熟練工に、自分と連絡を取るよう呼びかけている
     - title: Appeal of 18 June
       url: https://en.wikipedia.org/wiki/Appeal_of_18_June
     - title: Free France

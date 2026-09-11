@@ -140,8 +140,11 @@
     - 各軍に督戦隊を置き、無断で後退する部隊を阻止する
     - 規律違反者を懲罰部隊に送る
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: ソビエト連邦国防人民委員令第227号（全文の日本語訳・Wikisource／露語原文は歴史文書電子図書館）
+      url: https://ja.wikisource.org/wiki/%E3%82%BD%E3%83%93%E3%82%A8%E3%83%88%E9%80%A3%E9%82%A6%E5%9B%BD%E9%98%B2%E4%BA%BA%E6%B0%91%E5%A7%94%E5%93%A1%E4%BB%A4%E7%AC%AC227%E5%8F%B7
+      note: 1942 年 7 月 28 日モスクワ。懲罰中隊・懲罰大隊の編成と、不安定な師団の背後に置く阻止部隊を定めている
     - title: Order No. 227
       url: https://en.wikipedia.org/wiki/Order_No._227
 
@@ -299,8 +302,11 @@
     - 8 月 9 日をもって日本と戦争状態に入る
     - ポツダム宣言に加わる
   license: pd
-  verified: false
+  verified: true
   sources:
+    - title: ソ連の対日宣戦通告（全文・Wikisource／底本は外務省外交史料館「東郷外務大臣「マリク」大使会議録」）
+      url: https://ja.wikisource.org/wiki/%E3%82%BD%E9%80%A3%E3%81%AE%E5%AF%BE%E6%97%A5%E5%AE%A3%E6%88%A6%E9%80%9A%E5%91%8A
+      note: 「明日即チ八月九日ヨリ「ソ」聯邦ハ日本ト戰爭状態ニアルモノト思考スルコトヲ宣言ス」。七月二十六日付の聯合國宣言（ポツダム宣言）への加入も明記
     - title: Soviet–Japanese War
       url: https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War
     - title: Yalta Conference
