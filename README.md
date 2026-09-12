@@ -3,8 +3,8 @@
 **現場（地図）・司令部（決定）・国内（発表と報道）の 3 層を、同じ時間軸で読む**ための
 日本語のデータセットとビューアです。
 
-> ⚠️ **このデータの大半は未検証です。** 634 件のレコードのうち、一次史料に当たって
-> 確認したのは **14 件だけ**。残りは LLM が下書きしたか、Wikipedia の記述に拠っています。
+> ⚠️ **このデータの大半は未検証です。** 650 件のレコードのうち、一次史料に当たって
+> 確認したのは **38 件だけ**。残りは LLM が下書きしたか、Wikipedia の記述に拠っています。
 > **史実の典拠として引用しないでください。** 詳しくは [未検証であること](#未検証であること) を読んでください。
 > このリポジトリを公開しているのは、**間違いを見つけて直してもらうため**です。
 
@@ -37,9 +37,9 @@
 | 国内 HomeFront | 40 | 大本営発表 20・米報道 10・生活 10 |
 | つながり Link | 84 | うち「発表と実態の差」30 |
 | 前線ライン | 16 | **概略**。地図のトレースではない |
-| フィードの要約 | 493 | 自前 16 ＋ Wikipedia 由来 477 |
+| フィードの要約 | 493 | 自前 17 ＋ Wikipedia 由来 476 |
 
-出典 URL は **732 件すべて到達を確認**しています（`npm run check:sources`）。
+出典 URL は **756 件すべて到達を確認**しています（`npm run check:sources`）。
 
 ### 支配領域の 3 層
 
@@ -67,16 +67,26 @@
 - `verified: true` ― **一次史料の全文を読んで**、日付と中身が要約と合うことを確認した
 - `verified: false` ― LLM の下書きか、Wikipedia などの二次情報に拠っているだけ
 
-**現在 634 件中 14 件のみが `true`** です。`true` にしてあるのは、たとえば
+**現在 650 件中 38 件のみが `true`** です（司令部 29・現場 5・国内 4）。
+`true` にしてあるのは、たとえば
 
 - 米國及英國ニ對スル宣戰ノ詔書（官報号外 1941-12-08・国立国会図書館デジタルコレクション）
 - 大東亞戰爭終結ノ詔書（官報号外 1945-08-14）
-- ハル・ノート（Avalon Project の全文）
+- ハル・ノート／独の対米宣戦布告／三国単独不講和協定（Avalon Project の全文）
+- 独の降伏文書 2 通・日本の降伏文書・ヴァンゼー議定書
 - 原爆投下命令（NARA ARC 542193 の原文）
 
-画面上部にも「未確認 620」と実数を出しています。隠していません。
+画面上部に「未確認 612」と実数を出し、各レコードの詳細にも
+「未検証／原典確認済み」のバッジを出しています。隠していません。
 
-**このリポジトリを公開している目的は、この 14 件を増やすことです。**
+**原典に当たると、記述のほうが間違っていることがあります。** これまでに
+ミュンヘン協定の「4 か国で保障する」（付属文書では独伊の保障が条件付き）、
+絶対国防圏の「圏外の要地は持久」（原文にない）など 3 件を訂正しました。
+会談系（カサブランカ・ダンバートンオークスなど）は公表された共同声明に
+「決定内容は発表しない」としか書かれておらず、FRUS を読まないと確認できません。
+カサブランカは確認できた範囲を `note` に書いて `verified: false` のままにしてあります。
+
+**このリポジトリを公開している目的は、この 38 件を増やすことです。**
 
 ## 訂正の送り方
 
@@ -129,7 +139,7 @@ npm run dev      # 開発サーバ
 
 ```bash
 npm run check          # 書き出さずに検証だけ
-npm run check:sources  # 出典 URL 732 件に実際に到達できるか確認（数分かかる）
+npm run check:sources  # 出典 URL 756 件に実際に到達できるか確認（数分かかる）
 ```
 
 外部からの取得は済んでいるので普段は不要です。引き直したいときだけ:
@@ -165,7 +175,7 @@ npm run build:approx      # 前線と範囲 → 概略の面
 synchronised layers**: the field (a map), the high command (decisions), and the
 home front (announcements and press).
 
-> ⚠️ **Most of this data is unverified.** Of 634 records, only **14** have been
+> ⚠️ **Most of this data is unverified.** Of 650 records, only **38** have been
 > checked against primary sources. The rest are LLM drafts or rest on Wikipedia.
 > **Do not cite this as a historical authority.** This repository is public so
 > that people can find the errors and fix them.
@@ -180,7 +190,7 @@ actual figure was four. That gap is stored as a structured `discrepancy`.
 
 Contents: 493 events, 101 decisions, 40 home-front records, 84 links,
 16 (approximate) front lines, and a short summary on every event.
-All 732 source URLs are checked for reachability.
+All 756 source URLs are checked for reachability.
 
 **Territory comes from three layers of very different accuracy**: political
 boundaries from OpenHistoricalMap (36 keyframes, borders only); military
