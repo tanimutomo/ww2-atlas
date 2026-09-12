@@ -7,14 +7,13 @@
     <title>WW2 時系列世界地図</title>
     <meta
       name="description"
-      content="第二次世界大戦を、地図に出す「現場」と、年表に出す「司令部」「国内」の3層で同じ時間軸に並べて見る日本語の地図。"
+      content="第二次世界大戦を、地図に出す「現場」と、年表に出す「司令部」「国内」の3層で同じ時間軸に並べて見る日本語の地図。大半のレコードは未検証で、史実の典拠にはできません。誤りの報告を受け付けています。"
     />
   </head>
   <body>
     <header id="topbar">
       <div class="brand">
         <strong>WW2 時系列世界地図</strong>
-        <span class="tag">P0</span>
       </div>
       <div id="counts" class="counts"></div>
       <div id="legend" class="legend"></div>
@@ -48,6 +47,13 @@
 
           <!-- 地図の下端に横長で置く凡例。説明文は注記に逃がして 1〜2 行に収める -->
           <div class="mapbar">
+            <!-- 幅が狭いときだけ出る。バーは地図の上に乗るので、畳むと地図がその分見える -->
+            <button
+              id="mapbar-toggle"
+              class="mb-toggle"
+              type="button"
+              aria-expanded="false"
+            >凡例</button>
             <span class="mb-label">戦域</span>
             <div id="theatres" class="theatres"></div>
             <span class="mb-break"></span>

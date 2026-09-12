@@ -45,10 +45,6 @@ a { color: var(--actual); }
   border-bottom: 1px solid var(--line);
 }
 .brand { display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
-.brand .tag {
-  font-size: 10px; letter-spacing: .08em; color: var(--bg);
-  background: var(--accent); border-radius: 3px; padding: 1px 5px;
-}
 .counts { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .legend { margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; font-size: 11px; color: var(--muted); }
 .legend .lg { display: inline-flex; align-items: center; gap: 4px; }
@@ -112,6 +108,10 @@ a { color: var(--actual); }
 .mb-notes:hover { color: var(--text); border-color: #4a5763; }
 .mb-notes[aria-expanded="true"] { color: #d9b08c; border-color: #6a5443; }
 .mb-attr { font-size: 9.5px; color: #5d6b78; }
+
+/* 凡例を畳むボタン。幅が足りるときはバーがそのまま収まるので出さない */
+.mb-toggle { display: none; }
+
 
 /* 注記。バーの上に開く */
 .map-notes {
@@ -423,4 +423,23 @@ body.resizing { cursor: col-resize; user-select: none; }
   #side { border-left: none; border-top: 1px solid var(--line); }
   #side-resizer { display: none; }
   .legend { display: none; }
+
+  /* 上バーは 375px だと件数が入りきらず右が切れる。
+     残すのは「未確認 N」― 中身が未検証であることは切ってはいけない */
+  .ct-main { display: none; }
+
+  /* 凡例バーは地図の上に乗っているので、畳むとその分だけ地図が見える。
+     既定は畳んだ状態。畳んだときはバーを幅いっぱいにせず、小さなボタンだけ残す */
+  .mb-toggle {
+    display: inline-flex;
+    font: inherit; font-size: 10.5px; line-height: 1;
+    color: var(--muted); background: transparent;
+    border: 1px solid var(--line); border-radius: 4px;
+    padding: 4px 8px;
+  }
+  .mb-toggle[aria-expanded="true"] { color: #d9b08c; border-color: #6a5443; }
+  /* 既定は畳んだ状態。JS ではなく CSS を既定にしておかないと、
+     読み込みの一瞬だけバーが開いて見える */
+  .mapbar:not(.is-open) { width: auto; border-top: 0; border-radius: 0 6px 0 0; }
+  .mapbar:not(.is-open) > *:not(.mb-toggle) { display: none; }
 }

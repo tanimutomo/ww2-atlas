@@ -377,6 +377,19 @@ async function main(): Promise<void> {
   notesToggle.addEventListener('click', () => showNotes(notes.hidden));
   $('#notes-close').addEventListener('click', () => showNotes(false));
 
+  // 凡例バー。狭い画面ではバーが地図の下半分を覆ってしまうので、既定で畳んでおく。
+  // 畳み方は注記と揃える（押したら開く・もう一度押したら閉じる）
+  // 畳んだ状態が既定なのは CSS 側（幅 900px 以下だけ効く）。ここは開け閉めだけ持つ
+  const mapbar = $('.mapbar');
+  const barToggle = $('#mapbar-toggle');
+  const syncBar = () =>
+    barToggle.setAttribute('aria-expanded', String(mapbar.classList.contains('is-open')));
+  barToggle.addEventListener('click', () => {
+    mapbar.classList.toggle('is-open');
+    syncBar();
+  });
+  syncBar();
+
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !notes.hidden) return showNotes(false);
     if (e.key === 'Escape' && state.selected) return select(null);
@@ -433,11 +446,12 @@ function buildChrome(atlas: Atlas, state: State): void {
     (r) => !r.verified,
   ).length;
   // 中身は件数だけなので innerHTML でよい（外から来る文字列は混ざらない）
+  // ct-main は狭い画面で伏せる。「未確認 N」だけは幅に関わらず残す
   $('#counts').innerHTML =
-    `現場 ${atlas.events.length} ・ 司令部 ${atlas.decisions.length} ・ 国内 ${atlas.homefront.length} ・ つながり ${atlas.links.length}` +
-    `（<span class="unverified-count" title="一次史料に当たって確認できたのは ${
+    `<span class="ct-main">現場 ${atlas.events.length} ・ 司令部 ${atlas.decisions.length} ・ 国内 ${atlas.homefront.length} ・ つながり ${atlas.links.length} ・ </span>` +
+    `<span class="unverified-count" title="一次史料に当たって確認できたのは ${
       atlas.events.length + atlas.decisions.length + atlas.homefront.length - unverified
-    } 件だけです。残りは LLM の下書きか、Wikipedia など二次情報に拠っています。点や投稿を開くと「この記述を訂正する」から誤りを報告できます">未確認 ${unverified}</span>）`;
+    } 件だけです。残りは LLM の下書きか、Wikipedia など二次情報に拠っています。点や投稿を開くと「この記述を訂正する」から誤りを報告できます">未確認 ${unverified}</span>`;
 }
 
 main().catch((err) => {

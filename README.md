@@ -3,7 +3,7 @@
 **現場（地図）・司令部（決定）・国内（発表と報道）の 3 層を、同じ時間軸で読む**ための
 日本語のデータセットとビューアです。
 
-> ⚠️ **このデータの大半は未検証です。** 650 件のレコードのうち、一次史料に当たって
+> ⚠️ **このデータの大半は未検証です。** 634 件のレコードのうち、一次史料に当たって
 > 確認したのは **38 件だけ**。残りは LLM が下書きしたか、Wikipedia の記述に拠っています。
 > **史実の典拠として引用しないでください。** 詳しくは [未検証であること](#未検証であること) を読んでください。
 > このリポジトリを公開しているのは、**間違いを見つけて直してもらうため**です。
@@ -67,7 +67,7 @@
 - `verified: true` ― **一次史料の全文を読んで**、日付と中身が要約と合うことを確認した
 - `verified: false` ― LLM の下書きか、Wikipedia などの二次情報に拠っているだけ
 
-**現在 650 件中 38 件のみが `true`** です（司令部 29・現場 5・国内 4）。
+**現在 634 件中 38 件のみが `true`** です（司令部 29・現場 5・国内 4）。
 `true` にしてあるのは、たとえば
 
 - 米國及英國ニ對スル宣戰ノ詔書（官報号外 1941-12-08・国立国会図書館デジタルコレクション）
@@ -76,7 +76,7 @@
 - 独の降伏文書 2 通・日本の降伏文書・ヴァンゼー議定書
 - 原爆投下命令（NARA ARC 542193 の原文）
 
-画面上部に「未確認 612」と実数を出し、各レコードの詳細にも
+画面上部に「未確認 596」と実数を出し、各レコードの詳細にも
 「未検証／原典確認済み」のバッジを出しています。隠していません。
 
 **原典に当たると、記述のほうが間違っていることがあります。** これまでに
@@ -175,7 +175,7 @@ npm run build:approx      # 前線と範囲 → 概略の面
 synchronised layers**: the field (a map), the high command (decisions), and the
 home front (announcements and press).
 
-> ⚠️ **Most of this data is unverified.** Of 650 records, only **38** have been
+> ⚠️ **Most of this data is unverified.** Of 634 records, only **38** have been
 > checked against primary sources. The rest are LLM drafts or rest on Wikipedia.
 > **Do not cite this as a historical authority.** This repository is public so
 > that people can find the errors and fix them.
