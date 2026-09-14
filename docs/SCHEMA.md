@@ -183,3 +183,40 @@ Wikidata から自動で埋まるもの: `name_ja` `name_en` `coord` `start` `en
 - 降伏・休戦は戦闘ではなく「大きな意思決定」として `decision` に入れる
 - 同じ座標に重なる点（東京に 39 件など）は、ひまわり配置で最大 1.2 度までずらして表示する。
   ずらすのは表示上の都合なので YAML の座標は動かさない
+
+## UnitSnapshot（部隊配置・P2-a）`data/units/snapshots/*.yaml`
+
+作戦フェーズ単位のスナップショット。West Point 史学科アトラス等の PD 状況図から**位置と向きだけをトレース**する（画像はリポに入れない）。設計: garden 設計ページ §9。
+
+```yaml
+- id: us-19440606-overlord-p1-us-first-army
+  unit: Q1142417                 # Wikidata QID（無ければ 自前 id: unit-…）
+  name_ja: 米 第1軍
+  side: us                       # actors.yaml の id
+  echelon: army                  # army | corps | division | regiment
+  date: 1944-06-06               # このスナップショットの日付
+  until: 1944-06-12              # 次の節目まで表示（date <= 今 < until）
+  coord: [-0.85, 49.35]
+  heading: 180                   # 北を 0 とした時計回りの度。不明なら null
+  event: Q16470                  # 紐づく Event（作戦）
+  source_map: {title: "West Point Atlas WWII Europe 51", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope51}
+  license: pd
+  verified: false
+```
+
+## Movement（部隊の移動・P2-a）`data/units/movements/*.yaml`
+
+```yaml
+- id: mv-19440606-19440612-us-first-army
+  unit: Q1142417
+  from_date: 1944-06-06
+  to_date: 1944-06-12
+  path: [[-0.85, 49.35], [-1.10, 49.20]]   # LineString [lon, lat]
+  kind: advance                  # advance | retreat | transfer
+  event: Q16470
+  source_map: {title: ..., url: ..., sheet: ...}
+  license: pd
+  verified: false
+```
+
+描画: `milsymbol`（MIT）で APP-6 記号を生成し `map.addImage`。**友軍青・敵軍赤の配色は使わず**、単色記号＋陣営色の枠。表示はタイムライン日付に一致するスナップショットのみ（補間しない）。
