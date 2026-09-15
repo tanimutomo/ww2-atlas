@@ -1,0 +1,55 @@
+# バルバロッサ作戦 1941。West Point アトラス 19 番から「画素で」読み取った生の値。
+#
+# この図は 3000km を 1 枚に収めていて 1 画素 ≈ 2.7km。読み取り誤差がそのまま
+# 20km 前後になるので、**方面軍・軍より下は置かない**。
+#
+# ⚠ ソ連側の方面軍（北部・北西・西部・予備・ブリャンスク・南西・南部）の箱は
+#   後方に置いてあり、司令部の所在地というより「その方面軍の受け持ち」を指す。
+#   ドイツ側の軍集団の箱も同じ読み方。
+# ⚠ ルーマニア第 3 軍とソ連第 5 軍（1941 年）は Wikidata に相当する項目が
+#   見つからなかったので自前 id。英語版の "5th Army (Soviet Union)" は
+#   戦後の第 5 親衛諸兵科連合軍に転送されるので使わない。
+
+- operation: barbarossa
+  event: Q83055            # バルバロッサ作戦
+  sheet: WWIIEurope19
+  date: 1941-06-22
+  until: 1941-08-26        # この図が扱う範囲の終わり
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない
+  units:
+    # ドイツ・枢軸
+    - {unit: Q163084,  name_ja: 北方軍集団（レープ）,        side: de, echelon: army_group, px: 365.0, py: 357.0}
+    - {unit: Q158260,  name_ja: 中央軍集団（ボック）,        side: de, echelon: army_group, px: 365.0, py: 405.0}
+    - {unit: Q266893,  name_ja: 南方軍集団（ルントシュテット）, side: de, echelon: army_group, px: 355.0, py: 490.0}
+    - {unit: Q200121,  name_ja: 第 18 軍（キュヒラー）,       side: de, echelon: army, px: 443.0, py: 267.0}
+    - {unit: Q168248,  name_ja: 第 4 装甲集団（ヘプナー）,     side: de, echelon: army, px: 468.4, py: 298.9}
+    - {unit: Q194400,  name_ja: 第 16 軍（ブッシュ）,         side: de, echelon: army, px: 471.3, py: 328.6}
+    - {unit: Q275151,  name_ja: 第 9 軍（シュトラウス）,      side: de, echelon: army, px: 472.1, py: 355.6}
+    - {unit: Q223458,  name_ja: 第 3 装甲集団（ホト）,        side: de, echelon: army, px: 444.0, py: 380.0}
+    - {unit: Q210404,  name_ja: 第 2 装甲集団（グデーリアン）, side: de, echelon: army, px: 455.0, py: 405.0}
+    - {unit: Q464848,  name_ja: 第 4 軍（クルーゲ）,         side: de, echelon: army, px: 482.6, py: 437.0}
+    - {unit: Q819304,  name_ja: 第 2 軍（ヴァイクス・OKH 予備）, side: de, echelon: army, px: 295.0, py: 405.0}
+    - {unit: Q161213,  name_ja: 第 6 軍（ライヒェナウ）,      side: de, echelon: army, px: 468.4, py: 464.8}
+    - {unit: Q163388,  name_ja: 第 1 装甲集団（クライスト）,   side: de, echelon: army, px: 501.0, py: 487.4}
+    - {unit: Q197284,  name_ja: 第 17 軍（シュテュルプナーゲル）, side: de, echelon: army, px: 467.0, py: 509.2}
+    - {unit: Q155434,  name_ja: 第 11 軍（ショーベルト）,     side: de, echelon: army, px: 574.1, py: 639.6}
+    - {unit: unit-ro-3rd-army, name_ja: ルーマニア 第 3 軍（ドゥミトレスク）, side: ro, echelon: army, px: 502.4, py: 627.7}
+    - {unit: Q2613020, name_ja: ルーマニア 第 4 軍（コンスタンティネスク）, side: ro, echelon: army, px: 570.0, py: 712.0}
+    # ソ連
+    - {unit: Q1076943, name_ja: 北部方面軍（ポポフ）,          side: su, echelon: army_group, px: 818.0, py: 85.0}
+    - {unit: Q257026,  name_ja: 北西方面軍（F.I. クズネツォフ）, side: su, echelon: army_group, px: 878.0, py: 155.0}
+    - {unit: Q848492,  name_ja: 西部方面軍（チモシェンコ）,     side: su, echelon: army_group, px: 855.0, py: 297.0}
+    - {unit: Q2599920, name_ja: 予備方面軍（ジューコフ）,       side: su, echelon: army_group, px: 938.0, py: 240.0}
+    - {unit: Q921618,  name_ja: ブリャンスク方面軍（エリョーメンコ）, side: su, echelon: army_group, px: 855.0, py: 470.0}
+    - {unit: Q1469548, name_ja: 南西方面軍（キルポノス）,       side: su, echelon: army_group, px: 852.0, py: 489.0}
+    - {unit: Q1634413, name_ja: 南部方面軍（チュレネフ）,       side: su, echelon: army_group, px: 975.0, py: 662.0}
+    - {unit: Q2026210, name_ja: 第 22 軍（エルシャコフ）,      side: su, echelon: army, px: 746.9, py: 252.4}
+    - {unit: Q2470547, name_ja: 第 19 軍（コーネフ）,          side: su, echelon: army, px: 771.5, py: 293.2}
+    - {unit: unit-su-5th-army-1941, name_ja: 第 5 軍（ポタポフ）, side: su, echelon: army, px: 649.2, py: 467.3}
+    - {unit: Q1823528, name_ja: 第 21 軍（V.I. クズネツォフ）, side: su, echelon: army, px: 716.3, py: 447.2}
+    - {unit: Q3658267, name_ja: 第 37 軍（ヴラソフ）,          side: su, echelon: army, px: 704.4, py: 486.6}
+    - {unit: Q4030397, name_ja: 第 26 軍（コステンコ）,        side: su, echelon: army, px: 730.5, py: 505.6}

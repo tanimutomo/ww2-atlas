@@ -1,0 +1,56 @@
+# West Point 史学科アトラス WWII Europe 19
+#   "Eastern Europe, 1941 — German Invasion of Russia, Operations 22 June - 25 August 1941"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+#
+# コペンハーゲンからバクーまで約 3000km。1 画素 ≈ 2.7km なので、
+# 読み取り誤差 6〜10 画素がそのまま 20km 前後になる。方面軍・軍を置くには足りる。
+sheet: WWIIEurope19
+title: "German Invasion of Russia, 22 June - 25 August 1941"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 22
+control:
+  - {name: Riga, px: 551.4, py: 217.6, lon: 24.1052, lat: 56.9496}
+  - {name: Pskov, px: 643.2, py: 189.3, lon: 28.3320, lat: 57.8194}
+  - {name: StarayaRussa, px: 713.5, py: 180.8, lon: 31.3550, lat: 57.9928}
+  - {name: Demyansk, px: 737.0, py: 199.8, lon: 32.4670, lat: 57.6440}
+  - {name: Kholm, px: 707.2, py: 220.4, lon: 31.1800, lat: 57.1500}
+  - {name: Memel, px: 476.9, py: 267.2, lon: 21.1443, lat: 55.7033}
+  - {name: Tilsit, px: 491.1, py: 304.6, lon: 21.8800, lat: 55.0800}
+  - {name: Kaunas, px: 538.7, py: 308.0, lon: 23.9036, lat: 54.8985}
+  - {name: Daugavpils, px: 595.9, py: 268.6, lon: 26.5361, lat: 55.8747}
+  - {name: Vilnius, px: 568.4, py: 320.2, lon: 25.2797, lat: 54.6872}
+  - {name: Polotsk, px: 635.0, py: 299.8, lon: 28.7860, lat: 55.4850}
+  - {name: Vitebsk, px: 687.4, py: 301.2, lon: 30.2049, lat: 55.1904}
+  - {name: Nevel, px: 658.2, py: 267.7, lon: 29.9300, lat: 56.0200}
+  - {name: Smolensk, px: 743.2, py: 326.4, lon: 32.0401, lat: 54.7818}
+  - {name: Orsha, px: 687.4, py: 330.9, lon: 30.4172, lat: 54.5081}
+  - {name: Minsk, px: 619.4, py: 357.0, lon: 27.5590, lat: 53.9006}
+  - {name: Bobruisk, px: 648.3, py: 376.3, lon: 29.2214, lat: 53.1384}
+  - {name: Mogilev, px: 692.3, py: 357.0, lon: 30.3320, lat: 53.9006}
+  - {name: Grodno, px: 529.9, py: 358.4, lon: 23.8258, lat: 53.6884}
+  - {name: Bialystok, px: 510.1, py: 380.5, lon: 23.1688, lat: 53.1325}
+  - {name: Suwalki, px: 506.7, py: 340.0, lon: 22.9300, lat: 54.1000}
+  - {name: Roslavl, px: 741.8, py: 362.7, lon: 32.8600, lat: 53.9500}
+  - {name: Brest, px: 520.0, py: 429.1, lon: 23.7341, lat: 52.0976}
+  - {name: Lublin, px: 484.6, py: 463.9, lon: 22.5684, lat: 51.2465}
+  - {name: Kovel, px: 540.7, py: 469.6, lon: 24.7200, lat: 51.2100}
+  - {name: Mozyr, px: 664.4, py: 439.3, lon: 29.2700, lat: 52.0500}
+  - {name: Rivne, px: 581.8, py: 496.0, lon: 26.2516, lat: 50.6199}
+  - {name: Korosten, px: 644.1, py: 488.6, lon: 28.6500, lat: 50.9500}
+  - {name: Kyiv, px: 687.4, py: 506.4, lon: 30.5234, lat: 50.4501}
+  - {name: Zhytomyr, px: 644.9, py: 514.9, lon: 28.6587, lat: 50.2547}
+  - {name: Fastiv, px: 678.9, py: 524.3, lon: 29.9100, lat: 50.0750}
+  - {name: Lviv, px: 520.0, py: 527.7, lon: 24.0297, lat: 49.8397}
+  - {name: Przemysl, px: 480.6, py: 529.9, lon: 22.7677, lat: 49.7838}
+  - {name: Ternopil, px: 562.8, py: 543.8, lon: 25.5948, lat: 49.5535}
+  - {name: Vinnytsia, px: 636.4, py: 556.9, lon: 28.4682, lat: 49.2331}
+  - {name: Chernivtsi, px: 568.4, py: 599.1, lon: 25.9350, lat: 48.2900}
+  - {name: Uman, px: 688.9, py: 583.8, lon: 30.2219, lat: 48.7480}
+  - {name: Kropyvnytskyi, px: 743.2, py: 590.0, lon: 32.2623, lat: 48.5079}
+  - {name: Balta, px: 672.4, py: 614.9, lon: 29.6200, lat: 47.9350}
+  - {name: Konotop, px: 763.0, py: 473.0, lon: 33.2022, lat: 51.2417}
+  - {name: Romny, px: 756.0, py: 491.7, lon: 33.4833, lat: 50.7500}
+  - {name: Lubny, px: 755.4, py: 524.8, lon: 32.9930, lat: 50.0170}
+  - {name: Iasi, px: 604.4, py: 650.1, lon: 27.6014, lat: 47.1585}

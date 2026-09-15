@@ -1,0 +1,512 @@
+# ⚠ 自動生成。直すのは data/units/readings/barbarossa.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: barbarossa-19410622-q163084
+    unit: Q163084
+    name_ja: "北方軍集団（レープ）"
+    side: de
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [16.8144, 53.4687]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q158260
+    unit: Q158260
+    name_ja: "中央軍集団（ボック）"
+    side: de
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [17.165, 52.3904]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q266893
+    unit: Q266893
+    name_ja: "南方軍集団（ルントシュテット）"
+    side: de
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [17.3433, 50.4671]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q200121
+    unit: Q200121
+    name_ja: "第 18 軍（キュヒラー）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [19.6565, 55.6713]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q168248
+    unit: Q168248
+    name_ja: "第 4 装甲集団（ヘプナー）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [20.9748, 54.9946]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q194400
+    unit: Q194400
+    name_ja: "第 16 軍（ブッシュ）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [21.2609, 54.3231]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q275151
+    unit: Q275151
+    name_ja: "第 9 軍（シュトラウス）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [21.4343, 53.7098]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q223458
+    unit: Q223458
+    name_ja: "第 3 装甲集団（ホト）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [20.3663, 53.1068]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q210404
+    unit: Q210404
+    name_ja: "第 2 装甲集団（グデーリアン）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [20.963, 52.5591]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q464848
+    unit: Q464848
+    name_ja: "第 4 軍（クルーゲ）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [22.2543, 51.876]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q819304
+    unit: Q819304
+    name_ja: "第 2 軍（ヴァイクス・OKH 予備）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [14.1602, 52.2328]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q161213
+    unit: Q161213
+    name_ja: "第 6 軍（ライヒェナウ）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [21.8, 51.2249]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q163388
+    unit: Q163388
+    name_ja: "第 1 装甲集団（クライスト）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [23.1926, 50.756]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q197284
+    unit: Q197284
+    name_ja: "第 17 軍（シュテュルプナーゲル）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [21.9369, 50.2182]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q155434
+    unit: Q155434
+    name_ja: "第 11 軍（ショーベルト）"
+    side: de
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [26.282, 47.3592]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-unit-ro-3rd-army
+    unit: unit-ro-3rd-army
+    name_ja: "ルーマニア 第 3 軍（ドゥミトレスク）"
+    side: ro
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [23.6859, 47.5794]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q2613020
+    unit: Q2613020
+    name_ja: "ルーマニア 第 4 軍（コンスタンティネスク）"
+    side: ro
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [26.1996, 45.7121]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q1076943
+    unit: Q1076943
+    name_ja: "北部方面軍（ポポフ）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [36.1894, 60.4416]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q257026
+    unit: Q257026
+    name_ja: "北西方面軍（F.I. クズネツォフ）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [38.7324, 58.7991]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q848492
+    unit: Q848492
+    name_ja: "西部方面軍（チモシェンコ）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [37.3371, 55.407]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q2599920
+    unit: Q2599920
+    name_ja: "予備方面軍（ジューコフ）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [40.9539, 56.7623]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q921618
+    unit: Q921618
+    name_ja: "ブリャンスク方面軍（エリョーメンコ）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [36.6927, 51.308]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q1469548
+    unit: Q1469548
+    name_ja: "南西方面軍（キルポノス）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [36.5017, 50.8607]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q1634413
+    unit: Q1634413
+    name_ja: "南部方面軍（チュレネフ）"
+    side: su
+    echelon: army_group
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [39.5832, 46.6501]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q2026210
+    unit: Q2026210
+    name_ja: "第 22 軍（エルシャコフ）"
+    side: su
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [32.9229, 56.4239]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q2470547
+    unit: Q2470547
+    name_ja: "第 19 軍（コーネフ）"
+    side: su
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [33.9203, 55.4767]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-unit-su-5th-army-1941
+    unit: unit-su-5th-army-1941
+    name_ja: "第 5 軍（ポタポフ）"
+    side: su
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [28.9445, 51.3514]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q1823528
+    unit: Q1823528
+    name_ja: "第 21 軍（V.I. クズネツォフ）"
+    side: su
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [31.538, 51.848]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q3658267
+    unit: Q3658267
+    name_ja: "第 37 軍（ヴラソフ）"
+    side: su
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [31.0457, 50.9282]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: barbarossa-19410622-q4030397
+    unit: Q4030397
+    name_ja: "第 26 軍（コステンコ）"
+    side: su
+    echelon: army
+    date: 1941-06-22
+    until: 1941-08-26
+    coord: [31.9958, 50.4914]
+    heading: null
+    event: Q83055
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope19}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 19: German Invasion of Russia, Operations 22 June - 25 August 1941"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
