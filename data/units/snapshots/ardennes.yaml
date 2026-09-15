@@ -1,0 +1,529 @@
+# ⚠ 自動生成。直すのは data/units/readings/ardennes.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: ardennes-19441216-q655075
+    unit: Q655075
+    name_ja: "西方総軍（ルントシュテット）"
+    side: de
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [7.9013, 50.2292]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q643512
+    unit: Q643512
+    name_ja: "H 軍集団（シュトゥデント）"
+    side: de
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.3559, 51.2868]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q157572
+    unit: Q157572
+    name_ja: "B 軍集団（モーデル）"
+    side: de
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [7.2683, 50.2873]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q316999
+    unit: Q316999
+    name_ja: "G 軍集団（バルク）"
+    side: de
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [7.7785, 49.4114]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q191052
+    unit: Q191052
+    name_ja: "第 15 軍（ツァンゲン）"
+    side: de
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.7652, 50.8773]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q246340
+    unit: Q246340
+    name_ja: "第 6 SS 装甲軍（ディートリヒ）"
+    side: de
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.994, 50.4464]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q240048
+    unit: Q240048
+    name_ja: "第 5 装甲軍（マントイフェル）"
+    side: de
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.814, 50.1232]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q671885
+    unit: Q671885
+    name_ja: "第 7 軍（ブランデンベルガー）"
+    side: de
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.8054, 49.9066]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q327779
+    unit: Q327779
+    name_ja: "第 1 軍（オプストフェルダー）"
+    side: de
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [7.1075, 49.4501]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2032096
+    unit: Q2032096
+    name_ja: "第 81 軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.5437, 50.9333]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2563862
+    unit: Q2563862
+    name_ja: "第 74 軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.5997, 50.6902]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2818029
+    unit: Q2818029
+    name_ja: "第 67 軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.5192, 50.4609]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2818019
+    unit: Q2818019
+    name_ja: "第 66 軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.6971, 50.2604]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2817726
+    unit: Q2817726
+    name_ja: "第 58 装甲軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.4935, 50.0787]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2580063
+    unit: Q2580063
+    name_ja: "第 47 装甲軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.5037, 50.0028]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2818513
+    unit: Q2818513
+    name_ja: "第 85 軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.632, 49.9063]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2818465
+    unit: Q2818465
+    name_ja: "第 80 軍団"
+    side: de
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.6121, 49.8503]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q647033
+    unit: Q647033
+    name_ja: "連合国遠征軍最高司令部（アイゼンハワー）"
+    side: us
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [4.1847, 49.517]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q214026
+    unit: Q214026
+    name_ja: "第 21 軍集団（モントゴメリー）"
+    side: uk
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [4.5882, 50.761]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2703383
+    unit: Q2703383
+    name_ja: "米 第 12 軍集団（ブラッドレー）"
+    side: us
+    echelon: army_group
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.4947, 49.1823]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q209514
+    unit: Q209514
+    name_ja: "英 第 2 軍（デンプシー）"
+    side: uk
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.4611, 51.1481]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q275885
+    unit: Q275885
+    name_ja: "米 第 9 軍（シンプソン）"
+    side: us
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.92, 50.8151]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q163646
+    unit: Q163646
+    name_ja: "米 第 1 軍（ホッジズ）"
+    side: us
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.5281, 50.7028]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q223548
+    unit: Q223548
+    name_ja: "米 第 3 軍（パットン）"
+    side: us
+    echelon: army
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.086, 49.5452]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q1515278
+    unit: Q1515278
+    name_ja: "米 第 7 軍団（コリンズ）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.1468, 50.393]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q2063057
+    unit: Q2063057
+    name_ja: "米 第 5 軍団（ジェロー）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.1065, 50.547]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q582971
+    unit: Q582971
+    name_ja: "米 第 18 空挺軍団（リッジウェイ）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.6047, 50.4469]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q1923739
+    unit: Q1923739
+    name_ja: "米 第 8 軍団（ミドルトン）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.5214, 49.7574]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q1515252
+    unit: Q1515252
+    name_ja: "米 第 3 軍団（ミリキン）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [5.8109, 49.7479]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q8042206
+    unit: Q8042206
+    name_ja: "米 第 12 軍団（エディ）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.2395, 49.7637]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: ardennes-19441216-q8042655
+    unit: Q8042655
+    name_ja: "米 第 20 軍団（ウォーカー）"
+    side: us
+    echelon: corps
+    date: 1944-12-16
+    until: 1944-12-26
+    coord: [6.4951, 49.3653]
+    heading: null
+    event: Q151018
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope72}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 72: The Ardennes Area, Initial German Attack and Operations, 16-25 December 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false

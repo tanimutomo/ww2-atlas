@@ -1,0 +1,57 @@
+# West Point 史学科アトラス WWII Europe 72
+#   "The Ardennes Area, 1944 — Initial German Attack and Operations, 16-25 December 1944"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+# 1 画素 ≈ 0.3km と細かい。軍団まで置ける。
+sheet: WWIIEurope72
+title: "The Ardennes Area, Initial German Attack, 16-25 December 1944"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 5
+control:
+  - {name: Maastricht,  px: 646.7, py: 239.3, lon: 5.6910, lat: 50.8514}
+  - {name: Sittard,     px: 656.7, py: 187.3, lon: 5.8700, lat: 51.0000}
+  - {name: Linnich,     px: 764.0, py: 181.7, lon: 6.2700, lat: 51.0000}
+  - {name: Julich,      px: 781.3, py: 219.3, lon: 6.3600, lat: 50.9200}
+  - {name: Koln,        px: 908.3, py: 214.3, lon: 6.9603, lat: 50.9375}
+  - {name: Duren,       px: 810.0, py: 252.7, lon: 6.4800, lat: 50.8000}
+  - {name: Bonn,        px: 938.3, py: 279.3, lon: 7.0982, lat: 50.7374}
+  - {name: Tongeren,    px: 602.7, py: 272.7, lon: 5.4700, lat: 50.7800}
+  - {name: Aachen,      px: 717.3, py: 278.3, lon: 6.0839, lat: 50.7753}
+  - {name: Eupen,       px: 716.7, py: 315.0, lon: 6.0400, lat: 50.6300}
+  - {name: Verviers,    px: 672.7, py: 345.0, lon: 5.8600, lat: 50.5900}
+  - {name: Liege,       px: 596.7, py: 313.3, lon: 5.5797, lat: 50.6326}
+  - {name: Spa,         px: 678.3, py: 363.3, lon: 5.8600, lat: 50.4900}
+  - {name: Monschau,    px: 761.7, py: 350.7, lon: 6.2450, lat: 50.5550}
+  - {name: Stavelot,    px: 707.7, py: 398.3, lon: 5.9300, lat: 50.4000}
+  - {name: TroisPonts,  px: 672.3, py: 414.3, lon: 5.8700, lat: 50.3700}
+  - {name: Vielsalm,    px: 711.7, py: 428.3, lon: 5.9200, lat: 50.2800}
+  - {name: SanktVith,   px: 751.0, py: 429.3, lon: 6.1300, lat: 50.2800}
+  - {name: Schleiden,   px: 797.3, py: 357.7, lon: 6.4700, lat: 50.5300}
+  - {name: Blankenheim, px: 819.3, py: 387.7, lon: 6.6500, lat: 50.4400}
+  - {name: Aywaille,    px: 640.0, py: 372.7, lon: 5.6800, lat: 50.4700}
+  - {name: Manhay,      px: 616.7, py: 432.7, lon: 5.6700, lat: 50.2900}
+  - {name: Werbomont,   px: 606.7, py: 411.0, lon: 5.6800, lat: 50.4000}
+  - {name: Rochefort,   px: 537.7, py: 473.3, lon: 5.2200, lat: 50.1600}
+  - {name: LaRoche,     px: 616.0, py: 476.7, lon: 5.5760, lat: 50.1830}
+  - {name: Houffalize,  px: 662.3, py: 492.7, lon: 5.7900, lat: 50.1300}
+  - {name: SaintHubert, px: 574.0, py: 523.3, lon: 5.3740, lat: 50.0270}
+  - {name: Bastogne,    px: 653.3, py: 533.3, lon: 5.7167, lat: 50.0000}
+  - {name: Clervaux,    px: 687.7, py: 527.7, lon: 6.0300, lat: 50.0550}
+  - {name: Dasburg,     px: 745.0, py: 526.0, lon: 6.2000, lat: 50.0280}
+  - {name: Libramont,   px: 564.0, py: 555.0, lon: 5.3800, lat: 49.9200}
+  - {name: Wiltz,       px: 681.7, py: 556.7, lon: 5.9300, lat: 49.9700}
+  - {name: Vianden,     px: 750.0, py: 552.3, lon: 6.2067, lat: 49.9350}
+  - {name: Bitburg,     px: 829.3, py: 544.3, lon: 6.5300, lat: 49.9700}
+  - {name: Neufchateau, px: 588.3, py: 589.0, lon: 5.4300, lat: 49.8400}
+  - {name: Martelange,  px: 630.0, py: 585.7, lon: 5.7400, lat: 49.8300}
+  - {name: Diekirch,    px: 721.7, py: 583.3, lon: 6.1600, lat: 49.8700}
+  - {name: Echternach,  px: 798.3, py: 603.3, lon: 6.4200, lat: 49.8100}
+  - {name: Trier,       px: 846.7, py: 621.0, lon: 6.6442, lat: 49.7596}
+  - {name: Arlon,       px: 656.7, py: 636.0, lon: 5.8167, lat: 49.6833}
+  - {name: Luxembourg,  px: 743.3, py: 670.0, lon: 6.1319, lat: 49.6116}
+  - {name: Virton,      px: 586.0, py: 677.3, lon: 5.5320, lat: 49.5670}
+  - {name: Montmedy,    px: 563.3, py: 692.7, lon: 5.3600, lat: 49.5200}
+  - {name: Longwy,      px: 658.3, py: 712.7, lon: 5.7600, lat: 49.5200}
+  - {name: Saarburg,    px: 822.7, py: 670.0, lon: 6.5500, lat: 49.6100}
+  - {name: Merzig,      px: 858.3, py: 711.7, lon: 6.6400, lat: 49.4400}
