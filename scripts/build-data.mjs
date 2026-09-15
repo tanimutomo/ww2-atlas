@@ -35,6 +35,9 @@ const HOMEFRONT_TYPES = ['announcement', 'press', 'newsreel', 'life', 'opinion',
 const RELATIONS = ['authorizes', 'triggers', 'responds_to', 'decided_at', 'reports'];
 const DISCREPANCY_KINDS = ['own_losses_understated', 'enemy_losses_overstated', 'omitted', 'euphemism', 'accurate'];
 const CONTROLS = ['axis', 'axis_occupied', 'allied', 'allied_occupied', 'neutral', 'su'];
+// 部隊配置（P2-a）。echelon は大きい順。milsymbol の SIDC に対応させる
+const ECHELONS = ['army_group', 'army', 'corps', 'division', 'regiment'];
+const MOVEMENT_KINDS = ['advance', 'retreat', 'transfer'];
 
 const errors = [];
 const warnings = [];
@@ -479,6 +482,93 @@ async function main() {
     warn('data/territory/approx/index.json が無い（npm run build:approx）');
   }
 
+  // ------------------------------------------------------- 部隊配置（P2-a）
+  // 配置は「作戦フェーズごとのスナップショット」。date <= 今 < until の 1 枚だけを出す。
+  // 補間しない（間を埋めると、読み取っていない位置を描いたことになる）
+  const isDate = (v) => /^\d{4}-\d{2}-\d{2}$/.test(String(v ?? ''));
+  const checkSourceMap = (rec, where) => {
+    const m = rec.source_map;
+    if (!m?.title || !m?.url) err(`${where} (${rec.id}): source_map に title / url が要る`);
+  };
+
+  const snapshots = [];
+  for (const { file, records } of await readYamlDir(resolve(DATA, 'units/snapshots'))) {
+    for (const u of records) {
+      const where = `units/snapshots/${file}`;
+      checkCommon(u, where);
+      checkCoord(u, where);
+      checkSourceMap(u, where);
+      if (!u.unit) err(`${where} (${u.id}): unit（Wikidata QID か unit-… の自前 id）が無い`);
+      if (!u.name_ja) err(`${where} (${u.id}): name_ja が無い`);
+      if (!actorIds.has(u.side)) err(`${where} (${u.id}): side "${u.side}" が actors.yaml に無い`);
+      if (!ECHELONS.includes(u.echelon)) err(`${where} (${u.id}): 未知の echelon "${u.echelon}"`);
+      if (!isDate(u.date)) err(`${where} (${u.id}): date は YYYY-MM-DD`);
+      if (!isDate(u.until)) err(`${where} (${u.id}): until は YYYY-MM-DD`);
+      if (isDate(u.date) && isDate(u.until) && u.until <= u.date) {
+        err(`${where} (${u.id}): until は date より後（date <= 今 < until で出す）`);
+      }
+      if (u.heading != null && (typeof u.heading !== 'number' || u.heading < 0 || u.heading >= 360)) {
+        err(`${where} (${u.id}): heading は 0 以上 360 未満の度（不明なら null）`);
+      }
+      // 配置は「どの戦闘の話か」が無いと画面に出す機会が無い
+      if (!u.event) err(`${where} (${u.id}): event が無い`);
+      else if (!eventIds.has(u.event)) err(`${where} (${u.id}): event "${u.event}" が存在しない`);
+      snapshots.push(u);
+    }
+  }
+
+  const movements = [];
+  for (const { file, records } of await readYamlDir(resolve(DATA, 'units/movements'))) {
+    for (const m of records) {
+      const where = `units/movements/${file}`;
+      checkCommon(m, where);
+      checkSourceMap(m, where);
+      if (!m.unit) err(`${where} (${m.id}): unit が無い`);
+      if (!MOVEMENT_KINDS.includes(m.kind)) err(`${where} (${m.id}): 未知の kind "${m.kind}"`);
+      if (!isDate(m.from_date)) err(`${where} (${m.id}): from_date は YYYY-MM-DD`);
+      if (!isDate(m.to_date)) err(`${where} (${m.id}): to_date は YYYY-MM-DD`);
+      if (isDate(m.from_date) && isDate(m.to_date) && m.to_date < m.from_date) {
+        err(`${where} (${m.id}): to_date < from_date`);
+      }
+      if (!Array.isArray(m.path) || m.path.length < 2) {
+        err(`${where} (${m.id}): path は 2 点以上の [経度, 緯度] の配列`);
+      } else {
+        for (const c of m.path) {
+          if (!Array.isArray(c) || c.length !== 2 || typeof c[0] !== 'number' || typeof c[1] !== 'number') {
+            err(`${where} (${m.id}): path の要素が [経度, 緯度] でない`);
+            break;
+          }
+        }
+      }
+      if (!m.event) err(`${where} (${m.id}): event が無い`);
+      else if (!eventIds.has(m.event)) err(`${where} (${m.id}): event "${m.event}" が存在しない`);
+      movements.push(m);
+    }
+  }
+
+  // 同じ部隊の配置が期間で重ならないこと（重なると 2 つ同時に出る）
+  const byUnit = new Map();
+  for (const u of snapshots) {
+    if (!byUnit.has(u.unit)) byUnit.set(u.unit, []);
+    byUnit.get(u.unit).push(u);
+  }
+  for (const [unit, list] of byUnit) {
+    list.sort((a, b) => String(a.date).localeCompare(String(b.date)));
+    for (let i = 1; i < list.length; i++) {
+      if (list[i].date < list[i - 1].until) {
+        err(`units/snapshots: ${unit} の ${list[i - 1].id} と ${list[i].id} が期間で重なっている`);
+      }
+    }
+  }
+
+  // id の重複は片方を静かに落とすので、ここで落とす
+  if (new Set(snapshots.map((u) => u.id)).size !== snapshots.length) {
+    err('units/snapshots: id が重複している');
+  }
+  if (new Set(movements.map((m) => m.id)).size !== movements.length) {
+    err('units/movements: id が重複している');
+  }
+
   // --------------------------------------------------------------- 検証結果
   if (warnings.length) {
     console.warn(`\n⚠ 警告 ${warnings.length} 件`);
@@ -504,6 +594,8 @@ async function main() {
     control: controlMonths.length,
     approx: approxDates.length,
     summaries: eventSummaries.size,
+    unit_snapshots: snapshots.length,
+    movements: movements.length,
   };
   if (CHECK_ONLY) {
     console.log('\n✓ 検証だけ実行（--check）');
@@ -550,6 +642,19 @@ async function main() {
   }
 
   await write('links.json', { _meta: meta('links', { count: links.length }), links });
+  if (snapshots.length || movements.length) {
+    await write('units.json', {
+      _meta: meta('unit snapshots / movements', {
+        snapshots: snapshots.length,
+        movements: movements.length,
+        note:
+          'West Point 史学科アトラス等の PD 状況図から位置と向きだけを読み取ったもの。' +
+          '軍・軍団レベル。作戦の節目ごとのスナップショットで、間は補間していない',
+      }),
+      snapshots,
+      movements,
+    });
+  }
   if (eventSummaries.size) {
     await write('event-summaries.cc-by-sa.json', {
       _meta: meta('event summaries (CC BY-SA)', {

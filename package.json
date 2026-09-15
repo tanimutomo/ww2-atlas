@@ -14,10 +14,13 @@
     "build:approx": "node scripts/build-approx-occupation.mjs",
     "fetch:summaries": "node scripts/fetch-wikipedia-summaries.mjs",
     "check": "node scripts/build-data.mjs --check",
-    "check:sources": "node scripts/check-sources.mjs"
+    "check:sources": "node scripts/check-sources.mjs",
+    "build:units": "node scripts/build-units.mjs",
+    "check:georef": "node scripts/georef-check.mjs"
   },
   "dependencies": {
-    "maplibre-gl": "^5.6.0"
+    "maplibre-gl": "^5.6.0",
+    "milsymbol": "^3.0.4"
   },
   "devDependencies": {
     "js-yaml": "^4.1.0",

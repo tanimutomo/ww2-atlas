@@ -11,6 +11,9 @@ export type Control =
 
 export type Source = { title: string; url: string; note?: string };
 
+export type { UnitSnapshot, Movement } from './units';
+import type { UnitSnapshot, Movement } from './units';
+
 export type EventRec = {
   id: string;
   name_ja: string;
@@ -118,6 +121,9 @@ export type Atlas = {
    * 精度は元の折れ線と同じなので、UI では薄く塗って区別している。
    */
   approxDates: string[];
+  /** 部隊配置（P2-a）。まだ無いこともある */
+  unitSnapshots: UnitSnapshot[];
+  movements: Movement[];
   /**
    * Event の短い要約（Wikipedia のリード文にもとづく・CC BY-SA）。
    * 自前の要約（summary_ja）がある Event はここに入らない。
@@ -158,6 +164,10 @@ export async function loadAtlas(): Promise<Atlas> {
   const wiki = await getJson<{ summaries: { id: string; text: string }[] }>(
     'event-summaries.cc-by-sa.json',
   ).catch(() => ({ summaries: [] }));
+  // 部隊配置はまだ作っていない作戦のほうが多いので、無くても落とさない
+  const units = await getJson<{ snapshots: UnitSnapshot[]; movements: Movement[] }>(
+    'units.json',
+  ).catch(() => ({ snapshots: [], movements: [] }));
 
   const byId = new Map<string, EventRec | Decision | HomeFront>();
   for (const r of ev.events) byId.set(r.id, r);
@@ -185,6 +195,8 @@ export async function loadAtlas(): Promise<Atlas> {
     keyframes: tf.keyframes,
     controlMonths: control.months.map((m) => m.month),
     approxDates: approx.dates.map((d) => d.date),
+    unitSnapshots: units.snapshots ?? [],
+    movements: units.movements ?? [],
     wikiSummaries: new Map(wiki.summaries.map((s) => [s.id, s.text])),
     byId,
     linksOf,

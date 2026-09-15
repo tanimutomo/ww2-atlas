@@ -1,0 +1,31 @@
+# West Point 史学科アトラス WWII Europe 55
+#   "Invasion of Normandy and Operations, 6-12 June 1944"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+#
+# px / py は **幅 1400 に縮めた画像**の画素。原寸のままだと拡大して読むときに
+# 数え間違えるので、縮めた側で統一する（small_width を変えたら全部取り直し）。
+# lon / lat は地名の実座標。両者からアフィン変換を当てる（scripts/lib/affine.mjs）。
+sheet: WWIIEurope55
+title: "Invasion of Normandy and Operations, 6-12 June 1944"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+max_rmse_km: 4
+control:
+  - {name: Coutances,        px: 427.0, py: 480.1, lon: -1.4442, lat: 49.0453}
+  - {name: Saint-Lô,         px: 554.1, py: 446.9, lon: -1.0894, lat: 49.1157}
+  - {name: Carentan,         px: 506.6, py: 344.2, lon: -1.2436, lat: 49.3036}
+  - {name: Périers,          px: 442.1, py: 408.4, lon: -1.4139, lat: 49.1794}
+  - {name: Lessay,           px: 396.5, py: 392.5, lon: -1.5333, lat: 49.2183}
+  - {name: La Haye-du-Puits, px: 389.4, py: 355.1, lon: -1.5439, lat: 49.2925}
+  - {name: Tessy-sur-Vire,   px: 560.6, py: 530.0, lon: -1.0619, lat: 48.9761}
+  - {name: Airel,            px: 557.6, py: 393.6, lon: -1.0331, lat: 49.2264}
+  - {name: Lisieux,          px: 1013.8, py: 426.2, lon: 0.2280, lat: 49.1462}
+  - {name: Deauville,        px: 965.3, py: 302.4, lon: 0.0725, lat: 49.3606}
+  - {name: Cabourg,          px: 896.1, py: 347.9, lon: -0.1147, lat: 49.2896}
+  - {name: Bernay,           px: 1157.9, py: 456.2, lon: 0.5972, lat: 49.0886}
+  - {name: Pont-Audemer,     px: 1114.2, py: 309.2, lon: 0.5140, lat: 49.3520}
+  - {name: Saint-Pierre-sur-Dives, px: 927.7, py: 492.4, lon: -0.0316, lat: 49.0189}
+  - {name: Falaise,          px: 869.4, py: 567.5, lon: -0.1958, lat: 48.8931}
+  - {name: Argentan,         px: 929.3, py: 648.7, lon: -0.0210, lat: 48.7447}
+  - {name: Flers,            px: 736.9, py: 644.8, lon: -0.5686, lat: 48.7458}
+  - {name: Chambois,         px: 995.7, py: 623.2, lon: 0.0972, lat: 48.8064}

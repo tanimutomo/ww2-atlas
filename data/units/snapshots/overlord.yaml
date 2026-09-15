@@ -1,0 +1,529 @@
+# ⚠ 自動生成。直すのは data/units/readings/overlord.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: overlord-19440606-q157572
+    unit: Q157572
+    name_ja: "B 軍集団（ロンメル）"
+    side: de
+    echelon: army_group
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [0.9507, 48.8981]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q671885
+    unit: Q671885
+    name_ja: "第 7 軍（ドルマン）"
+    side: de
+    echelon: army
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.1667, 48.1969]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q191052
+    unit: Q191052
+    name_ja: "第 15 軍（ザルムート）"
+    side: de
+    echelon: army
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [3.1532, 50.5264]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2078882
+    unit: Q2078882
+    name_ja: "第 84 軍団"
+    side: de
+    echelon: corps
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.8952, 49.1325]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2580063
+    unit: Q2580063
+    name_ja: "第 47 装甲軍団"
+    side: de
+    echelon: corps
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [0.6252, 49.1941]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2032096
+    unit: Q2032096
+    name_ja: "第 81 軍団"
+    side: de
+    echelon: corps
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [1.1568, 49.6495]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2818029
+    unit: Q2818029
+    name_ja: "第 67 軍団"
+    side: de
+    echelon: corps
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [2.2625, 50.28]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2818481
+    unit: Q2818481
+    name_ja: "第 82 軍団"
+    side: de
+    echelon: corps
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [2.6847, 50.7616]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2621811
+    unit: Q2621811
+    name_ja: "第 243 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-1.6522, 49.5544]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2633592
+    unit: Q2633592
+    name_ja: "第 709 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-1.3253, 49.6015]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q276377
+    unit: Q276377
+    name_ja: "第 91 空挺師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-1.5512, 49.4386]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q390997
+    unit: Q390997
+    name_ja: "第 352 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.8537, 49.3742]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2429393
+    unit: Q2429393
+    name_ja: "第 716 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.4919, 49.3057]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q2631179
+    unit: Q2631179
+    name_ja: "第 711 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [0.0626, 49.3725]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q213379
+    unit: Q213379
+    name_ja: "第 21 装甲師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.28, 49.0976]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q158277
+    unit: Q158277
+    name_ja: "第 12 SS 装甲師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [0.2762, 49.0915]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q233763
+    unit: Q233763
+    name_ja: "装甲教導師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [0.713, 48.4216]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q170787
+    unit: Q170787
+    name_ja: "第 116 装甲師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [1.4046, 49.4997]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q210387
+    unit: Q210387
+    name_ja: "第 2 装甲師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [2.3361, 49.8183]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440606-q667773
+    unit: Q667773
+    name_ja: "第 77 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-1.8755, 48.6303]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope54}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q2715528
+    unit: Q2715528
+    name_ja: "米 第 29 歩兵師団"
+    side: us
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-1.0576, 49.289]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q210607
+    unit: Q210607
+    name_ja: "米 第 2 歩兵師団"
+    side: us
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.955, 49.2834]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q163659
+    unit: Q163659
+    name_ja: "米 第 1 歩兵師団"
+    side: us
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.7755, 49.2861]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q2713768
+    unit: Q2713768
+    name_ja: "英 第 50 歩兵師団"
+    side: uk
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.6475, 49.2261]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q260830
+    unit: Q260830
+    name_ja: "英 第 7 機甲師団"
+    side: uk
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.6317, 49.1923]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q2816553
+    unit: Q2816553
+    name_ja: "カナダ 第 3 歩兵師団"
+    side: ca
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.4759, 49.2139]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q223165
+    unit: Q223165
+    name_ja: "英 第 3 歩兵師団"
+    side: uk
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.4191, 49.2452]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q2429393
+    unit: Q2429393
+    name_ja: "第 716 歩兵師団"
+    side: de
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.4348, 49.1841]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q213379
+    unit: Q213379
+    name_ja: "第 21 装甲師団"
+    side: de
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.2593, 49.1676]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q158277
+    unit: Q158277
+    name_ja: "第 12 SS 装甲師団"
+    side: de
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.5237, 49.1599]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q233763
+    unit: Q233763
+    name_ja: "装甲教導師団"
+    side: de
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-0.6313, 49.1331]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false

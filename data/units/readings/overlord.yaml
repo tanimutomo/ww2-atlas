@@ -1,0 +1,70 @@
+# オーヴァーロード作戦。West Point アトラスから「画素で」読み取った生の値。
+# 経緯度は data/units/georef/<sheet>.yaml の変換で出す（npm run build:units）。
+#
+# ⚠ 記号には 2 種類ある。
+#   ① 地面に置いてあるもの ＝ その部隊がそこにいた
+#   ② 図の外（海・イギリス側）に並べてあるもの ＝ 上陸予定日つきの編成表であって
+#      位置ではない。**②は採らない。** 55 番の UTAH/OMAHA/GOLD/JUNO/SWORD の
+#      上に並ぶ連合軍師団は全部②なので、この図から採れるのは
+#      「12 日までに上陸を終えて地上にいる師団」だけになる。
+#
+# 精度: 独軍の司令部記号（B 軍集団・第 7 軍・第 15 軍）は実際の司令部所在地に
+# 置かれている（ラ・ロシュ＝ギュイヨン／ル・マン／トゥールコワン）。
+# 師団記号は数十 km の幅で見ること。コタンタン半島は図の癖でさらに 5〜8km ずれる。
+
+- operation: overlord
+  event: Q8641370          # オーヴァーロード作戦
+  sheet: WWIIEurope54
+  date: 1944-06-06
+  until: 1944-06-12
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 54: Allied Invasion Force and German Dispositions, 6 June 1944"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない
+  units:
+    - {unit: Q157572,  name_ja: B 軍集団（ロンメル）,      side: de, echelon: army_group, px: 840.7, py: 560.5}
+    - {unit: Q671885,  name_ja: 第 7 軍（ドルマン）,        side: de, echelon: army,       px: 719.7, py: 669.4}
+    - {unit: Q191052,  name_ja: 第 15 軍（ザルムート）,     side: de, echelon: army,       px: 1067.1, py: 305.3}
+    - {unit: Q2078882, name_ja: 第 84 軍団,                side: de, echelon: corps,      px: 646.8, py: 517.6}
+    - {unit: Q2580063, name_ja: 第 47 装甲軍団,            side: de, echelon: corps,      px: 808.0, py: 512.8}
+    - {unit: Q2032096, name_ja: 第 81 軍団,                side: de, echelon: corps,      px: 863.9, py: 441.8}
+    - {unit: Q2818029, name_ja: 第 67 軍団,                side: de, echelon: corps,      px: 977.1, py: 343.8}
+    - {unit: Q2818481, name_ja: 第 82 軍団,                side: de, echelon: corps,      px: 1018.2, py: 268.5}
+    - {unit: Q2621811, name_ja: 第 243 歩兵師団,           side: de, echelon: division,   px: 563.7, py: 447.0}
+    - {unit: Q2633592, name_ja: 第 709 歩兵師団,           side: de, echelon: division,   px: 599.4, py: 441.2}
+    - {unit: Q276377,  name_ja: 第 91 空挺師団,            side: de, echelon: division,   px: 575.2, py: 465.9}
+    - {unit: Q390997,  name_ja: 第 352 歩兵師団,           side: de, echelon: division,   px: 651.2, py: 479.4}
+    - {unit: Q2429393, name_ja: 第 716 歩兵師団,           side: de, echelon: division,   px: 690.1, py: 491.7}
+    - {unit: Q2631179, name_ja: 第 711 歩兵師団,           side: de, echelon: division,   px: 749.1, py: 483.0}
+    - {unit: Q213379,  name_ja: 第 21 装甲師団,            side: de, echelon: division,   px: 712.5, py: 525.5}
+    - {unit: Q158277,  name_ja: 第 12 SS 装甲師団,         side: de, echelon: division,   px: 771.2, py: 528.2}
+    - {unit: Q233763,  name_ja: 装甲教導師団,              side: de, echelon: division,   px: 813.0, py: 635.9}
+    - {unit: Q170787,  name_ja: 第 116 装甲師団,           side: de, echelon: division,   px: 889.5, py: 465.9}
+    - {unit: Q210387,  name_ja: 第 2 装甲師団,             side: de, echelon: division,   px: 985.3, py: 416.5}
+    - {unit: Q667773,  name_ja: 第 77 歩兵師団,            side: de, echelon: division,   px: 539.8, py: 592.8}
+
+- operation: overlord
+  event: Q8641370
+  sheet: WWIIEurope55
+  date: 1944-06-12
+  until: 1944-06-19        # 次の図（58 番）を入れるまでの仮。入れたら詰める
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない
+  units:
+    # 上陸を終えて地上にいる連合軍師団（海の上に並ぶ記号は編成表なので採らない）
+    - {unit: Q2715528, name_ja: 米 第 29 歩兵師団,         side: us, echelon: division, px: 562.1, py: 350.9}
+    - {unit: Q210607, name_ja: 米 第 2 歩兵師団,          side: us, echelon: division, px: 598.6, py: 353.6}
+    - {unit: Q163659, name_ja: 米 第 1 歩兵師団,          side: us, echelon: division, px: 662.3, py: 351.4}
+    - {unit: Q2713768, name_ja: 英 第 50 歩兵師団,         side: uk, echelon: division, px: 708.4, py: 384.3}
+    - {unit: Q260830, name_ja: 英 第 7 機甲師団,          side: uk, echelon: division, px: 714.4, py: 403.0}
+    - {unit: Q2816553, name_ja: カナダ 第 3 歩兵師団,      side: ca, echelon: division, px: 769.5, py: 390.4}
+    - {unit: Q223165, name_ja: 英 第 3 歩兵師団,          side: uk, echelon: division, px: 789.3, py: 372.8}
+    # 前線に張り付いた独師団
+    - {unit: Q2429393, name_ja: 第 716 歩兵師団,           side: de, echelon: division, px: 784.4, py: 406.8}
+    - {unit: Q213379,  name_ja: 第 21 装甲師団,            side: de, echelon: division, px: 846.9, py: 415.3}
+    - {unit: Q158277,  name_ja: 第 12 SS 装甲師団,         side: de, echelon: division, px: 753.1, py: 420.6}
+    - {unit: Q233763,  name_ja: 装甲教導師団,              side: de, echelon: division, px: 715.2, py: 435.9}

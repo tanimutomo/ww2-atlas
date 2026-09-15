@@ -1,0 +1,52 @@
+# West Point 史学科アトラス WWII Europe 54
+#   "Northwestern France, 1944 — Allied Invasion Force and German Dispositions, 6 June 1944"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+#
+# この図はブルターニュからアントワープまで約 700km を写していて、
+# 円錐図法の曲がりがアフィンに収まらない（残差 3.4km）。2 次に上げて 2.7km。
+# ⚠ **コタンタン半島（シェルブール・カランタン・グランカン）だけ 5〜8km ずれる。**
+#   基準点の読み違いではなく（2 枚の切り出しで同じ値が出る）、図の描き方の癖に見える。
+#   D デイの独師団はまさにここにあるので、この一帯の位置は「その程度」と見ること。
+sheet: WWIIEurope54
+title: "Allied Invasion Force and German Dispositions, 6 June 1944"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 4
+control:
+  - {name: Carentan, px: 619.3, py: 491.7, lon: -1.2436, lat: 49.3036}
+  - {name: StLo, px: 625.4, py: 521.9, lon: -1.0894, lat: 49.1157}
+  - {name: Bayeux, px: 668.2, py: 496.1, lon: -0.7024, lat: 49.2764}
+  - {name: Caen, px: 704.4, py: 508.8, lon: -0.3707, lat: 49.1829}
+  - {name: Vire, px: 640.2, py: 565.6, lon: -0.8894, lat: 48.8386}
+  - {name: Avranches, px: 599.0, py: 586.2, lon: -1.3567, lat: 48.6839}
+  - {name: StMalo, px: 528.2, py: 589.4, lon: -2.0257, lat: 48.6493}
+  - {name: Domfront, px: 673.4, py: 603.2, lon: -0.6444, lat: 48.5928}
+  - {name: Falaise, px: 718.1, py: 556.8, lon: -0.1958, lat: 48.8931}
+  - {name: Argentan, px: 734.9, py: 581.0, lon: -0.021, lat: 48.7447}
+  - {name: Fougeres, px: 611.4, py: 638.9, lon: -1.2018, lat: 48.3521}
+  - {name: Mayenne, px: 671.5, py: 650.7, lon: -0.6156, lat: 48.3006}
+  - {name: Rennes, px: 556.8, py: 676.0, lon: -1.6778, lat: 48.1173}
+  - {name: Vitre, px: 607.2, py: 675.1, lon: -1.2119, lat: 48.1246}
+  - {name: Alencon, px: 749.1, py: 633.4, lon: 0.093, lat: 48.4306}
+  - {name: Dieppe, px: 857.4, py: 397.3, lon: 1.0777, lat: 49.9229}
+  - {name: LeHavre, px: 755.0, py: 464.0, lon: 0.1079, lat: 49.4944}
+  - {name: Rouen, px: 858.4, py: 476.1, lon: 1.0993, lat: 49.4431}
+  - {name: Evreux, px: 860.7, py: 539.2, lon: 1.1508, lat: 49.0241}
+  - {name: Vernon, px: 894.4, py: 532.8, lon: 1.4844, lat: 49.0933}
+  - {name: Grandcamp, px: 637.8, py: 478.6, lon: -1.0447, lat: 49.3872}
+  - {name: Boulogne, px: 910.6, py: 272.1, lon: 1.6139, lat: 50.7264}
+  - {name: Lille, px: 1054.2, py: 288.6, lon: 3.0573, lat: 50.6292}
+  - {name: Mons, px: 1151.3, py: 320.2, lon: 3.9564, lat: 50.4542}
+  - {name: Cambrai, px: 1074.2, py: 358.6, lon: 3.235, lat: 50.1767}
+  - {name: Abbeville, px: 932.9, py: 371.2, lon: 1.8357, lat: 50.1053}
+  - {name: Amiens, px: 978.9, py: 403.9, lon: 2.2958, lat: 49.8941}
+  - {name: StQuentin, px: 1080.0, py: 410.7, lon: 3.2865, lat: 49.8489}
+  - {name: Laon, px: 1114.0, py: 454.6, lon: 3.6236, lat: 49.5641}
+  - {name: Compiegne, px: 1031.9, py: 479.6, lon: 2.8261, lat: 49.4179}
+  - {name: Soissons, px: 1083.8, py: 486.5, lon: 3.3239, lat: 49.3817}
+  - {name: Reims, px: 1155.6, py: 502.7, lon: 4.0317, lat: 49.2583}
+  - {name: Cherbourg, px: 555.2, py: 432.1, lon: -1.6164, lat: 49.6386}
+  - {name: LeMans, px: 757.0, py: 703.7, lon: 0.1996, lat: 48.0061}
+  - {name: Chartres, px: 895.1, py: 632.4, lon: 1.489, lat: 48.4439}
+  - {name: Dreux, px: 883.8, py: 589.8, lon: 1.3656, lat: 48.7372}

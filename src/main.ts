@@ -157,7 +157,7 @@ async function main(): Promise<void> {
     const panel = $('#detail-panel');
     if (!id) {
       panel.hidden = true;
-      atlasMap.highlight([]);
+      atlasMap.highlight([], state.date);
       // 閉じたら開く前の視点に戻す。ただし自分で地図を動かしたあとは戻さない
       if (wasOpen && homeView && !atlasMap.hasUserMoved()) atlasMap.easeToView(homeView);
       homeView = null;
@@ -175,7 +175,7 @@ async function main(): Promise<void> {
     // 選択したものと、そこから伸びるリンク先を地図で光らせる。
     // 司令部・国内も地図に出るようになったので、層で絞らず全部光らせる
     const related = (atlas.linksOf.get(id) ?? []).map((l) => (l.from === id ? l.to : l.from));
-    atlasMap.highlight([id, ...related]);
+    atlasMap.highlight([id, ...related], state.date);
 
     const coord = atlasMap.coordOf(id);
     if (coord && pan) {

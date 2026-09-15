@@ -21,6 +21,15 @@ import {
   type MapPoint,
 } from './data';
 import { MapLabels, type LabelItem } from './labels';
+import {
+  bakeArrowhead,
+  bakeIcon,
+  brighten,
+  endBearing,
+  movementsOn,
+  snapshotsOn,
+  type Echelon,
+} from './units';
 
 const BASE = import.meta.env.BASE_URL ?? '/';
 
@@ -44,6 +53,8 @@ export class AtlasMap {
   private currentKeyframe: string | null = null;
   private onSelect: (id: string) => void;
   private labels: MapLabels | null = null;
+  /** 部隊名のラベル。選択中の戦闘のあいだだけ出す */
+  private unitLabels: LabelItem[] = [];
   /** 前回の描画で「進行中」だったイベント。増えたぶんにだけ名前を出す */
   private prevActive = new Set<string>();
   private stickyId: string | null = null;
@@ -216,6 +227,51 @@ export class AtlasMap {
       },
     });
 
+    // 部隊の移動（矢印つきの線）。配置より下に敷く
+    this.map.addSource('unit-moves', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'unit-moves-line',
+      type: 'line',
+      source: 'unit-moves',
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: {
+        'line-color': ['get', 'color'],
+        'line-width': 2,
+        'line-opacity': 0.9,
+        // 後退は破線にして、前進と一目で見分ける
+        'line-dasharray': ['case', ['==', ['get', 'kind'], 'retreat'], ['literal', [2, 2]], ['literal', [1]]],
+      },
+    });
+    this.map.addSource('unit-move-heads', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'unit-move-heads',
+      type: 'symbol',
+      source: 'unit-move-heads',
+      layout: {
+        // 矢じりは色ごとに焼いてある（icon-color は SDF 画像にしか効かない）
+        'icon-image': ['get', 'icon'],
+        'icon-rotate': ['get', 'bearing'],
+        'icon-rotation-alignment': 'map',
+        'icon-allow-overlap': true,
+        'icon-ignore-placement': true,
+      },
+    });
+
+    // 部隊の配置（NATO 記号）
+    this.map.addSource('units', { type: 'geojson', data: emptyFc() });
+    this.map.addLayer({
+      id: 'units-symbol',
+      type: 'symbol',
+      source: 'units',
+      layout: {
+        'icon-image': ['get', 'icon'],
+        'icon-offset': ['get', 'offset'],
+        'icon-allow-overlap': true,
+        'icon-ignore-placement': true,
+      },
+      // 部隊名はグリフを持っていないので、地図のラベル（HTML 側）に出す
+    });
+
     // イベント点
     this.map.addSource('events', { type: 'geojson', data: emptyFc() });
     this.map.addLayer({
@@ -349,10 +405,64 @@ export class AtlasMap {
       })),
     });
 
+    // 開いている戦闘の配置は日付で入れ替わる（スナップショットの区間をまたぐ）
+    this.setUnits(date, this.stickyId);
     this.refreshLabels(date, filters);
   }
 
   /** その日までに起きていて、フィルタを通る点。戦域フィルタは現場だけに効く */
+  /**
+   * 部隊配置を出す。開いている戦闘のものだけ・その日のスナップショットだけ。
+   * 何も開いていなければ空にする（常時出すと地図が記号で埋まる）。
+   */
+  setUnits(date: string, eventId: string | null): void {
+    const snaps = snapshotsOn(this.atlas.unitSnapshots, date, eventId);
+    const moves = movementsOn(this.atlas.movements, date, eventId);
+    const colorOf = (side: string) => brighten(this.atlas.actorById.get(side)?.color ?? '#9aa7b4');
+
+    (this.map.getSource('units') as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: snaps.map((u) => {
+        const color = colorOf(u.side);
+        const { id, offset } = bakeIcon(this.map, color, u.echelon as Echelon, u.heading);
+        return {
+          type: 'Feature' as const,
+          geometry: { type: 'Point' as const, coordinates: u.coord },
+          properties: { icon: id, offset, color },
+        };
+      }),
+    } as never);
+
+    // 部隊名はグリフが無いので HTML のラベルで出す。開いているあいだは消さない
+    this.unitLabels = snaps.map((u) => ({
+      id: `unit:${u.id}`,
+      coord: u.coord,
+      text: `${u.name_ja}`,
+      sticky: true,
+    }));
+
+    const unitOf = new Map(snaps.map((u) => [u.unit, u]));
+    (this.map.getSource('unit-moves') as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: moves.map((m) => ({
+        type: 'Feature' as const,
+        geometry: { type: 'LineString' as const, coordinates: m.path },
+        properties: { kind: m.kind, color: colorOf(unitOf.get(m.unit)?.side ?? '') },
+      })),
+    } as never);
+    (this.map.getSource('unit-move-heads') as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: moves.map((m) => {
+        const color = colorOf(unitOf.get(m.unit)?.side ?? '');
+        return {
+          type: 'Feature' as const,
+          geometry: { type: 'Point' as const, coordinates: m.path[m.path.length - 1] },
+          properties: { icon: bakeArrowhead(this.map, color), bearing: endBearing(m.path) },
+        };
+      }),
+    } as never);
+  }
+
   private visible(date: string, filters: { theatres: Set<string> }): MapPoint[] {
     return this.points.filter(
       (p) => p.start <= date && (p.theatre === null || filters.theatres.has(p.theatre)),
@@ -385,6 +495,9 @@ export class AtlasMap {
         else items.push({ id: sel.id, coord: sel.coord, text: sel.name, sticky: true });
       }
     }
+
+    // 部隊名は開いている戦闘のあいだだけ、常に出す
+    items.push(...this.unitLabels);
 
     this.labels.show(items);
     this.prevActive = activeIds;
@@ -440,16 +553,18 @@ export class AtlasMap {
   }
 
   /** 選択・リンク先のハイライト。先頭が選択中のもので、その名前は出したままにする */
-  highlight(ids: string[]): void {
+  highlight(ids: string[], date?: string): void {
     this.map.setFilter('events-highlight', ['in', ['get', 'id'], ['literal', ids]]);
     this.stickyId = ids[0] ?? null;
+    if (date) this.setUnits(date, this.stickyId);
+    else this.unitLabels = [];
     if (!this.labels) return;
     // ハイライトされた点すべてに名前を出す（リンク先がどれか分かるように）
     const items = ids
       .map((id) => this.points.find((p) => p.id === id))
       .filter((p): p is MapPoint => Boolean(p))
       .map((p) => ({ id: p.id, coord: p.coord, text: p.name, sticky: true }));
-    this.labels.show(items);
+    this.labels.show([...items, ...this.unitLabels]);
   }
 
   /** ずらし込み後の座標。詳細を開いたときに寄せる先として使う */
