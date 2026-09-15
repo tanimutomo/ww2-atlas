@@ -1,0 +1,257 @@
+# ⚠ 自動生成。直すのは data/units/readings/poland.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: poland-19390901-q163084
+    unit: Q163084
+    name_ja: "北方軍集団（ボック）"
+    side: de
+    echelon: army_group
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [16.5837, 53.9119]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q266893
+    unit: Q266893
+    name_ja: "南方軍集団（ルントシュテット）"
+    side: de
+    echelon: army_group
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [16.9068, 50.4656]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q540974
+    unit: Q540974
+    name_ja: "第 3 軍（キュヒラー）"
+    side: de
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [20.2804, 53.9483]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q464848
+    unit: Q464848
+    name_ja: "第 4 軍（クルーゲ）"
+    side: de
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [16.9974, 53.607]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q671863
+    unit: Q671863
+    name_ja: "第 8 軍（ブラスコヴィッツ）"
+    side: de
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [17.3089, 51.2214]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q163925
+    unit: Q163925
+    name_ja: "第 10 軍（ライヒェナウ）"
+    side: de
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [17.9155, 50.7074]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q187119
+    unit: Q187119
+    name_ja: "第 14 軍（リスト）"
+    side: de
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [18.04, 49.8856]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q2617307
+    unit: Q2617307
+    name_ja: "ポモージェ軍"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [18.3139, 53.6089]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q258916
+    unit: Q258916
+    name_ja: "モドリン軍"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [20.7655, 52.9782]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q2348050
+    unit: Q2348050
+    name_ja: "ポズナン軍"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [17.1168, 51.9224]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q4069624
+    unit: Q4069624
+    name_ja: "ウッチ軍"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [19, 51.4027]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q4069623
+    unit: Q4069623
+    name_ja: "クラクフ軍"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [19.6432, 49.8332]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q4069622
+    unit: Q4069622
+    name_ja: "カルパチア軍"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [21.8419, 49.742]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q2618585
+    unit: Q2618585
+    name_ja: "ナレフ軍集団"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [22.6304, 53.3818]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: poland-19390901-q4069629
+    unit: Q4069629
+    name_ja: "プロシー軍（総予備）"
+    side: pl
+    echelon: army
+    date: 1939-09-01
+    until: 1939-09-17
+    coord: [20.7158, 51.3661]
+    heading: null
+    event: Q150812
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope04}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false

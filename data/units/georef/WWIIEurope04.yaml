@@ -1,0 +1,62 @@
+# West Point 史学科アトラス WWII Europe 04
+#   "Poland, 1939 — Dispositions of Opposing Forces, 31 August 1939 and the German Plan"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+#
+# 基準点は拡大した切り出しから読んだ。バルト海からルヴフまで約 900km を
+# 写しているので 2 次（order: 2）。
+#
+# ⚠ **精度は図の広さに比例する。** 記号や地名の点を目で読む誤差はどの図でもおよそ
+#   6〜10 画素で変わらないので、実距離の誤差は「1 画素が何 km か」で決まる。
+#   ノルマンディーの図（1 画素 ≈ 0.3km）は RMSE 1.7km に収まるが、この図は
+#   1 画素 ≈ 1km なので **10km 前後が下限**。北・南・東・西に分けて当て直しても
+#   同じ 10km 前後なので、図法の当て方ではなく読み取りの限界。
+#   軍・軍集団の記号（正面幅が 50〜150km ある）を置くには十分だが、
+#   師団を語れる精度ではない。
+sheet: WWIIEurope04
+title: "Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 12
+control:
+  - {name: Gdynia,       px: 520.4, py: 144.7, lon: 18.5305, lat: 54.5189}
+  - {name: Gdańsk,       px: 538.7, py: 165.6, lon: 18.6466, lat: 54.3520}
+  - {name: Bytów,        px: 450.0, py: 173.3, lon: 17.4914, lat: 54.1697}
+  - {name: Tczew,        px: 527.4, py: 200.8, lon: 18.7900, lat: 54.0928}
+  - {name: Kętrzyn,      px: 707.7, py: 189.4, lon: 21.3750, lat: 54.0764}
+  - {name: Olsztyn,      px: 652.4, py: 226.8, lon: 20.4801, lat: 53.7784}
+  - {name: Ostróda,      px: 623.1, py: 230.5, lon: 19.9650, lat: 53.6959}
+  - {name: Jastrowie,    px: 386.6, py: 257.6, lon: 16.8100, lat: 53.4200}
+  - {name: Piła,         px: 384.0, py: 276.7, lon: 16.7383, lat: 53.1515}
+  - {name: Nakło,        px: 437.2, py: 290.2, lon: 17.6000, lat: 53.1400}
+  - {name: Bydgoszcz,    px: 461.0, py: 294.6, lon: 18.0084, lat: 53.1235}
+  - {name: Toruń,        px: 523.3, py: 312.2, lon: 18.5981, lat: 53.0138}
+  - {name: Włocławek,    px: 542.0, py: 360.3, lon: 19.0677, lat: 52.6483}
+  - {name: Mława,        px: 642.9, py: 300.1, lon: 20.3800, lat: 53.1136}
+  - {name: Wielbark,     px: 671.1, py: 264.2, lon: 20.9450, lat: 53.3986}
+  - {name: Różan,        px: 717.6, py: 328.7, lon: 21.3889, lat: 52.8836}
+  - {name: Pułtusk,      px: 689.0, py: 355.5, lon: 21.0836, lat: 52.7060}
+  - {name: Kwidzyn,      px: 534.7, py: 227.9, lon: 18.9308, lat: 53.7297}
+  - {name: Grodno,       px: 876.4, py: 212.9, lon: 23.8258, lat: 53.6884}
+  - {name: Białystok,    px: 824.2, py: 307.8, lon: 23.1688, lat: 53.1325}
+  - {name: Łomża,        px: 769.4, py: 305.1, lon: 22.0592, lat: 53.1781}
+  - {name: Ełk,          px: 774.0, py: 211.2, lon: 22.3660, lat: 53.8280}
+  - {name: Poznań,       px: 406.4, py: 381.8, lon: 16.9252, lat: 52.4064}
+  - {name: Głogów,       px: 335.1, py: 455.3, lon: 16.0847, lat: 51.6640}
+  - {name: Trzebnica,    px: 395.2, py: 481.1, lon: 17.0630, lat: 51.3100}
+  - {name: Wrocław,      px: 401.8, py: 521.4, lon: 17.0385, lat: 51.1079}
+  - {name: Kalisz,       px: 482.9, py: 453.8, lon: 18.0910, lat: 51.7611}
+  - {name: Łódź,         px: 587.5, py: 456.7, lon: 19.4560, lat: 51.7592}
+  - {name: Łowicz,       px: 617.5, py: 427.1, lon: 19.9450, lat: 52.1078}
+  - {name: Piotrków,     px: 608.8, py: 500.0, lon: 19.7030, lat: 51.4050}
+  - {name: Radom,        px: 691.7, py: 499.2, lon: 21.1471, lat: 51.4027}
+  - {name: Częstochowa,  px: 565.1, py: 570.8, lon: 19.1203, lat: 50.8118}
+  - {name: Katowice,     px: 547.2, py: 630.2, lon: 19.0238, lat: 50.2649}
+  - {name: Tarnów,       px: 695.2, py: 671.6, lon: 20.9858, lat: 50.0121}
+  - {name: Dębica,       px: 721.8, py: 654.8, lon: 21.4114, lat: 50.0517}
+  - {name: Jarosław,     px: 826.2, py: 674.9, lon: 22.6778, lat: 50.0167}
+  - {name: Lwów,         px: 909.1, py: 676.8, lon: 24.0297, lat: 49.8397}
+  - {name: Przemyśl,     px: 821.0, py: 696.1, lon: 22.7677, lat: 49.7838}
+  - {name: Zamość,       px: 846.5, py: 576.0, lon: 23.2500, lat: 50.7167}
+  - {name: Brest,        px: 870.1, py: 431.3, lon: 23.7341, lat: 52.0976}
+  - {name: Włodawa,      px: 857.2, py: 486.5, lon: 23.5500, lat: 51.5500}

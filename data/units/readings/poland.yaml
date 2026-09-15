@@ -1,0 +1,40 @@
+# ポーランド侵攻 1939。West Point アトラス 04 番（両軍の配置・8 月 31 日）から
+# 「画素で」読み取った生の値。経緯度は georef の変換で出す（npm run build:units）。
+#
+# この図は珍しく**両軍とも地面に置いてある**（ノルマンディーの 55 番のような
+# 「海の上の編成表」が無い）。ただし連合国側の「GENERAL RESERVE」の箱だけは
+# 吹き出しで、細い線が実際の集結地（ラドム〜キェルツェの袋）を指している。
+# 箱ではなく袋のほうに置いた（プロシー軍）。
+# ナレフ軍集団も同じで、文字は袋の外にあるので袋の中心に置いている。
+#
+# 軍・軍集団だけを採り、軍団（XIX・XXI など）は採っていない。
+# この図の 1 画素は約 1km で、読み取り誤差がおよそ 10km ある。軍団を語る精度が無い。
+
+- operation: poland
+  event: Q150812           # ポーランド侵攻
+  sheet: WWIIEurope04
+  date: 1939-09-01
+  until: 1939-09-17        # ソ連の侵攻で図が変わる日まで
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 4: Poland 1939, Dispositions of Opposing Forces, 31 August 1939"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない
+  units:
+    # ドイツ
+    - {unit: Q163084,  name_ja: 北方軍集団（ボック）,   side: de, echelon: army_group, px: 375.9, py: 199.7}
+    - {unit: Q266893,  name_ja: 南方軍集団（ルントシュテット）, side: de, echelon: army_group, px: 394.0, py: 588.0}
+    - {unit: Q540974,  name_ja: 第 3 軍（キュヒラー）,   side: de, echelon: army, px: 637.7, py: 207.0}
+    - {unit: Q464848,  name_ja: 第 4 軍（クルーゲ）,     side: de, echelon: army, px: 404.2, py: 237.1}
+    - {unit: Q671863,  name_ja: 第 8 軍（ブラスコヴィッツ）, side: de, echelon: army, px: 422.6, py: 508.0}
+    - {unit: Q163925,  name_ja: 第 10 軍（ライヒェナウ）, side: de, echelon: army, px: 469.6, py: 570.8}
+    - {unit: Q187119,  name_ja: 第 14 軍（リスト）,      side: de, echelon: army, px: 483.3, py: 663.8}
+    # ポーランド
+    - {unit: Q2617307, name_ja: ポモージェ軍,           side: pl, echelon: army, px: 499.1, py: 243.7}
+    - {unit: Q258916,  name_ja: モドリン軍,             side: pl, echelon: army, px: 669.3, py: 321.4}
+    - {unit: Q2348050, name_ja: ポズナン軍,             side: pl, echelon: army, px: 407.8, py: 427.9}
+    - {unit: Q4069624, name_ja: ウッチ軍,               side: pl, echelon: army, px: 547.1, py: 499.6}
+    - {unit: Q4069623, name_ja: クラクフ軍,             side: pl, echelon: army, px: 602.9, py: 681.3}
+    - {unit: Q4069622, name_ja: カルパチア軍,           side: pl, echelon: army, px: 760.8, py: 698.8}
+    - {unit: Q2618585, name_ja: ナレフ軍集団,           side: pl, echelon: army, px: 794.9, py: 268.6}
+    - {unit: Q4069629, name_ja: プロシー軍（総予備）,   side: pl, echelon: army, px: 669.6, py: 509.6}

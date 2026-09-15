@@ -1,0 +1,48 @@
+# 西方戦役（黄色作戦）1940。West Point アトラス 10 番（両軍の配置）から
+# 「画素で」読み取った生の値。経緯度は georef の変換で出す。
+#
+# この図も両軍とも地面に置いてある。軍・軍集団だけを採った。
+# 1 画素 ≈ 1.3km で読み取り誤差が 10km 前後あるので、軍団以下を語る精度は無い。
+#
+# ⚠ 仏第 1・第 2 軍集団は Wikidata に項目が無いので自前 id（unit-fr-…）。
+# ⚠ **軍集団の箱は「その軍集団の受け持ち区域」に置いてある**のであって、
+#   司令部の所在地ではない。B 軍集団の箱はエムス川の東（パーダーボルン付近）に
+#   出るが、ボックの司令部はもっと西にあった。師団や軍の記号とは読み方が違う。
+
+- operation: france1940
+  event: Q151340           # フランス侵攻（西方電撃戦）
+  sheet: WWIIEurope10
+  date: 1940-05-10
+  until: 1940-05-21        # 英仏海峡到達で図が変わる日まで
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 10: Campaign in the West, Dispositions of Opposing Forces, 1940"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない
+  units:
+    # ドイツ
+    - {unit: Q157572,  name_ja: B 軍集団（ボック）,        side: de, echelon: army_group, px: 1146.1, py: 269.6}
+    - {unit: Q163259,  name_ja: A 軍集団（ルントシュテット）, side: de, echelon: army_group, px: 1137.6, py: 408.3}
+    - {unit: Q313823,  name_ja: C 軍集団（レープ）,        side: de, echelon: army_group, px: 1136.2, py: 595.2}
+    - {unit: Q200121,  name_ja: 第 18 軍（キュヒラー）,     side: de, echelon: army, px: 1102.1, py: 193.3}
+    - {unit: Q161213,  name_ja: 第 6 軍（ライヒェナウ）,     side: de, echelon: army, px: 994.4, py: 376.7}
+    - {unit: Q464848,  name_ja: 第 4 軍（クルーゲ）,        side: de, echelon: army, px: 1039.4, py: 407.3}
+    - {unit: Q819304,  name_ja: 第 2 軍（ヴァイクス）,       side: de, echelon: army, px: 1107.5, py: 452.4}
+    - {unit: Q171673,  name_ja: 第 12 軍（リスト）,         side: de, echelon: army, px: 1047.1, py: 467.1}
+    - {unit: Q194400,  name_ja: 第 16 軍（ブッシュ）,       side: de, echelon: army, px: 1050.5, py: 504.0}
+    - {unit: Q2077031, name_ja: クライスト装甲集団,          side: de, echelon: army, px: 1003.3, py: 496.3}
+    - {unit: Q327779,  name_ja: 第 1 軍（ヴィッツレーベン）, side: de, echelon: army, px: 1085.8, py: 581.8}
+    - {unit: Q671885,  name_ja: 第 7 軍（ドルマン）,        side: de, echelon: army, px: 1156.3, py: 733.6}
+    # 連合国
+    - {unit: unit-fr-ag1, name_ja: 仏 第 1 軍集団（ビヨット）, side: fr, echelon: army_group, px: 640.0, py: 546.7}
+    - {unit: unit-fr-ag2, name_ja: 仏 第 2 軍集団（プレテラ）, side: fr, echelon: army_group, px: 940.3, py: 689.5}
+    - {unit: Q3277777, name_ja: 英 海外派遣軍（ゴート）,     side: uk, echelon: army, px: 695.0, py: 444.0}
+    - {unit: Q162513,  name_ja: 仏 第 1 軍（ブランシャール）, side: fr, echelon: army, px: 733.3, py: 462.7}
+    - {unit: Q259766,  name_ja: 仏 第 7 軍（ジロー）,        side: fr, echelon: army, px: 657.0, py: 398.0}
+    - {unit: Q2818788, name_ja: 仏 第 9 軍（コラップ）,      side: fr, echelon: army, px: 783.3, py: 523.3}
+    - {unit: Q209507,  name_ja: 仏 第 2 軍（アンツィジェ）,  side: fr, echelon: army, px: 880.8, py: 576.4}
+    - {unit: Q2816561, name_ja: 仏 第 3 軍（コンデ）,        side: fr, echelon: army, px: 949.7, py: 606.6}
+    - {unit: Q2816994, name_ja: 仏 第 4 軍（ルカン）,        side: fr, echelon: army, px: 1050.5, py: 655.0}
+    - {unit: Q2817826, name_ja: 仏 第 5 軍（ブーレ）,        side: fr, echelon: army, px: 1034.6, py: 708.3}
+    - {unit: Q2818604, name_ja: 仏 第 8 軍（ガルシュリ）,    side: fr, echelon: army, px: 1031.3, py: 771.1}
+    - {unit: Q2257572, name_ja: ベルギー軍（レオポルド 3 世）, side: be, echelon: army, px: 872.0, py: 385.8}
