@@ -1,0 +1,53 @@
+# ⚠ 自動生成。直すのは data/units/readings/torch.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: torch-19421108-unit-torch-western
+    unit: unit-torch-western
+    name_ja: "西部機動部隊（フェダラ）"
+    side: us
+    echelon: corps
+    date: 1942-11-08
+    until: 1942-11-17
+    coord: [-7.7694, 33.8236]
+    heading: 143
+    event: Q194132
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope38a}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: torch-19421108-unit-torch-center
+    unit: unit-torch-center
+    name_ja: "中部機動部隊（オラン）"
+    side: us
+    echelon: corps
+    date: 1942-11-08
+    until: 1942-11-17
+    coord: [-0.4232, 35.6192]
+    heading: 180
+    event: Q194132
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope38a}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: torch-19421108-unit-torch-eastern
+    unit: unit-torch-eastern
+    name_ja: "東部機動部隊（アルジェ）"
+    side: uk
+    echelon: corps
+    date: 1942-11-08
+    until: 1942-11-17
+    coord: [3.0405, 36.7773]
+    heading: 190
+    event: Q194132
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope38a}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false

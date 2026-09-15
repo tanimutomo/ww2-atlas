@@ -1,0 +1,26 @@
+# トーチ作戦 1942。West Point アトラス 38（合成図）の上側から読み取った。
+#
+# ⚠ **この図には部隊の記号が無い。** 上陸を 3 本の太い矢印で示しているだけなので、
+#   ノルマンディーと同じく**矢じりの先＝上陸地点、矢の向き＝進行方向**として読んだ。
+#   西部機動部隊はサフィ・フェダラ・ポールリョーテの 3 か所に分かれて上陸しており、
+#   主力が向かったフェダラ（カサブランカ正面）に置いている。
+#   ⚠ 矢印が太く大きく描かれているので**矢じりの先が沖に出る**。西部機動部隊は
+#     実際の上陸地から 38km、中部は 22km 沖にずれる（東部は 3km）。図がそう描いている。
+# ⚠ 迎え撃ったのはヴィシー・フランス軍だが、**この図には敵側の記号が描かれていない**。
+#   描かれていないものは足さない。
+# ⚠ 3 つの機動部隊は Wikidata に項目が見つからないので自前 id。
+
+- operation: torch
+  event: Q194132           # トーチ作戦
+  sheet: WWIIEurope38a
+  date: 1942-11-08
+  until: 1942-11-17
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 38a: North Africa, The Allied Invasion, 8 November 1942"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った
+  units:
+    - {unit: unit-torch-western, name_ja: 西部機動部隊（フェダラ）, side: us, echelon: corps, px: 353.2, py: 334.3, heading: 143}
+    - {unit: unit-torch-center,  name_ja: 中部機動部隊（オラン）,   side: us, echelon: corps, px: 663.0, py: 271.0, heading: 180}
+    - {unit: unit-torch-eastern, name_ja: 東部機動部隊（アルジェ）, side: uk, echelon: corps, px: 804.0, py: 213.3, heading: 190}

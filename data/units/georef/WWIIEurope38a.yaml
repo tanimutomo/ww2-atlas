@@ -1,0 +1,36 @@
+# West Point 史学科アトラス WWII Europe 38（合成図）の **上側（a）**
+#   "North Africa, 1941 — The Allied Invasion, 8 November 1942"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+#
+# ⚠ **この画像にも地図が 2 枚入っている**（上 a＝トーチ上陸、下 b＝チュニジア追撃）。
+#   縮尺が違うので変換も別。ここは上側だけ。
+sheet: WWIIEurope38a
+title: "North Africa, The Allied Invasion, 8 November 1942"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 18
+control:
+  - {name: Gibraltar,    px: 466.9, py: 223.8, lon: -5.3536, lat: 36.1408}
+  - {name: Tangier,      px: 445.3, py: 245.9, lon: -5.8340, lat: 35.7595}
+  - {name: Kenitra,      px: 406.2, py: 315.1, lon: -6.5802, lat: 34.2610}
+  - {name: Rabat,        px: 390.9, py: 331.5, lon: -6.8416, lat: 34.0209}
+  - {name: Mohammedia,   px: 368.0, py: 345.7, lon: -7.3830, lat: 33.6866}
+  - {name: Casablanca,   px: 358.9, py: 346.2, lon: -7.5898, lat: 33.5731}
+  - {name: Safi,         px: 283.3, py: 396.7, lon: -9.2372, lat: 32.2994}
+  - {name: Fez,          px: 472.3, py: 336.3, lon: -5.0003, lat: 34.0331}
+  - {name: Meknes,       px: 442.5, py: 342.8, lon: -5.5473, lat: 33.8935}
+  - {name: Algiers,      px: 804.0, py: 216.0, lon: 3.0588, lat: 36.7538}
+  - {name: Bejaia,       px: 884.3, py: 212.3, lon: 5.0833, lat: 36.7500}
+  - {name: Jijel,        px: 913.3, py: 209.3, lon: 5.7667, lat: 36.8200}
+  - {name: Skikda,       px: 954.3, py: 202.7, lon: 6.9000, lat: 36.8800}
+  - {name: Annaba,       px: 989.3, py: 201.0, lon: 7.7667, lat: 36.9000}
+  - {name: Bizerte,      px: 1071.0, py: 177.7, lon: 9.8739, lat: 37.2744}
+  - {name: Tunis,        px: 1085.7, py: 198.3, lon: 10.1815, lat: 36.8065}
+  - {name: Constantine,  px: 947.7, py: 230.0, lon: 6.6147, lat: 36.3650}
+  - {name: SoukAhras,    px: 1000.7, py: 231.7, lon: 7.9511, lat: 36.2864}
+  - {name: Beja,         px: 1046.7, py: 202.7, lon: 9.1817, lat: 36.7256}
+  - {name: Tebessa,      px: 1009.3, py: 271.7, lon: 8.1244, lat: 35.4042}
+  - {name: Kairouan,     px: 1083.3, py: 255.0, lon: 10.0963, lat: 35.6781}
+  - {name: Biskra,       px: 913.3, py: 306.7, lon: 5.7333, lat: 34.8500}
+  - {name: Gafsa,        px: 1037.7, py: 312.7, lon: 8.7842, lat: 34.4250}
