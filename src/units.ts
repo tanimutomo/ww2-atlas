@@ -1,16 +1,19 @@
 // 部隊配置レイヤー（P2-a）。
 //
-// 作戦の節目ごとの「スナップショット」を NATO 記号（APP-6）で地図に重ねる。
-// milsymbol（MIT）で SVG を作り、canvas に焼いて map.addImage する。
+// 作戦の節目ごとの「スナップショット」を、駒のかたちで地図に重ねる。
 //
-// 設計上の約束ごとが 3 つある:
+// 設計上の約束ごとが 4 つある:
 //   ① 補間しない。date <= 今 < until のスナップショットだけを出す。
 //      間を埋めると、読み取っていない位置を描いたことになる
 //   ② 友軍=青・敵軍=赤 の NATO 配色は使わない。どちらの視点かを決めることになるので、
-//      記号は単色にして、枠を「その国の色」（actors.yaml）で塗る
-//   ③ 向きは記号を回さず、NATO の作法どおり別に矢印を出す（milsymbol の direction）
+//      駒は「その国の色」（actors.yaml）で塗る
+//   ③ **向きが分かっている駒は五角形（尖った側が向き）、分からない駒は四角**。
+//      向き不明を五角形で描くと、読み取っていない向きを描いたことになる
+//   ④ 大きさは規模（軍集団＞軍＞軍団＞師団＞連隊）。名前は触れるか押したときだけ
+//
+// ⚠ 当初は milsymbol で APP-6 の記号を出していたが、20 個並べると細かすぎて読めず、
+//   「戦況図の駒」に寄せた。規模は記号ではなく大きさで表す。
 
-import ms from 'milsymbol';
 import type { Map as MlMap } from 'maplibre-gl';
 
 export type Echelon = 'army_group' | 'army' | 'corps' | 'division' | 'regiment';
@@ -44,13 +47,13 @@ export interface Movement {
   verified: boolean;
 }
 
-// SIDC の 12 文字目（2525C の規模）。大きい順
-const ECHELON_SIDC: Record<Echelon, string> = {
-  army_group: 'L',
-  army: 'K',
-  corps: 'J',
-  division: 'I',
-  regiment: 'G',
+// 駒の幅（px）。規模の差が一目で分かる程度に開けてある
+const ECHELON_SIZE: Record<Echelon, number> = {
+  army_group: 30,
+  army: 25,
+  corps: 21,
+  division: 17,
+  regiment: 14,
 };
 
 export const ECHELON_JA: Record<Echelon, string> = {
@@ -63,9 +66,9 @@ export const ECHELON_JA: Record<Echelon, string> = {
 
 /**
  * 地図が暗いので、国の色をそのままだと沈む。明度を上げて使う。
- * （面の塗りと違って記号は線が細いので、同じ色では読めない）
+ * （面の塗りと違って駒は小さいので、同じ色では読めない）
  */
-export function brighten(hex: string, amount = 0.3): string {
+export function brighten(hex: string, amount = 0.25): string {
   const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
   if (!m) return hex;
   const n = parseInt(m[1], 16);
@@ -73,24 +76,7 @@ export function brighten(hex: string, amount = 0.3): string {
   return `#${[(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) => mix(c).toString(16).padStart(2, '0')).join('')}`;
 }
 
-/**
- * 記号の大きさは規模で変える。数字は milsymbol の size（おおよそ枠の高さの px）。
- * 師団を基準に、上の規模ほど大きくする。常時 20 個前後が同時に出るので、
- * 地図が記号で埋まらない範囲に抑えてある。
- */
-const ECHELON_SIZE: Record<Echelon, number> = {
-  army_group: 22,
-  army: 19,
-  corps: 16,
-  division: 13,
-  regiment: 11,
-};
-
-/** 位置を指す三角。コマの下に付けて、どの地点の話かを外さないようにする */
-const POINTER_H = 5;
-const POINTER_W = 8;
-
-/** 記号 1 つぶんの画像の id。同じ見た目は 1 枚だけ作って使い回す */
+/** 駒 1 つぶんの画像の id。同じ見た目は 1 枚だけ焼いて使い回す */
 export function iconId(color: string, echelon: Echelon, heading?: number | null): string {
   const dir = typeof heading === 'number' ? Math.round(heading) : 'x';
   return `unit:${color}:${echelon}:${dir}`;
@@ -98,14 +84,16 @@ export function iconId(color: string, echelon: Echelon, heading?: number | null)
 
 interface Baked {
   id: string;
-  /** 画像の中心から、記号の足元（実際の位置）までのずれ。icon-offset に渡す */
+  /** 画像の中心から実際の位置までのずれ。駒は中心が位置なので常に 0 */
   offset: [number, number];
 }
 
 /**
- * milsymbol の記号を canvas に焼いて map に登録する。
- * 向きの矢印が付くと絵の外形が上下に伸びるので、記号の基準点が画像の中心から
- * ずれる。そのぶんを icon-offset で戻さないと、部隊が座標からずれて見える。
+ * 駒を canvas に焼いて map に登録する。
+ *
+ * 向きが分かっていれば五角形（尖った側が向き）、分からなければ四角。
+ * **向き不明を五角形で描かない**のは、読み取っていない向きを描いたことに
+ * なるため。回しても画像から食み出さないよう、画布は駒の対角より大きく取る。
  */
 export function bakeIcon(
   map: MlMap,
@@ -114,53 +102,45 @@ export function bakeIcon(
   heading?: number | null,
 ): Baked {
   const id = iconId(color, echelon, heading);
-  // 記号の中身は指定しない（`U------` ＝ 種別不明）。
-  // 軍・軍団までしか読めない図から兵種を決め打ちする根拠が無いので、枠と規模だけにする。
-  // 色は所属を問わず同じ扱いにして、陣営色をそのまま流し込む
-  //（Friend を青・Hostile を赤にする NATO の配色は、どちらの視点かを決めてしまう）
-  const sym = new ms.Symbol(`SFGPU------${ECHELON_SIDC[echelon]}---`, {
-    size: ECHELON_SIZE[echelon],
-    fill: true,
-    colorMode: { Friend: color, Hostile: color, Neutral: color, Unknown: color, Civilian: color, Suspect: color },
-    outlineColor: '#0b1017',
-    outlineWidth: 2,
-    infoColor: '#0b1017',
-    ...(typeof heading === 'number' ? { direction: heading } : {}),
-  });
-  const anchor = sym.getAnchor();
-  const size = sym.getSize();
-  // 三角のぶんだけ下に伸ばした絵にする。指す先（三角の先端）が実際の位置なので、
-  // icon-offset で「絵の中心 → 三角の先端」のずれを打ち消す
-  const w = Math.ceil(size.width);
-  const h = Math.ceil(size.height) + POINTER_H;
-  const tipX = anchor.x;
-  const tipY = h;
-  const offset: [number, number] = [w / 2 - tipX, h / 2 - tipY];
+  const offset: [number, number] = [0, 0];
   if (map.hasImage(id)) return { id, offset };
 
+  const w = ECHELON_SIZE[echelon];
+  const half = w / 2;
+  const box = Math.ceil(w * 1.55);
   const ratio = Math.min(2, Math.max(1, Math.round(window.devicePixelRatio || 1)));
   const canvas = document.createElement('canvas');
-  canvas.width = Math.ceil(w * ratio);
-  canvas.height = Math.ceil(h * ratio);
+  canvas.width = box * ratio;
+  canvas.height = box * ratio;
   const ctx = canvas.getContext('2d');
-  if (ctx) {
-    ctx.scale(ratio, ratio);
-    ctx.drawImage(sym.asCanvas(ratio) as HTMLCanvasElement, 0, 0, size.width, size.height);
-    ctx.beginPath();
-    ctx.moveTo(tipX - POINTER_W / 2, h - POINTER_H);
-    ctx.lineTo(tipX + POINTER_W / 2, h - POINTER_H);
-    ctx.lineTo(tipX, h);
-    ctx.closePath();
-    ctx.fillStyle = color;
-    ctx.strokeStyle = '#0b1017';
-    ctx.lineWidth = 1;
-    ctx.fill();
-    ctx.stroke();
-    const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    map.addImage(id, { width: img.width, height: img.height, data: new Uint8Array(img.data) }, {
-      pixelRatio: ratio,
-    });
+  if (!ctx) return { id, offset };
+  ctx.scale(ratio, ratio);
+  ctx.translate(box / 2, box / 2);
+  if (typeof heading === 'number') ctx.rotate((heading * Math.PI) / 180);
+
+  ctx.beginPath();
+  if (typeof heading === 'number') {
+    // 五角形。上が尖っている（回す前は北を向く）
+    ctx.moveTo(0, -half * 1.15);
+    ctx.lineTo(half, -half * 0.3);
+    ctx.lineTo(half, half * 0.85);
+    ctx.lineTo(-half, half * 0.85);
+    ctx.lineTo(-half, -half * 0.3);
+  } else {
+    ctx.rect(-half, -half * 0.85, w, half * 1.7);
   }
+  ctx.closePath();
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.strokeStyle = '#0b1017';
+  ctx.lineWidth = 1.5;
+  ctx.lineJoin = 'round';
+  ctx.stroke();
+
+  const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  map.addImage(id, { width: img.width, height: img.height, data: new Uint8Array(img.data) }, {
+    pixelRatio: ratio,
+  });
   return { id, offset };
 }
 

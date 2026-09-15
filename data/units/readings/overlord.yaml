@@ -44,6 +44,27 @@
     - {unit: Q210387,  name_ja: 第 2 装甲師団,             side: de, echelon: division,   px: 985.3, py: 416.5}
     - {unit: Q667773,  name_ja: 第 77 歩兵師団,            side: de, echelon: division,   px: 539.8, py: 592.8}
 
+# ── 6 月 6 日の連合軍。55 番の上陸の矢印から読む。
+#    矢じりの先 ＝ 上陸地点、矢の向き ＝ 進む方向（heading）。
+#    ⚠ 矢じりは沖合に描いてあるので、駒が少し海に乗る。図がそう描いている。
+#    ⚠ 海の上に並ぶ師団記号（上陸予定日つき）は編成表なので、そちらは採らない。
+- operation: overlord
+  event: Q8641370
+  sheet: WWIIEurope55
+  date: 1944-06-06
+  until: 1944-06-12
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った
+  units:
+    - {unit: Q231293, name_ja: 米 第 4 歩兵師団（ユタ）,   side: us, echelon: division, px: 531.1, py: 273.8, heading: 195}
+    - {unit: Q163659,  name_ja: 米 第 1 歩兵師団（オマハ）, side: us, echelon: division, px: 635.9, py: 296.8, heading: 180}
+    - {unit: Q2713768, name_ja: 英 第 50 歩兵師団（ゴールド）, side: uk, echelon: division, px: 728.0, py: 310.8, heading: 190}
+    - {unit: Q2816553, name_ja: カナダ 第 3 歩兵師団（ジュノー）, side: ca, echelon: division, px: 770.6, py: 308.6, heading: 233}
+    - {unit: Q223165,  name_ja: 英 第 3 歩兵師団（ソード）, side: uk, echelon: division, px: 842.0, py: 322.3, heading: 207}
+
 - operation: overlord
   event: Q8641370
   sheet: WWIIEurope55
@@ -56,6 +77,8 @@
       note: 米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない
   units:
     # 上陸を終えて地上にいる連合軍師団（海の上に並ぶ記号は編成表なので採らない）
+    - {unit: Q231293,  name_ja: 米 第 4 歩兵師団,          side: us, echelon: division, px: 485.8, py: 257.9}
+    - {unit: Q2332538, name_ja: 米 第 90 歩兵師団,         side: us, echelon: division, px: 452.9, py: 268.9}
     - {unit: Q2715528, name_ja: 米 第 29 歩兵師団,         side: us, echelon: division, px: 562.1, py: 350.9}
     - {unit: Q210607, name_ja: 米 第 2 歩兵師団,          side: us, echelon: division, px: 598.6, py: 353.6}
     - {unit: Q163659, name_ja: 米 第 1 歩兵師団,          side: us, echelon: division, px: 662.3, py: 351.4}

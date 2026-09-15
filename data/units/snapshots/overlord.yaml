@@ -340,6 +340,125 @@
         url: https://dhc.westpoint.edu/atlases/
         note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
     verified: false
+  - id: overlord-19440606-q231293
+    unit: Q231293
+    name_ja: "米 第 4 歩兵師団（ユタ）"
+    side: us
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-1.1406, 49.4283]
+    heading: 195
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: overlord-19440606-q163659
+    unit: Q163659
+    name_ja: "米 第 1 歩兵師団（オマハ）"
+    side: us
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.8468, 49.3849]
+    heading: 180
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: overlord-19440606-q2713768
+    unit: Q2713768
+    name_ja: "英 第 50 歩兵師団（ゴールド）"
+    side: uk
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.5882, 49.3579]
+    heading: 190
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: overlord-19440606-q2816553
+    unit: Q2816553
+    name_ja: "カナダ 第 3 歩兵師団（ジュノー）"
+    side: ca
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.4682, 49.3611]
+    heading: 233
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: overlord-19440606-q223165
+    unit: Q223165
+    name_ja: "英 第 3 歩兵師団（ソード）"
+    side: uk
+    echelon: division
+    date: 1944-06-06
+    until: 1944-06-12
+    coord: [-0.2679, 49.335]
+    heading: 207
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。上陸の矢印から位置と向きだけを読み取った"
+    verified: false
+  - id: overlord-19440612-q231293
+    unit: Q231293
+    name_ja: "米 第 4 歩兵師団"
+    side: us
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-1.2672, 49.4577]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
+  - id: overlord-19440612-q2332538
+    unit: Q2332538
+    name_ja: "米 第 90 歩兵師団"
+    side: us
+    echelon: division
+    date: 1944-06-12
+    until: 1944-06-19
+    coord: [-1.3605, 49.4386]
+    heading: null
+    event: Q8641370
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope55}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 55: Invasion of Normandy and Operations, 6-12 June 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置と向きだけを読み取り、画像は複製していない"
+    verified: false
   - id: overlord-19440612-q2715528
     unit: Q2715528
     name_ja: "米 第 29 歩兵師団"

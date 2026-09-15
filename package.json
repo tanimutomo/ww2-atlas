@@ -19,8 +19,7 @@
     "check:georef": "node scripts/georef-check.mjs"
   },
   "dependencies": {
-    "maplibre-gl": "^5.6.0",
-    "milsymbol": "^3.0.4"
+    "maplibre-gl": "^5.6.0"
   },
   "devDependencies": {
     "js-yaml": "^4.1.0",
