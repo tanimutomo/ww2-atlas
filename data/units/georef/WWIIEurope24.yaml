@@ -1,0 +1,27 @@
+# West Point 史学科アトラス WWII Europe 24
+#   "Southwest Russia, 1942 — Soviet Winter Offensive, Operations 19 Nov. - 12 Dec. 1942"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+# 1 画素 ≈ 1.8km。読み取り誤差 6〜10 画素がそのまま 15km 前後になる。
+sheet: WWIIEurope24
+title: "Soviet Winter Offensive, 19 Nov - 12 Dec 1942"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 16
+control:
+  - {name: Serafimovich, px: 744.2, py: 264.2, lon: 42.7292, lat: 49.5806}
+  - {name: KalachNaDonu, px: 777.3, py: 318.8, lon: 43.5300, lat: 48.6900}
+  - {name: Tsimlyansk,   px: 724.9, py: 383.4, lon: 42.0930, lat: 47.6470}
+  - {name: Kotelnikovo,  px: 768.0, py: 389.1, lon: 43.1400, lat: 47.6300}
+  - {name: Stalingrad,   px: 815.6, py: 304.7, lon: 44.5133, lat: 48.7080}
+  - {name: Rostov,       px: 616.6, py: 411.3, lon: 39.7015, lat: 47.2357}
+  - {name: Taganrog,     px: 577.5, py: 412.8, lon: 38.8969, lat: 47.2362}
+  - {name: Salsk,        px: 695.3, py: 468.0, lon: 41.5400, lat: 46.4800}
+  - {name: Elista,       px: 822.6, py: 468.6, lon: 44.2700, lat: 46.3080}
+  - {name: Tikhoretsk,   px: 638.7, py: 506.3, lon: 40.1290, lat: 45.8560}
+  - {name: Armavir,      px: 683.2, py: 561.5, lon: 41.1229, lat: 44.9892}
+  - {name: Krasnodar,    px: 587.7, py: 563.8, lon: 38.9753, lat: 45.0355}
+  - {name: Maykop,       px: 638.4, py: 587.0, lon: 40.1058, lat: 44.6098}
+  - {name: Pyatigorsk,   px: 781.8, py: 619.6, lon: 43.0594, lat: 44.0486}
+  - {name: Mozdok,       px: 856.0, py: 626.7, lon: 44.6500, lat: 43.7500}
+  - {name: Tuapse,       px: 588.3, py: 626.7, lon: 39.0800, lat: 44.1000}
