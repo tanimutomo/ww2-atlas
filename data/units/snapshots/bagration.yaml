@@ -1,0 +1,308 @@
+# ⚠ 自動生成。直すのは data/units/readings/bagration.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: bagration-19440622-q163084
+    unit: Q163084
+    name_ja: "北方軍集団（リンデマン→シェルナー）"
+    side: de
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [19.3517, 58.7117]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q158260
+    unit: Q158260
+    name_ja: "中央軍集団（ブッシュ→モーデル）"
+    side: de
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [14.8858, 54.4421]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q702618
+    unit: Q702618
+    name_ja: "北ウクライナ軍集団（モーデル→ハルペ）"
+    side: de
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [15.5881, 47.7875]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q585349
+    unit: Q585349
+    name_ja: "南ウクライナ軍集団（シェルナー→フリースナー）"
+    side: de
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [22.8261, 44.3522]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q200121
+    unit: Q200121
+    name_ja: "第 18 軍"
+    side: de
+    echelon: army
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [23.0083, 58.0162]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q194400
+    unit: Q194400
+    name_ja: "第 16 軍（シュルツ）"
+    side: de
+    echelon: army
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [21.7217, 57.3119]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q223458
+    unit: Q223458
+    name_ja: "第 3 装甲軍（ラインハルト）"
+    side: de
+    echelon: army
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [20.9237, 56.0509]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q464848
+    unit: Q464848
+    name_ja: "第 4 軍"
+    side: de
+    echelon: army
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [20.5806, 54.5384]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q819304
+    unit: Q819304
+    name_ja: "第 2 軍（ヴァイス）"
+    side: de
+    echelon: army
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [20.6626, 53.3024]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q275151
+    unit: Q275151
+    name_ja: "第 9 軍（ヨルダン→フォルマン）"
+    side: de
+    echelon: army
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [17.9218, 52.3128]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q1635580
+    unit: Q1635580
+    name_ja: "レニングラード方面軍（ゴヴォロフ）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [27.4281, 60.2874]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q223144
+    unit: Q223144
+    name_ja: "第 3 バルト方面軍（マスレンニコフ）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [37.9383, 59.6295]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q209587
+    unit: Q209587
+    name_ja: "第 2 バルト方面軍（エリョーメンコ）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [38.0089, 58.5548]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q2344621
+    unit: Q2344621
+    name_ja: "第 1 バルト方面軍（バグラミャン）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [39.5718, 56.6469]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q2354459
+    unit: Q2354459
+    name_ja: "第 3 白ロシア方面軍（チェルニャホフスキー）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [42.1559, 55.4259]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q210633
+    unit: Q210633
+    name_ja: "第 2 白ロシア方面軍（ザハロフ）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [41.555, 54.1077]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q2088142
+    unit: Q2088142
+    name_ja: "第 1 白ロシア方面軍（ロコソフスキー）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [41.3285, 52.6657]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: bagration-19440622-q277985
+    unit: Q277985
+    name_ja: "第 1 ウクライナ方面軍（コーネフ）"
+    side: su
+    echelon: army_group
+    date: 1944-06-22
+    until: 1944-08-20
+    coord: [40.9633, 50.9873]
+    heading: null
+    event: Q151052
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope30}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false

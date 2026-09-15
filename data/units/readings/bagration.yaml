@@ -1,0 +1,39 @@
+# バグラチオン作戦 1944。West Point アトラス 30 番から読み取った。
+#
+# ⚠ 下図は 19 番（バルバロッサ）と完全に同一なので、変換は 19 番の基準点を使い回している。
+# ⚠ 部隊の箱は**概観（幅 1400）から読んだ**。この図の 1 画素 ≈ 2.7km で
+#   読み取りの下限が 18km あり、軍集団・方面軍の箱は大きくて位置を取り違えないので、
+#   切り出しても得るものが無いと判断した。地名の点は逆に取り違えるので必ず拡大する。
+# ⚠ ナルヴァ軍支隊は英語版の記事が第 54 軍団に転送されるので入れていない。
+
+- operation: bagration
+  event: Q151052           # バグラチオン作戦
+  sheet: WWIIEurope30
+  date: 1944-06-22
+  until: 1944-08-20
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration, 22 June - 19 August 1944"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない
+  units:
+    # ドイツ
+    - {unit: Q163084,  name_ja: 北方軍集団（リンデマン→シェルナー）, side: de, echelon: army_group, px: 455.0, py: 135.0}
+    - {unit: Q158260,  name_ja: 中央軍集団（ブッシュ→モーデル）,     side: de, echelon: army_group, px: 330.0, py: 310.0}
+    - {unit: Q702618,  name_ja: 北ウクライナ軍集団（モーデル→ハルペ）, side: de, echelon: army_group, px: 290.0, py: 605.0}
+    - {unit: Q585349,  name_ja: 南ウクライナ軍集団（シェルナー→フリースナー）, side: de, echelon: army_group, px: 467.0, py: 770.0}
+    - {unit: Q200121,  name_ja: 第 18 軍,                 side: de, echelon: army, px: 528.0, py: 172.0}
+    - {unit: Q194400,  name_ja: 第 16 軍（シュルツ）,      side: de, echelon: army, px: 497.0, py: 200.0}
+    - {unit: Q223458,  name_ja: 第 3 装甲軍（ラインハルト）, side: de, echelon: army, px: 473.0, py: 253.0}
+    - {unit: Q464848,  name_ja: 第 4 軍,                  side: de, echelon: army, px: 457.0, py: 318.0}
+    - {unit: Q819304,  name_ja: 第 2 軍（ヴァイス）,       side: de, echelon: army, px: 452.0, py: 372.0}
+    - {unit: Q275151,  name_ja: 第 9 軍（ヨルダン→フォルマン）, side: de, echelon: army, px: 382.0, py: 410.0}
+    # ソ連
+    - {unit: Q1635580, name_ja: レニングラード方面軍（ゴヴォロフ）, side: su, echelon: army_group, px: 630.0, py: 82.0}
+    - {unit: Q223144,  name_ja: 第 3 バルト方面軍（マスレンニコフ）, side: su, echelon: army_group, px: 858.0, py: 120.0}
+    - {unit: Q209587,  name_ja: 第 2 バルト方面軍（エリョーメンコ）, side: su, echelon: army_group, px: 862.0, py: 165.0}
+    - {unit: Q2344621, name_ja: 第 1 バルト方面軍（バグラミャン）,   side: su, echelon: army_group, px: 905.0, py: 245.0}
+    - {unit: Q2354459, name_ja: 第 3 白ロシア方面軍（チェルニャホフスキー）, side: su, echelon: army_group, px: 975.0, py: 295.0}
+    - {unit: Q210633,  name_ja: 第 2 白ロシア方面軍（ザハロフ）,     side: su, echelon: army_group, px: 968.0, py: 350.0}
+    - {unit: Q2088142, name_ja: 第 1 白ロシア方面軍（ロコソフスキー）, side: su, echelon: army_group, px: 972.0, py: 410.0}
+    - {unit: Q277985,  name_ja: 第 1 ウクライナ方面軍（コーネフ）,   side: su, echelon: army_group, px: 975.0, py: 480.0}

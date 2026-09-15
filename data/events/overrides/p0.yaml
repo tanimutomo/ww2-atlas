@@ -35,6 +35,28 @@
     - title: Führer Directive 21（英訳全文・Wikisource）
       url: https://en.wikisource.org/wiki/F%C3%BChrer_Directive_21
 
+- id: Q151052
+  name_ja: バグラチオン作戦
+  type: battle
+  theatre: europe_east
+  coord: [27.6, 53.3] # 中央軍集団を割った主攻正面（ミンスク〜ボブルイスク）を代表点にする
+  significance: 3
+  outcome: allied_victory
+  actors: [su, de]
+  summary_ja: |
+    ソ連軍による中央軍集団への大攻勢。1944 年 6 月 22 日、独ソ開戦から 3 年の日に始まり、
+    8 月までにベラルーシを解放してワルシャワ近郊まで進んだ。ドイツ軍は 4 個軍のうち
+    3 個軍が壊滅し、東部戦線で最大の損害を出す。西のノルマンディー上陸と同じ夏に、
+    東西から同時に押される形がここで完成した。
+  verified: false
+  sources:
+    - title: Wikidata Q151052
+      url: https://www.wikidata.org/wiki/Q151052
+      note: CC0
+    - title: "West Point History of Warfare Atlas, WWII Europe 30: Operation Bagration"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 部隊配置レイヤーの出どころ（PD 相当・画像は複製していない）
+
 - id: Q150812
   name_ja: ポーランド侵攻
   type: invasion
