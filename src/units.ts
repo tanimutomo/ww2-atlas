@@ -73,7 +73,22 @@ export function brighten(hex: string, amount = 0.3): string {
   return `#${[(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) => mix(c).toString(16).padStart(2, '0')).join('')}`;
 }
 
-const SIZE = 30;
+/**
+ * 記号の大きさは規模で変える。数字は milsymbol の size（おおよそ枠の高さの px）。
+ * 師団を基準に、上の規模ほど大きくする。常時 20 個前後が同時に出るので、
+ * 地図が記号で埋まらない範囲に抑えてある。
+ */
+const ECHELON_SIZE: Record<Echelon, number> = {
+  army_group: 22,
+  army: 19,
+  corps: 16,
+  division: 13,
+  regiment: 11,
+};
+
+/** 位置を指す三角。コマの下に付けて、どの地点の話かを外さないようにする */
+const POINTER_H = 5;
+const POINTER_W = 8;
 
 /** 記号 1 つぶんの画像の id。同じ見た目は 1 枚だけ作って使い回す */
 export function iconId(color: string, echelon: Echelon, heading?: number | null): string {
@@ -104,7 +119,7 @@ export function bakeIcon(
   // 色は所属を問わず同じ扱いにして、陣営色をそのまま流し込む
   //（Friend を青・Hostile を赤にする NATO の配色は、どちらの視点かを決めてしまう）
   const sym = new ms.Symbol(`SFGPU------${ECHELON_SIDC[echelon]}---`, {
-    size: SIZE,
+    size: ECHELON_SIZE[echelon],
     fill: true,
     colorMode: { Friend: color, Hostile: color, Neutral: color, Unknown: color, Civilian: color, Suspect: color },
     outlineColor: '#0b1017',
@@ -114,16 +129,33 @@ export function bakeIcon(
   });
   const anchor = sym.getAnchor();
   const size = sym.getSize();
-  const offset: [number, number] = [
-    anchor.x - size.width / 2,
-    anchor.y - size.height / 2,
-  ];
+  // 三角のぶんだけ下に伸ばした絵にする。指す先（三角の先端）が実際の位置なので、
+  // icon-offset で「絵の中心 → 三角の先端」のずれを打ち消す
+  const w = Math.ceil(size.width);
+  const h = Math.ceil(size.height) + POINTER_H;
+  const tipX = anchor.x;
+  const tipY = h;
+  const offset: [number, number] = [w / 2 - tipX, h / 2 - tipY];
   if (map.hasImage(id)) return { id, offset };
 
   const ratio = Math.min(2, Math.max(1, Math.round(window.devicePixelRatio || 1)));
-  const canvas = sym.asCanvas(ratio) as HTMLCanvasElement;
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.ceil(w * ratio);
+  canvas.height = Math.ceil(h * ratio);
   const ctx = canvas.getContext('2d');
   if (ctx) {
+    ctx.scale(ratio, ratio);
+    ctx.drawImage(sym.asCanvas(ratio) as HTMLCanvasElement, 0, 0, size.width, size.height);
+    ctx.beginPath();
+    ctx.moveTo(tipX - POINTER_W / 2, h - POINTER_H);
+    ctx.lineTo(tipX + POINTER_W / 2, h - POINTER_H);
+    ctx.lineTo(tipX, h);
+    ctx.closePath();
+    ctx.fillStyle = color;
+    ctx.strokeStyle = '#0b1017';
+    ctx.lineWidth = 1;
+    ctx.fill();
+    ctx.stroke();
     const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
     map.addImage(id, { width: img.width, height: img.height, data: new Uint8Array(img.data) }, {
       pixelRatio: ratio,

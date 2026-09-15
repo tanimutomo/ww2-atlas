@@ -53,8 +53,11 @@ export class AtlasMap {
   private currentKeyframe: string | null = null;
   private onSelect: (id: string) => void;
   private labels: MapLabels | null = null;
-  /** 部隊名のラベル。選択中の戦闘のあいだだけ出す */
-  private unitLabels: LabelItem[] = [];
+  /** 部隊名は常時出すと地図が埋まるので、触れたもの・押したものだけ出す */
+  private hoveredUnit: LabelItem | null = null;
+  private pinnedUnit: LabelItem | null = null;
+  /** 直前に出したラベル（部隊名を足して出し直すのに使う） */
+  private lastLabelItems: LabelItem[] = [];
   /** 前回の描画で「進行中」だったイベント。増えたぶんにだけ名前を出す */
   private prevActive = new Set<string>();
   private stickyId: string | null = null;
@@ -328,6 +331,33 @@ export class AtlasMap {
       this.map.on('mouseleave', layer, () => (this.map.getCanvas().style.cursor = ''));
     }
 
+    // 部隊の記号。名前は常時出さず、触れたとき・押したときだけ出す
+    const unitLabelOf = (f: maplibregl.MapGeoJSONFeature): LabelItem | null => {
+      const p = f.properties as { uid?: string; name?: string } | undefined;
+      const g = f.geometry;
+      if (!p?.uid || !p.name || g?.type !== 'Point') return null;
+      return { id: `unit:${p.uid}`, coord: g.coordinates as [number, number], text: p.name, sticky: true };
+    };
+    this.map.on('mousemove', 'units-symbol', (e) => {
+      const item = e.features?.[0] ? unitLabelOf(e.features[0]) : null;
+      if (item?.id === this.hoveredUnit?.id) return;
+      this.hoveredUnit = item;
+      this.map.getCanvas().style.cursor = item ? 'pointer' : '';
+      this.showLabels();
+    });
+    this.map.on('mouseleave', 'units-symbol', () => {
+      if (!this.hoveredUnit) return;
+      this.hoveredUnit = null;
+      this.map.getCanvas().style.cursor = '';
+      this.showLabels();
+    });
+    // 押すと出したままにする（触れない端末のため）。もう一度押すと消える
+    this.map.on('click', 'units-symbol', (e) => {
+      const item = e.features?.[0] ? unitLabelOf(e.features[0]) : null;
+      this.pinnedUnit = item && item.id !== this.pinnedUnit?.id ? item : null;
+      this.showLabels();
+    });
+
     // 利用者の手による移動だけを拾う（自前の easeTo には originalEvent が無い）
     this.map.on('movestart', (e) => {
       if ((e as { originalEvent?: unknown }).originalEvent) this.userMoved = true;
@@ -428,18 +458,15 @@ export class AtlasMap {
         return {
           type: 'Feature' as const,
           geometry: { type: 'Point' as const, coordinates: u.coord },
-          properties: { icon: id, offset, color },
+          properties: { icon: id, offset, color, uid: u.id, name: u.name_ja },
         };
       }),
     } as never);
 
-    // 部隊名はグリフが無いので HTML のラベルで出す。開いているあいだは消さない
-    this.unitLabels = snaps.map((u) => ({
-      id: `unit:${u.id}`,
-      coord: u.coord,
-      text: `${u.name_ja}`,
-      sticky: true,
-    }));
+
+    const alive = new Set(snaps.map((u) => `unit:${u.id}`));
+    if (this.pinnedUnit && !alive.has(this.pinnedUnit.id)) this.pinnedUnit = null;
+    if (this.hoveredUnit && !alive.has(this.hoveredUnit.id)) this.hoveredUnit = null;
 
     const unitOf = new Map(snaps.map((u) => [u.unit, u]));
     (this.map.getSource('unit-moves') as GeoJSONSource | undefined)?.setData({
@@ -461,6 +488,12 @@ export class AtlasMap {
         };
       }),
     } as never);
+  }
+
+  /** 地名ラベル ＋ 触れている／押している部隊名 */
+  private showLabels(): void {
+    const unit = this.pinnedUnit ?? this.hoveredUnit;
+    this.labels?.show(unit ? [...this.lastLabelItems, unit] : this.lastLabelItems);
   }
 
   private visible(date: string, filters: { theatres: Set<string> }): MapPoint[] {
@@ -496,10 +529,8 @@ export class AtlasMap {
       }
     }
 
-    // 部隊名は開いている戦闘のあいだだけ、常に出す
-    items.push(...this.unitLabels);
-
-    this.labels.show(items);
+    this.lastLabelItems = items;
+    this.showLabels();
     this.prevActive = activeIds;
   }
 
@@ -557,14 +588,18 @@ export class AtlasMap {
     this.map.setFilter('events-highlight', ['in', ['get', 'id'], ['literal', ids]]);
     this.stickyId = ids[0] ?? null;
     if (date) this.setUnits(date, this.stickyId);
-    else this.unitLabels = [];
+    else {
+      this.hoveredUnit = null;
+      this.pinnedUnit = null;
+    }
     if (!this.labels) return;
     // ハイライトされた点すべてに名前を出す（リンク先がどれか分かるように）
     const items = ids
       .map((id) => this.points.find((p) => p.id === id))
       .filter((p): p is MapPoint => Boolean(p))
       .map((p) => ({ id: p.id, coord: p.coord, text: p.name, sticky: true }));
-    this.labels.show([...items, ...this.unitLabels]);
+    this.lastLabelItems = items;
+    this.showLabels();
   }
 
   /** ずらし込み後の座標。詳細を開いたときに寄せる先として使う */
