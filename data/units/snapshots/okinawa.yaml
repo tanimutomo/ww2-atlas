@@ -1,0 +1,87 @@
+# ⚠ 自動生成。直すのは data/units/readings/okinawa.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: okinawa-19450401-q4646122
+    unit: Q4646122
+    name_ja: "米 第 96 歩兵師団（ブラッドレー）"
+    side: us
+    echelon: division
+    date: 1945-04-01
+    until: 1945-04-09
+    coord: [127.7384, 26.262]
+    heading: null
+    event: Q192660
+    source_map: {title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945", url: https://dhc.westpoint.edu/atlases/, sheet: ww220map2048b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: okinawa-19450401-q261179
+    unit: Q261179
+    name_ja: "米 第 7 歩兵師団（アーノルド）"
+    side: us
+    echelon: division
+    date: 1945-04-01
+    until: 1945-04-09
+    coord: [127.7727, 26.2682]
+    heading: null
+    event: Q192660
+    source_map: {title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945", url: https://dhc.westpoint.edu/atlases/, sheet: ww220map2048b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: okinawa-19450401-q795540
+    unit: Q795540
+    name_ja: "第 62 師団"
+    side: jp
+    echelon: division
+    date: 1945-04-01
+    until: 1945-04-09
+    coord: [127.7432, 26.2367]
+    heading: null
+    event: Q192660
+    source_map: {title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945", url: https://dhc.westpoint.edu/atlases/, sheet: ww220map2048b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: okinawa-19450401-q702783
+    unit: Q702783
+    name_ja: "第 24 師団"
+    side: jp
+    echelon: division
+    date: 1945-04-01
+    until: 1945-04-09
+    coord: [127.7233, 26.1462]
+    heading: null
+    event: Q192660
+    source_map: {title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945", url: https://dhc.westpoint.edu/atlases/, sheet: ww220map2048b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: okinawa-19450401-unit-jp-imb44
+    unit: unit-jp-imb44
+    name_ja: "独立混成第 44 旅団"
+    side: jp
+    echelon: regiment
+    date: 1945-04-01
+    until: 1945-04-09
+    coord: [127.7837, 26.169]
+    heading: null
+    event: Q192660
+    source_map: {title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945", url: https://dhc.westpoint.edu/atlases/, sheet: ww220map2048b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false

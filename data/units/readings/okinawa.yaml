@@ -1,0 +1,25 @@
+# 沖縄戦 1945。West Point アトラス アジア太平洋 48（合成図）の左側から読み取った。
+#
+# ⚠ **米軍の第 10 軍・第 3 水陸両用軍団・第 24 軍団と、上陸各師団の記号は
+#   島の西の海上に並べてある編成表**で、位置ではない。ノルマンディーの 55 番と同じ。
+#   採ったのは**島の上に置かれている記号だけ** ― 米第 96・第 7 師団と、
+#   日本側の第 62 師団・第 24 師団・独立混成第 44 旅団。
+# ⚠ この図は原寸 1260×970 と粗く、基準点の実座標もヨーロッパの都市ほど確かではない。
+#   RMSE 2km は島の幅（約 30km）の 7% にあたる。師団より下は置かない。
+
+- operation: okinawa
+  event: Q192660           # 沖縄戦
+  sheet: ww220map2048b
+  date: 1945-04-01
+  until: 1945-04-09
+  license: pd
+  sources:
+    - title: "West Point History of Warfare Atlas, Asia-Pacific 48b: Southern Okinawa, Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+      url: https://dhc.westpoint.edu/atlases/
+      note: 米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない
+  units:
+    - {unit: Q4646122, name_ja: 米 第 96 歩兵師団（ブラッドレー）, side: us, echelon: division, px: 288.9, py: 418.9}
+    - {unit: Q261179,  name_ja: 米 第 7 歩兵師団（アーノルド）,   side: us, echelon: division, px: 335.1, py: 419.8}
+    - {unit: Q795540,  name_ja: 第 62 師団,                      side: jp, echelon: division, px: 290.3, py: 460.0}
+    - {unit: Q702783,  name_ja: 第 24 師団,                      side: jp, echelon: division, px: 246.4, py: 595.4}
+    - {unit: unit-jp-imb44, name_ja: 独立混成第 44 旅団,          side: jp, echelon: regiment, px: 330.0, py: 578.4}

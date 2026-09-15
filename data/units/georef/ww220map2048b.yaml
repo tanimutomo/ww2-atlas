@@ -1,0 +1,24 @@
+# West Point 史学科アトラス アジア太平洋 48（合成図）の **左側（b）**
+#   "Southern Okinawa, 1945 — Tenth Army Operations (Operation Iceberg), 1-8 April 1945"
+#   https://dhc.westpoint.edu/atlases/
+#
+# ⚠ **この画像も 2 枚組**（左 b＝米第 10 軍の作戦、右 a＝日本第 32 軍の配備）。ここは左だけ。
+# ⚠ **原寸が 1260×970 しかない。** ヨーロッパの図（5100×3300）と違って粗い版なので、
+#   px は原寸そのもの（small_width: 1260）。
+# ⚠ **この図がいちばん精度が怪しい。** 島の幅が 30km ほどしかないのに RMSE 2km ある
+#   （＝島幅の 7%）。基準点にした地名の実座標も、ヨーロッパの都市ほど確かではない。
+#   師団の駒を置くには足りるが、それ以上に使わないこと。
+sheet: ww220map2048b
+title: "Southern Okinawa, Tenth Army Operations, 1-8 April 1945"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1260
+order: 1
+max_rmse_km: 3
+control:
+  - {name: Naha,     px: 199.7, py: 496.8, lon: 127.6809, lat: 26.2124}
+  - {name: Yonabaru, px: 296.0, py: 515.2, lon: 127.7553, lat: 26.1928}
+  - {name: Itoman,   px: 188.3, py: 598.8, lon: 127.6690, lat: 26.1247}
+  - {name: Futenma,  px: 317.3, py: 397.1, lon: 127.7800, lat: 26.2853}
+  - {name: Urasoe,   px: 256.3, py: 454.3, lon: 127.7219, lat: 26.2458}
+  - {name: Awase,    px: 393.7, py: 357.4, lon: 127.8056, lat: 26.3344}
+  - {name: Chatan,   px: 358.3, py: 302.8, lon: 127.7642, lat: 26.3186}
