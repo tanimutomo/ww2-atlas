@@ -1,0 +1,512 @@
+# ⚠ 自動生成。直すのは data/units/readings/kursk.yaml か data/units/georef/*.yaml のほう。
+#   生成: node scripts/build-units.mjs（2026-09-15）
+  - id: kursk-19430705-q158260
+    unit: Q158260
+    name_ja: "中央軍集団（クルーゲ）"
+    side: de
+    echelon: army_group
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [33.0788, 51.8829]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q266893
+    unit: Q266893
+    name_ja: "南方軍集団（マンシュタイン）"
+    side: de
+    echelon: army_group
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [33.4323, 50.2228]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q819304
+    unit: Q819304
+    name_ja: "第 2 装甲軍（シュミット／モーデル）"
+    side: de
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [33.9318, 53.5406]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q275151
+    unit: Q275151
+    name_ja: "第 9 軍（モーデル）"
+    side: de
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [33.9932, 52.8743]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q168248
+    unit: Q168248
+    name_ja: "第 4 装甲軍（ホト）"
+    side: de
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [34.7165, 50.3444]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2664778
+    unit: Q2664778
+    name_ja: "ケンプフ軍支隊"
+    side: de
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [34.1605, 51.5705]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2453565
+    unit: Q2453565
+    name_ja: "第 41 装甲軍団（ハルペ）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.585, 52.7239]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2072964
+    unit: Q2072964
+    name_ja: "第 46 装甲軍団（ツォルン）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [34.4772, 52.6941]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2580063
+    unit: Q2580063
+    name_ja: "第 47 装甲軍団（レメルゼン）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.0057, 52.7144]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2578572
+    unit: Q2578572
+    name_ja: "第 23 軍団（フリースナー）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.6723, 52.9352]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2816913
+    unit: Q2816913
+    name_ja: "第 48 装甲軍団（クノーベルスドルフ）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.3797, 50.6061]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q701700
+    unit: Q701700
+    name_ja: "第 2 SS 装甲軍団（ハウサー）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.9108, 50.5989]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q835595
+    unit: Q835595
+    name_ja: "第 3 装甲軍団（ブライト）"
+    side: de
+    echelon: corps
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [36.4727, 50.4383]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q190500
+    unit: Q190500
+    name_ja: "中央方面軍（ロコソフスキー）"
+    side: su
+    echelon: army_group
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [38.035, 53.6916]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q277985
+    unit: Q277985
+    name_ja: "ヴォロネジ方面軍（ヴァトゥーチン）"
+    side: su
+    echelon: army_group
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.7092, 51.5095]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2032186
+    unit: Q2032186
+    name_ja: "第 11 親衛軍（バグラミャン）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [34.9711, 54.0714]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4032017
+    unit: Q4032017
+    name_ja: "第 61 軍（ベロフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [36.7873, 53.6165]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2599059
+    unit: Q2599059
+    name_ja: "第 63 軍（コルパクチ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.4868, 53.0058]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4031526
+    unit: Q4031526
+    name_ja: "第 48 軍（ロマネンコ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.2351, 52.6878]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2501519
+    unit: Q2501519
+    name_ja: "第 13 軍（プホフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [36.8782, 52.4113]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4032252
+    unit: Q4032252
+    name_ja: "第 70 軍（ガラニン）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.3595, 52.4288]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4031982
+    unit: Q4031982
+    name_ja: "第 60 軍（チェルニャホフスキー）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.5857, 51.7157]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4031102
+    unit: Q4031102
+    name_ja: "第 38 軍（モスカレンコ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.9312, 51.5043]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q231336
+    unit: Q231336
+    name_ja: "第 40 軍"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.659, 50.8494]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4031957
+    unit: Q4031957
+    name_ja: "第 6 親衛軍（チスチャコフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [36.8489, 51.2449]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q4031636
+    unit: Q4031636
+    name_ja: "第 5 親衛軍（ジャドフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.2208, 51.0866]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q7485683
+    unit: Q7485683
+    name_ja: "第 69 軍"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.9427, 50.9343]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q162559
+    unit: Q162559
+    name_ja: "第 1 戦車軍（カトゥコフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [35.9082, 51.0912]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2594845
+    unit: Q2594845
+    name_ja: "第 5 親衛戦車軍（ロトミストロフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.4526, 50.799]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false
+  - id: kursk-19430705-q2333748
+    unit: Q2333748
+    name_ja: "第 7 親衛軍（シュミロフ）"
+    side: su
+    echelon: army
+    date: 1943-07-05
+    until: 1943-08-02
+    coord: [37.449, 50.5127]
+    heading: null
+    event: Q130861
+    source_map: {title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943", url: https://dhc.westpoint.edu/atlases/, sheet: WWIIEurope27b}
+    license: pd
+    sources:
+      - title: "West Point History of Warfare Atlas, WWII Europe 27b: Kursk and Vicinity, Battle of Kursk, 4 July - 1 August 1943"
+        url: https://dhc.westpoint.edu/atlases/
+        note: "米陸軍士官学校 史学科。位置だけを読み取り、画像は複製していない"
+    verified: false

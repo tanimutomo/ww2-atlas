@@ -1,0 +1,31 @@
+# West Point 史学科アトラス WWII Europe 27（合成図）の **右側（b）**
+#   "Kursk and Vicinity, 1943 — Battle of Kursk, 4 July - 1 August 1943"
+#   https://dhc.westpoint.edu/atlases/ （原寸 5100×3300・画像はリポに入れない）
+#
+# ⚠ **この画像には地図が 2 枚入っている**（左 a＝東欧全体、右 b＝クルスク周辺）。
+#   縮尺が違うので変換も別。ここは右側だけを扱う。左側を使うなら別ファイルにする。
+# 1 画素 ≈ 0.85km と細かいので、この図は**軍団まで置ける**。
+sheet: WWIIEurope27b
+title: "Kursk and Vicinity, 1943, 4 July - 1 August 1943"
+url: https://dhc.westpoint.edu/atlases/
+small_width: 1400
+order: 2
+max_rmse_km: 8
+control:
+  - {name: Kirov,       px: 879.2, py: 127.6, lon: 34.3000, lat: 54.0800}
+  - {name: Sukhinichi,  px: 960.0, py: 122.0, lon: 35.3500, lat: 54.1000}
+  - {name: Bryansk,     px: 870.0, py: 243.2, lon: 34.3717, lat: 53.2521}
+  - {name: Karachev,    px: 918.8, py: 260.0, lon: 34.9900, lat: 53.1300}
+  - {name: Bolkhov,     px: 1007.2, py: 216.0, lon: 36.0000, lat: 53.4500}
+  - {name: Mtsensk,     px: 1054.0, py: 250.0, lon: 36.5700, lat: 53.2800}
+  - {name: Oryol,       px: 1014.0, py: 282.4, lon: 36.0700, lat: 52.9700}
+  - {name: Ponyri,      px: 1036.0, py: 378.8, lon: 36.2800, lat: 52.3200}
+  - {name: Livny,       px: 1130.0, py: 356.0, lon: 37.6100, lat: 52.4300}
+  - {name: Kursk,       px: 1034.0, py: 445.2, lon: 36.1926, lat: 51.7304}
+  - {name: Hlukhiv,     px: 824.8, py: 461.2, lon: 33.9160, lat: 51.6780}
+  - {name: Konotop,     px: 764.0, py: 516.0, lon: 33.2022, lat: 51.2417}
+  - {name: Sumy,        px: 904.8, py: 572.0, lon: 34.7981, lat: 50.9077}
+  - {name: Oboyan,      px: 1036.0, py: 532.0, lon: 36.2700, lat: 51.2100}
+  - {name: Belgorod,    px: 1067.2, py: 617.2, lon: 36.5873, lat: 50.5952}
+  - {name: Okhtyrka,    px: 916.0, py: 665.2, lon: 34.9000, lat: 50.3100}
+  - {name: Kharkiv,     px: 1032.0, py: 700.0, lon: 36.2304, lat: 49.9935}
